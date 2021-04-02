@@ -19,4 +19,4 @@ En este tema, revisamos los comandos  `pwd` `cd`  y  `ls`
 
 [Menú Principal](../)
 [Atras](#)
-[Siguiente](./modulo01_linux/comandosTerminal)
+[Siguiente](./comandosTerminal)
