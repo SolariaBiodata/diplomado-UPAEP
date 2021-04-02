@@ -1,37 +1,25 @@
-## Welcome to GitHub Pages
+![alt text](https://solariabiodata.com.mx/images/solaria_banner.png "Soluciones de Siguiente Generación")
+# 1er Diplomado de Bioinformática y Docking
+## Solaria Biodata - UPAEP
 
-You can use the [editor on GitHub](https://github.com/SolariaBiodata/diplomado-UPAEP/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Bienvenido a nuestro 1er Diplomado en "Bioinformática y Docking" en colaboración con la Facultad de Ingeniería en Biotecnología de la Universidad Popular Autónoma del Estado de Puebla (UPAEP), nos da mucho gusto que participes con nosotros. ¡Esperamos el diplomado sea de tu total agrado, adquieras muchos conocimientos y lo disfrutes mucho!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Duración: 96 horas
+Periodo: 5 Abril - 25 Junio 2021 (8 horas por semana)
+Horario: Flexible. 
 
-### Markdown
+**Objetivo**: Que los participantes aprendan los procesos de datos de forma sistemática, desde cómo usar las herramientas de procesamiento en Linux, hasta los elementos que afectan la parametrización de programas, así como la interpretación de resultados de modelamiento molecular y docking.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+**En esta página, estaremos revisando el contenido de lecturas y el resumen de comandos revisados en las sesiones en vivo**
 
-```markdown
-Syntax highlighted code block
+## Unidad 1 Introducción a Linux
 
-# Header 1
-## Header 2
-### Header 3
+### Tema 2 Sistemas de archivos
 
-- Bulleted
-- List
+#### [2.3 Comandos de navegación](./sesion01_estructuraFileSystem/)
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SolariaBiodata/diplomado-UPAEP/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
