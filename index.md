@@ -15,23 +15,23 @@ Bienvenido a nuestro 1er Diplomado en "Bioinformática y Docking" en colaboraci�
 
 **En esta página, estaremos revisando el contenido de lecturas y el resumen de comandos revisados en las sesiones en vivo**
 
-## Unidad 1 - Introducción a Linux
+## Introducción a Linux
 
-### Tema 1 - Introducción a GNU/Linux
+### [Sistemas de archivos](./modulo01_linux/sistemaArchivos)
 
-### Tema 2 - Sistemas de archivos
+#### [Estructura jerárquica y navegación](./modulo01_linux/sistemaArchivos#estructura-jerarquica-y-navegacion)
 
-#### 2.3 - [Comandos de navegación](./modulo01_linux/comandosNavegacion)
+#### [Comandos de navegación](./modulo01_linux/sistemaArchivos#comandos-de-navegacion)
 
-### Tema 3 - [Comandos de la terminal](./modulo01_linux/comandosTerminal)
+### [Comandos de la terminal](./modulo01_linux/comandosTerminal)
 
-#### 3.4 - [man](./modulo01_linux/comandosTerminal#34---man)
+#### [man](./modulo01_linux/comandosTerminal#man)
 
-#### 3.5 - [date](./modulo01_linux/comandosTerminal#35---date)
+#### [date](./modulo01_linux/comandosTerminal#date)
 
-#### 3.6 - [uname](./modulo01_linux/comandosTerminal#36---uname)
+#### [uname](./modulo01_linux/comandosTerminal#uname)
 
-#### 3.7 - [who](./modulo01_linux/comandosTerminal#37---who)
+#### [who](./modulo01_linux/comandosTerminal#who)
 
 
 

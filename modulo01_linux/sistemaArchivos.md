@@ -1,11 +1,13 @@
 ![alt text](https://solariabiodata.com.mx/images/solaria_banner.png "Soluciones de Siguiente Generación")
 # 1er [Diplomado de Bioinformática y Docking](../)
 
-## Unidad 1 - Introducción a Linux
+## Introducción a Linux
 
-### Tema 2 - Sistemas de Archivos
+### Sistemas de Archivos
 
-#### 2.3 - Comandos de navegación
+#### Estructura jerárquica y navegación
+
+#### Comandos de navegación
 
 En este tema, revisamos los comandos  `pwd` `cd`  y  `ls`
 

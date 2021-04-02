@@ -1,11 +1,11 @@
 ![alt text](https://solariabiodata.com.mx/images/solaria_banner.png "Soluciones de Siguiente Generación")
 # 1er [Diplomado de Bioinformática y Docking](../)
 
-## Unidad 1 - Introducción a Linux
+## Introducción a Linux
 
-### Tema 3 - Comandos de la terminal
+### Comandos de la terminal
 
-#### 3.4 - man
+#### man
 
 `man` es un comando que invoca manuales de uso de otros comandos al ser pasados como argumento de este comando. La sintaxis de uso es:
 
@@ -15,7 +15,7 @@ man <comando>
 
 Donde _\<comando\>_ se refiere a cualquier otro comando, del cual quieras conocer el manual de uso.
 
-#### 3.5 - date
+#### date
 
 El comando `date` te permite acceder a la información de la fecha y hora actuales en el sistema operativo. En otras palabras, este comando de usa como un reloj. La sintáxis de este comando es la siguiente:
 
@@ -36,7 +36,7 @@ Fri Apr  2 10:35:46 CST 2021
 ```
 
 
-#### 3.6 - uname
+#### uname
 
 Este comando se usa para obtener información relevante del sistema que tenemos en nuestra computadora. Concretamente nos da información acerca de la arquitectura del procesador y la versión del kernel que usa nuestro sistema operativo. 
 
@@ -60,7 +60,7 @@ Esta salida contiene la siguiente información:
  -  `GNU/Linux` Nombre del sistema operativo
 
 
-#### 3.7 - who
+#### who
 
 `who` es un comando que te permite conocer los usuarios que actualmente están conectados al sistema operativo.
 
