@@ -10,19 +10,20 @@
 A continuación
 
 ```
-\/
-|   bin
-|   dev
-|   etc
-|   home
-|   |   bill
-|   |   |   books
-|   |   |   school
-|   |   patrick
-|   |   |   school
-|   tmp
-|   usr
+/
++---bin
++---dev
++---etc
++---home
+|   +---bill
+|   |   +---books
+|   |   +---school
+|   +---patrick
+|       +---school
++---tmp
++---usr
 ```
+
 Lorem ipsum
 
 
