@@ -19,9 +19,9 @@ Bienvenido a nuestro 1er Diplomado en "Bioinformática y Docking" en colaboraci�
 
 ### [Sistemas de archivos](./modulo01_linux/sistemaArchivos)
 
-#### [Estructura jerárquica y navegación](./modulo01_linux/sistemaArchivos#estructura-jerarquica-y-navegacion)
+#### [Estructura jerárquica y navegación](./modulo01_linux/sistemaArchivos#estructura-jerárquica-y-navegación)
 
-#### [Comandos de navegación](./modulo01_linux/sistemaArchivos#comandos-de-navegacion)
+#### [Comandos de navegación](./modulo01_linux/sistemaArchivos#comandos-de-navegación)
 
 ### [Comandos de la terminal](./modulo01_linux/comandosTerminal)
 

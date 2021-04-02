@@ -9,11 +9,11 @@
 
 A continuación se muestra un ejemplo de la estructura de directorios
 
-![](https://drive.google.com/file/d/13NQkLkKlV-bQtuGr90VaiC7Uq2_m7xa8/view?usp=sharing)
+![](https://drive.google.com/uc?id=13NQkLkKlV-bQtuGr90VaiC7Uq2_m7xa8&export=download)
 
 Por ejemplo, si nosotros queremos conocer el `path` o la `ruta` de un directorio
 
-![](https://drive.google.com/file/d/1eDOHlrE7d8aVXW_9Q7Vi-moJUj54xYkU/view?usp=sharing)
+![](https://drive.google.com/uc?id=1eDOHlrE7d8aVXW_9Q7Vi-moJUj54xYkU&export=download)
 
 basta encontrar el camino 
 
