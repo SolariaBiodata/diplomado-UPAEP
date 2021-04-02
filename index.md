@@ -19,19 +19,19 @@ Bienvenido a nuestro 1er Diplomado en "Bioinformática y Docking" en colaboraci�
 
 ### Tema 1 - Introducción a GNU/Linux
 
-### Tema 2 - [Sistemas de archivos](./sesion01_estructuraFileSystem/)
+### Tema 2 - Sistemas de archivos
 
-#### 2.3 - Comandos de navegación
+#### 2.3 - [Comandos de navegación](./modulo01_linux/comandosNavegacion)
 
-### Tema 3 - [Comandos de la terminal](./sesion01_estructuraFileSystem/comandosTerminal)
+### Tema 3 - [Comandos de la terminal](./modulo01_linux/comandosTerminal)
 
-#### 3.4 - man
+#### 3.4 - [man](./modulo01_linux/comandosTerminal#34---man)
 
-#### 3.5 - date
+#### 3.5 - [date](./modulo01_linux/comandosTerminal#35---date)
 
-#### 3.6 - uname
+#### 3.6 - [uname](./modulo01_linux/comandosTerminal#36---uname)
 
-#### 3.7 - who
+#### 3.7 - [who](./modulo01_linux/comandosTerminal#37---who)
 
 
 
