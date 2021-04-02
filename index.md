@@ -21,9 +21,9 @@ Bienvenido a nuestro 1er Diplomado en "Bioinformática y Docking" en colaboraci�
 
 ### Tema 2 - [Sistemas de archivos](./sesion01_estructuraFileSystem/)
 
-#### 2.3 - [Comandos de navegación](./sesion01_estructuraFileSystem/)
+#### 2.3 - Comandos de navegación
 
-### Tema 3 - [Comandos de la terminal](./sesion01_estructuraFileSystem/)
+### Tema 3 - [Comandos de la terminal](./sesion01_estructuraFileSystem/comandosTerminal)
 
 #### 3.4 - man
 
