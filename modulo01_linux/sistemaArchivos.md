@@ -7,6 +7,16 @@
 
 #### Estructura jerárquica y navegación
 
+A continuación
+
+```mermaid
+graph LR
+  \/ --> bin;
+  \/ --> dev;
+```
+Lorem ipsum
+
+
 #### Comandos de navegación
 
 En este tema, revisamos los comandos  `pwd` `cd`  y  `ls`
