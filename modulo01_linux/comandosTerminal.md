@@ -82,4 +82,6 @@ Cada línea contiene cuatro campos separados por espacios:
 
 
 
-[Menu principal](../) [Regresar](./)
+[Menu principal](../) 
+[Atras](./comandosNavegacion)
+[Siguiente](#)
