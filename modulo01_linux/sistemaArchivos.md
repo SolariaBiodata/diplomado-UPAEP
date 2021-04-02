@@ -7,22 +7,15 @@
 
 #### Estructura jerárquica y navegación
 
-A continuación
+A continuación se muestra un ejemplo de la estructura de directorios
 
-```
-/
-+---bin
-+---dev
-+---etc
-+---home
-|   +---bill
-|   |   +---books
-|   |   +---school
-|   +---patrick
-|       +---school
-+---tmp
-+---usr
-```
+![](https://drive.google.com/file/d/13NQkLkKlV-bQtuGr90VaiC7Uq2_m7xa8/view?usp=sharing)
+
+Por ejemplo, si nosotros queremos conocer el `path` o la `ruta` de un directorio
+
+![](https://drive.google.com/file/d/1eDOHlrE7d8aVXW_9Q7Vi-moJUj54xYkU/view?usp=sharing)
+
+basta encontrar el camino 
 
 Lorem ipsum
 
