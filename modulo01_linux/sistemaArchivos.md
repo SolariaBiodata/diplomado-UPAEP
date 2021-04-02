@@ -9,10 +9,19 @@
 
 A continuación
 
-```mermaid
-graph LR
-  \/ --> bin;
-  \/ --> dev;
+```
+\/
+|   bin
+|   dev
+|   etc
+|   home
+|   |   bill
+|   |   |   books
+|   |   |   school
+|   |   patrick
+|   |   |   school
+|   tmp
+|   usr
 ```
 Lorem ipsum
 
