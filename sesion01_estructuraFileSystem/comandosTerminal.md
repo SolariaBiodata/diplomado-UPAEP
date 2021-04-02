@@ -1,10 +1,10 @@
 
-## Unidad 1 - [Linux](#start)
-
+## Unidad 1 - Linux
+{:linux}
 ### Tema 3 - Comandos de la terminal
 
 #### 3.4 - [man](#man)
-
+{:man}
 `man` es un comando que invoca manuales de uso de otros comandos al ser pasados como argumento de este comando. La sintaxis de uso es:
 
 ```bash
@@ -14,7 +14,7 @@ man <comando>
 Donde _\<comando\>_ se refiere a cualquier otro comando, del cual quieras conocer el manual de uso.
 
 #### 3.5 - [date](#date)
-
+{:date}
 El comando `date` te permite acceder a la información de la fecha y hora actuales en el sistema operativo. En otras palabras, este comando de usa como un reloj. La sintáxis de este comando es la siguiente:
 
 ```bash
@@ -35,7 +35,7 @@ Fri Apr  2 10:35:46 CST 2021
 
 
 #### 3.6 - [uname](#uname)
-
+{:uname}
 Este comando se usa para obtener información relevante del sistema que tenemos en nuestra computadora. Concretamente nos da información acerca de la arquitectura del procesador y la versión del kernel que usa nuestro sistema operativo. 
 
 ```bash
@@ -59,7 +59,7 @@ Esta salida contiene la siguiente información:
 
 
 #### 3.7 - [who](#who)
-
+{:who}
 `who` es un comando que te permite conocer los usuarios que actualmente están conectados al sistema operativo.
 
 ```bash
@@ -82,4 +82,4 @@ Cada línea contiene cuatro campos separados por espacios:
 
 
 
-[Menu principal](./) [Regresar](./comandosTerminal#start)
+[Menu principal](./) [Regresar](./comandosTerminal#linux)
