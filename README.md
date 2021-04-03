@@ -29,3 +29,6 @@ En este tema, revisamos los comandos  `pwd` `cd`  y  `ls`
 `ls`  -  Visualizar el contenido del directorio 
 
 
+
+Este documento es para anotar los comandos 
+
