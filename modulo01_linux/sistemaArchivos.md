@@ -45,6 +45,14 @@ En este tema, revisamos los comandos  `pwd` `cd`  y  `ls`
 
 `ls`  -  Visualizar el contenido del directorio 
 
+También podemos combinar estos comandos con los comodines:
+
+| Comodín | Significado |
+|--|--|
+| `.` | Directorio actual |
+| `..` | Directorio padre |
+| `~` | Directorio "Home" _(directorio en donde se inicia sesión)_ |
+
 [Menú Principal](../)
 [Atras](#)
 [Siguiente](./comandosTerminal)
