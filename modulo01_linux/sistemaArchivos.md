@@ -51,7 +51,18 @@ También podemos combinar estos comandos con los comodines:
 |--|--|
 | `.` | Directorio actual |
 | `..` | Directorio padre |
-| `~` | Directorio "Home" _(directorio en donde se inicia sesión)_ |
+| `~` | Directorio "Home" |
+
+Por ejemplo, so nos encontramos en la ruta
+
+> /home/bill/school
+
+y colocamos en la terminal
+
+`cd ~` 
+
+en automático nos llevará al directorio home | `/home/bill` |
+
 
 [Menú Principal](../)
 [Atras](#)
