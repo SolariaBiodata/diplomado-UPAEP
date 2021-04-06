@@ -2,6 +2,5 @@ theme: jekyll-theme-cayman
 #name: diplomado bioinformática
 title: Diplomado bioinformática y docking
 description: [Sitio de recursos de apoyo para el diplomado de bioinformática y docking]
-#usemathjax: true
 plugins:
   - jemoji
