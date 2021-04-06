@@ -1,5 +1,4 @@
 ---
-usemathjax: true
 ---
 
 ![alt text](https://solariabiodata.com.mx/images/solaria_banner.png "Soluciones de Siguiente Generación")
