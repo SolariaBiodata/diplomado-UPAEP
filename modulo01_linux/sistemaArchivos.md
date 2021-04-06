@@ -31,7 +31,40 @@ Por ejemplo, cuando te encuentras en el directorio `/home/patrick`, la ruta `sch
 | `/home/bill/school` | `../books` | `/home/bill/school/../books` | `/home/bill/books` |
 | `/home/patrick` | `.` | `/home/patrick/.` | `/home/patrick` |
 
+#### Sistema de permisos
 
+En linux la primera capa de seguridad es provista por el sistema de permisos. Este sistema está formado por dos componentes:
+
+1. Grupo de permisos
+    - Propietario
+    - Grupo
+    - Otros
+    
+2. Tipo de permisos
+    - Lectura
+    - Escritura
+    - Ejecución
+
+Estos componentes se pueden representar como una matriz de asignación de permisos, donde con un símbolo :heavy_check_mark: podemos definir el permiso específico asignado para un fichero:
+
+| | Propietario | Grupo | Otros |
+|--|--|--|--|
+| **Lectura** | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| **Escritura** | :heavy_check_mark: | :heavy_check_mark: | |
+| **Ejecución** | :heavy_check_mark: | | |
+
+En este ejemplo, para este fichero, el propietario tiene todos los permisos, el grupo puede leer y escribir, y los otros solo pueden leerlo. Sin embargo esta determinación de permisos puede resumirse mediante estas operaciones:
+
+| | Valor | Propietario | Grupo | Otros |
+|--|--|--|--|--|
+| **Posición** | | :one: | :two: | :three: |
+| **Lectura** | \\(2^2 = 4\\)  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| **Escritura** | \\(2^1 = 2\\)  | :heavy_check_mark: | :heavy_check_mark: | |
+| **Ejecución** | \\(2^0 = 1\\)  | :heavy_check_mark: | | |
+|  |  |  \\(4 + 2 + 1\\) | \\(4 + 2 + 0\\) | \\(4 + 0 + 0\\)  |
+|  |  |  **7** | **6** | **4** |
+
+Por lo cual los permisos asociados a este fichero se representan con el número `764`.
 
 #### Comandos de navegación
 
@@ -73,5 +106,7 @@ en automático nos llevará al directorio home
 
 
 [Menú Principal](../)
+
 [Atras](#)
+
 [Siguiente](./comandosTerminal)
