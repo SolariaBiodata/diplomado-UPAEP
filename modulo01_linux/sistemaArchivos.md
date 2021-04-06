@@ -61,10 +61,10 @@ En este ejemplo, para este fichero, el propietario tiene todos los permisos, el 
 | | Valor | Propietario | Grupo | Otros |
 |--|--|--|--|--|
 | **Posición** | | :one: | :two: | :three: |
-| **Lectura** | \\[^2 = 4\\]  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| **Lectura** | \\[2^2 = 4\\]  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | **Escritura** | \\[2^1 = 2\\]  | :heavy_check_mark: | :heavy_check_mark: | |
 | **Ejecución** | \\[2^0 = 1\\]  | :heavy_check_mark: | | |
-|  |  |  \\(4 + 2 + 1\\) | \\(4 + 2 + 0\\) | \\(4 + 0 + 0\\)  |
+|  |  |  \\[4 + 2 + 1\\] | \\[4 + 2 + 0\\] | \\[4 + 0 + 0\\]  |
 |  |  |  **7** | **6** | **4** |
 
 Por lo cual los permisos asociados a este fichero se representan con el número `764`.
