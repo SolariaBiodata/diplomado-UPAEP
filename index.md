@@ -35,6 +35,12 @@ Bienvenido a nuestro 1er Diplomado en "Bioinformática y Docking" en colaboraci�
 
 #### [who](./modulo01_linux/comandosTerminal#who)
 
+### [Operaciones con archivos de texto](https://solariabiodata.github.io/diplomado-UPAEP/modulo01_linux/operacionesArchivosTexto)
+
+#### [Tipos de archivos estándar](https://solariabiodata.github.io/diplomado-UPAEP/modulo01_linux/operacionesArchivosTexto#tipos-de-archivos-estándar)
+
+#### [Asignación de permisos](https://solariabiodata.github.io/diplomado-UPAEP/modulo01_linux/operacionesArchivosTexto#asignación-de-permisos)
+
 
 
 
