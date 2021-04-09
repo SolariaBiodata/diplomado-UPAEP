@@ -29,7 +29,7 @@ Existe una forma de clasificar los archivos estándar:
 
 Esta clasificación es importante porque gracias a ella, sabemos como se puede interaccionar con los archivos. Por ejemplo, en la siguiente imagen se puede apreciar que un mismo archivo puede ser interpretado de diferentes formas:
 
-![BinaryFile](https://drive.google.com/file/d/1okRj3TmZTUbAjb7shpJJ020EqdJ-CGYM&export=download "Archivos binarios")
+![BinaryFile](https://drive.google.com/uc?id=1okRj3TmZTUbAjb7shpJJ020EqdJ-CGYM&export=download "Archivos binarios")
 
 En este ejemplo se muestra una imagen, la cual es un archivo binario. Al decir binario nos referimos a que este archivo es una secuencia de *bytes* o agrupaciones estructuradas de `0`'s  y `1`'s. Un programa de gestión de imágenes puede interpretar correctamente esa estructura y desplegar la información relevante para el usuario (la imagen). En cambio, si usamos un interprete de texto, la secuencia de *bytes* puede ser interpretada de manera equivocada.
 
