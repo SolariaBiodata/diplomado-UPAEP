@@ -86,4 +86,4 @@ Cada línea contiene cuatro campos separados por espacios:
 
 [Menu principal](../) 
 [Atras](./sistemaArchivos)
-[Siguiente](#)
+[Siguiente](./operacionesArchivosTexto)
