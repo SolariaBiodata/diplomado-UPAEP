@@ -35,11 +35,21 @@ Bienvenido a nuestro 1er Diplomado en "Bioinformática y Docking" en colaboraci�
 
 #### [who](./modulo01_linux/comandosTerminal#who)
 
-### [Operaciones con archivos de texto](https://solariabiodata.github.io/diplomado-UPAEP/modulo01_linux/operacionesArchivosTexto)
+### [Operaciones con archivos de texto](./modulo01_linux/operacionesArchivosTexto)
 
-#### [Tipos de archivos estándar](https://solariabiodata.github.io/diplomado-UPAEP/modulo01_linux/operacionesArchivosTexto#tipos-de-archivos-estándar)
+#### [Tipos de archivos estándar](./modulo01_linux/operacionesArchivosTexto#tipos-de-archivos-estándar)
 
-#### [Asignación de permisos](https://solariabiodata.github.io/diplomado-UPAEP/modulo01_linux/operacionesArchivosTexto#asignación-de-permisos)
+#### [Asignación de permisos](./modulo01_linux/operacionesArchivosTexto#asignación-de-permisos)
+
+### [Operaciones avanzadas con archivos](./modulo01_linux/operacionesAvanzadasArchivos)
+
+#### [Uso de comodines](./modulo01_linux/operacionesAvanzadasArchivos#uso-de-comodines)
+
+#### [Comandos de inspección](./modulo01_linux/operacionesAvanzadasArchivos#comandos-de-inspección)
+
+#### [Comandos de descomposición](./modulo01_linux/operacionesAvanzadasArchivos#comandos-de-descomposición)
+
+#### [Comandos de lectura amortiguada](./modulo01_linux/operacionesAvanzadasArchivos#comandos-de-lectura-amortiguada)
 
 
 
