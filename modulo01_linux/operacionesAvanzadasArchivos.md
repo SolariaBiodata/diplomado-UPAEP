@@ -246,16 +246,11 @@ Permite fusionar las columnas de dos archivos tabulares, agregando las columnas 
 
 #### Redireccionamiento
 
-En linux se pueden redireccionar las salidas y entradas.
+En linux se pueden redireccionar las salidas y entradas de diferentes comandos. Para ello se utilizan los canales de comunicación estándar:
 
-```mermaid
-graph LR
-A[Teclado] -->|stdin| B[Comando 1]
-B -->|stderr| C[Monitor]
-B -->|stdout/stdin| D[Comando 2]
-D -->|stderr| C
-D -->|stdout| C
-```
+ - `0` Entrada estándar (Por defecto el teclado) `stdin`
+ - `1` Salida estándar (Por defecto el monitor) `stdout`
+ - `2` Error estándar (Por defecto el monitor) `stderr`
 
 |Caracter de redireccionamiento| Descripción|
 |--|--|
