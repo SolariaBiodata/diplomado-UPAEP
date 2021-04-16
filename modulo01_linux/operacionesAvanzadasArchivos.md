@@ -248,13 +248,22 @@ Permite fusionar las columnas de dos archivos tabulares, agregando las columnas 
 
 En linux se pueden redireccionar las salidas y entradas.
 
+```mermaid
+graph LR
+A[Teclado] -->|stdin| B[Comando 1]
+B -->|stderr| C[Monitor]
+B -->|stdout/stdin| D[Comando 2]
+D -->|stderr| C
+D -->|stdout| C
+```
+
 |Caracter de redireccionamiento| Descripción|
 |--|--|
 |`>`| Redirige `stdout` a fichero |
 |`2>`| Redirige `stderr` a fichero |
 |`>&`| Redirige `stdout` y `stderr` a fichero |
 |`<`| Redirige `stdin` a un comando |
-|`\|`| Redirige `stdout` de un comando a `stdin` de otro comando |
+|`|`| Redirige `stdout` de un comando a `stdin` de otro comando |
 |`>>`| Agrega `stdout` a fichero |
 |`2>>`| Agrega `stderr` a fichero |
 |`>>&`| Agrega `stdout` y `stderr` a fichero |
