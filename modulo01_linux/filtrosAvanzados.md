@@ -67,8 +67,19 @@ Las opciones de este comando son las que se presentan con los siguientes modific
 Los _conjuntos_ deben ser expresados como cadenas de caracteres. La mayoría de los caracteres se representan a sí mismos excepto por:
 
  - `\NNN` es el caracter con valor octal NNN
- - `\\\\` backslash, contrabarra \\ 
- - `\\b`  backspace
+ - `\\` backslash, contrabarra, \\ 
+ - `\b` backspace
+ - `\n` línea nueva
+ - `\r` retorno de carro
+ - `\t` tabulador horizontal
+ - `\a` una campana audible 🔔 🔊
+
+Así mismo, los conjuntos se pueden expresar de la siguiente manera:
+
+ - **CARACTER_1-CARACTER_2** simboliza todos los caracteres que existen entre **CARACTER_1** y **CARACTER_2** en orden ascendente. Por ejemplo `a-c` simboliza (`a`, `b`, `c`).
+ - **CARACTER\*REPS** simboliza el **CARACTER** repetido **REPS** veces
+
+Por otro lado
 
 
 
