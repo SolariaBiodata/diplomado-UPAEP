@@ -246,11 +246,13 @@ Permite fusionar las columnas de dos archivos tabulares, agregando las columnas 
 
 #### Redireccionamiento
 
-En linux se pueden redireccionar las salidas y entradas de diferentes comandos. Para ello se utilizan los canales de comunicación estándar:
+En linux se pueden redireccionar las salidas y entradas de todos los comandos. Para ello se utilizan los canales de comunicación estándar:
 
- - `0` Entrada estándar (Por defecto el teclado) `stdin`
- - `1` Salida estándar (Por defecto el monitor) `stdout`
- - `2` Error estándar (Por defecto el monitor) `stderr`
+ - `0` Entrada estándar (`stdin`) ⌨️
+ - `1` Salida estándar (`stdout`) 🖥️
+ - `2` Error estándar (`stderr`) 🖥️
+
+y se utilizan los operadores de redireccionamiento de acuerdo con la siguiente tabla
 
 |Caracter de redireccionamiento| Descripción|
 |--|--|
@@ -262,6 +264,8 @@ En linux se pueden redireccionar las salidas y entradas de diferentes comandos. 
 |`>>`| Agrega `stdout` a fichero |
 |`2>>`| Agrega `stderr` a fichero |
 |`>>&`| Agrega `stdout` y `stderr` a fichero |
+|`$()`| Genera un subshell y ejecuta los comandos dentro de los paréntesis |
+|`<()`| Redirige `stdout` de un subshell como `stdin` hacia un comando |
 
 [Menú Principal](../)
 
