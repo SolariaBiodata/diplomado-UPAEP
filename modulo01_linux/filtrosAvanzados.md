@@ -106,11 +106,63 @@ cat secuencia.fasta | tr "ATCG" "UAGC" # Para obtener el transcrito de una secue
 
 #### sed
 
-El comando sed es un comando que invoca por si mismo a un lenguaje de expresiones para procesar texto.
+El comando sed es un comando que invoca por si mismo a un lenguaje de expresiones para procesar texto. Es un editor **no interactivo** de texto.
 
 ```bash
-tr [OPCIONES] [EXPRESION] [ARCHIVO]
+sed [OPCIONES] [EXPRESION] [ARCHIVO]
 ```
+
+Las opciones más usuales son
+
+| Modificador | Descripción |
+|--|--|
+| `-e` | Ejecutar la siguiente expresión en el texto |
+| `-f` | Ejecutar las expresiones contenidas en un archivo, se usa pasando la ruta hacia un archivo de texto : `sed -f /ruta/de/script.txt archivo.txt` en este ejemplo `/ruta/de/script.txt` es un archivo con una serie de expresiones para ser ejecutadas |
+| `-i` | Ejecuta la expresión y sobreescribe el archivo de entrada (_in place_), si se agrega un sufijo lo escribe en un archivo que contiene en su nombre dicho sufijo |
+| `-E`, `-r` | Usa las expresiones regulares extendidas |
+
+Si no se usan los modificadores `-e` o `-f`, el primer argumento (que no sea una opción) es tomado como la expresión para el procesamiento.
+
+El comando `sed` puede ser visto como un **mini lenguaje de programación**. Esto se debe a que las expresiones para procesar texto pueden ser acomodadas de tal forma que se logren diferentes resultados dependiendo de la estructura de las expresiones mismas.
+
+Las expresiones de este comando por si mismas tienen una sintaxis:
+
+```
+sed '[direccion] instruccion argumentos'
+```
+En este caso `[direccion]` es opcional, hace referencia al número de línea (*N*) o rango de número de líneas (_N,M_).
+
+Para las instrucciones conviene ver la siguiente tabla:
+
+| Instrucción | Significado |
+|--|--|
+| `i` | Insertar línea antes de la actual |
+| `a` | Insertar línea después de la actual |
+| `c` | Cambiar línea actual |
+| `d` | Borrar línea actual |
+| `p` | Imprimir en `stdout` la línea actual |
+| `s` | Sustituir cadena en la línea actual |
+| `r fichero` | Añade el contenido de `fichero` en la línea actual |
+| `w fichero` | Escribe la salida en `fichero` |
+| `!` | Aplica la instrucción a las líneas no seleccionadas por la condición |
+| `q` | Finalizar procesamiento de texto |
+
+Los procesamientos de texto que permite `sed` son muy amplios, a continuación se mencionan ejemplos de casos de uso.
+
+##### Eliminación de líneas
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
