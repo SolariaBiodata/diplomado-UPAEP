@@ -30,7 +30,7 @@ Las opciones de este comando son la forma por la cual se definen instrucciones e
 
 Para definir un **Rango** es necesario seguir algunas convenciones, mismas que se presentan a continuación:
 
- - **N** representa al N-ésimo componente (_byte_, caracter o columna), donde \[N \in \mathbb{Z}^{+} \]
+ - **N** representa al N-ésimo componente (_byte_, caracter o columna), donde \\[N \in \mathbb{Z}^{+} \\]
 
 #### tr
 
