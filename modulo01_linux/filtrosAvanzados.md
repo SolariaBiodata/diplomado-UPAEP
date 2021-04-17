@@ -30,7 +30,21 @@ Las opciones de este comando son la forma por la cual se definen instrucciones e
 
 Para definir un **Rango** es necesario seguir algunas convenciones, mismas que se presentan a continuación:
 
- - **N** representa al N-ésimo componente (_byte_, caracter o columna), donde \\[N \in \mathbb{Z}^{+} \\]
+siendo \\[N \in \mathbb{Z}^{+}; M \in \mathbb{Z}^{+};\\]
+
+ - **N** representa al N-ésimo componente (_byte_, caracter o columna)
+ - **N-** representa a todos los componentes desde el N-ésimo hasta el último de cada línea
+ - **N-M** representa a todos los componentes entre el N-ésimo y el M-ésimo, incluídos N y M
+ - **-M** representa a todos los componentes desde el primero hasta el M-ésimo de dicha línea
+ - **N,M** representa a solo los componentes N-ésimo y M-ésimmo de cada línea
+
+ahora, **N** y **M** pueden representar por sí mismos otros rangos, por lo que se pueden construir cualquier combinación de rangos para especificar muy detalladamente los componentes que se desean extraer:
+
+```bash
+cut -d "," -f 1,5-8,10,12,21- archivo.csv
+```
+
+En este ejemplo, de un archivo de valores separados por comas, se extraerían las columnas (1,5,6,7,8,10,12,21,22,23,...).
 
 #### tr
 
