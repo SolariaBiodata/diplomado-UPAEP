@@ -87,7 +87,7 @@ Por otro lado, es viable utilizar expresiones de corchetes. Para ello se describ
 | `[:alnum:]` | Todos los caracteres alfanuméricos, sería lo mismo que `[0-9A-Za-z]` |
 | `[:alpha:]` | Todas las letras, sería lo mismo que `[A-Za-z]` |
 | `[:digit:]` | Todos los dígitos, sería lo mismo que `[0-9]` |
-| `[:blank:]` | Todos los caracteres que representan espacios en blanco, por ejemplo ` `, `\t` |
+| `[:blank:]` | Todos los caracteres que representan espacios en blanco, por ejemplo `' '`, `\t`  |
 | `[:graph:]` | Todos los caracteres imprimibles, excepto el espacio en blanco |
 | `[:print:]` | Todos los caracteres imprimibles |
 | `[:punct:]` | Todos los caracteres de puntuación |
