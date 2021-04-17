@@ -77,18 +77,40 @@ Los _conjuntos_ deben ser expresados como cadenas de caracteres. La mayoría de 
 Así mismo, los conjuntos se pueden expresar de la siguiente manera:
 
  - **CARACTER_1-CARACTER_2** simboliza todos los caracteres que existen entre **CARACTER_1** y **CARACTER_2** en orden ascendente. Por ejemplo `a-c` simboliza (`a`, `b`, `c`).
- - **CARACTER\*REPS** simboliza el **CARACTER** repetido **REPS** veces
+ - **CARACTER\*REPS** simboliza el **CARACTER** repetido **REPS** veces.
 
-Por otro lado
-
-
+Por otro lado, es viable utilizar expresiones de corchetes. Para ello se describen en la siguiente tabla algunos conjuntos importantes.
 
 
+| Expresión | Significado |
+|--|--|
+| `[:alnum:]` | Todos los caracteres alfanuméricos, sería lo mismo que `[0-9A-Za-z]` |
+| `[:alpha:]` | Todas las letras, sería lo mismo que `[A-Za-z]` |
+| `[:digit:]` | Todos los dígitos, sería lo mismo que `[0-9]` |
+| `[:blank:]` | Todos los caracteres que representan espacios en blanco, por ejemplo ` `, `\t` |
+| `[:graph:]` | Todos los caracteres imprimibles, excepto el espacio en blanco |
+| `[:print:]` | Todos los caracteres imprimibles |
+| `[:punct:]` | Todos los caracteres de puntuación |
+| `[:space:]` | Todos los caracteres de espaciamiento, tanto horizontales como verticales |
+| `[:lower:]` | Todas las letras minúsculas, sería lo mismo que `[a-z]` |
+| `[:upper:]` | Todas las letras mayúsculas, sería lo mismo que `[A-Z]` |
 
+Algunos ejemplos de uso serían:
 
+```bash
+cat archivo.txt | tr -s " " # Para eliminar espacios duplicados
+cat archivo.txt | tr -d "|" # Para eliminar todos los pipes
+cat archivo.txt | tr [:lower:] [:upper:]  # Para cambiar todas las letras a mayúsculas
+cat secuencia.fasta | tr "ATCG" "UAGC" # Para obtener el transcrito de una secuencia de DNA
+```
 
 #### sed
 
+El comando sed es un comando que invoca por si mismo a un lenguaje de expresiones para procesar texto.
+
+```bash
+tr [OPCIONES] [EXPRESION] [ARCHIVO]
+```
 
 
 
