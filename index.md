@@ -51,6 +51,20 @@ Bienvenido a nuestro 1er Diplomado en "Bioinformática y Docking" en colaboraci�
 
 #### [Comandos de lectura amortiguada](./modulo01_linux/operacionesAvanzadasArchivos#comandos-de-lectura-amortiguada)
 
+#### [Diferenciación](./modulo01_linux/operacionesAvanzadasArchivos#diferenciación)
+
+#### [Comandos de manipulación](./modulo01_linux/operacionesAvanzadasArchivos#comandos-de-manipulación)
+
+#### [Redireccionamiento](./modulo01_linux/operacionesAvanzadasArchivos#redireccionamiento)
+
+### [Filtros Avanzados](./modulo01_linux/filtrosAvanzados)
+
+#### [cut](./modulo01_linux/filtrosAvanzados#cut)
+
+#### [tr](./modulo01_linux/filtrosAvanzados#tr)
+
+#### [sed](./modulo01_linux/filtrosAvanzados#sed)
+
 
 
 
