@@ -271,4 +271,4 @@ y se utilizan los operadores de redireccionamiento de acuerdo con la siguiente t
 
 [Atras](./operacionesArchivosTexto)
 
-[Siguiente](#)
+[Siguiente](./filtrosAvanzados)
