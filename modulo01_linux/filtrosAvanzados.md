@@ -106,7 +106,7 @@ cat secuencia.fasta | tr "ATCG" "UAGC" # Para obtener el transcrito de una secue
 
 #### sed
 
-El comando sed es un comando que invoca por si mismo a un lenguaje de expresiones para procesar texto. Es un editor **no interactivo** de texto.
+El comando `sed` es un comando que invoca por si mismo a un lenguaje de expresiones para procesar texto. Es un editor **no interactivo** de texto.
 
 ```bash
 sed [OPCIONES] [EXPRESION] [ARCHIVO]
@@ -130,6 +130,7 @@ Las expresiones de este comando por si mismas tienen una sintaxis:
 ```
 sed '[direccion] instruccion argumentos'
 ```
+
 En este caso `[direccion]` es opcional, hace referencia al número de línea (*N*) o rango de número de líneas (_N,M_).
 
 Para las instrucciones conviene ver la siguiente tabla:
@@ -151,20 +152,208 @@ Los procesamientos de texto que permite `sed` son muy amplios, a continuación s
 
 ##### Eliminación de líneas
 
+Una funcionalidad importante de `sed` es la capacidad que ofrece para eliminar líneas en archivos de texto
+
+```bash
+sed '2 d' archivo.txt 
+```
+
+En este caso el comando avanza a la linea `2` y ejecuta la instrucción `d`, por lo tanto elimina la segunda línea del archivo. Esta operación también se puede realizar por rangos:
+
+```bash
+sed '3,7 d' archivo.txt
+```
+
+##### Sustitución de cadenas
+
+Posiblemente la función más importante del comando `sed` es la sustitución de texto, es decir, hacer una edición para sustituir una cadena de caracteres por otra cadena de nuestro interés. Para mostra esta función definamos un `archivo.txt` con este contenido:
+
+```
+hola
+buenas
+tardes
+```
+
+Una opción sería ejecutar la siguiente instrucción:
+
+```bash
+cat archivo.txt | sed 's/tardes/noches/'
+```
+
+Lo cual genera una salida en `stdout` como esta:
+
+```
+hola
+buenas
+noches
+```
+
+Algo muy importante a notar es la notación de la instrucción `s/tardes/noches/`, la cual sigue la sintaxis de [expresiones regulares](https://regexr.com/). En esta instrucción se usa el caracter `/` para delimitar 4 secciones importantes:
+
+ 1. La instrucción, en este caso `s` denota la **s**ustitución de cadenas.
+ 2. La cadena `tardes` es la cadena a buscar en el texto, y es la que será sustituída.
+ 3. La cadena `noches` es la cadena que se usará para sustituír en la salida.
+ 4. En la última sección se agregan condicionantes y modificadores, en este caso no hay ninguno.
+
+Para profundizar en el funcionamiento del comando `sed` es necesario crear un archivo `texto.txt` con el siguiente contenido:
+
+```
+10 tiny toes
+5 funny two
+One two three
+tree twice
+```
+
+Al ejecutar el comando
+
+```bash
+sed 's/t/T/' texto.txt
+```
+
+el resultado sería algo como esto:
+
+```
+10 Tiny toes
+5 funny Two
+One Two three
+Tree twice
+```
+
+Como se puede notar el comando se ejecuta cuando encuentra la primer coincidencia por cada línea. Para modificar ese funcionamiento sirve la última sección en la expresión regular. Por ejemplo, al agregar `g` el modificador de ejecución **g**lobal de este modo:
+
+```bash
+sed 's/t/T/g' texto.txt
+```
+
+la salida en `stdout` será:
+
+```
+10 Tiny Toes
+5 funny Two
+One Two Three
+Tree Twice
+```
+
+Usando el modificador `I` de **I**nsensibilidad a mayúsculas o minúsculas, en combinación con `g`:
+
+```bash
+sed 's/o/a/Ig' texto.txt
+```
+
+la salida en `stdout` será:
+
+```
+10 tiny taes
+5 funny twa
+ane twa three
+tree twice
+```
+
+Existen _metacaracteres_ que pueden ser usados en las cadenas para específicar patrones específicos:
+
+| Metacaracteres | Significado |
+|--|--|
+| `^` | Coincide con la posición inicial en la línea |
+| `.` | Coincide con cualquier único caracter, excepto el caracter de nueva línea |
+| `[ ]` | Una expresión de corchetes, coincidencia de un solo caracter con alguno de un grupo de caracteres delimitado entre corchetes |
+| `[^ ]` | Una expresión de corchetes, coincidencia de un solo caracter con alguno de los caracteres complementarios a un grupo de caracteres delimitado entre corchetes |
+| `$` | Coincide con la posición final en la línea |
+| `\( \)` | Define una subexpresión |
+| `\n` | Marca la `n`-sima subexpresión, `n` solo puede ir de `1` a `9` |
+| `*` | Coincide la expresión anterior 0 o más veces, por ejemplo `ab*c` coincide con `"ac"`, `"abc"`, `"abbbc"`, etc |
+| `\{m,n\}` | Coincide la expresión anterior almenos `m` veces y cuando máximo `n` veces |
+
+Usando algunos ejemplos:
+
+```bash
+sed 's/^t/oooo/g' texto.txt
+```
+
+```
+10 tiny toes
+5 funny two
+One two three
+ooooree twice
+```
+***
+```bash
+sed 's/e$/oooo/g' texto.txt
+```
+
+```
+10 tiny toes
+5 funny two
+One two threoooo
+tree twicoooo
+```
+***
+```bash
+sed 's/[0-9]/*/g' texto.txt
+```
+
+```
+** tiny toes
+* funny two
+One two three
+tree twice
+```
+***
+```bash
+sed 's/[0-9]/*/g' texto.txt
+```
+
+```
+** tiny toes
+* funny two
+One two three
+tree twice
+```
+***
+```bash
+sed 's/[a-z]/*/g' texto.txt
+```
+
+```
+10 **** ****
+5 ***** ***
+O** *** *****
+**** *****
+```
+
+
+##### Sustitución de delimitadores
+
+Una de las más grandes ventajas de `sed` es que en expresiones regulares implementadas en cualquier lenguaje de programación el caracter `/` es la forma absoluta para delimitar las secciones de la expresión regular. Por lo que, al querer realizar expresiones con cadenas que incluyen el caracter `/` (ampliamente usado para representar rutas en el sistema de archivo linux) es necesario escapar el caracter mediante `\/`. En `sed` se puede sustituír por cualquier caracter no incluído en las cadenas:
+
+```bash
+pwd | sed 's_/_\\_g'
+```
+es equivalente a:
+
+```bash
+pwd | sed 's/\//\\/g'
+```
+
+en ambos casos, se pretende sustituír el caracter de contención de directorios `/` por `\`, sin embargo es mucho más fácil de interpretar e implementar el primero.
 
 
 
+##### Ejecución múltiple
 
+Al trabajar con archivos de texto es viable tener que realizar múltiples sustituciones en un texto. Con `sed` se pueden usar múltiples instrucciones, ya sea mediante un script alojado en un archivo con cada instrucción en diferentes líneas, o bien escribiendo múltiples instrucciones separadas por un `;` como se muestra a continuación
 
+```bash
+sed '4 s/twice/None/g;3 s/three/Two/g' texto.txt
+```
 
+En este caso se interpreta como, ejecuta la primera instrucción en la línea `4`, la cual es sustituye la cadena `twice` por la cadena `None` de manera global; luego ejecuta la segunda instrucción en la línea `3`, la cual es sustituir  la cadena `three` por la cadena `Two` de manera global. Por lo que el resultado en `stdout` es:
 
-
-
-
-
-
-
-
+```
+10 tiny toes
+5 funny two
+One two Two
+tree None
+```
 
 
 [Menú Principal](../)
