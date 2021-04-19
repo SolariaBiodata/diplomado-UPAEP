@@ -219,7 +219,7 @@ One Two three
 Tree twice
 ```
 
-Como se puede notar el comando se ejecuta cuando encuentra la primer coincidencia por cada línea. Para modificar ese funcionamiento sirve la última sección en la expresión regular. Por ejemplo, al agregar `g` el modificador de ejecución **g**lobal de este modo:
+Como se puede notar el comando se ejecuta cuando encuentra la primer coincidencia por cada línea. La última sección en la expresión regular sirve para modificar ese comportamiento. Por ejemplo, al agregar `g` el modificador de ejecución **g**lobal de este modo:
 
 ```bash
 sed 's/t/T/g' texto.txt
