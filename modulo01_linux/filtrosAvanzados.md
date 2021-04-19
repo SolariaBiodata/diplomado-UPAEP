@@ -150,7 +150,7 @@ Para las instrucciones conviene ver la siguiente tabla:
 
 Los procesamientos de texto que permite `sed` son muy amplios, a continuación se mencionan ejemplos de casos de uso.
 
-##### Eliminación de líneas
+**Eliminación de líneas**
 
 Una funcionalidad importante de `sed` es la capacidad que ofrece para eliminar líneas en archivos de texto
 
@@ -164,7 +164,7 @@ En este caso el comando avanza a la linea `2` y ejecuta la instrucción `d`, por
 sed '3,7 d' archivo.txt
 ```
 
-##### Sustitución de cadenas
+**Sustitución de cadenas**
 
 Posiblemente la función más importante del comando `sed` es la sustitución de texto, es decir, hacer una edición para sustituir una cadena de caracteres por otra cadena de nuestro interés. Para mostra esta función definamos un `archivo.txt` con este contenido:
 
@@ -321,7 +321,7 @@ O** *** *****
 ```
 
 
-##### Sustitución de delimitadores
+**Sustitución de delimitadores**
 
 Una de las más grandes ventajas de `sed` es que en expresiones regulares implementadas en cualquier lenguaje de programación el caracter `/` es la forma absoluta para delimitar las secciones de la expresión regular. Por lo que, al querer realizar expresiones con cadenas que incluyen el caracter `/` (ampliamente usado para representar rutas en el sistema de archivo linux) es necesario escapar el caracter mediante `\/`. En `sed` se puede sustituír por cualquier caracter no incluído en las cadenas:
 
@@ -338,7 +338,7 @@ en ambos casos, se pretende sustituír el caracter de contención de directorios
 
 
 
-##### Ejecución múltiple
+**Ejecución múltiple**
 
 Al trabajar con archivos de texto es viable tener que realizar múltiples sustituciones en un texto. Con `sed` se pueden usar múltiples instrucciones, ya sea mediante un script alojado en un archivo con cada instrucción en diferentes líneas, o bien escribiendo múltiples instrucciones separadas por un `;` como se muestra a continuación
 
