@@ -77,9 +77,9 @@ Existen diferentes tipos de _operadores_ en este lenguaje de programación, come
 | `*` | Aritmético | Multiplicación | `7*3` | `21` |
 | `/` | Aritmético | División | `7/3` | `2.3333` |
 | `%` | Aritmético | Módulo | `7%3` | `1` |
-| `' '` \<espacio\> (' ') | Cadena | Concatenación | `7 3` | `73` |
+| `' '` \<espacio\> | Cadena | Concatenación | `7 3` | `73` |
 
-Cabe destacar que existen algunos operadores que operan con una sola _variable_, para ello asumamamos que `x` tiene el valor de 3:
+Cabe destacar que existen algunos operadores que operan con una sola _variable_, para ello asumamamos que `x` tiene el valor de $$3$$:
 
 | Operador | Tipo | Significado | Ejemplo | Resultado |
 |--|--|--|--|--|
@@ -124,11 +124,11 @@ var ~ /cadena/
 ```
 Finalmente se encuentran los _operadores_ booleanos, es decir los que operan con los resultados de las _expresiones_ condicionales:
 
-| Operador | Significado | Ejemplo | Resultado |
-|--|--|--|--|
-| `&&` | _AND_ ambos valores deben ser `verdadero` para que el resultado sea `verdadero` | `1 && 0` | `0` |
-| `||` | _OR_ al menos un valor debe ser `verdadero` para que el resultado sea `verdadero` | `1 || 0` | `1` |
-| `!` | _NOT_ cambia un valor por el valor complementario | `!0` | `1` |
+| Operador | Función Booleana | Significado | Ejemplo | Resultado |
+|--|--|--|--|--|
+| `&&` | _AND_ | Ambos valores deben ser `verdadero` para que el resultado sea `verdadero` | `1 && 0` | `0` |
+| `||` | _OR_ | Al menos un valor debe ser `verdadero` para que el resultado sea `verdadero` | `1 || 0` | `1` |
+| `!` | _NOT_ | Cambia un valor por el valor complementario | `!0` | `1` |
 
 **Variables especiales**
 
