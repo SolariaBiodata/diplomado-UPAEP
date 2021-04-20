@@ -59,7 +59,7 @@ TERMINADO
 
 **Sintáxis de AWK**
 
-Como `awk` es un lenguaje de programación existen algunos elementos muy importantes a tener en consideración cuando escribimos instrucciones de dicho lenguaje. Lo primero a mencionar es que en este lenguaje podemos contener dos tipos de elementos con los cuales operar: `cadenas` (de caracteres) o `números`. El interprete de `awk` determinará automáticamente cuando un elemento se trate de un tipo u otro, sin embargo los usuarios pueden modificar la asignación automática de tipos por al usar `"` para delimitar un valor. Por ejemplo `"123"` es una cadena con los caracteres `"1"`, `"2"` y `"3"`, sin embargo `123` representa al número \\$123\\$.
+Como `awk` es un lenguaje de programación existen algunos elementos muy importantes a tener en consideración cuando escribimos instrucciones de dicho lenguaje. Lo primero a mencionar es que en este lenguaje podemos contener dos tipos de elementos con los cuales operar: `cadenas` (de caracteres) o `números`. El interprete de `awk` determinará automáticamente cuando un elemento se trate de un tipo u otro, sin embargo los usuarios pueden modificar la asignación automática de tipos por al usar `"` para delimitar un valor. Por ejemplo `"123"` es una cadena con los caracteres `"1"`, `"2"` y `"3"`, sin embargo `123` representa al número $$123$$.
 
 Como en otros lenguajes de programación en `awk` existen _variables_ que son formas de representar elementos que contienen un valor, (y ese valor puede cambiar). La forma de asignar un valor en una _variable_ sigue la siguiente sintáxis:
 
