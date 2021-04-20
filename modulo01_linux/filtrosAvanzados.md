@@ -360,4 +360,4 @@ tree None
 
 [Atras](./operacionesAvanzadasArchivos)
 
-[Siguiente](#)
+[Siguiente](./busquedaPatrones)
