@@ -17,9 +17,9 @@ Algunos archivos de texto pueden contener mucha información, es posible que en 
 
 #### awk
 
-`awk` es un comando que invoca un poderoso interprete del lenguaje de programación homónimo. Este lenguaje de programación es muy versátil y permite a los usuarios de Linux trabajar con archivos de texto. Este lenguaje de programación se desarrolló desde las primeras arquitecturas de Unix, principalmente por el estilo de reportes tabulares que se han hecho para monitoreo del sistema operativo. `awk` es prácticamente un lenguaje de programación completo, y en la actualidad puede ser invocado desde algunas versiones más actuales como `gawk` o `nawk`.
+`awk` es un comando que invoca un poderoso interprete del lenguaje de programación homónimo. Este lenguaje de programación es muy versátil y permite a los usuarios de Linux trabajar con archivos de texto. `awk` se desarrolló desde las primeras arquitecturas de Unix, principalmente por el estilo de reportes tabulares que se han hecho para monitoreo del sistema operativo. `awk` es prácticamente un lenguaje de programación completo, y en la actualidad puede ser invocado desde algunas versiones más actuales como `gawk` o `nawk`.
 
-> Erroneamente se cree que el nombre de AWK proviene del prefijo de la palabra _awkward_, sin embargo su origen son las iniciales de sus creadores: A. **A**ho, P. **W**einberger y B. W. **K**ernigham
+> Erroneamente se cree que el nombre de AWK proviene del prefijo de la palabra _awkward_, sin embargo su origen coincide con las iniciales de sus creadores: A. **A**ho, P. **W**einberger y B. W. **K**ernigham
 
 La estructura básica de un programa de `awk` tiene la siguiente forma:
 
@@ -59,7 +59,7 @@ TERMINADO
 
 **Sintáxis de AWK**
 
-Como `awk` es un lenguaje de programación existen algunos elementos muy importantes a tener en consideración cuando escribimos instrucciones de dicho lenguaje. Lo primero a mencionar es que en este lenguaje podemos contener dos tipos de elementos con los cuales operar: `cadenas` (de caracteres) o `números`. El interprete de `awk` determinará automáticamente cuando un elemento se trate de un tipo u otro, sin embargo los usuarios pueden modificar la asignación automática de tipos por al usar `"` para delimitar un valor. Por ejemplo `"123"` es una cadena con los caracteres `"1"`, `"2"` y `"3"`, sin embargo `123` representa al número \[123\].
+Como `awk` es un lenguaje de programación existen algunos elementos muy importantes a tener en consideración cuando escribimos instrucciones de dicho lenguaje. Lo primero a mencionar es que en este lenguaje podemos contener dos tipos de elementos con los cuales operar: `cadenas` (de caracteres) o `números`. El interprete de `awk` determinará automáticamente cuando un elemento se trate de un tipo u otro, sin embargo los usuarios pueden modificar la asignación automática de tipos por al usar `"` para delimitar un valor. Por ejemplo `"123"` es una cadena con los caracteres `"1"`, `"2"` y `"3"`, sin embargo `123` representa al número $123$.
 
 Como en otros lenguajes de programación en `awk` existen _variables_ que son formas de representar elementos que contienen un valor, (y ese valor puede cambiar). La forma de asignar un valor en una _variable_ sigue la siguiente sintáxis:
 
@@ -77,7 +77,7 @@ Existen diferentes tipos de _operadores_ en este lenguaje de programación, come
 | `*` | Aritmético | Multiplicación | `7*3` | `21` |
 | `/` | Aritmético | División | `7/3` | `2.3333` |
 | `%` | Aritmético | Módulo | `7%3` | `1` |
-| ` ` \<espacio\> (' ') | Cadena | Concatenación | `7 3` | `73` |
+| `\ ` \<espacio\> (' ') | Cadena | Concatenación | `7 3` | `73` |
 
 Cabe destacar que existen algunos operadores que operan con una sola _variable_, para ello asumamamos que `x` tiene el valor de 3:
 
