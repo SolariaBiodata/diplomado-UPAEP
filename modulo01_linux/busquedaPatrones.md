@@ -12,7 +12,72 @@ Una de las tareas que es común en diferentes problemas de bioinformática recae
 
 #### grep
 
-Algunos archivos de texto pueden contener mucha información, es posible que en algunos casos solo una parte de esa información es valiosa para procesarse de acuerdo a nuestras necesidades. En este tema se revisarán comandos que permiten la selección estratégica de la información de archivos de texto. 
+Algunos archivos de texto pueden contener mucha información, es posible que en algunos casos solo una parte de esa información es valiosa para procesarse de acuerdo a nuestras necesidades. El comando `grep` nos ayuda a buscar la información más relevante, esto se hace mediante una búsqueda de coincidencias de texto. Este comando permite buscar en uno o más archivos un objetivo o _patrón_, cada línea de un archivo de texto puede (o no) contener dicho _patrón_, cuando existe una coincidencia, se imprime la línea del texto en la cual se halló la coincidencia.
+
+> El origen del nombre de este comando son las iniciales de **g**lobal **r**egular **e**xpression and **p**rint
+
+Debido a su funcionalidad, el comando `grep` es un gran apoyo para buscar patrones en archivos de bioinformática. Una gran cantidad de veces es la herramienta predilecta para buscar coincidencias de una cadena esperada de texto dentro de los archivos de Linux. Por ello es útil conocer la sintáxis básica del comando:
+
+```bash
+grep [OPCIONES] PATRON [ARCHIVO(S)]
+```
+
+Como se puede apreciar, existen 4 elementos básicos en la invocación de este comando:
+
+  1. El comando `grep`
+  2. Las opciones o modificadores del comando
+  3. La _cadena_ de texto o _patrón_ que se desea buscar
+  4. La entrada de texto, suelen ser el o los archivos donde se desea buscar el _patrón_
+
+Las opciones del comando `grep` son muy variadas, lo cual nos da una gran ventaja y le dan una gran versatilidad al comando. Antes de revisar las opciones completas conviene revisar características importantes del _patrón_. Típicamente los _patrones_ se delimitan por el caracter `"` cuando se invoca desde la consola de comandos. Los _patrones_ de texto que se pueden buscar siguen la convención de las [expresiones regulares](./filtrosAvanzados#sed). No obstante puede modificarse la interpretación de los mismos de acuerdo con los siguientes _modificadores_:
+
+| Modificador | Interpretación del _patrón_ |
+|--|--|
+| `-E` | Como una expresión regular **e**xtendida |
+| `-F` | Como una _cadena_ de caracteres fija, no como expresión regular |
+| `-G` | Como una expresión regular básica (por defecto se usa está interpretación) |
+| `-P` | Como una expresión regular compatible con `Perl` (experimental) |
+
+Cabe mencionar que la principal diferencia entre `-E` y `-G` recae en el uso de escape para ciertos caracteres. Por lo general con la opción por defecto, es necesario escapar algunos caracteres de control en la expresión regular (por ejemplo `|`, `{`, `}`). Por otro lado, las expresiones regulares surgieron en el lenguaje de programación `Perl`, desde su adopción diferentes lenguajes de programación han ocurrido algunos cambios para estandarizar el modo en el que se implementan en las tan diferentes sintáxis de dichos lenguajes, lo cual dio lugar en principio a la interpretación básica y luego a la extendida. No obstante, la interpretación extendida es similar a la interpretación de `Perl`, por lo que es muy importante no confundir ambas interpretaciones, ya que pueden ocurrir diferencias muy sutiles que solo un experto podría diferenciar.
+
+Por otro lado, existen algunos modificadores que sirven para indicar explícitamente el tipo de _patrón_ que se desea ingresar al comando:
+
+| Modificador | Descripción |
+|--|--|
+| `-e` | Usa el siguiente argumento como _patrón_, se puede usar múltiples veces en una misma invocación, en ese caso `grep` devolverá un resultado cada vez que alguno de los _patrones_ sea encontrado. |
+| `-f` | Usa el siguiente argumento como la ruta de un archivo que contiene uno o más _patrones_, devolverá un resultado cada vez que alguno de los _patrones_ sea encontrado. |
+
+***
+
+`grep` como muchos comandos en Linux, posee una buena cantidad de _modificadores_ que le aportan gran versatilidad al comando:
+
+| Modificador | Tipo | Descripción |
+|--|--|--|
+| `-v` | Control de coincidencia | Ivierte la condición de resultado, solo selecciona líneas que **NO** coincidan con el _patrón_ suministrado. |
+| `-i` | Control de coincidencia | Ignora la diferencia entre mayúsculas y minúsculas cuando busca el _patrón_ en el texto. |
+| `-w` | Control de coincidencia | Selecciona solo aquellas líneas en las que el _patrón_ coincide con palabras completas, es decir, el _patrón_ no es una subcadena de otra palabra. Las _cadenas_ que son consideradas como palabras son aquellas que se delimitan por caracteres no alfanuméricos y `_`. |
+| `-x` | Control de coincidencia | Selecciona aquellas líneas que coinciden perfectamente con el _patrón_. |
+| `-c` | Control de salida | Suprime la salida normal, imprime el conteo de las líneas que coincidieron con el _patrón_. |
+| `-m` | Control de salida | Detiene la búsqueda cuando se alcanza el número indicado a continuación de coincidencias. |
+| `-n` | Control de los prefijos de salida | Agrega como prefijo el número de la línea en el texto que coincide con el _patrón_. |
+| `-H` | Control de los prefijos de salida | Imprime el nombre del archivo con el texto que coincide con el _patrón_. Es la opción por defecto cuando se utilizan múltiples archivos de entrada. |
+| `-h` | Control de los prefijos de salida | **NO** imprime el nombre del archivo con el texto que coincide con el _patrón_. Es la opción por defecto cuando se utiliza solo un archivo de entrada. |
+| `-A` | Control de contexto | En la salida imprime tantas líneas como se especifica a continuación que siguen despues de la línea en la que se halla coincidencia con el _patrón_. (**A**fter match). |
+| `-B` | Control de contexto | En la salida imprime tantas líneas como se especifica a continuación que preceden a la línea en la que se halla coincidencia con el _patrón_. (**B**efore match). |
+| `-C` | Control de contexto | En la salida imprime tantas líneas como se especifica a continuación que preceden y siguen después de la línea en la que se halla coincidencia con el _patrón_. (**C**ontext match). |
+| `-r` | Control de archivos | Se busca el _patrón_ de manera recursiva en todos los archivos de un directorio. |
+
+A continuación se plantean ejemplos de uso:
+
+
+
+
+
+
+
+
+
+
 
 
 #### awk
