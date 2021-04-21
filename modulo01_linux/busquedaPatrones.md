@@ -67,17 +67,163 @@ Por otro lado, existen algunos modificadores que sirven para indicar explícitam
 | `-C` | Control de contexto | En la salida imprime tantas líneas como se especifica a continuación que preceden y siguen después de la línea en la que se halla coincidencia con el _patrón_. (**C**ontext match). |
 | `-r` | Control de archivos | Se busca el _patrón_ de manera recursiva en todos los archivos de un directorio. |
 
-A continuación se plantean ejemplos de uso:
+A continuación se plantean ejemplos de uso, para el desarrollo de estos ejemplos se asume la creación de un archivo `texto.txt` con el siguiente contenido:
+
+```
+This is a line
+This is also a Line
+I will Also type this
+I will display this
+final line
+```
+
+Si se desea buscar las líneas que coincidan con  `display`:
+
+```bash
+grep "display" texto.txt
+```
+
+```
+I will display this
+```
+
+Si se dese buscar el complemento:
+
+```bash
+grep -v "display" texto.txt
+```
+
+```
+This is a line
+This is also a Line
+I will Also type this
+final line
+```
+
+***
+
+Si se desea buscar una _cadena_ sin importar la aparición de mayúsculas o minúsculas:
+
+```bash
+grep -i "also" texto.txt
+```
+
+```
+This is also a Line
+I will Also type this
+```
+
+***
+
+Si se desean buscar varias _cadenas_:
+
+```bash
+grep -i -e "also" -e "display" texto.txt
+```
+
+```
+This is also a Line
+I will Also type this
+I will display this
+```
+
+***
+
+Para realizar el conteo de coincidencias:
+
+```bash
+grep -c "will" texto.txt
+```
+
+```
+2
+```
+
+***
+
+Buscar líneas que comiencen con un _patrón_ específico:
 
 
+```bash
+grep ^I texto.txt
+```
+
+```
+I will Also type this
+I will display this
+```
+
+o terminen con un _patrón_:
 
 
+```bash
+grep -i line$ texto.txt
+```
+
+```
+This is a line
+This is also a Line
+```
+
+***
+
+Búsqueda de cadenas completas:
+
+```bash
+grep -iw line texto.txt
+```
+
+```
+This is a line
+This is also a Line
+final line
+```
+
+***
+
+Búsqueda contextual:
+
+```bash
+grep -A 1 "display" texto.txt
+```
+
+```
+I will display this
+final line
+```
+
+```bash
+grep -B 1 "display" texto.txt
+```
+
+```
+I will Also type this
+I will display this
+```
 
 
+```bash
+grep -C 1 "display" texto.txt
+```
+
+```
+I will Also type this
+I will display this
+final line
+```
+
+***
+
+Para encontrar las líneas de una arhivo que coinciden:
 
 
+```bash
+grep -n 1 "display" texto.txt
+```
 
-
+```
+4:I will display this
+```
 
 
 #### awk
