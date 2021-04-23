@@ -377,12 +377,17 @@ awk 'BEGIN{ FS=";"; OFS="\t" };{ print $0 }' <(echo "contenido;dos") # Asignando
 
 Otra _variable_ útil es `NF` ya que con ella podemos conocer la cantidad de campos en una línea determinada. Esto es muy útil cuando, por alguna razón, un archivo de texto contiene diferente cantidad de campos, y queremos ejecutar instrucciones diferentes basándose en la cantidad de campos de cada línea. Por otro lado `$NF` contiene el valor del último campo de la línea respectiva.
 
+```bash
+awk 'NF > 2{print}' ejemplo.vcf
+```
+
 ***
 
 La _variable_ `NR` representa el número de registros (o líneas) que tiene un archivo. Esta variable es muy útil cuando queremos ejecutar instrucciones específicas basándonos en el número de línea. Un caso de uso muy claro, es cuando se tiene un archivo con encabezados que contienen comentarios que siguen la estructura general de una tabla:
 
+
 ```bash
-awk 'NF > 2{print}' ejemplo.vcf
+awk 'NR%3 == 0 { print }' ejemplo.vcf
 ```
 
 **Pasando valores de variables**
@@ -399,6 +404,6 @@ Como se puede notar, para hacer el pase de variables se utiliza el modificador `
 
 [Menú Principal](../)
 
-[Atras](./operacionesAvanzadasArchivos)
+[Atras](./filtrosAvanzados)
 
 [Siguiente](#)
