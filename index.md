@@ -23,8 +23,6 @@ Bienvenido a nuestro 1er Diplomado en "Bioinformática y Docking" en colaboraci�
 
 ### [Operaciones con archivos de texto](./modulo01_linux/operacionesArchivosTexto)
 
-#### [Asignación de permisos](./modulo01_linux/operacionesArchivosTexto#asignación-de-permisos)
-
 ### [Operaciones avanzadas con archivos](./modulo01_linux/operacionesAvanzadasArchivos)
 
 ### [Filtros avanzados](./modulo01_linux/filtrosAvanzados)
@@ -32,7 +30,7 @@ Bienvenido a nuestro 1er Diplomado en "Bioinformática y Docking" en colaboraci�
 ### [Búsqueda de patrones](./modulo01_linux/busquedaPatrones)
 
 
-## [Lenguajes de Programación R y Python](./modulo02_PythonR/)
+## [Lenguajes de Programación](./modulo02_PythonR/)
 
 
 
