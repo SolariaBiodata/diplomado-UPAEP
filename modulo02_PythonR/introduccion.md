@@ -68,7 +68,7 @@ Existen muchos recursos para habilitar interfaces gráficas de despliegue de an�
 En colab existen dos tipos de celdas
 
   1. Celdas de **código** las cuales permiten la ejecución de instrucciones en el lenguaje deseado (`R` o `python`, sólo uno).
-  2. Celdas de **texto** con las cuales podemos agregar más información no ejecutable, la cual nos pemrite agregar texto enriquecido con el lenguaje _markdown_
+  2. Celdas de **texto** con las cuales podemos agregar más información no ejecutable, la cual nos permite agregar texto enriquecido con el lenguaje _markdown_.
 
 Las celdas de texto permiten incluso incluír fórmulas escritas en lenguaje $$LaTeX$$:
 
@@ -76,7 +76,23 @@ Las celdas de texto permiten incluso incluír fórmulas escritas en lenguaje $$L
 $$y=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}{\frac{x-\mu}{\sigma}}^2}$$
 ```
 
+lo cual genera una fórmula así:
+
 $$y=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}{\frac{x-\mu}{\sigma}}^2}$$
+
+
+A continuación se describen algunos ejemplos de texto enriquecido con _Markdown_
+
+| Ejemplo | Salida |
+|--|--|
+| `**negritas**` | **negritas** |
+| `_cursivas_` | _cursivas_ |
+| `~tachado~` | ~tachado~ |
+| `# Título` | # Título |
+| `\`codigo\`` | `codigo` |
+| `> cita` | > cita |
+| `- lista` | - lista |
+
 
 [Menú Principal](./)
 
