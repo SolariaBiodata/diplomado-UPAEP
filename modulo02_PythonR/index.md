@@ -17,7 +17,7 @@ Bienvenido a nuestro 1er Diplomado en "Bioinformática y Docking" en colaboraci�
 
 ## Lenguajes de programación
 
-### [Introduccion](./)
+### [Introduccion](./introduccion)
 
 
 
