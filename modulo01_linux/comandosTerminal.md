@@ -1,5 +1,5 @@
 ![alt text](https://solariabiodata.com.mx/images/solaria_banner.png "Soluciones de Siguiente Generación")
-# 1er [Diplomado de Bioinformática y Docking](../)
+# 1er [Diplomado de Bioinformática y Docking](./)
 
 ## Introducción a Linux
 
@@ -84,6 +84,6 @@ Cada línea contiene cuatro campos separados por espacios:
 
 
 
-[Menu principal](../) 
+[Menu principal](./) 
 [Atras](./sistemaArchivos)
 [Siguiente](./operacionesArchivosTexto)

@@ -2,7 +2,7 @@
 usemathjax: true
 ---
 ![alt text](https://solariabiodata.com.mx/images/solaria_banner.png "Soluciones de Siguiente Generación")
-# 1er [Diplomado de Bioinformática y Docking](../)
+# 1er [Diplomado de Bioinformática y Docking](./)
 
 ## Introducción a Linux
 
@@ -402,7 +402,7 @@ awk -v var=$x 'BEGIN { FS=";"}; $1~/G/ { var+=$2 }; END { print var }' <(echo "T
 Como se puede notar, para hacer el pase de variables se utiliza el modificador `-v` y enseguida se integra el pase del valor de la variable de shell `$x` en la variable de awk `var`.
 
 
-[Menú Principal](../)
+[Menú Principal](./)
 
 [Atras](./filtrosAvanzados)
 

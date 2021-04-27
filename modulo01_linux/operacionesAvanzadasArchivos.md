@@ -1,5 +1,5 @@
 ![alt text](https://solariabiodata.com.mx/images/solaria_banner.png "Soluciones de Siguiente Generación")
-# 1er [Diplomado de Bioinformática y Docking](../)
+# 1er [Diplomado de Bioinformática y Docking](./)
 
 ## Introducción a Linux
 
@@ -267,7 +267,7 @@ y se utilizan los operadores de redireccionamiento de acuerdo con la siguiente t
 |`$()`| Genera un subshell y ejecuta los comandos dentro de los paréntesis |
 |`<()`| Redirige `stdout` de un subshell como `stdin` hacia un comando |
 
-[Menú Principal](../)
+[Menú Principal](./)
 
 [Atras](./operacionesArchivosTexto)
 
