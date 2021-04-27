@@ -89,7 +89,7 @@ A continuación se describen algunos ejemplos de texto enriquecido con _Markdown
 | `_cursivas_` | _cursivas_ |
 | `~~tachado~~` | ~~tachado~~ |
 | `# Título` | # Título |
-| `\\`codigo\\`` | `codigo` |
+| ``codigo`` | `codigo` |
 | `> cita` | > cita |
 | ` - lista` | - lista |
 
