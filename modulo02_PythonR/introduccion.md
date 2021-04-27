@@ -81,7 +81,7 @@ lo cual genera una fórmula así:
 $$y=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}{\frac{x-\mu}{\sigma}}^2}$$
 
 
-A continuación se describen algunos ejemplos de texto enriquecido con _Markdown_
+A continuación se describen algunos ejemplos de texto enriquecido con [_Markdown_](https://www.markdownguide.org/basic-syntax/)
 
 | Ejemplo | Salida |
 |--|--|
@@ -90,8 +90,6 @@ A continuación se describen algunos ejemplos de texto enriquecido con _Markdown
 | `~~tachado~~` | ~~tachado~~ |
 | `# Título` | # Título |
 | \``codigo`\` | `codigo` |
-| `> cita` | > cita |
-| ` - lista` | - lista |
 
 
 [Menú Principal](./)
