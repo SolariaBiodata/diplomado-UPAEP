@@ -19,7 +19,7 @@ El primer tipo de datos es el tipo numérico. Este, como su nombre lo indica, no
 
 | Tipo matemático | Descripción | Python | R |
 |--|--|--|--|
-| $$\mathbb{Z}  {-\infinity,...,-3,-2,-1,0,1,2,3,...,\infinity}$$ | Los _enteros_ son todos los números que se pueden representar sin un componente fraccional| Integer | int |  
+| $$\mathbb{Z}  \{-\infty,...,-3,-2,-1,0,1,2,3,...,\infty\}$$ | Los _enteros_ son todos los números que se pueden representar sin un componente fraccional| Integer | int |  
 | $$\mathbb{R}$$ | Los _flotantes_ (números de punto flotante) son las aproximaciones que se usan en computación paara representar números reales | Integer | int |  
 | $$\mathbb{Z}$$ | Los enteros son todos los números que se pueden representar sin un componente fraccional | Integer | int |  
 | $$\mathbb{Z}$$ | Los enteros son todos los números que se pueden representar sin un componente fraccional | Integer | int |  
