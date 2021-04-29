@@ -19,8 +19,13 @@ Bienvenido a nuestro 1er Diplomado en "Bioinform√°tica y Docking" en colaboraci√
 
 ### [Introduccion](./introduccion)
 
+#### [R](./introduccion#r)
 
+#### [Python](./introduccion#python)
 
+#### [Google Colab](./introduccion#google-colab)
+
+### [Tipos de datos](./tiposDatos)
 
 
 

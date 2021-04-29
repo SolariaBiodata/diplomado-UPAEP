@@ -96,4 +96,4 @@ A continuación se describen algunos ejemplos de texto enriquecido con [_Markdow
 
 [Atras](#)
 
-[Siguiente](#)
+[Siguiente](./tiposDatos)
