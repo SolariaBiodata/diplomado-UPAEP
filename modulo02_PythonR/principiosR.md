@@ -210,11 +210,11 @@ rep(c("s", "b", "d"), times=c(2,1,4))
 ```
 Un método muy importante es la generación de números aleatorios. En R es muy fácil generar vectores con números aleatorios.
 
-| Función | Descripción |
-|--|--|
-| `runif()` | Recibe como parámetro la cantidad de elementos que se desea que tenga el vector de números aleatorios, los cuales son seleccionados de una distribución uniforme |
-| `rnorm()` | Recibe como parámetro la cantidad de elementos que se desea que tenga el vector de números aleatorios, los cuales son seleccionados de una distribución normal |
-| `sample()` | Recibe como parámetros, un vector con elementos, la cantidad de elementos que se desea obtener, como tercer parámetro opcioonal se define si el muestreo es con remplazo |
+| Función | Descripción | Ejemplo |
+|--|--|--|
+| `runif()` | Recibe como parámetro la cantidad de elementos que se desea que tenga el vector de números aleatorios, los cuales son seleccionados de una distribución uniforme | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Uniform_Distribution_PDF_SVG.svg/320px-Uniform_Distribution_PDF_SVG.svg.png) |
+| `rnorm()` | Recibe como parámetro la cantidad de elementos que se desea que tenga el vector de números aleatorios, los cuales son seleccionados de una distribución normal | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Standard_deviation_diagram.svg/320px-Standard_deviation_diagram.svg.png) |
+| `sample()` | Recibe como parámetros, un vector con elementos, la cantidad de elementos que se desea obtener, como tercer parámetro opcioonal se define si el muestreo es con remplazo | ![](https://upload.wikimedia.org/wikipedia/commons/b/bf/Simple_random_sampling.PNG) |
 
 **Aritmética de vectores**
 
