@@ -19,9 +19,9 @@ El primer tipo de datos es el tipo numérico. Este, como su nombre lo indica, no
 
 | Tipo matemático | Descripción | Python | R |
 |--|--|--|--|
-| $$\mathbb{Z}$$ | Los _enteros_ son todos los números que se pueden representar sin un componente fraccional $$\{-\infty,\dots,-3,-2,-1,0,1,2,3,\dots,\infty\}$$ | `int`, `long` | `int` |  
+| $$\mathbb{Z}$$ | Los _enteros_ son todos los números que se pueden representar sin un componente fraccional $$\{-\infty,\dots,-3,-2,-1,0,1,2,3,\dots,\infty\}$$ | `int`, `long` | `integer` |  
 | $$\mathbb{R}$$ | Los _flotantes_ (números de punto flotante) son las aproximaciones que se usan en computación paara representar números reales $$\{-\infty,\dots,\infty\}$$ | `float`  | `double` |  
-| $$\mathbb{C}$$ | Los _complejos_ son números que tienen un componente real y un componente imaginario de la forma $$a+b\dot\imath$$ donde $$a$$ y $$b$$ son numeros reales, en cambio $$\dot\imath$$ representa al número imaginario que satisface la ecuación $$\dot\imath^{2} = -1$$ | `complex` | `comp` |  
+| $$\mathbb{C}$$ | Los _complejos_ son números que tienen un componente real y un componente imaginario de la forma $$a+b\dot\imath$$ donde $$a$$ y $$b$$ son numeros reales, en cambio $$\dot\imath$$ representa al número imaginario que satisface la ecuación $$\dot\imath^{2} = -1$$ | `complex` | `complex` |  
   
 Cabe destacar que las representaciones numéricas en computación tienen una precisión buena, más no perfecta, esto se debe a que en la computadora los números solo pueden representarse en base 2, por lo que se pierde precisión debido a ello.
 
