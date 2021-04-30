@@ -48,35 +48,35 @@ A continuación una tabla con las operaciones binarias que pueden realizarse:
 | `!` | negación lógica ( _NOT_) |
 | `&` | _AND_ |
 | `&&` | conjunción lógica (_AND_) |
-| `\|` | _OR_ |
-| `\|\|` | disyunción lógica (_OR_) |
+| `|` | _OR_ |
+| `||` | disyunción lógica (_OR_) |
 
 Los operadores `AND`, `OR` son compuertas lógicas que proceden del álgebra booleana. En este caso los `1` son interpretados como `verdadero` y los `0` como `falso`.
 
 _`AND`_
 
-| A | B || `A&&B` |
-|--|--||--|
-| 0 | 0 || **0** |
-| 0 | 1 || **0** |
-| 1 | 0 || **0** |
-| 1 | 1 || **1** |
+| A | B | `A&&B` |
+|--|--|--|
+| 0 | 0 | **0** |
+| 0 | 1 | **0** |
+| 1 | 0 | **0** |
+| 1 | 1 | **1** |
 
 _`OR`_
 
-| A | B || `A\|\|B` |
-|--|--||--|
-| 0 | 0 || **0** |
-| 0 | 1 || **1** |
-| 1 | 0 || **1** |
-| 1 | 1 || **1** |
+| A | B | `A||B` |
+|--|--|--|
+| 0 | 0 | **0** |
+| 0 | 1 | **1** |
+| 1 | 0 | **1** |
+| 1 | 1 | **1** |
 
 _`NOT`_
 
-| A || `!A` |
-|--||--|
-| 0 || **1** |
-| 1 || **0** |
+| A | `!A` |
+|--|--|
+| 0 | **1** |
+| 1 | **0** |
 
 **Comparación**
 
@@ -93,7 +93,7 @@ En programación, una relación muy importante que existe en los datos son las c
 
 Es importante destacar que estas comparaciones generan resultados del tipo lógico, es decir valores para un resultado verdadero que en pyhton se asiga **`True`** y falso representado como **`False`**.
 
-### Operadores de asignación
+**Operadores de asignación**
 
 El último tipo de operadores de R son muy útiles, ya que permiten asignar valores a elementos conocidos como _variables_. A continuación una tabla que resume los operadores disponibles en este lenguaje de programación:
 
@@ -118,7 +118,7 @@ Es importantísimo asignar un orden de ejecución cuando se combinan operadores 
 | 6 | `<`, `<=`, `==`, `>=`, `>`, `!=` | Comparativos |
 | 7 | `!` | Negación lógica |
 | 8 | `&&`, `&` | Conjunción lógica |
-| 9 | `\|\|`, `\|` | Disyunción lógica |
+| 9 | `||`, `|` | Disyunción lógica |
 | 10 | `->` | Asignación a la derecha |
 | 11 | `<-` | Asignación a la izquierda |
 | 12 | `=`| Asignación a la izquierda |
@@ -184,7 +184,7 @@ c("Solaria","Biodata")[2]
 'Biodata'
 ```
 
-#### Métodos de generación de vectores
+**Métodos de generación de vectores**
 
 Asimismo, se pueden generar vectores con secuencias regulares, para ello es indispensable usar el operador `:`:
 
@@ -294,13 +294,15 @@ veamos como funcionan estas operaciones:
 | **`FALSE`** | `TRUE` | `FALSE` | **`FALSE`** | **`TRUE`** | 
 | **`TRUE`** | `FALSE` | `TRUE` | **`FALSE`** | **`TRUE`** | 
 
-Existen funciones muy utiles para trabajar con vectores lógicos
+Existen funciones muy utiles para trabajar con vectores lógicos:
 
 | Función | Descripción |
 |--|--|
 | `all` | Evalua si todos los elementos cumplen una condición |
 | `any` | Evalua si almenos un elemento cumple una condición |
 | `which` | Regresa un vector con lo índices de los elementos que cumplen una condición |
+
+Así funcionan:
 
 ```R
 v<-c(2,4,6,12,15)
