@@ -31,7 +31,7 @@ Otro tipo de datos habitual en programación son las cadenas de caracteres o tex
 
 | Python | R |
 |--|--|
-| `str` | `char` |
+| `str` | `character` |
 
 #### Valores lógicos
 
@@ -39,8 +39,8 @@ Los valores lógicos representan los valores más sencillos de operar en _algebr
 
 | Booleano | Python | R |
 |--|--|--|
-| $$0$$ | `False` | `FALSE` |
-| $$1$$ | `True` | `TRUE` |
+| $$0$$ | `False` | `FALSE`, `F` |
+| $$1$$ | `True` | `TRUE`, `T` |
 
 
 [Menú Principal](./)
