@@ -91,6 +91,11 @@ A continuación se describen algunos ejemplos de texto enriquecido con [_Markdow
 | `# Título` | # Título |
 | \``codigo`\` | `codigo` |
 
+En este curso vamos a usar esta herramienta para practicar la sintáxis y hacer ejercicios, por lo cual es muy importante que puedas generar nuevas libretas. Para ello solo requieres inicializar nuevas libretas haciendo click en las siguientes ligas:
+
+| Python | R |
+|--|--|
+| [Libreta Python3](https://colab.research.google.com/notebook#create=true&language=python3) | [Libreta R](https://colab.research.google.com/notebook#create=true&language=r) |
 
 [Menú Principal](./)
 
