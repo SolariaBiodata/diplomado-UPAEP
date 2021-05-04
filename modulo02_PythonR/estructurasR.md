@@ -263,12 +263,11 @@ rownames(v)<-c("r1","r2")
 
 **Operaciones con matrices**
 
-De manera similar a los vectores, los operadores aritméticos (`+`, `-`, `*`, `/`, `^`, ... )funcionan elemento por elemento, reciclando si es necesario. No obstante, existen operaciones del algebra lineal que se pueden realizar como el producto de matrices que se pueden realizar con el operador `%*%`. Así se pueden multiplicar  una matriz $$A$$ de dimensiones $$m$$ renglones y $$n$$ columnas, con una matriz $$B$$  de dimensiones $$n$$ columnas y $$p$$ renglones para obtener una matriz $$C$$ con dimensiones $$m$$ columnas y $$p$$ renglones:
-
-\\[A := (a_{ij})_{m \times n}
-B := (b_{ij})_{n \times p} \\]
+De manera similar a los vectores, los operadores aritméticos (`+`, `-`, `*`, `/`, `^`, ... )funcionan elemento por elemento, reciclando si es necesario. No obstante, existen operaciones del algebra lineal que se pueden realizar como el producto de matrices que se pueden realizar con el operador `%*%`. Así se pueden multiplicar  una matriz $$A := (a_{ij})_{m \times n}$$ de $$m$$ renglones y $$n$$ columnas, con una matriz $$B := (b_{ij})_{n \times p}$$ de $$n$$ columnas y $$p$$ renglones para obtener una matriz $$C$$ con $$m$$ columnas y $$p$$ renglones:
 
 \\[C = A \times B := (c_{ij})_{m \times p}\\]
+
+tomando como consideración que $$c_{ij}$$ se obtiene mediante:
 
 \\[ c_{ij} = \sum_{r=1}^{n}a_{ir}b_{rj}\\]
 
@@ -276,11 +275,37 @@ lo cual se puede ver en este diagrama:
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Matrix_multiplication_diagram.svg/240px-Matrix_multiplication_diagram.svg.png)
 
+Otras operaciones del algebra matricial se implementan de manera muy sencilla, por ejemplo la _transposición_ se realiza con la función `t()`, lo cual genera una matriz con las dimensiones invertidas. Por otro lado, es posible obtener un vector con los valores de la diagonal mediante la función `diag()`. Otra función que se realiza de manera muy sencilla es la obtención del _determinante_ mediante la función `det()`, la cual solo se puede hacer en matrices cuadradas.
+
+Asímismo, las funciones que se aplican a vectores se pueden realizar también con las matrices. No obstante existen algunas que se agregan como `colMeans()` y `rowMeans()`, las cuales generan la función `mean()` sobre los componentes respectivos, o bien `colSums()` y `rowSums()`, que generan las sumatorias correspondientes.
+
+Por otro lado se encuentran las operaciones para concatenar matrices, las cuales se pueden realizar verticalmente con `rbind()` u horizontalmente mediante `cbind()`.
 
 
+**Arreglos**
 
+Los vectores y las matrices son en realidad objetos de la clase de los arreglos o _arrays_. Los vectores tienen una sola dimensión, mientras que las matrices son arreglos de dos dimensiones. Los arreglos que se pueden construir en `R` pueden tener más dimensiones y se pueden construir con la función `array()`, la cual requiere que se defina el atributo `dim` para construir el arreglo de datos.
 
+```
+arreglo3d <- array(runif(5*3*2, max = 10), dim = c(5, 3, 2))
+```
 
+Este tipo de estructuras no se suele utilizar muy a menudo, sin embargo, comparte las mismas propiedades que los arreglos más sencillos. Cabe mencionar que una función muy útil para hacer operaciones sobre cualquier dimensión es la función `apply()`. Esta función recibe 3 parámetros:
+
+ - El arreglo en el que va a operar
+ - La dimensión en la que opera
+ - La función que se desea utilizar
+
+```R
+vector1 <- c(5,9,3)
+vector2 <- c(10,11,12,13,14,15)
+arreglo3 <- array(c(vector1,vector2),dim = c(3,3,2))
+apply(new.array, c(1), sum)
+```
+
+```
+[1] 56 68 60
+```
 
 
 
