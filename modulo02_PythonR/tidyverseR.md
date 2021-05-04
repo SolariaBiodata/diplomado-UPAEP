@@ -8,13 +8,7 @@ usemathjax: true
 
 ### Tidyverse 
 
-Cuando trabajamos con **R** procesamos objetos que contienen datos. Cada uno de esos objetos tiene una estructura particular, sin embargo existen algunas propiedades estructurales de los objetos que son consecuencia de sus características. En términos generales podemos clasificar las estructuras de datos en R con la siguiente tabla.
-
-| Dimensiones | Homogéneas | Heterogénas |
-|----------|-------------|-------------|
-| $$1$$ |  Vector	| Lista |
-| $$2$$ | Matriz	| Data frame |
-| $$n$$	|  Arreglo	| |<img src="https://soka.gitlab.io/blog/post/2019-10-06-r-tidyverse-intro/images/hex-tidyverse.png" width=150 align=right>
+<img src="https://soka.gitlab.io/blog/post/2019-10-06-r-tidyverse-intro/images/hex-tidyverse.png" width=150 align=right>
 <br>
 
 [Core Tidyverse](https://www.tidyverse.org/packages/) es un compendio de paquetes que se han desarrollado para el análisis de datos en `R`. Estos paquetes comparten una filosofía de diseño en términos de gramática y estructuras de datos, por lo cual se han desarrollado para funcionar como un todo, sin embargo también pueden operar por separado.
