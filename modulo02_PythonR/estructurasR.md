@@ -265,11 +265,12 @@ rownames(v)<-c("r1","r2")
 
 De manera similar a los vectores, los operadores aritméticos (`+`, `-`, `*`, `/`, `^`, ... )funcionan elemento por elemento, reciclando si es necesario. No obstante, existen operaciones del algebra lineal que se pueden realizar como el producto de matrices que se pueden realizar con el operador `%*%`. Así se pueden multiplicar  una matriz $$A$$ de dimensiones $$m$$ renglones y $$n$$ columnas, con una matriz $$B$$  de dimensiones $$n$$ columnas y $$p$$ renglones para obtener una matriz $$C$$ con dimensiones $$m$$ columnas y $$p$$ renglones:
 
-\\[A := (a_{ij})_{m \times n}; B := (b_{ij})_{n \times p} \\]
+\\[A := (a_{ij})_{m \times n}
+B := (b_{ij})_{n \times p} \\]
 
 \\[C = A \times B := (c_{ij})_{m \times p}\\]
 
-\\[ c_{ij} = \sum^{n}_{r=1}a_{ir}b_{rj}\\]
+\\[ c_{ij} = \sum_{r=1}^{n}a_{ir}b_{rj}\\]
 
 lo cual se puede ver en este diagrama:
 
