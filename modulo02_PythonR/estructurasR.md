@@ -240,7 +240,7 @@ donde `c` representa la columna y `r` el renglón.
 
 Es importante mencionar que en una matriz, si se omite la `,` en la indexación, se obtendrían valores individuales equivalentes a la composición de un vector de la concatenación de las columnas, así cada índice  seguiría un orden como el que se muestra a continuación:
 
-|`[,1]`|`[,2]`|`[,3]`|`[,4]`|`[,5]`|`[,6]`|
+||`[,1]`|`[,2]`|`[,3]`|`[,4]`|`[,5]`|`[,6]`|
 |--|--|--|--|--|--|--|
 | **`[1,]`** | $$1$$ | $$5$$ | $$9$$ | $$13$$ | $$17$$ | $$21$$ |
 | **`[2,]`**| $$2$$ | $$6$$ | $$10$$ | $$14$$ | $$18$$ | $$22$$ |
