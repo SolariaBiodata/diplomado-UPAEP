@@ -12,9 +12,9 @@ Cuando trabajamos con **R** procesamos objetos que contienen datos. Cada uno de 
 
 | Dimensiones | Homogéneas | Heterogénas |
 |----------|-------------|-------------|
-| 1 |  Vector	| Lista |
-| 2 | Matriz	| Data frame |
-| n	|  Arreglo	| |
+| $$1$$ |  Vector	| Lista |
+| $$2$$ | Matriz	| Data frame |
+| $$n$$	|  Arreglo	| |
 
 #### Vectores
 
