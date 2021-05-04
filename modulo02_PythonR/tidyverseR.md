@@ -25,7 +25,7 @@ Existe una serie de paquetes que se distribuyen en conjunto en el compendio bás
 library(tidyverse)
 ```
 
-🚩 Antes de continuar es importante mencionar un operador que se carga con tidyverse, se trata del operador %>%. Este nuevo operador está inspirado en el operador | de bash, es decir ayuda a redireccionar la salida de una función a la entrada de otra función. En breve, es posible remplazar el estilo clásico de f(x) con x %>% f(). Esto ayuda a la legibilidad del código cuando se acoplan múltiples funciones:
+🚩 Antes de continuar es importante mencionar un operador que se carga con tidyverse, se trata del operador `%>%`. Este nuevo operador está inspirado en el operador `|` de bash, es decir ayuda a redireccionar la salida de una función a la entrada de otra función. En breve, es posible remplazar el estilo clásico de `f(x)` con `x %>% f()`. Esto ayuda a la legibilidad del código cuando se acoplan múltiples funciones:
 
 ```R
 los_datos <- read.table(/ruta/a/archivo.txt) %>% subset(variable_a > x) %>% head(100)
