@@ -10,7 +10,7 @@ usemathjax: true
 
 Cuando trabajamos con **R** procesamos objetos que contienen datos. Cada uno de esos objetos tiene una estructura particular, sin embargo existen algunas propiedades estructurales de los objetos que son consecuencia de sus características. En términos generales podemos clasificar las estructuras de datos en R con la siguiente tabla.
 
-|| Dimensiones | Homogéneas | Heterogénas |
+| Dimensiones | Homogéneas | Heterogénas |
 |----------|-------------|-------------|
 | 1 |  Vector	| Lista |
 | 2 | Matriz	| Data frame |
