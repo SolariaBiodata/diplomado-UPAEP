@@ -8,13 +8,13 @@ usemathjax: true
 
 ### Estructuras de R 
 
-[R](https://www.r-project.org/) es un programa de ambiente para cómputo estadístico y graficación. Se distribuye de manera libre en las distribuciones principales de plataformas **UNIX**, sin embargo es posible compilarlo en Windows y MacOS haciendo uso de los [instaladores oficiales](https://cran.r-project.org/mirrors.html). Para invocar el programa solo se necesita usar un comando en nuestra consola de comandos:
+Cuando trabajamos con **R** procesamos objetos que contienen datos. Cada uno de esos objetos tiene una estructura particular, sin embargo existen algunas propiedades estructurales de los objetos que son consecuencia de sus características. En términos generales podemos clasificar las estructuras de datos en R con la siguiente tabla.
 
-```bash
-R
-```
-
-Ya vimos con [anterioridad](./tiposDatos) los tipos de valores que son usados en lenguajes de programación, sin embargo existen diferentes elementos dentro del lenguaje de progamación `R` que aportan todo el poder de procesamiento de datos.
+|| Dimensiones | Homogéneas | Heterogénas |
+|----------|-------------|-------------|
+| 1 |  Vector	| Lista |
+| 2 | Matriz	| Data frame |
+| n	|  Arreglo	| |
 
 #### Vectores
 
@@ -300,16 +300,68 @@ Este tipo de estructuras no se suele utilizar muy a menudo, sin embargo, compart
 vector1 <- c(5,9,3)
 vector2 <- c(10,11,12,13,14,15)
 arreglo3 <- array(c(vector1,vector2),dim = c(3,3,2))
-apply(new.array, c(1), sum)
+apply(arreglo3, c(1), sum)
 ```
 
 ```
 [1] 56 68 60
 ```
 
+#### Listas y dataframes
 
+Este tipo de estructura se diferencían de los arreglos puesto que pueden contener elementos con diversos tipos de datos. Esta carácterística hace que, aunque sean menos eficientes para los procesos de cálculo, sean muy versátiles. Las listas son estructuras de una sola dimensión que pueden contener múltiples tipos de datos:
 
-#### Dataframes
+```R
+lista <- list("Solaria Biodata", 42i, 3.14159, TRUE, c(1.1, 2.3, 4))
+lista
+```
+
+```
+[[1]]
+[1] "Solaria Biodata"
+
+[[2]]
+[1] 0+42i
+
+[[3]]
+[1] 3.14159
+
+[[4]]
+[1] TRUE
+
+[[5]]
+[1] 1.1 2.3 4.0
+```
+
+así mismo, es posible agregar nombres a los elementos de una lista:
+
+```R
+names(lista) <- c("nombre", "significado imaginario de todo en la vida", "pi", "existencia", "aleatorio")
+lista
+```
+
+```
+$nombre
+[1] "Solaria Biodata"
+
+$`significado imaginario de todo en la vida`
+[1] 0+42i
+
+$pi
+[1] 3.14159
+
+$existencia
+[1] TRUE
+
+$aleatorio
+[1] 1.1 2.3 4.0
+```
+
+esto es muy conveniente, ya que nos permite utilizar un operador nuevo `$` el cual nos ayuda a acceder a los elementos de la lista mediante el nombre del elemento, en este ejemplo `lista$pi` contiene el valor `3.14159`. Es importante notar que cuando los nombres de los elementos tienen espacios, es necesario usar `"` o el caracter \` para escapar correctamente el nombre:
+
+```R
+lista$`significado imaginario de todo en la vida`
+```
 
 Los data frames son estructuras de datos de dos dimensiones (rectangulares) que pueden contener datos de diferentes tipos, por lo tanto, son heterogéneas. 
 
