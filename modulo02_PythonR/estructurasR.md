@@ -307,7 +307,7 @@ apply(arreglo3, c(1), sum)
 [1] 56 68 60
 ```
 
-#### Listas y dataframes
+#### Listas
 
 Este tipo de estructura se diferencían de los arreglos puesto que pueden contener elementos con diversos tipos de datos. Esta carácterística hace que, aunque sean menos eficientes para los procesos de cálculo, sean muy versátiles. Las listas son estructuras de una sola dimensión que pueden contener múltiples tipos de datos:
 
@@ -363,6 +363,12 @@ esto es muy conveniente, ya que nos permite utilizar un operador nuevo `$` el cu
 lista$`significado imaginario de todo en la vida`
 ```
 
+```
+[1] 0+42i
+```
+
+#### Data Frames
+
 Los data frames son estructuras de datos de dos dimensiones (rectangulares) que pueden contener datos de diferentes tipos, por lo tanto, son heterogéneas. 
 
 ```R
@@ -378,9 +384,7 @@ dim(mi_df)
 length(mi_df)
 ```
 
-**Importación de tablas desde archivos**
-
-R cuenta con la función genérica `read.table()`, que puede leer cualquier tipo de archivo que contenga una tabla. Para ello es importante localizar en el sistema de archivos el directorio de trabajo, el cual es el lugar en nuestra computadora en el que se encuentran los archivos con los que estamos trabajando en `R`.
+En R es muy relevante este tipo de estructuras, ya que cuando es necesario importar datos desde diversas fuentes (predominantemente archivos) estos se almacenan en el espacio de trabajo como `data.frame`. R cuenta con la función genérica `read.table()`, que puede leer cualquier tipo de archivo que contenga una tabla. Para ello es importante localizar en el sistema de archivos el directorio de trabajo, el cual es el lugar en nuestra computadora en el que se encuentran los archivos con los que estamos trabajando en `R`.
 
 ```R
 #Para conocer cuál es el directorio de trabajo
@@ -402,8 +406,7 @@ la función `read.table` puede ser ajustada para importar diversos formatos de t
 | `sep` | Especificar cuál es el caracter de separación de campos | `'\t'` | 
 | `col.names` | Especificar con un vector los nombres de los campos | `FALSE` |
 
-#### Tibbles
-
+Los nombres de las columnas de un `data.frame` son equivalentes a los nombres de las listas, es por ello que se puede acceder a los valores de cada columna como si fueran un vector mediante el uso del operador `$`.
 
 [Menú Principal](./)
 
