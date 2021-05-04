@@ -27,6 +27,28 @@ Bienvenido a nuestro 1er Diplomado en "Bioinformática y Docking" en colaboraci�
 
 ### [Tipos de datos](./tiposDatos)
 
+#### [Numéricos](./tiposDatos#numéricos)
+
+#### [Cadenas de caracteres](./tiposDatos#cadenas-de-caracteres)
+
+#### [Valores lógicos](./tiposDatos#valores-lógicos)
+
+### [Principios R](./principiosR)
+
+#### [Operadores](./principiosR#operadores)
+
+#### [Variables](./principiosR#variables)
+
+### [Estructuras de R](./estructurasR)
+
+#### [Vectores](./testructurasR#vectores)
+
+#### [Matrices y arreglos](./estructurasR#matrices-y-arreglos)
+
+#### [Listas](./estructurasR#listas)
+
+#### [Dataframes](./estructurasR#data-frames)
+
 
 
 
