@@ -410,6 +410,6 @@ Los nombres de las columnas de un `data.frame` son equivalentes a los nombres de
 
 [Menú Principal](./)
 
-[Atras](./tiposDatos)
+[Atras](./principiosR)
 
 [Siguiente](#)
