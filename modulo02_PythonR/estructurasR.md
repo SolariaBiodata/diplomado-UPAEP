@@ -227,14 +227,27 @@ matrix(1:5)
 Sin embargo, podemos definir las dimensiones
 
 ```R
-matrix(1:10, nrow = 4, ncol = 5)
+matrix(1:20, ncol=6, nrow = 4)
 ```
 
-las matrices, al igual que los vectores, tienen la propiedad de que los valores individuales pueden ser accedidos mediante la **indexación**, en el caso de las matrices, es conveniente conceptualizarlas como vectores compuestos de vectores, por lo tanto, una representación común sería:
+las matrices, al igual que los vectores, tienen la propiedad de que los valores individuales pueden ser accedidos mediante la **indexación**. En el caso de las matrices, es conveniente conceptualizarlas como vectores compuestos de vectores. Por ese motivo es que conviene pensar en las matrices como arreglos _bidimensionales_, y así el método de indexación puede tener `2` dimensiones, las cuales se separan por una `,`:
 
 ```R
-matriz[][]
+matriz[r,c]
 ```
+
+donde `c` representa la columna y `r` el renglón. 
+
+Es importante mencionar que en una matriz, si se omite la `,` en la indexación, se obtendrían valores individuales equivalentes a la composición de un vector de la concatenación de las columnas, así cada índice  seguiría un orden como el que se muestra a continuación:
+
+|||||||
+|--|--|--|--|--|--|
+| $$1$$ | $$5$$ | $$9$$ | $$13$$ | $$17$$ | $$21$$ |
+| $$2$$ | $$6$$ | $$10$$ | $$14$$ | $$18$$ | $$22$$ |
+| $$3$$ | $$7$$ | $$11$$ | $$15$$ | $$19$$ | $$23$$ |
+| $$4$$ | $$8$$ | $$12$$ | $$16$$ | $$20$$ | $$24$$ |
+
+
 
 
 
