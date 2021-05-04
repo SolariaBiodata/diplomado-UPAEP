@@ -217,9 +217,67 @@ sbio[c(-2,-4)]
 
 #### Matrices y arreglos
 
+Las matrices pueden ser descritas como vectores multidimensionales. Al igual que un vector, únicamente pueden contener datos de un sólo tipo, pero además de largo, tienen más dimensiones.
+
+Se requiere utilizar la función `matrix()` para generar una matriz:
+
+```R
+matrix(1:5)
+```
+Sin embargo, podemos definir las dimensiones
+
+```R
+matrix(1:10, nrow = 4, ncol = 5)
+```
+
+las matrices, al igual que los vectores, tienen la propiedad de que los valores individuales pueden ser accedidos mediante la **indexación**, en el caso de las matrices, es conveniente conceptualizarlas como vectores compuestos de vectores, por lo tanto, una representación común sería:
+
+```R
+matriz[][]
+```
+
+
 
 #### Dataframes
 
+Los data frames son estructuras de datos de dos dimensiones (rectangulares) que pueden contener datos de diferentes tipos, por lo tanto, son heterogéneas. 
+
+```R
+mi_df <- data.frame("entero" = c(1:4), "factor" = c("a", "b", "c", "d"), "numero" = c(1.2, 3.4, 4.5, 5.6),
+  "cadena" = as.character(c("a", "b", "c", "d")))
+mi_df
+```
+
+así mismo se puede usar `dim()` para conocer las dimensiones del `data.frame`, o bien `length` para obtener el número de columnas:
+
+```R
+dim(mi_df)
+length(mi_df)
+```
+
+**Importación de tablas desde archivos**
+
+R cuenta con la función genérica `read.table()`, que puede leer cualquier tipo de archivo que contenga una tabla. Para ello es importante localizar en el sistema de archivos el directorio de trabajo, el cual es el lugar en nuestra computadora en el que se encuentran los archivos con los que estamos trabajando en `R`.
+
+```R
+#Para conocer cuál es el directorio de trabajo
+getwd()
+#Para cambiar el directorio de trabajo
+setwd()
+```
+una vez que tenemos eso determinado, se puede utilizar la función `read.table` para cargar los datos de un archivo en nuestra sesión de trabajo, para ello es necesario suministrar como parámetro, la ruta del archivo:
+
+```R
+cancer<-read.table("/content/breast-cancer-wis.data")
+```
+
+la función `read.table` puede ser ajustada para importar diversos formatos de texto:
+
+| Parámetro | Función | Valor por defecto |
+|--|--|--|
+| `header` | Especificar si se usará un encabezado definido en el archivo | `TRUE` |
+| `sep` | Especificar cuál es el caracter de separación de campos | `'\t'` | 
+| `col.names` | Especificar con un vector los nombres de los campos | `FALSE` |
 
 #### Tibbles
 
