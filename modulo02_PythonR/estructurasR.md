@@ -247,6 +247,40 @@ Es importante mencionar que en una matriz, si se omite la `,` en la indexación,
 | **`[3,]`**| $$3$$ | $$7$$ | $$11$$ | $$15$$ | $$19$$ | $$23$$ |
 | **`[4,]`**| $$4$$ | $$8$$ | $$12$$ | $$16$$ | $$20$$ | $$24$$ |
 
+esta propiedad es muy importante cuando es necesario convertir un vector a una matriz. Esta conversión es muy sencilla, ya que se puede utilizar las funciónes de `matrix()`, sin embargo, existe un atributo de los vectores que usualmente se omite por ser obvia: la dimensión. La dimensión de un vector es por defecto `NULL`, sin embargo si se asigna ese atributo, se puede generar una matriz:
+
+```R
+v<-runif(4)
+dim(v)<-c(2,2)
+```
+
+Una función útil cuando tratamos con matrices es `length()`, la cual nos regresa el número de elementos que existen en la matriz. Esto es especialmente útil porque existen un par de atributos que permiten redefinir los nombres de las columnas `colnames()` y renglones `rownames()` de una matriz.
+
+```R
+colnames(v)<-c("columna_1","columna_2")
+rownames(v)<-c("r1","r2")
+```
+
+**Operaciones con matrices**
+
+De manera similar a los vectores, los operadores aritméticos (`+`, `-`, `*`, `/`, `^`, ... )funcionan elemento por elemento, reciclando si es necesario. No obstante, existen operaciones del algebra lineal que se pueden realizar como el producto de matrices que se pueden realizar con el operador `%*%`. Así se pueden multiplicar  una matriz $$A$$ de dimensiones $$m$$ renglones y $$n$$ columnas, con una matriz $$B$$  de dimensiones $$n$$ columnas y $$p$$ renglones para obtener una matriz $$C$$ con dimensiones $$m$$ columnas y $$p$$ renglones:
+
+\\[A := (a_{ij})_{m \times n}; B := (b_{ij})_{n \times p} \\]
+
+\\[C = A \times B := (c_{ij})_{m \times p}\\]
+
+\\[ c_{ij} = \sum^{n}_{r=1}a_{ir}b_{rj}\\]
+
+lo cual se puede ver en este diagrama:
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Matrix_multiplication_diagram.svg/240px-Matrix_multiplication_diagram.svg.png)
+
+
+
+
+
+
+
 
 
 #### Dataframes
