@@ -171,6 +171,8 @@ A continuación se presenta una tabla de los operadores de texto
 | `not in` | No está contenido en |
 | `%` | Realizar formateo especial* |
 
+Se puede apreciar el funcionamiento de los operadores a continuación:
+
 ```python
 var = 'Hola '*3 + 'Solaria'
 var
@@ -178,6 +180,9 @@ var
 ```
 'Hola Hola Hola Solaria'
 ```
+
+Otro ejemplo:
+
 ```python
 'sol' not in var
 ```
@@ -201,7 +206,6 @@ por ejemplo:
 
 ```python
 "Hola %s, te presento unos ejemplos %c %i %o %x %e %f" % ("Solaria",36,34.5,16,14,3.1453,1/3)var = 'Hola '*3 + 'Solaria'
-'sol' not in var
 ```
 ```
 'Hola Solaria, te presento unos ejemplos $ 34 20 e 3.145300e+00 0.333333'
@@ -232,7 +236,7 @@ texto2='Esto es otro texto'
 texto3="""Holi
 caracoli"""
 
-###
+# definicion explicita
 texto4=str(54)
 ```
 
