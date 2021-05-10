@@ -217,7 +217,7 @@ entonces podemos calcular el estadístico así:
 t = (x_bar - mu_0) / (s / sqrt(n))
 ```
 
-Bajo la hipótesis nula el estadístico se distribuye como una distribución $$t$$ con $$n-1$$ grados de libertad por lo tanto, para completar la prueba es necesario computar el _valor-p_, entonces necesitamos el área bajo la curva a la izquierda del valor de `t` para una distribución $$t$$ con `n` grados de libertad. Esto lo obtenemos mediante:
+Bajo la hipótesis nula el estadístico se distribuye como una distribución $$t$$ con $$n-1$$ grados de libertad por lo tanto, para completar la prueba es necesario computar el _valor-p_, entonces necesitamos el área bajo la curva a la izquierda del valor de `t` para una distribución $$t$$ con `n-1` grados de libertad. Esto lo obtenemos mediante:
 
 ```R
 pt(t, df = n-1)
@@ -241,7 +241,7 @@ Así, nosotros suministramos a `R` con $$\mu$$, $$H_{1}$$ y el intervalo de conf
 
 Suponiendo que tenemos dos muestras de genes que pertenecen a 2 vías diferentes en la misma condición $$x_{i} \sim N(\mu_{x},\sigma^{2})$$ e $$y_{i} \sim N(\mu_{y},\sigma^{2})$$.
 
-Nosotros queremos probar $$H_{0}: \mu_{x} - \mu_{y} = \mu_{0}$$ contra $$H_{1}: \mu_{x} - \mu_{y} \not = \mu_{0}$$, asumiendo que $$\sigma$$ es desconocido podemos usar el estadístico $t$ de Student de dos muestras:
+Nosotros queremos probar $$H_{0}: \mu_{x} - \mu_{y} = \mu_{0}$$ contra $$H_{1}: \mu_{x} - \mu_{y} \not = \mu_{0}$$, asumiendo que $$\sigma$$ es desconocido podemos usar el estadístico $$t$$ de Student de dos muestras:
 
 \\[t = \frac{(\bar x - \bar y) - \mu_{0}}{s_{p}\sqrt{\frac{1}{n} + \frac{1}{m}}} \sim t_{n+m-2}\\],
 
