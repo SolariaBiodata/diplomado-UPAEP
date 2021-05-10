@@ -69,7 +69,7 @@ Los histogramas son una forma efectiva de visualizar cómo es que los datos se d
 hist(mpg$cty)
 ```
 
-![]()
+![](https://drive.google.com/uc?id=1hRzlS4nSSG_WGPO88_hMKaeqLDngr4G5&export=download)
 
 **Diagramas de caja _boxplot_**
 
@@ -79,7 +79,7 @@ Los _boxplot_ ayudan a comparar la dispersión entre diferentes grupos de datos 
 boxplot(mpg$hwy)
 ```
 
-![]()
+![](https://drive.google.com/uc?id=1GjNSCm6UuIbxc8zj9CLFzF9z5qdX4nzM&export=download)
 
 Al generar la gráfica resaltan los cuartiles `1`, `2` (_mediana_) y `3`, los cuales representan la _caja_. Por otro lado, existen los _bigotes_ los cuales se extienden hasta máximo $$1.5$$ veces el _rango intercuartil_ o el valor más extremo si se encuentra en ese rango, en caso de que existan valores extremos (_outliers_) se muestran los puntos correspondientes.
 
@@ -137,7 +137,7 @@ En este caso esos prefijos se pueden combinar con los siguientes sufijos para ge
 | `f` | $$F$$ de Fisher  |
 | `chisq` | $$\chi^{2}$$  |
 
-Entonces por ejemplo, asumamos que usamos una variable aleatoria $X$  que se distribuye de manera **normal** $$N( \mu=4, \sigma^{2}=16)$$, donde $$\mu$$ es el valor de la media, y $$\sigma^{2}$$ es la varianza, para obtener $$P(X<=5)$$ _la probabilidad de que un valor $$X$$ sea menor a $$5$$_ dada una distribución _normal_ podemos usar:
+Entonces por ejemplo, asumamos que usamos una variable aleatoria $$X$$  que se distribuye de manera **normal** $$N( \mu=4, \sigma^{2}=16)$$, donde $$\mu$$ es el valor de la media, y $$\sigma^{2}$$ es la varianza, para obtener $$P(X<=5)$$ _la probabilidad de que un valor $$X$$ sea menor a $$5$$_ dada una distribución _normal_ podemos usar:
 
 ```R
 pnorm(q=5, mean=4, sd = 4)
