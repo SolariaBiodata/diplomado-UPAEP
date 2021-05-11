@@ -281,7 +281,9 @@ Una pregunta importante es ¿Cuál es la probabilidad de tener al menos un error
 
 \\[P(X=0) = \binom{m}{x} p^{x}q^{m-x}\\]
 
-$$1 - (\binom{6}{0} 0.05^{0} 0.95^{6-0}) = 1 - 0.95^{6} \approx 1 - 0.7351 \approx 0.2649 $$
+Recordemos que $$p$$ representa a la _probabilidad de éxito_ en una binomial, y $$q$$ la de fracaso. Entonces en este caso $$p= \alpha = 0.05$$ por lo tanto $$$q= 1-p = 0.95$, por lo que:
+
+$$P(X \ge 1) = 1 - (\binom{6}{0} \cdot 0.05^{0} \cdot 0.95^{6-0}) = 1 - (1 \ cdot 1 \cdot (0.95^{6})) \approx 1 - 0.7351 \approx 0.2649 $$
 
 lo cual se puede implementar:
 
