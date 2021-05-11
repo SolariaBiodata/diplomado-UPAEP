@@ -256,6 +256,71 @@ y=c(64, 72, 60, 76, 72, 80, 84, 68)
 t.test(x,y, alternative = c("greater"), var.equal = TRUE)
 ```
 
+#### Múltiples pruebas
+
+Supongamos que queremos probar que varias ($$n$$) muestras son tomadas en un experimento y queremos comparar todas ellas para probar que hay alguna muestra que es diferente. Nosotros podemos intentar generar multiples testeos $$m = \binom{n}{2}$$ utilizando un $$\alpha = 0.95$$.
+
+\\[\binom{n}{2}=\frac{n!}{(2!)(n-2!)}\\]
+
+Asumamos que $$n=4$$ como ejemplo:
+
+\\[\binom{4}{2}=\frac{4!}{(2!)(2!)} = \frac{4 \cdot 3 \cdot 2 \cdot 1}{(2)\cdot(2)}= \frac{24}{4} = 6\\]
+
+Lo cual puede ser muy fácilmente implementado en `R`:
+
+```R
+n<-4
+m<-choose(n,2)
+m
+```
+```
+6
+```
+
+Una pregunta importante es ¿Cuál es la probabilidad de tener al menos un error tipo I en todas las pruebas? $$P(X \ge 1) = 1 - P(X=0)$$ Lo cual está descrito por una distribución de probabilidad binomial:
+
+\\[P(X=0) = \binom{m}{x} p^{x}q^{m-x}\\]
+
+$$1 - (\binom{6}{0} 0.05^{0} 0.95^{6-0}) = 1 - 0.95^{6} \approx 1 - 0.7351 \approx 0.2649 $$
+
+lo cual se puede implementar:
+
+```R
+1 - choose(m,0)*(0.05^0)*(0.95^(m-0))
+```
+```
+0.264908109375
+```
+
+Como se puede observar la _probabilidad_ de tener un **error de tipo I** aumenta considerablemente cuando hacemos más pruebas. Es por eso que existen algunos métodos para disminuir el efecto al hacer el multitesting. Uno de esos métodos es conocido como la _corrección de Bonferroni_ la cual implica generar un nuevo nivel de confianza $$\alpha^{\prime}=\alpha/m$$. De esta manera el umbral de significancia que queremos obtener sobre todas las pruebas tiene que pasar pruebas más fuertes para ser consideradas como significativas.
+
+Un ejemplo sería usar un set de datos `PlantGrowth` procedente de `tidyverse`:
+
+```
+library(tidyverse)
+data("PlantGrowth")
+head(PlantGrowth)
+```
+
+Con este ejemplo podemos generar una serie de pruebas grupo a grupo:
+
+```R
+pairwise.t.test(PlantGrowth$weight,PlantGrowth$group, p.adj="bonf")
+```
+
+```
+	Pairwise comparisons using t tests with pooled SD 
+
+data:  PlantGrowth$weight and PlantGrowth$group 
+
+     ctrl  trt1 
+trt1 0.583 -    
+trt2 0.263 0.013
+
+P value adjustment method: bonferroni 
+```
+
+
 [Menú Principal](./)
 
 [Atras](./tidyverseR)
