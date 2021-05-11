@@ -49,6 +49,57 @@ Bienvenido a nuestro 1er Diplomado en "Bioinformática y Docking" en colaboraci�
 
 #### [Dataframes](./estructurasR#data-frames)
 
+### [Principios de Python](./principiosPython)
+
+#### [Operadores](./principiosPython#operadores)
+
+#### [Variables](./principiosPython#variables)
+
+### [Estructuras de Python](./estructurasPython)
+
+#### [Datos unidimensionales](./testructurasPython#datos-unidimensionales)
+
+#### [Datos multidimensionales](./estructurasPython#datos-multidimensionales)
+
+#### [DataFrames](./estructurasPython#dataframes)
+
+### [Tidyverse](./tidyverseR)
+
+#### [ggplot2](./tidyverseR#ggplot2)
+
+#### [tibble](./tidyverseR#tibble)
+
+#### [dplyr](./tidyverseR#dplyr)
+
+#### [tidyr](./tidyverseR#tidyr)
+
+#### [readr](./tidyverseR#readr)
+
+#### [purrr](./tidyverseR#purrr)
+
+#### [stringr](./tidyverseR#stringr)
+
+#### [forcats](./tidyverseR#forcats)
+
+#### [Paquetes fuera del núcleo](./tidyverseR#paquetes-fuera-del-núcleo)
+
+### [Estadística con R](./estadisticaR)
+
+#### [Mediciones generales](./estadisticaR#mediciones-generales)
+
+#### [Gráficas básicas de exploración](./estadisticaR#gráficas-basicas-de-exploración)
+
+#### [Probabilidad](./estadisticaR#probabilidad)
+
+#### [Pruebas de hiótesis](./estadisticaR#pruebas-de-hipótesis)
+
+#### [Prueba de una muestra](./estadisticaR#prueba-de-una-muestra)
+
+#### [Prueba con dos muestras](./estadisticaR#prueba-con-dos-muestras)
+
+#### [Múltiples pruebas](./estadisticaR#múltiples-pruebas)
+
+
 
 
 
