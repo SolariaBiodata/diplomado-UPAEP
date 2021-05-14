@@ -33,4 +33,7 @@ Bienvenido a nuestro 1er Diplomado en "Bioinformática y Docking" en colaboraci�
 ## [Lenguajes de Programación](./modulo02_PythonR/)
 
 
+## [Bioinformática](./modulo03_bioinfo/)
+
+
 
