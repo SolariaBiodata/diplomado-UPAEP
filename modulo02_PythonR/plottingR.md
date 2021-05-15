@@ -8,9 +8,6 @@ usemathjax: true
 
 ### Generación de gráficas
 
-<img src="https://soka.gitlab.io/blog/post/2019-10-06-r-tidyverse-intro/images/hex-tidyverse.png" width=150 align=right>
-<br>
-
 Una de las grandes ventajas que ofrece `R` es la posibilidad de generar gráficas con una gran versatilidad de funciones. Esto se debe a que el propósito original del lenguaje es ofrecer métodos para el análisis de datos, y una parte esencial del análisis de datos recae en la visualización de los mismos.
 
 
