@@ -99,6 +99,13 @@ Bienvenido a nuestro 1er Diplomado en "Bioinformática y Docking" en colaboraci�
 
 #### [Múltiples pruebas](./estadisticaR#múltiples-pruebas)
 
+### [Gráficas](./plottingR)
+
+#### [Gráficos básicos](./plottingR#gráficas-básicas)
+
+#### [Ajustes de graficación](./plottingR#ajustes-generales-de-graficación)
+
+#### [Colores](./plottingR#colores)
 
 
 
