@@ -8,38 +8,19 @@ usemathjax: true
 
 ### Plotly
 
-#### R
-
-img src="https://plotly.com/all_static/images/plotly_graphing_libraries_1.png" width=150 align=right>
+<img src="https://plotly.com/all_static/images/plotly_graphing_libraries_1.png" width=150 align=right>
 <br>
 <br><br>
 
-Hacer gráficas es una de las herramientas más poderosas para comunicar características importantes de un análisis de datos. No obstante la visualización de datos va un paso más adelante con la posibilidad de interaccionar directamente con un gráfico para obtener alguna clase de información clave. [Plotly](https://plotly.com/) es un paquete de visualización de datos que permite a `R` generar gráficos interactivos. Este paquete de hecho es una biblioteca multiplataforma (también corre en `python`) y su desarrollo es de libre acceso y distribución. Lo cual provee de una serie de herramientas para obtener ayuda de la comunidad ([foro](https://community.plotly.com/), [página para reportar problemas](https://github.com/ropensci/plotly/issues))
+Hacer gráficas es una de las herramientas más poderosas para comunicar características importantes de un análisis de datos. No obstante la visualización de datos va un paso más adelante con la posibilidad de interaccionar directamente con un gráfico para obtener alguna clase de información clave. [Plotly](https://plotly.com/) es un paquete de visualización de datos que permite generar gráficos interactivos. Este paquete de hecho es una biblioteca multiplataforma (corre en `python` y en `R`) y su desarrollo es de libre acceso y distribución. Lo cual provee de una serie de herramientas para obtener ayuda de la comunidad ([foro](https://community.plotly.com/), [página para reportar problemas](https://github.com/ropensci/plotly/issues))
 
 Plotly está construído a partir de `javascript`, un lenguaje de programación ampliamente usado por la comunidad de desarrollo de aplicaciones web. Como resultado de la implementación de `plotly` se pueden obtener gráficos interactivos los cuales se pueden embeber nativamente en aplicaciones web 🌐 (como colab, jupyter, rstudio, spyder, etc).
 
-`plotly` puede ser instalado muy fácilmente ya que se encuentra disponible en el CRAN.
-
-```R
-install.packages("plotly")
-library(plotly)
-```
-
-Plotly sigue una sintáxis muy similar a la que se implementa con otros paquetes de `R`:
-
-```R
-fig <- plot_ly(midwest, x = ~percollege, color = ~state, type = "box")
-fig
-```
-
-
-
-
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="starwars.html" height="525" width="100%"></iframe>
 
 #### Python
 
-[Plotly](https://plotly.com/) es un paquete multiplataforma (también está disponible para `R`) el cual tiene como objetivo implementar diversos métodos de visualización de datos. 
+Plotly puede ser instalado de manera sencilla utilizando `pip install plotly`, sin embargo también es posible instalarlo desde el manejador de conda. Una vez que se ha instalado solo es necesario importar la librería `plotly.express`:
+
 
 ```python
 import os
@@ -56,8 +37,7 @@ from Bio.Blast import NCBIWWW
 from Bio.Data import CodonTable
 ```
 
-
-Una vez que se ha importado plotly, podemos generar diversos tipos de gráficas:
+Una vez que se ha importado `plotly`, podemos generar diversos tipos de gráficas:
 
 ```python
 fig = px.line(y=[7,-4,30],x=["s","b","d"], title="Plotly inicial de Solaria")
@@ -90,8 +70,7 @@ Figure({
 fig.show
 ```
 
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="starwars.html" height="525" width="100%"></iframe>
-
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="example_pxline.html" height="525" width="100%"></iframe>
 
 **Ejercicio con blast**
 
@@ -127,6 +106,8 @@ fig=px.histogram(x=xevalue)
 fig.show()
 ```
 
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="example_xevalues_hist.html" height="525" width="100%"></iframe>
+
 
 Se hace lo mismo con las longitudes de todos los _hits_:
 
@@ -138,12 +119,18 @@ fig=px.histogram(x=xlengths)
 fig.show()
 ```
 
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="example_xlengths_hist.html" height="525" width="100%"></iframe>
+
+
 Con dos variables numéricas es viable hacer un diagrama de dispersión (_scatter plot_)
 
 ```python
 fig=px.scatter(x=xevalue,y=xlengths)
 fig.show()
 ```
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="example_xl_xev_scatter.html" height="525" width="100%"></iframe>
+
 
 Ahora se usa `numpy` y `pandas` para automatizar el análisis y usando otra variable con los `bitscore`:
 
@@ -167,6 +154,9 @@ fig=px.scatter_3d(blastMetrics,x='bitscore',y='evalue',z='longitud')
 fig.show()
 ```
 
+
+
+
 Y se puede generar una versión filtrada:
 
 
@@ -175,11 +165,51 @@ fig=px.scatter_3d(blastMetrics.loc[blastMetrics['bitscore']>1000],x='bitscore',y
 fig.show()
 ```
 
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="example_scatter3d.html" height="525" width="100%"></iframe>
+
+#### R
+
+`plotly` puede ser instalado muy fácilmente ya que se encuentra disponible en el CRAN.
+
+```R
+install.packages("plotly")
+library(plotly)
+```
+
+Plotly sigue una sintáxis muy similar a la que se implementa con otros paquetes de `R`:
+
+```R
+fig <- plot_ly(midwest, x = ~percollege, color = ~state, type = "box")
+fig
+```
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="violinStatesMidwest.html" height="525" width="100%"></iframe>
+
+Una gran ventaja recae en la adaptabilidad sencilla para generar visualizaciones interactivas del paquete `ggplot2`:
+
+```R
+starwars %>% 
+    select(name, height, mass, birth_year,species) %>% 
+    mutate(bmi=mass/height^2) %>% 
+    ggplot(., aes(x=mass, y=height, color=species, size=bmi, text=name)) + 
+        geom_point() -> p
+ggplotly(p)
+```
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="ggplotlySW.html" height="525" width="100%"></iframe>
 
 
+Agregar información en las etiquetas dinámicas se puede hacer al agregar `layer`s a las gráficas:
 
+```R
+starwars %>% select(name, height, mass, birth_year,species) %>% mutate(bmi=mass/height^2) -> swbmi
+fig<-plot_ly(swbmi, x=~mass, y=~height, z=~birth_year, color=~bmi, text=~species, text2=~name)
+fig %>% layout( tittle=~text)
+```
 
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="starwars.html" height="525" width="100%"></iframe>
 
+😄
 
 [Menú Principal](./)
 
