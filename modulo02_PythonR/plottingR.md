@@ -59,7 +59,7 @@ algunos parámetros con los cuales podemos ajustar la visualización de los dato
   - un solo número que indica el número de barras que se requieren
   - una función para calcular el número de barras que se requieren
   - una clave de tipo `character` que indica el método de visualización, por defecto es `"pretty"`
- - `freq` por defecto es `TRUE`, por lo cual el eje $y$ está en función de la frecuencia, y por tanto, de los conteos de los valores, en cambio con `FALSE` se usa la función de densidad, por lo cual la suma de todas las alturas de las barras en el gráfico debe ser `1`.
+ - `freq` por defecto es `TRUE`, por lo cual el eje $$y$$ está en función de la frecuencia, y por tanto, de los conteos de los valores, en cambio con `FALSE` se usa la función de densidad, por lo cual la suma de todas las alturas de las barras en el gráfico debe ser `1`.
 
 
 ```R
@@ -76,8 +76,8 @@ hist(rnorm(100), breaks=30, freq=FALSE)
 Los diagramas de cajas y bigotes permiten revisar algunos parámetros importantes de la distribución de los datos en una dimensión. Dichos elementos son:
 
 - La mediana de los datos (la línea más llamativa al centro de la gráfica).
-- Los cuartiles $1$ y $3$ que delimitan el rectángulo de la _caja_.
-- Los _bigotes_ representan valores que se encuentran hasta máximo $1.5$ veces el rango intercuartiles (hacia abajo del cuartil $1$ y hacia arriba del cuartil $3$) o si no hay valores que llegen hasta ese rango, los valores _máximo_ o _mínimo_ respectivamente.
+- Los cuartiles $$1$$ y $$3$$ que delimitan el rectángulo de la _caja_.
+- Los _bigotes_ representan valores que se encuentran hasta máximo $$1.5$$ veces el rango intercuartiles (hacia abajo del cuartil $$1$$ y hacia arriba del cuartil $$3$$) o si no hay valores que llegen hasta ese rango, los valores _máximo_ o _mínimo_ respectivamente.
 - Los valores extremos _outliers_ son los puntos que se aprecian más allá del rango de los _bigotes_.
 
 Para llamar a la función de graficación se utiliza `boxplot()`:
@@ -174,18 +174,18 @@ Por otro lado, están algunos parámetros que suelen utilizarse para proveer de 
 | Parámetro | Descripción | Valor por defecto | Información adicional |
 |--|--|--|--|
 | `main` | Se define un título para la gráfica | `NULL` | Se usa un valor de tipo `character` |
-| `xlab` | Se define una etiqueta para el eje $x$ | Descripción de la variable | Se usa un valor de tipo `character` |
-| `ylab` | SSe define una etiqueta para el eje $y$ | Descripción de la variable | Se usa un valor de tipo `character` |
+| `xlab` | Se define una etiqueta para el eje $$x$$ | Descripción de la variable | Se usa un valor de tipo `character` |
+| `ylab` | SSe define una etiqueta para el eje $$y$$ | Descripción de la variable | Se usa un valor de tipo `character` |
 | `type` | Se usa para modificar el tipo de representación de los datos en el gráfico. | Depende de la función | `p` ➡️ puntos, `l` ➡️ líneas, `b` ➡️ puntos y líneas, `c` ➡️ puntos vacíos y líneas, `n` ➡️ no genera ni puntos ni líneas |
-| `xlim` | Se define a través de un vector con dos valores los límites de graficación en el eje $x$ | `NULL` | Por defecto se usa el rango de los valores en el eje $x$ |
-| `ylim` | Se define a través de un vector con dos valores los límites de graficación en el eje $y$ | `NULL` | Por defecto se usa el rango de los valores en el eje $y$ |
+| `xlim` | Se define a través de un vector con dos valores los límites de graficación en el eje $$x$$ | `NULL` | Por defecto se usa el rango de los valores en el eje $$x$$ |
+| `ylim` | Se define a través de un vector con dos valores los límites de graficación en el eje $$y$$ | `NULL` | Por defecto se usa el rango de los valores en el eje $$y$$ |
 
 #### Colores
 
 En `R` hay diversas maneras de representar colores,
 
 - Mediante claves que representan ciertos colores p. e. `"red"`, `"blue"`, [etc](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf).
-- Mediante _códigos hexadecimales de color_ p. e. `"#FFFFFF"` o `"#FF3300"`. En este caso los códigos hexadecimales representan el triplete de valores de los colores primarios aditivos _Red_ _Green_ _Blue_ que se desean incorporar en el color. El `#` representa la conversión hexadécimal (la cual se compone de 16 símbolos: `0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `A`, `B`, `C`, `D`, `E` y `F`). Estos se combinan en parejas para generar hasta $256$ diferentes saturaciones de cada uno de los tres componentes (**rojo** para los primeros $2$ caracteres, **verde** para los siguientes $2$ caracteres y **azul** para la última pareja de caracteres).
+- Mediante _códigos hexadecimales de color_ p. e. `"#FFFFFF"` o `"#FF3300"`. En este caso los códigos hexadecimales representan el triplete de valores de los colores primarios aditivos _Red_ _Green_ _Blue_ que se desean incorporar en el color. El `#` representa la conversión hexadécimal (la cual se compone de $$16$$ símbolos: `0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `A`, `B`, `C`, `D`, `E` y `F`). Estos se combinan en parejas para generar hasta $$256$$ diferentes saturaciones de cada uno de los tres componentes (**rojo** para los primeros 2 caracteres, **verde** para los siguientes 2 caracteres y **azul** para la última pareja de caracteres).
 - Mediante la función `rgb()`, la cual requiere de un vector de 4 valores numéricos con valores entre `0-1`, los tres primeros valores corresponden a los valores de saturación de los colores aditivos primarios, el cuarto valor se conoce como valor de transparencia `alpha`, el cual cuando es `1` se genera un color totalmente sólido, en cambio el valor de `0` genera un color totalmente transparente.
 
 
