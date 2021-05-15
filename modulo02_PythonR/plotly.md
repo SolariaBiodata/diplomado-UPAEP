@@ -211,7 +211,7 @@ fig %>% layout( tittle=~text)
 
 [Menú Principal](./)
 
-[Atras R](./estadisticaR)
+[Atras R](./plottingR)
 
 [Atras Python](./estructurasPython)
 
