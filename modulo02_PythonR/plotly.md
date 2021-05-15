@@ -147,25 +147,23 @@ npxbits=np.array(xbits)
 blastMetrics=pd.DataFrame(np.hstack((npxbits[:,None],npxevalues[:,None],npxlengths[:,None])),columns=['bitscore','evalue','longitud'])
 ```
 
-Se genera un _scatter plot_ de 3 dimensiones:
+Se genera un _scatter plot_ de 3 dimensiones para visualizar cómo se relacionan las variables `bitscore`, `evalue` y `longitud`:
 
 ```python
 fig=px.scatter_3d(blastMetrics,x='bitscore',y='evalue',z='longitud')
 fig.show()
 ```
 
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="example_scatter3d.html" height="525" width="100%"></iframe>
 
-
-
-Y se puede generar una versión filtrada:
-
+Y se puede generar una versión filtrada aprovechando el método `loc` de los `data.frames` de `pandas`, así podemos visualizar los datos correspondientes a los mejores _hits_:
 
 ```python
 fig=px.scatter_3d(blastMetrics.loc[blastMetrics['bitscore']>1000],x='bitscore',y='evalue',z='longitud')
 fig.show()
 ```
 
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="example_scatter3d.html" height="525" width="100%"></iframe>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="example_scatter3df.html" height="525" width="100%"></iframe>
 
 #### R
 
@@ -213,6 +211,8 @@ fig %>% layout( tittle=~text)
 
 [Menú Principal](./)
 
-[Atras](./estadisticaR)
+[Atras R](./estadisticaR)
+
+[Atras Python](./estructurasPython)
 
 [Siguiente](./#)

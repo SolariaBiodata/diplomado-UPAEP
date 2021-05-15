@@ -215,4 +215,4 @@ plot(df, main="Prueba de Solaria", xlab="datos de la dimension 1", ylab="datos d
 
 [Atras](./estadisticaR)
 
-[Siguiente](./#)
+[Siguiente](./plotly)
