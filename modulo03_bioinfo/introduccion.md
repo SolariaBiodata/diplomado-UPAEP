@@ -21,14 +21,25 @@ Comoncemos a hablar del ADN. Existen 4 nucleótidos básicos que todos conocemos
 
 El primer paso para comenzar con prácticamente cualquier técnica de biología molecular que involucre ADN/ARN es la extracción de ácidos nucléicos. En la siguiente imágen se observa el procedimiento general
 
+
 ![image](https://drive.google.com/uc?export=view&id=1FINYhXWZtFog8BWDtaWSrTgPQQF9s5Q_)
 
 
 Siempre debemos tratar de obtener nuestro ADN/ARN lo más puro posible, podemos utilizar algún kit de extracción o los métodos tradicionales pero debemos tener cuidado con los famosos y nada deseables `Iinhibidores de reacción`
 
+
 ![image](https://drive.google.com/uc?export=view&id=1o-YGUwM1HZYX1yhJQECCMXtQI8KvnFel)
 
 
+Una forma de revisar cómo está la calidad de nuestro DNA, es con la relación 260/280, que es un indicador de pureza. Podemos utilizar un espectrofotómetro para realizar estas mediciones, el más conocido y práctico es el equipo `NanoDrop`.
+
+
+![image](https://drive.google.com/uc?export=view&id=1iURz_wn5XLZ0NcAH0s08ZmsibVIyA-46)
+
+
+Debemos también cuantificar nuestro ADN, para ello, es más recomendable utilizar un intercalante de doble cadena más que el valor que nos pueda dar el espectrofotómetro, ya que este podría estar sobreestimado por los nucleótidos libres o por algunos "contaminantes" como el fenol por ejemplo.  Uno de los equipos más conocidos y utilizados es el `Qubit`
+
+![image](https://drive.google.com/uc?export=view&id=1sVbAvGt9OuNYlks_teLmWp7FwjnpV6wI)
 
 
 
