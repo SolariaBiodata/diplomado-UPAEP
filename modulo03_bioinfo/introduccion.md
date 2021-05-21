@@ -11,9 +11,7 @@ usemathjax: true
 #### Técnicas de Biología Molecular
 
 
-| Python | R |
-|--|--|
-| [Libreta Python3](https://colab.research.google.com/notebook#create=true&language=python3) | [Libreta R](https://colab.research.google.com/notebook#create=true&language=r) |
+
 
 [Menú Principal](./)
 
