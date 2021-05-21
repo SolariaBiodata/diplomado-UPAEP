@@ -12,11 +12,11 @@ Bienvenidos a la Unidad 3  del 1er Diplomado de Bioinformática y Docking. En es
 
 #### Técnicas de Biología Molecular
 
-Se dice que la biolog+ia molecular, comienza el 25 de abril de 1953, también conocido como el Día Internacional del ADN, para conmemorar la propuesta de la estructura en doble hélice del ácido desoxirribonucleico, considerado uno de los hallazgos científicos más significativos del siglo XX y de mayor impacto en la humanidad.
+Se dice que la biología molecular, comienza el 25 de abril de 1953, también conocido como el Día Internacional del ADN, para conmemorar la propuesta de la estructura en doble hélice del ácido desoxirribonucleico, considerado uno de los hallazgos científicos más significativos del siglo XX y de mayor impacto en la humanidad.
 
 Comoncemos a hablar del ADN. Existen 4 nucleótidos básicos que todos conocemos: `Adenina, Timina, Citosina y Guanina` que están conformados por un grupo Tri-fosfato, una base nitrogenada y un azúcar, que puede ser ribosa (para ARN) o desoxiribosa (para ADN)
 
-
+![](https://drive.google.com/file/d/1Rry3T0NC2qAgKvs3aqr-hS_I10UP67n6/view?usp=sharing)
 
 
 [Menú Principal](./)
