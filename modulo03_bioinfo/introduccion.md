@@ -19,6 +19,17 @@ Comoncemos a hablar del ADN. Existen 4 nucleótidos básicos que todos conocemos
 ![image](https://drive.google.com/uc?export=view&id=1Rry3T0NC2qAgKvs3aqr-hS_I10UP67n6)
 
 
+El primer paso para comenzar con prácticamente cualquier técnica de biología molecular que involucre ADN/ARN es la extracción de ácidos nucléicos. En la siguiente imágen se observa el procedimiento general
+
+![image](https://drive.google.com/uc?export=view&id=1FINYhXWZtFog8BWDtaWSrTgPQQF9s5Q)
+
+
+Siempre debemos tratar de obtener nuestro ADN/ARN lo más puro posible, podemos utilizar algún kit de extracción o los métodos tradicionales pero debemos tener cuidado con los famosos y nada deseables `Iinhibidores de reacción`
+
+![image](https://drive.google.com/uc?export=view&id=1o-YGUwM1HZYX1yhJQECCMXtQI8KvnFel)
+
+
+
 
 
 [Menú Principal](./)
