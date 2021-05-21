@@ -6,7 +6,9 @@ usemathjax: true
 
 ## Bioinformática
 
-### Introducción a R y Python
+### Introducción a NGS
+
+#### Técnicas de Biología Molecular
 
 
 | Python | R |
