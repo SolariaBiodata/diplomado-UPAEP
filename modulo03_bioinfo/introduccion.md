@@ -16,7 +16,8 @@ Se dice que la biología molecular, comienza el 25 de abril de 1953, también co
 
 Comoncemos a hablar del ADN. Existen 4 nucleótidos básicos que todos conocemos: `Adenina, Timina, Citosina y Guanina` que están conformados por un grupo Tri-fosfato, una base nitrogenada y un azúcar, que puede ser ribosa (para ARN) o desoxiribosa (para ADN)
 
-![image](https://drive.google.com/uc?export=view&id=19PiVEKQfXr4dZKTnnFi15-aDBY989nKK)
+![image](https://drive.google.com/uc?export=view&id=1Rry3T0NC2qAgKvs3aqr-hS_I10UP67n6)
+
 
 
 
