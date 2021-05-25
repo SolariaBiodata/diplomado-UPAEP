@@ -46,4 +46,4 @@ Debemos también cuantificar nuestro _ADN_, para ello, es más recomendable util
 
 [Atras](#)
 
-[Siguiente](./basesDatos)
+[Siguiente](./archivosBioinfo)
