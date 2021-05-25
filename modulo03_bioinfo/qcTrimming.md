@@ -147,6 +147,6 @@ MINLEN:50
 
 [Menú Principal](./)
 
-[Atras](./introduccion)
+[Atras](./archivosBioinfo)
 
 [Siguiente](./#)
