@@ -129,7 +129,7 @@ El proceso de secuenciación nos permite conocer las secuencia de fragmentos de 
 
 La secuenciación se hace a través de moléculas biológicas, mismas que son propensas a errores. La medición de dichos errores se lleva a cabo por diferentes métodos, los cuales son dependientes de cada tecnología. Sin embargo, existe un estándar para el despliegue de dichas mediciones y se hace a través de lo que se conoce como métricas de calidad de la secuenciación.
 
-Para expresar la calidad de la asignación de bases es muy útil la _escala Phred_. La _escala Phred_ se generó para relacionar la probabilidad de asignar erroneamente un nucleótido $P$ mediante un valor de calidad $Q$.
+Para expresar la calidad de la asignación de bases es muy útil la _escala Phred_. La _escala Phred_ se generó para relacionar la probabilidad de asignar erroneamente un nucleótido $$P$$ mediante un valor de calidad $$Q$$.
 
 \\[Q = -\log_{10}P\\]
 
@@ -139,15 +139,15 @@ por lo tanto:
 
 Por lo que a continuación se plantea un esquema de como se relacionan estos valores:
 
-| $Q$ | $P$ |Precisión en la asignación|
+| $$Q$$ | $$P$$ |Precisión en la asignación|
 |--|--|--|
-| $10$ | 1 en 10 | 90% |
-| $20$ | 1 en 100 | 99% |
-| $30$ | 1 en 1,000 | 99.9% |
-| $40$ | 1 en 10,000 | 99.99% |
-| $50$ | 1 en 100,000 | 99.999% |
+| $$10$$ | 1 en 10 | 90% |
+| $$20$$ | 1 en 100 | 99% |
+| $$30$$ | 1 en 1,000 | 99.9% |
+| $$40$$ | 1 en 10,000 | 99.99% |
+| $$50$$ | 1 en 100,000 | 99.999% |
 
-Una forma de visualizar cómo se relacionan la precisión y el valor de calidad $Q$:
+Una forma de visualizar cómo se relacionan la precisión y el valor de calidad $$Q$$:
 
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="QvsPrecisionPhred.html" height="525" width="100%"></iframe>
 
@@ -155,7 +155,7 @@ Como se puede apreciar, una forma de representar la calidad en un archivo de tex
 
 ![TablaASCII](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/ASCII-Table.svg/1261px-ASCII-Table.svg.png)
 
-Como se puede observar, los primeros `31` caracteres corresponden a símbolos no imprimibles, por lo que no es viable usarlos en archivos de texto plano; el caracter ` ` tampoco es viable debido a que es un espacio en blanco que puede ser erroneamente interpretado. Debido a ello es una de las principales codificaciones de la escala Phred está basada en el número `33` esto significa que el caracter `33` que equivale a `!` corresponde al índice de calidad Phred $Q=1$. La codificación _Phred33_ corresponde a ese estilo de codificación de calidades, sin embargo a lo largo de la historia se han utilizado algunas cotras codificaciones:
+Como se puede observar, los primeros `31` caracteres corresponden a símbolos no imprimibles, por lo que no es viable usarlos en archivos de texto plano; el caracter ` ` tampoco es viable debido a que es un espacio en blanco que puede ser erroneamente interpretado. Debido a ello es una de las principales codificaciones de la escala Phred está basada en el número `33` esto significa que el caracter `33` que equivale a `!` corresponde al índice de calidad Phred $$Q=1$$. La codificación _Phred33_ corresponde a ese estilo de codificación de calidades, sin embargo a lo largo de la historia se han utilizado algunas cotras codificaciones:
 
 ![PhredCoding](https://bioinformaticsworkbook.org/introduction/assets/qualityscore.png)
 
