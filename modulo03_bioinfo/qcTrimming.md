@@ -6,7 +6,45 @@ usemathjax: true
 
 ## Bioinformática
 
-### Bases de datos 
+### Calidad de la secuenciación
+
+A pesar de que los equipos actuales de secuenciación prometen o despliegan secuencias que parecen de alta calidad, existen algunos factores que afectan la calidad del _llamado de bases_. Este es un proceso por el cual una señal de un equipo es transformada en una representación de un nucleótido en una secuencia. Cada tecnología se basa en diferentes propiedades y procesos biológicos que toman como base la lectura de una secuencia de nucleótidos. Este proceso es uno secuencial, en el que por cada paso se determinan dos cosas, la asignación de una base y la estimación de la probabilidad de error en la asignación.
+
+La probabilidad de cometer un error en la asignación de una base es un factor determinante en el proceso del llamado de base. La estimación de esta probabilidad se puede hacer gracias a herramientas de clasifiación. En estas se ha determinado modelos de ajuste con base en secuencias conocidas y diversos parámetros estandarizados. Los manufacturadores procesan estas secuencias en condiciones controladas para obtener información acerca de los valores esperados de diversos parámetros de medición. Con esta información se entrenan los modelos de ajuste con lo cual se definen estimadores que pueden ser usados como referencia en condiciones y con secuencias no estándar para predecir la probabilidad de error.
+
+Cada plataforma de secuenciación es susceptible de tener ciertos errores, sin embargo existen algunas características comunes que suelen modificar los parámetros de calidad. Estas características tienen diversos orígenes.
+
+**Desfase de la polimerización $$\phi$$** Este se debe a que la actividad enzimática de una polimerasa, y por tanto su rendimiento, influye en la velocidad de síntesis. Como las tecnologías de segunda generación se basan en la acumulación de señal para poder medirla, el rendimiento enzimático influye en la medición de señal.
+
+**Decaimiento de la señal $$\delta$$** En general, la probabilidad de error aumenta con respecto al tamaño de la lectura. La actividad enzimática y los homopolímeros influyen en la reducción de intensidad de la señal.
+
+**Aglomeraciones policlonales mixtas $$\mu$$** La presencia de distintos insertos en una misma fuente de señal reduce significativamente la calidad. En algunos casos es imposible para el algoritmo hacer el llamado de base. Este efecto se incrementa cuando existe una carga elevada de material genético en los instrumentos de medición.
+
+**Efecto frontera $$\omega$$** El ruido de fondo y la presencia de aglomeraciones policlonales reducen el área de fondo. Ello implica una disminución enla capacidad de realizar el llamado de base. En términos prácticos, se reduce la diferencia entre una señal real y la intensidad del fondo, por lo cual se dificulta la estimación correcta de los parámetros en el algoritmo de llamado de base.
+
+**Entrecruzamiento de señal $$\Sigma$$** La diferencia entre intensidad de fluoróforo puede ser indistinguible dependiendo del estado de calibración del equipo, la integridad de los reactivos, entre otros. El efecto se debe a que la señal para determinar la presencia de un fluoróforo coincide en cierto grado con la señal que pertenece a otro. 
+
+**Acumulación de fluoróforo $$\tau$$** Entre otros contaminantes, la intensidad de una señal se ve alterada en los últimos pasos de la reacción. La acumulación de fluoróforos eleva la intensidad del fondo.
+
+
+De estos factores revisados algunos de ellos son comunes a diferentes plataformas de secuenciación:
+
+| Factor | Illumina | IonTorrent | 454 | PacBio | Nanopore |
+|--|--|--|--|--|--|
+| $$\phi$$ | :x: | :x: | :x: | :x: |  |
+| $$\delta$$ | :x: | :x: | :x: | :x: | :x: |
+| $$\mu$$ | :x: | :x: | :x: | :x: | :x: |
+| $$\omega$$ | :x: |  | :x: |  |  |
+| $$\Sigma$$ | :x: |  | :x: |  |  |
+| $$\tau$$ | :x: | :x: | :x: |  |  |
+
+### Control de calidad
+
+
+
+
+
+
 
 En bioinformática es muy importante contar con fuentes de información estándar y confiable debido a que la reproducibilidad de los resultados es un aspecto indispensable en el análisis de datos biológicos. Por ese motivo diversos consorcios han unido esfuerzos para recopilar, almacenar y gestionar la información biológica en diferentes ámbitos. Estos han desarrollado diversos portales que contienen repositorios de información (coloquialmente llamados _bases de datos_).
 
