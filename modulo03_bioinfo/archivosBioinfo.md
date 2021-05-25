@@ -181,7 +181,36 @@ Como puede observarse, en este formato cada lectura de un fragmento se compone p
 
 Un archivo FASTQ contiene múltiples lecturas, sin embargo, para que sea válido, debe contener esas 4 líneas por cada una de las lecturas, por lo que una característica adicional es que contiene un número de líneas el cual es múltiplo de 4. 
 
+Los archivos FASTQ son el éstandar para manejar datos de secuenciación masiva. No obstante existen otros formatos que se adoptaron a través del uso de tecnologías diferentes de secuenciación. A continuación se describen algunos de esos formatos:
 
+| Formato | Descripción |
+|--|--|
+| **HDF5** | Este tipo de formato es muy usado en tecnologías de secuenciación de 3a generación, se compone de distintos archivos siendo el principal uno con extensión `.h5` |
+| **SFF** | Este formato era nativo de la plataforma 454, contiene la información de la señal que se obtiene con cada flujo, su extensión es `.sff` |
+| **SRA** | Es un formato binario que utiliza el [SRA](https://www.ncbi.nlm.nih.gov/sra) para almacenar datos de secuenciación crudos, se caracteriza por tener la extensión `.sra` |
+| **FASTA + QUAL** | Este estilo requiere de dos archivos conjugados, un archivo `.fasta` y un archivo `.qual`, el primero contiene la secuencia de las lecturas y el segundo la secuencia de asignación de calidades |
+| **BAM / SAM** | Son formatos de alineamiento de lecturas, sin embargo, si no se usa un genoma de referencia las lecturas se encuentran sin alinear, un archivo `.sam` es la versión de texto plano del alineamiento, en cambio un `.bam` es un archivo binario |
+
+![alt text](https://github.com/SolariaBiodata/curso-RNASeq/blob/master/resources/file_formats.png "Solaria Biodata: Nextgen Solutions")
+
+Existen algunos métodos que permiten convertir estos formatos al formato **fastq**
+
+1. Conversión de Formato HDF5 a FASTQ:
+```
+python bash5tools.py --inFile input.bas.h5 --outFilePref reads --outType fastq --readType subreads --minLength 500 --minReadScore 0.8
+```
+2. Conversión de Formato SFF a FASTQ:
+```
+cat input.sff | sff2fastq > reads.fastq
+```
+3. Conversión de Formato FASTAQUAL a FASTQ
+```
+fastaQual2fastq.pl input.fasta input.qual
+```
+4. Conversión de Formatos BAM/SAM a FASTQ
+```
+samtools fastq input.*am > reads.fastq
+```
 
 
 
