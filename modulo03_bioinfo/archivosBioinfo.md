@@ -191,7 +191,7 @@ Los archivos FASTQ son el éstandar para manejar datos de secuenciación masiva.
 | **FASTA + QUAL** | Este estilo requiere de dos archivos conjugados, un archivo `.fasta` y un archivo `.qual`, el primero contiene la secuencia de las lecturas y el segundo la secuencia de asignación de calidades |
 | **BAM / SAM** | Son formatos de alineamiento de lecturas, sin embargo, si no se usa un genoma de referencia las lecturas se encuentran sin alinear, un archivo `.sam` es la versión de texto plano del alineamiento, en cambio un `.bam` es un archivo binario |
 
-![alt text](https://github.com/SolariaBiodata/curso-RNASeq/blob/master/resources/file_formats.png "Solaria Biodata: Nextgen Solutions")
+![alt text](https://github.com/SolariaBiodata/curso-RNASeq/blob/master/resources/file_formats.png?raw=true "Solaria Biodata: Nextgen Solutions")
 
 Existen algunos métodos que permiten convertir estos formatos al formato **fastq**
 
