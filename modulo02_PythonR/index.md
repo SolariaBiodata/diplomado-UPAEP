@@ -107,7 +107,10 @@ Bienvenido a nuestro 1er Diplomado en "Bioinformática y Docking" en colaboraci�
 
 #### [Colores](./plottingR#colores)
 
+### [Gráficos dinámicos](./plotly)
 
+#### [Plotly Python] (./plotly#python)
 
+#### [Plotly R](./plotly#r)
 
 

@@ -200,7 +200,9 @@ ggplotly(p)
 Agregar información en las etiquetas dinámicas se puede hacer al agregar `layer`s a las gráficas:
 
 ```R
-starwars %>% select(name, height, mass, birth_year,species) %>% mutate(bmi=mass/height^2) -> swbmi
+starwars %>% 
+    select(name, height, mass, birth_year,species) %>% 
+    mutate(bmi=mass/height^2) -> swbmi
 fig<-plot_ly(swbmi, x=~mass, y=~height, z=~birth_year, color=~bmi, text=~species, text2=~name)
 fig %>% layout( tittle=~text)
 ```

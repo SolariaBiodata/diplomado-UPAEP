@@ -19,7 +19,10 @@ Bienvenido a nuestro 1er Diplomado en "Bioinformática y Docking" en colaboraci�
 
 ### [Introduccion](./introduccion)
 
-#### [R](./introduccion#)
+### [Bases de datos y archivos de bioinformática](./archivosBioinfo)
+
+### [Preprocesamiento de lecturas](./qcTrimming)
+
 
 
 

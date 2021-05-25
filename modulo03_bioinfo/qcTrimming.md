@@ -189,4 +189,4 @@ Un archivo FASTQ contiene múltiples lecturas, sin embargo, para que sea válido
 
 [Atras](./introduccion)
 
-[Siguiente](./qcTrimming)
+[Siguiente](./#)
