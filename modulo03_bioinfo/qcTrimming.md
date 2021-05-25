@@ -14,29 +14,29 @@ La probabilidad de cometer un error en la asignación de una base es un factor d
 
 Cada plataforma de secuenciación es susceptible de tener ciertos errores, sin embargo existen algunas características comunes que suelen modificar los parámetros de calidad. Estas características tienen diversos orígenes.
 
-**Desfase de la polimerización $$\phi$$** Este se debe a que la actividad enzimática de una polimerasa, y por tanto su rendimiento, influye en la velocidad de síntesis. Como las tecnologías de segunda generación se basan en la acumulación de señal para poder medirla, el rendimiento enzimático influye en la medición de señal.
+**Desfase de la polimerización ($$\phi$$)** Este se debe a que la actividad enzimática de una polimerasa, y por tanto su rendimiento, influye en la velocidad de síntesis. Como las tecnologías de segunda generación se basan en la acumulación de señal para poder medirla, el rendimiento enzimático influye en la medición de señal.
 
-**Decaimiento de la señal $$\delta$$** En general, la probabilidad de error aumenta con respecto al tamaño de la lectura. La actividad enzimática y los homopolímeros influyen en la reducción de intensidad de la señal.
+**Decaimiento de la señal ($$\delta$$)** En general, la probabilidad de error aumenta con respecto al tamaño de la lectura. La actividad enzimática y los homopolímeros influyen en la reducción de intensidad de la señal.
 
-**Aglomeraciones policlonales mixtas $$\mu$$** La presencia de distintos insertos en una misma fuente de señal reduce significativamente la calidad. En algunos casos es imposible para el algoritmo hacer el llamado de base. Este efecto se incrementa cuando existe una carga elevada de material genético en los instrumentos de medición.
+**Aglomeraciones policlonales mixtas ($$\mu$$)** La presencia de distintos insertos en una misma fuente de señal reduce significativamente la calidad. En algunos casos es imposible para el algoritmo hacer el llamado de base. Este efecto se incrementa cuando existe una carga elevada de material genético en los instrumentos de medición.
 
-**Efecto frontera $$\omega$$** El ruido de fondo y la presencia de aglomeraciones policlonales reducen el área de fondo. Ello implica una disminución enla capacidad de realizar el llamado de base. En términos prácticos, se reduce la diferencia entre una señal real y la intensidad del fondo, por lo cual se dificulta la estimación correcta de los parámetros en el algoritmo de llamado de base.
+**Efecto frontera ($$\omega$$)** El ruido de fondo y la presencia de aglomeraciones policlonales reducen el área de fondo. Ello implica una disminución enla capacidad de realizar el llamado de base. En términos prácticos, se reduce la diferencia entre una señal real y la intensidad del fondo, por lo cual se dificulta la estimación correcta de los parámetros en el algoritmo de llamado de base.
 
-**Entrecruzamiento de señal $$\Sigma$$** La diferencia entre intensidad de fluoróforo puede ser indistinguible dependiendo del estado de calibración del equipo, la integridad de los reactivos, entre otros. El efecto se debe a que la señal para determinar la presencia de un fluoróforo coincide en cierto grado con la señal que pertenece a otro. 
+**Entrecruzamiento de señal ($$\Sigma$$)** La diferencia entre intensidad de fluoróforo puede ser indistinguible dependiendo del estado de calibración del equipo, la integridad de los reactivos, entre otros. El efecto se debe a que la señal para determinar la presencia de un fluoróforo coincide en cierto grado con la señal que pertenece a otro. 
 
-**Acumulación de fluoróforo $$\tau$$** Entre otros contaminantes, la intensidad de una señal se ve alterada en los últimos pasos de la reacción. La acumulación de fluoróforos eleva la intensidad del fondo.
+**Acumulación de fluoróforo ($$\tau$$)** Entre otros contaminantes, la intensidad de una señal se ve alterada en los últimos pasos de la reacción. La acumulación de fluoróforos eleva la intensidad del fondo.
 
 
 De estos factores revisados algunos de ellos son comunes a diferentes plataformas de secuenciación:
 
 | Factor | Illumina | IonTorrent | 454 | PacBio | Nanopore |
 |--|--|--|--|--|--|
-| $$\phi$$ | :x: | :x: | :x: | :x: |  |
-| $$\delta$$ | :x: | :x: | :x: | :x: | :x: |
-| $$\mu$$ | :x: | :x: | :x: | :x: | :x: |
-| $$\omega$$ | :x: |  | :x: |  |  |
-| $$\Sigma$$ | :x: |  | :x: |  |  |
-| $$\tau$$ | :x: | :x: | :x: |  |  |
+| Desfase de la polimerización <br>**$$\phi$$** | :x: | :x: | :x: | :x: |  |
+| Decaimiento de la señal <br>**$$\delta$$** | :x: | :x: | :x: | :x: | :x: |
+| Aglomeraciones policlonales mixtas <br>**$$\mu$$** | :x: | :x: | :x: | :x: | :x: |
+| Efecto frontera <br>**$$\omega$$** | :x: |  | :x: |  |  |
+| Entrecruzamiento de señal <br>**$$\Sigma$$** | :x: |  | :x: |  |  |
+| Acumulación de fluoróforo <br>**$$\tau$$** | :x: | :x: | :x: |  |  |
 
 ### Control de calidad
 
