@@ -102,7 +102,7 @@ en este caso `adapters.fa` corresponde a la ruta de un archivo FASTA con una ser
 En este tipo de proceso se define un umbral de calidad. Este umbral es un criterio con el cual se evaluan todas las lecturas y si por algun motivo una lectura no alcanza dicho umbral, dicha lectura se depleta del análisis completo.
 
 ```
-fastq_quality_filter -q 30 -p 90 -i mislecturas.fastq -o mislecturas_noadapter.fastq 
+fastq_quality_filter -q 30 -p 90 -i mislecturas.fastq -o mislecturas_q30p90.fastq 
 ```
 
 en este ejemplo, `-q` sirve para asignar el punto mínimo de calidad que tienen que cumplir al menos `-p` proporción de bases en una lectura.
@@ -113,7 +113,11 @@ en este ejemplo, `-q` sirve para asignar el punto mínimo de calidad que tienen 
 A veces es fácil determinar mediante un criterio posicional de las lecturas el punto en el que la calidad de una corrida tiene una caida abrupta. En este tipo de situaciones puede convenir usar una estrategia de cortes fijos, con base en la calidad de las bases en diferentes posiciones.
 
 ```
-cutadapt -u 5 -o mislecturas_noadapter.fastq mislecturas.fastq 
+cutadapt -u 5 -o mislecturas_u5.fastq mislecturas.fastq 
+```
+
+```
+fastx_trimmer -f 9 -i mislecturas.fastq -o mislecturas_f9.fastq
 ```
 
 ```
