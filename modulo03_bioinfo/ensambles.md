@@ -39,13 +39,13 @@ TCTATATCTCGGCTCTAGG
     TATCTCGACTCTAGGCC
 ``` 
 
-en este caso el **sufijo** de $$a$$$ es similar al **prefijo** de $$b$$, tomando en cuenta que la similaridad es flexible, es decir, podemos aceptar coincidencias perdidas debido a que pueden existir diversas fuentes de variación.
+en este caso el **sufijo** de $$a$$ es similar al **prefijo** de $$b$$, tomando en cuenta que la similaridad es flexible, es decir, podemos aceptar coincidencias perdidas debido a que pueden existir diversas fuentes de variación.
 
 Existen diferentes métodos para recuperar ensambles _de novo_, a continuación se describen algunos criterios importantes:
 
 | Método | Fundamentos | Casos de uso |  Ejemplos de software |
 |--|--|--|--|
-| **OLC** | Construcción de grafos de sobrelapes <br> Refinamiento de los grafos <br> Generación de consensos | Funcionan mejor con lecturas largas | Celera Assembler, Newbler, Arachne, Canu |
+| **OLC** | - Construcción de grafos de sobrelapes <br> - Refinamiento de los grafos <br> - Generación de consensos | Funcionan mejor con lecturas largas | 1. Celera Assembler <br> 2. Newbler<br> 3. Arachne<br> 4. Canu |
 | **Gráficas de Bruijn** | Descomposición de lecturas en k-meros <br> Generación de gráficas de cobrelapes de k-meros <br> Implementación de la solución algorítmica para encontrar _ciclos Eulerianos_ | Se usan con lecturas de alta calidad, pueden ser lecturas cortas | Euler, Velvet, Spades, Abyss |
 
 **velvet**
@@ -67,6 +67,6 @@ velvetg ruta/salida/
 
 [Menú Principal](./)
 
-[Atras](./archivosBioinfo)
+[Atras](./qcTrimming)
 
 [Siguiente](./#)
