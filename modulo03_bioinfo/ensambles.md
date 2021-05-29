@@ -49,7 +49,7 @@ Existen diferentes métodos para recuperar ensambles _de novo_, a continuación 
 
 Los ensambles _de novo_ son procesos cuyo resultado final son secuencias largas con el ensamble de las lecturas. Estas secuencias son la representación de la secuencia contigua de los sobrelapes de las lecturas, mismas que son conocidas como **contig**. Debido a que son secuencias de nucleótidos la forma general de contener dicha información es a través de archivos en formato FASTA. En el mejor de los escenarios cada contig representa una molécula de DNA, es decir cromosomas, plásmidos u otras únidades básicas de replicación de ADN, sin embargo en la práctica algunos contigs son el resultado de la resolución de problemas derivados de secuencias repetidas a lo largo del genoma.
 
-A continuación se aportan ejemplos de uso de algunos ensambladores. Para ello asumiremos que tenemos una pareja de archivos con lecturas pareadas preprocesadas `mislecturas_R1.fastq` (las lecturae en el sentido _forward_) y `mislecturas_R2.fastq` (en sentido _reverse_) y que `ruta/salida/` corresponde a la ruta relativa del directorio que se desea crear.
+A continuación se aportan ejemplos de uso de algunos ensambladores. Para ello asumiremos que tenemos una pareja de archivos con lecturas pareadas preprocesadas `mislecturas_R1.fastq` (las lecturas en el sentido _forward_) y `mislecturas_R2.fastq` (en sentido _reverse_) y que `ruta/salida/` corresponde a la ruta relativa del directorio que se desea crear.
 
 **velvet**
 
@@ -92,10 +92,84 @@ Este tipo de procesamiento es habitual cuando se generan datos de resecuenciaci�
 
 En este tipo de procesamiento, se trata de inferir la posición de cada lectura con respecto a una secuencia de referencia. Debido a que estas inferencias se tienen que hacer lectura por lectura, esta clase de procesos suelen ser costosos computacionalmente. No obstante, este reto computacional ha derivado en un esquema actual que usan todos los métodos de alineamiento de lecturas, este esquema implica el preprocesamiento de la secuencia de referencia para obtener índices, los cuales sirven para eficientar el modo en el que se comparan cada una de las lecturas con el genoma de referencia.
 
-| Método de indexación | Ejemplos de software | Especificidad de resultados | Requerimiento de memoria |
+| Método de indexación | Ejemplos de software | Sensibilidad | Requerimiento de memoria |
 |--|--|--|--|
-| **Hashing** | 1. Smalt<br> 2. Maq<br> 3. NovoAlign | Alta | Alto |
-| **Transformada de _Burrows-Wheeler_** | 1. BWA<br> 2. Bowtie | Alta | Bajo |
+| **Hashing** | 1. Smalt<br> 2. Maq<br> 3. Novoalign | Alta | Alto |
+| **Transformada de _Burrows-Wheeler_** | 1. BWA<br> 2. Bowtie<br> 3. SOAP | Alta | Bajo |
+
+El proceso típicamente requiere un archivo en formato FASTA que contiene el genoma de referencia, asi como también de las lecturas preprocesadas. Como resultado se obtiene un archivo con extensión `.sam` el cual contiene el formato del alineamiento de secuencias (por sus siglas en inglés). Algunos archivos que pueden derivarse son los archivos con índices del genoma de referencia, los cuales pueden ser reutilizados con otras lecturas que se deseen alinear contra el mismo genoma de referencia.
+
+A continuación se dan ejemplos de uso de algunos mapeadores. En términos generales el procesamiento se basa en dos partes: la indexación de la referencia y el mapeo de las lecturas. Para ello asumiremos que tenemos una pareja de archivos con lecturas pareadas preprocesadas `mislecturas_R1.fastq` (las lecturas en el sentido _forward_) y `mislecturas_R2.fastq` (en sentido _reverse_) y que contamos con un genoma de referencia `referencia.fasta`. Además el resultado será un archivo `mapeo.sam`.
+
+**bowtie**
+
+Con `bowtie2` es necesario usar los índices a manera de referencia, en este caso se utiliza `ref` como cadena base para los archivos de los índices.
+
+```bash
+bowtie2-build referencia.fasta ref
+
+bowtie2 -x ref -1 mislecturas_R1.fastq -2 mislecturas_R2.fastq -S mapeo.sam
+```
+
+**bwa**
+
+```bash
+bwa index -p ref referencia.fasta
+
+bwa aln ref mislecturas_R1.fastq mislecturas_R2.fastq > mapeo.sam
+```
+
+**smalt**
+
+Para este caso se tiene que definir el tamaño de palabra $$k=14$$ y el espaciado de los hashes $$s=8$$ 
+
+```bash
+smalt index -k 14 -s 8 ref referencia.fasta
+
+smalt map -o mapeo.sam ref mislecturas_R1.fastq mislecturas_R2.fastq
+```
+
+### Formato SAM
+
+El formato que se obtiene en un mapeo a referencia es un archivo de texto que contiene la información del alineamiento, es decir, contiene las secuencias de las lecturas, y del genoma de referencia con información relacionada con cada alineamiento. Este formato tiene algunas [especificaciones](https://samtools.github.io/hts-specs/SAMv1.pdf) que lo hacen muy útil, ya que provee de información muy importante como la calidad de los alineamientos así como información acerca del tipo de alineamiento encontrado.
+
+Este formato consta de dos secciones importantes:
+
+ - **Encabezado** En esta sección se incluyen metadatos que pueden incluir información como la versión del formato, diccionario de la referencia, metadatos de grupos de lecturas, información de ejecución de los programas usados.
+ - **Alineamiento** Esta sección contiene la información que relaciona cada lectura con el mapeo contra la referencia, consta de 11 columnas obligatorias que se describen a continuación.
+
+
+| Columna | Campo | Tipo de dato | Descripción |
+|--|--|--|--|
+| $$1$$ | `QNAME` | Texto | Nombre de la lectura |
+| $$2$$ | `FLAG` | Entero | Representación decimal bit a bit de descripción del tipo de alineamiento |
+| $$3$$ | `RNAME` | Texto | Nombre del contig de referencia |
+| $$4$$ | `POS` | Entero | Posición de inicio de la lectura con respecto a la referencia |
+| $$5$$ | `MAPQ` | Entero | Calidad del mapeo |
+| $$6$$ | `CIGAR` | Texto | Cadena con información del mapeo en formato CIGAR |
+| $$7$$ | `RNEXT` | Texto | Nombre de la lectura pareada |
+| $$8$$ | `PNEXT` | Entero | Posición de inicio de la lectura pareada |
+| $$9$$ | `TLEN` | Entero | Longitud del inserto (distancia de mapeo de las lecturas pareadas) en la referencia |
+| $$10$$ | `SEQ` | Texto | Secuencia de nucleótidos de la lectura |
+| $$10$$ | `QUAL` | Texto | Secuencia de caracteres de calidad Phred33 de la lectura |
+
+Este tipo de archivos contiene practicamente toda la información de las lecturas en formato `fastq` con información adicional. Por esa razón este tipo de archivos consumen mucho espacio de almacenamiento, sin embargo existe una versión binaria del mismo formato conocido como `.bam`. Este formato contiene la misma información que un `.sam` sin embargo como los campos son almacenados en formato binario se requiere de menos espacio de almacenamiento para utilizarlos. Esto ha conducido a que una buena práctica es transformar los alineamientos a formato `.bam` ya que es mucho más fácil gestionar ese tipo de resultados.
+
+Para ello se requiere una herramienta que se conoce como `samtools`. Esta herramienta es un programa que permite realizar diversas operaciones con archivos `.sam` y `.bam`.
+
+```bash
+samtools view -bS -T referencia.fasta mapeo.sam > mapeo.bam
+```
+
+Otros procesos que suelen ser útiles para pasos posteriores de procesamiento consisten en realizar un ordenamiento de las lecturas y generar índices para agilizar la lectura del mapeo:
+
+
+```
+samtools sort mapeo.bam > mapeo_ordenado.bam
+
+samtools index mapeo_ordenado.bam
+```
+
 
 
 
