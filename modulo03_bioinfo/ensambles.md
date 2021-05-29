@@ -28,7 +28,7 @@ GGCGTCTATATCT
 GGCGTCTATATCTCGGCTCTAGGCCCTCATTTTT
 ```
 
-Así mismo, también otro concepto importante que implica alinear dos secuencias `TCTATATCTCGGCTCTAGG` ($$a$$) y `TATCTCGACTCTAGGCC` ($$b$$)
+Así mismo, también aparece otro concepto importante que implica alinear dos secuencias $$a$$ (`TCTATATCTCGGCTCTAGG`) y $$b$$ (`TATCTCGACTCTAGGCC`):
 
 ```
 TCTATATCTCGGCTCTAGG
@@ -42,8 +42,8 @@ Existen diferentes métodos para recuperar ensambles _de novo_, a continuación 
 
 | Método | Fundamentos | Casos de uso |  Ejemplos de software |
 |--|--|--|--|
-| **OLC** | * Construcción de grafos de sobrelapes <br> * Refinamiento de los grafos <br> * Generación de consensos | Funcionan mejor con lecturas largas | 1. Celera Assembler<br> 2. Newbler<br> 3. Arachne<br> 4. Canu |
-| **Gráficas _de Bruijn_** | * Descomposición de lecturas en k-meros <br> * Generación de gráficas de cobrelapes de k-meros <br> * Implementación de la solución algorítmica para encontrar _ciclos Eulerianos_ | Se usan con lecturas de alta calidad, pueden ser lecturas cortas | 1. Euler<br> 2. Velvet<br> 3. Spades<br> 4. Abyss |
+| **OLC** | * Construcción de grafos de sobrelapes <br> * Refinamiento de los grafos <br> * Generación de consensos | Funcionan mejor con<br> lecturas largas | 1. Celera Assembler<br> 2. Newbler<br> 3. Arachne<br> 4. Canu |
+| **Gráficas _de Bruijn_** | * Descomposición de lecturas en k-meros <br> * Generación de gráficas de cobrelapes de k-meros <br> * Implementación de la solución algorítmica para encontrar _ciclos Eulerianos_ | Se usan con lecturas<br> de alta calidad, pueden ser <br>lecturas cortas | 1. Euler<br> 2. Velvet<br> 3. Spades<br> 4. Abyss |
 
 Los ensambles _de novo_ son procesos cuyo resultado final son secuencias largas con el ensamble de las lecturas. Estas secuencias son la representación de la secuencia contigua de los sobrelapes de las lecturas, mismas que son conocidas como **contig**. Debido a que son secuencias de nucleótidos la forma general de contener dicha información es a través de archivos en formato FASTA. En el mejor de los escenarios cada contig representa una molécula de DNA, es decir cromosomas, plásmidos u otras únidades básicas de replicación de ADN, sin embargo en la práctica algunos contigs son el resultado de la resolución de problemas derivados de secuencias repetidas a lo largo del genoma.
 
