@@ -6,9 +6,11 @@ usemathjax: true
 
 ## Bioinformática
 
-### Ensambles _de novo_
+### Ensambles
 
 La secuenciación permite obtener el contenido de la secuencia de miles de lecturas. Estas son fragmentos provenientes de moléculas de DNA cuya función biológica está determinada por la completitud de la secuencia. Por lo tanto, uno de los procesos más importantes en la secuenciación consiste en la _reconstrucción_ de la secuencia original, es decir, de la molécula de orígen biológico que se fragmentó al incio del proceso. Los procesos que se orientan a resolver este problema se conocen como _ensambles_.
+
+### Ensamble _de novo_
 
 Un tipo particular de ensamble es el _de novo_, lo cual ímplica que la única información disponible para realizar el ensamble es la información de secuencia contenida en todas las lecturas. Un caso análogo al problema de armar un rompecabezas sin ninguna clase de guía.
 
@@ -84,7 +86,16 @@ En este ejemplo usamos el parámetro `genomeSize` para suministrar el tamaño es
 
 ### Ensambles guíados por referencia
 
-En este tipo de ensambles se cuenta con una secuencia conocida que sirve como guía para alinear las secuencias. Esta secuencia se usa como una referencia de las pocisiones originales en el genoma del cual se extrajeron los fragmentos secuenciados como lecturas. 
+En este tipo de ensambles se cuenta con una secuencia conocida que sirve como guía para alinear las secuencias. Esta secuencia se usa como una referencia de las pocisiones originales en el genoma del cual se extrajeron los fragmentos secuenciados como lecturas. La idea central consiste en _mapear_ la posición de cada lectura en un mapa genómico que consiste en la secuencia de referencia.
+
+Este tipo de procesamiento es habitual cuando se generan datos de resecuenciación, los cuales son el resultado de secuenciar un conjunto de individuos de una especie cuyo genoma está disponible como referencia. También se utiliza esta aproximación cuando se secuencía un organismo que está cercanamente relacionado a otro organismo que sí cuenta con un genoma de referencia. Asi mismo, es viable utilizar secuencias de una base de secuencias como referencia en algunos casos.
+
+En este tipo de procesamiento, se trata de inferir la posición de cada lectura con respecto a una secuencia de referencia. Debido a que estas inferencias se tienen que hacer lectura por lectura, esta clase de procesos suelen ser costosos computacionalmente. No obstante, este reto computacional ha derivado en un esquema actual que usan todos los métodos de alineamiento de lecturas, este esquema implica el preprocesamiento de la secuencia de referencia para obtener índices, los cuales sirven para eficientar el modo en el que se comparan cada una de las lecturas con el genoma de referencia.
+
+| Método de indexación | Ejemplos de software | Especificidad de resultados | Requerimiento de memoria |
+|--|--|--|--|
+| **Hashing** | 1. Smalt<br> 2. Maq<br> 3. NovoAlign | Alta | Alto |
+| **Transformada de _Burrows-Wheeler_** | 1. BWA<br> 2. Bowtie | Alta | Bajo |
 
 
 
