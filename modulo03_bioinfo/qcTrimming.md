@@ -153,4 +153,4 @@ MINLEN:50
 
 [Atras](./archivosBioinfo)
 
-[Siguiente](./#)
+[Siguiente](./ensambles)
