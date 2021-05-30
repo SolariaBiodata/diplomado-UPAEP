@@ -153,16 +153,17 @@ Este formato consta de dos secciones importantes:
 | $$10$$ | `SEQ` | Texto | Secuencia de nucleótidos de la lectura |
 | $$11$$ | `QUAL` | Texto | Secuencia de caracteres de calidad Phred33 de la lectura |
 
-Este tipo de archivos contiene practicamente toda la información de las lecturas en formato `fastq` con información adicional. Por esa razón este tipo de archivos consumen mucho espacio de almacenamiento, sin embargo existe una versión binaria del mismo formato conocido como `.bam`. Este formato contiene la misma información que un `.sam` sin embargo como los campos son almacenados en formato binario se requiere de menos espacio de almacenamiento para utilizarlos. Esto ha conducido a que una buena práctica es transformar los alineamientos a formato `.bam` ya que es mucho más fácil gestionar ese tipo de resultados.
+Este tipo de archivos contiene practicamente toda la información de las lecturas en formato `fastq` con información adicional. Por esa razón este tipo de archivos consumen mucho espacio de almacenamiento, sin embargo existe una versión binaria del mismo formato conocido como `.bam`. Este formato contiene la misma información que un `.sam` sin embargo como los campos son almacenados en formato binario se requiere de menos espacio de almacenamiento para utilizarlos. Esto ha conducido a que una buena práctica es transformar los alineamientos a formato `.bam` ya que es mucho más fácil gestionar ese tipo de resultados. Para ello se requiere una herramienta que se conoce como `samtools`. Esta herramienta es un programa que permite realizar diversas operaciones con archivos `.sam` y `.bam`.
 
-Para ello se requiere una herramienta que se conoce como `samtools`. Esta herramienta es un programa que permite realizar diversas operaciones con archivos `.sam` y `.bam`.
+Para hacer la conversión es necesario también generar un índice especial de samtools para el genoma de referencia para lo cual usamos el argumento `faidx`. Posteriormente podemos ejecutar la transformación a `.bam` usando el archivo `mapeo.sam` y la referencia indexada `referencia.fasta`.
 
 ```bash
+samtools faidx referencia.fasta
+
 samtools view -bS -T referencia.fasta mapeo.sam > mapeo.bam
 ```
 
 Otros procesos que suelen ser útiles para pasos posteriores de procesamiento consisten en realizar un ordenamiento de las lecturas y generar índices para agilizar la lectura del mapeo:
-
 
 ```
 samtools sort mapeo.bam > mapeo_ordenado.bam
@@ -172,6 +173,9 @@ samtools index mapeo_ordenado.bam
 
 Este procesamiento genera un archivo `mapeo_ordenado.bai` el cual en combinación con `mapeo_ordenado.bam` pueden ser usados en programas de visualización para inspeccionar manualmente los alineamientos obtenidos.
 
+Uno de los sofware de visualización `IGV` puede generar imágenes como esta:
+
+![](https://drive.google.com/uc?id=17YaQUPHwap-VtOQCqDKfv5HF4aCboAy3&export=download "Mapeo en IGV")
 
 
 
