@@ -85,6 +85,31 @@ canu -assemble -p mis_lecturas -d ruta/salida genomeSize=2.8m -pacbio-raw mis_le
 
 En este ejemplo usamos el parámetro `genomeSize` para suministrar el tamaño esperado aproximado del genoma a ensamblar, en este caso de 2.8 Mb. También se asume que se trata de lecturas crudas de PacBio.
 
+### Métricas del ensamble
+
+Los ensambles poseen propiedades que pueden medirse, entre estas propiedades se encuentran:
+
+ - Cantidad de contigs
+ - Contenido de GC
+ - Cantidad total de bases en las secuencias
+
+Sin embargo existen algunas otras características importantes que aportan información acerca de cómo se distribuyen algunas características de los contigs ensamblados:
+
+- Cantidad de contigs de tamaño superior a diversos valores, tipicamente se pueden usar `500`, `1000`, `5000`, `10000`
+- El tamaño del contig más largo
+- $$N50$$ representa al tamaño del contig en el que se alcanza la mitad del tamaño del ensamble cuando los contigs se ordenan por tamaños de manera descendente
+- $$L50$$ representa la cantidad de contigs necesarios para alcanzar la mitad del tamaño del ensamble cuando los contigs se ordenan por tamaños de manera descendente
+
+Todas estas métricas se pueden obtener estudiando el archivo `.fasta` que contiene a los contigs de un ensamble. No obstante, existen algunos programas como `quast.py` que permiten obtener reportes de manera muy sencilla. En el siguiente ejemplo se asume que contamos con un archivo `contigs.fasta` el cual es el resultado de algún metodo de enamble _de novo_. 
+
+```bash
+quast.py contigs.fasta
+```
+
+Este programa genera una carpeta `quast_results` en donde uno de los archivos resultantes corresponden a reportes en formato `.html` como el que se muestra a continuación:
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="qreport.html" height="525" width="100%"></iframe>
+
 
 ### Ensambles guíados por referencia
 
