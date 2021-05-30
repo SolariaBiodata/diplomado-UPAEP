@@ -108,7 +108,7 @@ quast.py contigs.fasta
 
 Este programa genera una carpeta `quast_results` en donde uno de los archivos resultantes corresponden a reportes en formato `.html` como el que se muestra a continuación:
 
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="qreport.html" height="525" width="100%"></iframe>
+<iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="qreport.html" height="525" width="100%"></iframe>
 
 
 ### Ensambles guíados por referencia
