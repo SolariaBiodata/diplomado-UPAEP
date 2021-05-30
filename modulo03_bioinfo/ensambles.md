@@ -57,6 +57,7 @@ Para implementar este software se requieren de dos programas `velveth` y `velvet
 
 ```bash
 velveth ruta/salida/ 31 -separate mislecturas_R1.fastq mislecturas_R2.fastq
+
 velvetg ruta/salida/
 ```
 
@@ -81,7 +82,6 @@ canu -assemble -p mis_lecturas -d ruta/salida genomeSize=2.8m -pacbio-raw mis_le
 ```
 
 En este ejemplo usamos el parámetro `genomeSize` para suministrar el tamaño esperado aproximado del genoma a ensamblar, en este caso de 2.8 Mb. También se asume que se trata de lecturas crudas de PacBio.
-
 
 
 ### Ensambles guíados por referencia
@@ -151,7 +151,7 @@ Este formato consta de dos secciones importantes:
 | $$8$$ | `PNEXT` | Entero | Posición de inicio de la lectura pareada |
 | $$9$$ | `TLEN` | Entero | Longitud del inserto (distancia de mapeo de las lecturas pareadas) en la referencia |
 | $$10$$ | `SEQ` | Texto | Secuencia de nucleótidos de la lectura |
-| $$10$$ | `QUAL` | Texto | Secuencia de caracteres de calidad Phred33 de la lectura |
+| $$11$$ | `QUAL` | Texto | Secuencia de caracteres de calidad Phred33 de la lectura |
 
 Este tipo de archivos contiene practicamente toda la información de las lecturas en formato `fastq` con información adicional. Por esa razón este tipo de archivos consumen mucho espacio de almacenamiento, sin embargo existe una versión binaria del mismo formato conocido como `.bam`. Este formato contiene la misma información que un `.sam` sin embargo como los campos son almacenados en formato binario se requiere de menos espacio de almacenamiento para utilizarlos. Esto ha conducido a que una buena práctica es transformar los alineamientos a formato `.bam` ya que es mucho más fácil gestionar ese tipo de resultados.
 
@@ -170,10 +170,7 @@ samtools sort mapeo.bam > mapeo_ordenado.bam
 samtools index mapeo_ordenado.bam
 ```
 
-
-
-
-
+Este procesamiento genera un archivo `mapeo_ordenado.bai` el cual en combinación con `mapeo_ordenado.bam` pueden ser usados en programas de visualización para inspeccionar manualmente los alineamientos obtenidos.
 
 
 
