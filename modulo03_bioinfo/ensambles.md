@@ -10,6 +10,8 @@ usemathjax: true
 
 La secuenciación permite obtener el contenido de la secuencia de miles de lecturas. Estas son fragmentos provenientes de moléculas de DNA cuya función biológica está determinada por la completitud de la secuencia. Por lo tanto, uno de los procesos más importantes en la secuenciación consiste en la _reconstrucción_ de la secuencia original, es decir, de la molécula de orígen biológico que se fragmentó al incio del proceso. Los procesos que se orientan a resolver este problema se conocen como _ensambles_.
 
+![](https://lh3.googleusercontent.com/15yiepX-ss6sYMDsFtz_xA1cE4uAKeSur6G8AEu1U43AQnGVaR732ewhFhh7xBwM9vjeywIiGB6dFMkq70uIQL6XH7i6g60qlEBoHP0QH2C2qZInxHiO3zZiUnhWySEl_cfWSVlRYHM)
+
 ### Ensamble _de novo_
 
 Un tipo particular de ensamble es el _de novo_, lo cual ímplica que la única información disponible para realizar el ensamble es la información de secuencia contenida en todas las lecturas. Un caso análogo al problema de armar un rompecabezas sin ninguna clase de guía.
@@ -45,7 +47,7 @@ Existen diferentes métodos para recuperar ensambles _de novo_, a continuación 
 | Método | Fundamentos | Casos de uso |  Ejemplos de software |
 |--|--|--|--|
 | **OLC** | * Construcción de grafos de sobrelapes <br> * Refinamiento de los grafos <br> * Generación de consensos | Funcionan mejor con<br> lecturas largas | 1. Celera Assembler<br> 2. Newbler<br> 3. Arachne<br> 4. Canu |
-| **Gráficas _de Bruijn_** | * Descomposición de lecturas en k-meros <br> * Generación de gráficas de cobrelapes de k-meros <br> * Implementación de la solución algorítmica para encontrar _ciclos Eulerianos_ | Se usan con lecturas<br> de alta calidad, pueden ser <br>lecturas cortas | 1. Euler<br> 2. Velvet<br> 3. Spades<br> 4. Abyss |
+| **Gráficas _de Bruijn_** | * Descomposición de lecturas en k-meros <br> * Generación de gráficas de sobrelapes de k-meros <br> * Implementación de la solución algorítmica para encontrar _ciclos Eulerianos_ | Se usan con lecturas<br> de alta calidad, pueden ser <br>lecturas cortas | 1. Euler<br> 2. Velvet<br> 3. Spades<br> 4. Abyss |
 
 Los ensambles _de novo_ son procesos cuyo resultado final son secuencias largas con el ensamble de las lecturas. Estas secuencias son la representación de la secuencia contigua de los sobrelapes de las lecturas, mismas que son conocidas como **contig**. Debido a que son secuencias de nucleótidos la forma general de contener dicha información es a través de archivos en formato FASTA. En el mejor de los escenarios cada contig representa una molécula de DNA, es decir cromosomas, plásmidos u otras únidades básicas de replicación de ADN, sin embargo en la práctica algunos contigs son el resultado de la resolución de problemas derivados de secuencias repetidas a lo largo del genoma.
 
