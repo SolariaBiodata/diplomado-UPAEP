@@ -210,4 +210,4 @@ Uno de los sofware de visualización `IGV` puede generar imágenes como esta:
 
 [Atras](./qcTrimming)
 
-[Siguiente](./#)
+[Siguiente](./rnaseq)
