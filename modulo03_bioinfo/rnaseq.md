@@ -119,19 +119,74 @@ done
 
 En este punto ya se cuenta con información tabular de las métricas de conteo de cada gen en cada muestra. Sin embargo como el objetivo consiste en la comparación de la expresión genética entre condiciones es muy importante procesar estos datos para obtener un perfil de expresión diferencial. Este proceso se enfoca en determinar las diferencias entre los conteos, por lo cual conviene usar algunas funciones matemáticas para determinar de manera integral los cambios existentes entre condiciones.
 
-En el caso más sencillo la comparación puede mostrarse como una razón de cambio $$LFC$$ entre alguna métrica en la condicion 1 $$C1$$ y la 2 $$C2$$:
+En el caso más sencillo la comparación puede mostrarse como una razón de cambio $$LFC$$ entre alguna métrica de cuantificación de cada gen/transcrito en la condicion 1 $$C1$$ y la 2 $$C2$$:
 
-\\[LFC = \frac{C1}{C2}\\]
+\\[FC = \frac{C1}{C2}\\]
 
 No obstante debido a que una razón de cambio es una función que no es simétrica, suele utilizarse una composición con logaritmos para generar esa propiedad de simetría:
 
-\\[\log_{b}LFC = \log_{b}C1 - log_{b}C2\\]
+\\[LFC = \log_{b}FC = \log_{b}C1 - log_{b}C2\\]
 
 En este caso uno de los valores más usuales para la base del logaritmo suele ser $$b=2$$ ya que el valor se interpretaría como
+
 > ¿qué tanto se dobla la expresión en la condición 1 con respecto a la condición 2?
+
 Así valores positivos indicarían que se dobla en la condición 1, y valores negativos en la condición 2. Otro valor usual es $$b=10$$ ya que indica el cambio en términos de órdenes de magnitud.
 
-El análisis de las razones de cambio puede hacerse con paqueterías específicas de `R`. Una de ellas se trata de `ballgown` la cual requiere que los pasos de la estructura generada con `stringtie` usando el parámetro `-B`.
+El análisis de las razones de cambio puede hacerse con paqueterías específicas de `R`. Una de ellas se trata de `ballgown` la cual requiere que los pasos de la estructura generada con `stringtie` usando el parámetro `-B`. Para realizar este proceso es necesario generar un archivo de texto `pheno.csv` donde se tendrá un manifiesto con información de los experimentos, las muestras y los archivos, por lo que se genera un archivo similar a este:
+
+```
+ids,sample,experiment
+SampleA_S7_L001,SampleA,control
+SampleA_S7_L002,SampleA,control
+SampleA_S7_L003,SampleA,control
+SampleA_S7_L004,SampleA,control
+SampleB_S8_L001,SampleB,experimental
+SampleB_S8_L002,SampleB,experimental
+SampleB_S8_L003,SampleB,experimental
+SampleB_S8_L004,SampleB,experimental
+```
+
+Una vez que se tiene un archivo como este se puede abrir una consola con `R` para poder realizar el análisis
+
+```bash
+R
+```
+
+En la consola de R es necesario cargar algunos paquetes:
+
+```R
+library(tidyverse)
+library(genefilter)
+library(RSkittleBrewer)
+library(ballgown)
+```
+
+Luego es necesario cargar el archivo `pheno.csv` y los datos de cuantificación generados con `stringtie`:
+
+```R
+pheno = read.csv("pheno.csv")
+bg = ballgown(dataDir = "ballgown",samplePattern ="Sample",pData = pheno)
+```
+
+En este punto sigue un proceso de filtrado, se necesitan eliminar los transcritos con conteos nulos ($$FPKM=0$$) y definir un criterio de corte `alpha`, con lo cual se agregan columnas con información del $$LFC$$:
+
+```R
+gexpr(bg)
+bgf = subset(bg,"rowVars(gexpr(bg)) > 1", genomesubset=T)
+alpha = 0.01
+res = stattest(bgf, feature = "gene", covariate = "experiment", getFC = T, meas = "FPKM")
+res$stat = ifelse(res$qval<alpha,yes=TRUE,no=FALSE)
+res$log2fc = log(res$fc,base=2)
+res$log10qvalue = -log(res$qval,base=10) 
+```
+
+Con un objeto de este tipo se puede extraer información mediante:
+
+```R
+diff_genes = res %>% filter(stat == TRUE)
+diff_ids = diff_genes$id
+```
 
 [Menú Principal](./)
 
