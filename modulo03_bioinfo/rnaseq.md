@@ -125,9 +125,13 @@ En el caso más sencillo la comparación puede mostrarse como una razón de camb
 
 No obstante debido a que una razón de cambio es una función que no es simétrica, suele utilizarse una composición con logaritmos para generar esa propiedad de simetría:
 
-\\[\log_{b}LFC = \log_{b}\frac{C1}{C2}\\]
+\\[\log_{b}LFC = \log_{b}C1 - log_{b}C2\\]
 
-En este caso uno de los valores más usuales para la base del logaritmo suele ser $$b=2$$ ya que el valor se interpretaría como qué tanto se dobla la expresión en la condición 1 con respecto a la condición 2, así valores positivos indicarían que se dobla en la condición 1, y valores negativos en la condición 2. Otro valor usual es $$b=10$$ ya que indica el cambio en términos de órdenes de magnitud.
+En este caso uno de los valores más usuales para la base del logaritmo suele ser $$b=2$$ ya que el valor se interpretaría como
+> ¿qué tanto se dobla la expresión en la condición 1 con respecto a la condición 2?
+Así valores positivos indicarían que se dobla en la condición 1, y valores negativos en la condición 2. Otro valor usual es $$b=10$$ ya que indica el cambio en términos de órdenes de magnitud.
+
+El análisis de las razones de cambio puede hacerse con paqueterías específicas de `R`. Una de ellas se trata de `ballgown` la cual requiere que los pasos de la estructura generada con `stringtie` usando el parámetro `-B`.
 
 [Menú Principal](./)
 
