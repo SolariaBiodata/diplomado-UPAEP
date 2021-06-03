@@ -165,27 +165,28 @@ library(ballgown)
 Luego es necesario cargar el archivo `pheno.csv` y los datos de cuantificación generados con `stringtie`:
 
 ```R
-pheno = read.csv("pheno.csv")
-bg = ballgown(dataDir = "ballgown",samplePattern ="Sample",pData = pheno)
+pheno <- read.csv("pheno.csv")
+bg <- ballgown(dataDir = "ballgown",samplePattern ="Sample",pData = pheno)
 ```
 
-En este punto sigue un proceso de filtrado, se necesitan eliminar los transcritos con conteos nulos ($$FPKM=0$$) y definir un criterio de corte `alpha`, con lo cual se agregan columnas con información del $$LFC$$:
+En este punto sigue un proceso de filtrado, se necesitan eliminar los transcritos con conteos nulos $$FPKM=0$$ y definir un criterio de corte `alpha`, con lo cual se agregan columnas con información del $$LFC$$:
 
 ```R
 gexpr(bg)
-bgf = subset(bg,"rowVars(gexpr(bg)) > 1", genomesubset=T)
-alpha = 0.01
-res = stattest(bgf, feature = "gene", covariate = "experiment", getFC = T, meas = "FPKM")
-res$stat = ifelse(res$qval<alpha,yes=TRUE,no=FALSE)
-res$log2fc = log(res$fc,base=2)
-res$log10qvalue = -log(res$qval,base=10) 
+bgf <- subset(bg, "rowVars(gexpr(bg)) > 1", genomesubset=T)
+alpha <- 0.01
+res <- stattest(bgf, feature = "gene", covariate = "experiment", getFC = T, meas = "FPKM")
+res$stat <- ifelse(res$qval<alpha, yes=TRUE, no=FALSE)
+res$log2fc <- log(res$fc, base=2)
+res$log10qvalue <- -log(res$qval, base=10) 
 ```
 
-Con un objeto de este tipo se puede extraer información mediante:
+Con un objeto de este tipo se puede extraer la información de los genes diferencialmente expresados mediante:
 
 ```R
-diff_genes = res %>% filter(stat == TRUE)
-diff_ids = diff_genes$id
+res %>% filter(stat == TRUE) - > diff_genes
+diff_ids <- diff_genes$id
+diff_ids %>% 
 ```
 
 [Menú Principal](./)
