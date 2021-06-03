@@ -169,33 +169,32 @@ Para realizar este tipo de análisis es fundamental realizar _ensambles_ lo cual
 
 Algunos programas diseñados para este objetivo son los siguientes:
 
-    - Línea de comandos
-        - Kraken
-        - Parallel-meta
-        - Centrifuge
-        - MEGAN
-        - Focus
-        - Metaphlan2
-        - Clark
-        - Anvio
-    - En línea
-        - Taxonomer
-        - OneCodex
-    - Mixtos
-        - Superfocus
-        - MG-RAST
-        - MEGAN
-        - webMGA
-    -Bases de datos
-        - Cazy
-        - Kegg
-        - Eggnog
-        - COG
-        - Kog
-        - pfam
+- Programas en línea de comandos
+    - Kraken
+    - Parallel-meta
+    - Centrifuge
+    - MEGAN
+    - Focus
+    - Metaphlan2
+    - Clark
+    - Anvio
+- Programas _on line_
+    - Taxonomer
+    - OneCodex
+- Programas de anotación funcional _on line_
+    - Superfocus
+    - MG-RAST
+    - MEGAN
+    - webMGA
+-Bases de datos
+    - Cazy
+    - Kegg
+    - Eggnog
+    - COG
+    - Kog
+    - pfam
 
 Para realizar asignación taxonómica existen dos aproximaciones que se basan en diferentes propiedades.
-
 
 | Métodos basados en | Fundamentos |
 |--|--|
@@ -208,6 +207,6 @@ Para realizar asignación taxonómica existen dos aproximaciones que se basan en
 
 [Menú Principal](./)
 
-[Atras](./ensambles)
+[Atras](./rnaseq)
 
 [Siguiente](./#)
