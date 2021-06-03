@@ -186,7 +186,7 @@ Algunos programas diseñados para este objetivo son los siguientes:
     - MG-RAST
     - MEGAN
     - webMGA
--Bases de datos
+- Bases de datos
     - Cazy
     - Kegg
     - Eggnog
