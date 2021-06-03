@@ -43,6 +43,25 @@ Trinity --seqType fq --max_memory 16G --left mis_lecturas_R1.fastq.gz --rigth mi
 
 Cuando se tiene información de referencia, ya sea de un genoma anotado o de un transcriptoma de referencia se pueden usar protocolos donde múltiples condiciones pueden ser comparadas en términos del conteo de transcritos. En este caso se utiliza una aproximación de mapeo de lecturas a los transcriptomas. Estos presentan algunas consideraciones especiales ya que es perfectamente viable que una lectura sea alineada en diferentes exones, lo cual es consecuencia de la naturaleza de la transcripción.
 
+Este tipo de análisis genera en primer término métricas que permiten comparar la expresión genética. Existen diferentes tipos de métricas sin embargo algunas de las más comunes dependen de los siguientes valores:
+
+- $$NLG$$ Número de lecturas que mapean con un gen
+- $$LT$$ Número de total de lecturas en la muestra
+- $$TG$$ Tamaño del gen en pb
+- $$NFG$$ Número de fragmentos (lecturas pareadas) que mapean con un gen
+- $$TI$$ Tamaño de la isoforma en pb
+- $$TL$$ Tamaño de la lectura en pb
+- $$TT$$ Número de transcritos totales en la muestra
+
+Así las métricas, también conocidas como _conteos_ pueden apreciarse en la siguiente tabla:
+
+| Métrica | Significado |
+|--|--|
+| $$RPM = \frac{NLG \cdot 10^{6}}{LT}$$ | **Lecturas por millón** provee una medida básica de la proporción de lecturas que mapean en un gen  |
+| $$RPKM = \frac{NLG \cdot 10^{3} \cdot 10^{6}}{LT \cdot TG}$$ | **Lecturas por kilobase por millón** aporta un criterio de ajuste por la longitud de cada gen |
+| $$FPKM = \frac{NFG \cdot 10^{3} \cdot 10^{6}}{LT \cdot TI}$$ | **Fragmentos por kilobase por millón** aporta un criterio de ajuste para diferentes isoformas tomando en consideración el mapeo de lecturas pareadas|
+| $$TPM = \frac{NLG \cdot TL \cdot 10^{6}}{TT \cdot TG}$$ | **Transcritos por millón** toma en consideración ajuste por tamaño de diferentes transcritos y los que se miran en la muestra |
+
 Uno de los protocolos más conocidos para efectuar esta clase de análisis el el protocolo _tuxedo_. En este protocolo se realiza la implementación de diferentes módulos de procesamiento de los alineamientos y los conteos de transcritos. A continuación se muestra un diagrama de la implementación de este protocolo:
 
 ![](https://drive.google.com/uc?id=1myoii9DZADTj3WN6BGGOQtqmzXWGiJer&export=download "Pipeline Tuxedo")
@@ -98,7 +117,17 @@ for i in $(ls *sort.bam); do
 done
 ```
 
+En este punto ya se cuenta con información tabular de las métricas de conteo de cada gen en cada muestra. Sin embargo como el objetivo consiste en la comparación de la expresión genética entre condiciones es muy importante procesar estos datos para obtener un perfil de expresión diferencial. Este proceso se enfoca en determinar las diferencias entre los conteos, por lo cual conviene usar algunas funciones matemáticas para determinar de manera integral los cambios existentes entre condiciones.
 
+En el caso más sencillo la comparación puede mostrarse como una razón de cambio $$LFC$$ entre alguna métrica en la condicion 1 $$C1$$ y la 2 $$C2$$:
+
+\\[LFC = \frac{C1}{C2}\\]
+
+No obstante debido a que una razón de cambio es una función que no es simétrica, suele utilizarse una composición con logaritmos para generar esa propiedad de simetría:
+
+\\[\log_{b}LFC = \log_{b}\frac{C1}{C2}\\]
+
+En este caso uno de los valores más usuales para la base del logaritmo suele ser $$b=2$$ ya que el valor se interpretaría como qué tanto se dobla la expresión en la condición 1 con respecto a la condición 2, así valores positivos indicarían que se dobla en la condición 1, y valores negativos en la condición 2. Otro valor usual es $$b=10$$ ya que indica el cambio en términos de órdenes de magnitud.
 
 [Menú Principal](./)
 
