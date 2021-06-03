@@ -198,11 +198,8 @@ Para realizar asignación taxonómica existen dos aproximaciones que se basan en
 
 | Métodos basados en | Fundamentos |
 |--|--|
-| **similitud** | 1. Asignación de taxonomía por _homología_<br>2. Extracción de marcadores con mapeo directo contra bases de datos<br>3. Cada secuencia se identifica y agrupa en _Unidades taxonómicas operacionales_<br>4. Se ubica el _último ancestro común_ para ponderar las lecturas de acuerdo a un score, los resultados se ubican en un arbol filogenético de especies. |
-| **Ccomposición** | 1. Asignación por medio de espectro de _k-meros_<br>2. Modelado basado en _machine learning_ de las características de la secuencia<br>3. Modelado del conjunto de lecturas, tratadas igual que una referencia<br> 4. Comparación entre los modelos generados y las referencias para determinar la asignación taxonómica lectura a lectura. |
-
-
-
+| **Similitud** | 1. Asignación de taxonomía por _homología_<br>2. Extracción de marcadores con mapeo directo contra bases de datos<br>3. Cada secuencia se identifica y agrupa en _Unidades Taxonómicas Operacionales_<br>4. Se ubica el _último ancestro común_ para ponderar las lecturas de acuerdo a un score, los resultados se ubican en un arbol filogenético de especies. |
+| **Composición** | 1. Asignación por medio de espectro de _k-meros_<br>2. Modelado basado en _machine learning_ de las características de la secuencia<br>3. Modelado del conjunto de lecturas, tratadas igual que una referencia<br> 4. Comparación entre los modelos generados y las referencias para determinar la asignación taxonómica lectura a lectura. |
 
 
 [Menú Principal](./)
