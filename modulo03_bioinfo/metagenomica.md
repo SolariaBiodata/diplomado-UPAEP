@@ -69,6 +69,93 @@ Un caso de uso con `qiime2` se muestra a continuación. Primero es necesario act
 conda activate qiime2-2021.04
 ```
 
+Es necesario crear una tabla de metadatos, la cual debe contener información acerca de nuestras bibliotecas, esto se puede hacer con:
+
+```bash
+nano metadata.tsv
+```
+
+La tabla puede ser parecida a esto:
+
+| #SampleID | BarcodeSequence | Treatment   | Group       | Year    | Concentration |
+|-----------|-----------------|-------------|-------------|---------|---------------|
+| #q2:types | categorical     | categorical | categorical | numeric | numeric       |
+| SAMPLE_A  | CAGTGTCA        | Cont_A      | Control     | 2020    | 20.0          |
+| SAMPLE_B  | CATTGTCA        | Cont_A      | Experiment  | 2021    | 25.0          |
+
+
+Esta tabla la necesitamos cargar en `qiime`:
+
+```bash
+qiime tools inspect-metadata metadata.tsv
+```
+
+También se requiere crear un archivo manifiesto mediante:
+
+```bash
+nano manifiesto.csv
+```
+
+con información de este tipo:
+
+|sample-id|absolute-filepath|direction  |
+|---------|-----------------|-----------|
+|SAMPLE_A |$PWD/raw/samplA.fastq|forward|
+|SAMPLE_B |$PWD/raw/samplB.fastq|forward|
+
+En este caso asumimos que una muestra `SAMPLE_A` esta compuesta por unas lecturas en la ruta relativa `raw/samplA.fastq`, y que tenemos otra muestra `SAMPLE_B` en `raw/samplB.fastq`. 
+
+En seguida se procede a la carga de las lecturas, desreplicación y búsqueda de quimeras seguida de su remoción:
+
+```bash
+qiime tools import --type 'SampleData[SequencesWithQuality]' --input-path manifest.csv --input-format SingleEndFastqManifestPhred33 --output-path raw-seqs.qza
+
+qiime vsearch dereplicate-sequences --i-sequences raw-seqs.qza --output-dir derep
+
+qiime feature-table filter-features --i-table derep/dereplicated_table.qza --m-metadata-file chimeras/nonchimeras.qza --o-filtered-table filtered-table.qza
+
+qiime feature-table filter-seqs --i-data derep/dereplicated_sequences.qza --m-metadata-file chimeras/nonchimeras.qza --o-filtered-data filtered-seqs.qza
+```
+
+Después se procede a realizar los agrupamientos (binning),
+
+```bash
+qiime tools export --input-path chimeras/chimeras.qza --output-path chimeras
+
+qiime vsearch cluster-features-open-reference --i-table filtered-table.qza --i-sequences filtered-seqs.qza --i-reference-sequences chimeras/nonchimeras.qza --p-perc-identity 0.80 --output-dir clustered
+```
+
+Ahora se procede a realizar la asignación taxonómica, para lo cual se asume que se tiene una base de referencia en el archivo `gg13_16S.qza`, misma que puede descargarse en esta [liga](https://data.qiime2.org/2019.1/common/gg-13-8-99-nb-classifier.qza) mediante el comando `wget`.
+
+```bash
+qiime feature-classifier classify-sklearn --i-classifier gg13_16S.qza --i-reads clustered/clustered_sequences.qza --o-classification taxonomy.qza
+
+qiime taxa collapse --i-table clustered/clustered-table.qza --i-taxonomy taxonomy.qza --p-level 6 --output-dir results
+
+qiime tools export --input-path results/collapsed_table.qza --output-path export
+```
+
+Luego se realiza la exportación del archivo BIOM:
+
+```bash
+biom convert -i results/feature-table.biom --to-tsv -o results/feature-table.txt
+```
+
+Y se procede a realizar la exportación a formatos de visualización (`.qzv`'s):
+
+```bash
+qiime metadata tabulate --m-input-file taxonomy.qza --o-visualization vis/taxonomy.qzv
+ 
+qiime taxa barplot --i-table clustered/clustered_table.qza --i-taxonomy taxonomy.qza --m-metadata-file metadata.tsv --o-visualization vis/taxa-barplot.qzv
+```
+
+Y utilizamos el comando de Solaria para exportar archivo Krona:
+
+```bash
+SolariaFeatureExporter results/feature-table.txt
+```
+
+
 
 ### Metagenómica shotgun
 
