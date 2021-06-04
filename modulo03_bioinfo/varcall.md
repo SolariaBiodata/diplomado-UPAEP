@@ -110,6 +110,40 @@ Los arhivos `vcf` contienen la información de las variantes detectadas en una m
 
 ### Protocolo de buenas prácticas
 
+El principal objetivo de un análisis de variantes es determinar con alta confiabilidad aquellas mutaciones que corresponden con variaciones biológicamente relevantes. Por esa razón es fundamental contar con protocolos que permitan realizar este análisis con ciertos criterios que minicen la probabilidad de asignar un artificio como variante biológica. Debido a ello se han propuesto diferentes protocolos, uno de ellos es el [protocolo del Broad Institute](https://gatk.broadinstitute.org/hc/en-us/sections/360007226651-Best-Practices-Workflows).
+
+Dicho protocolo ha sido usado como base para la generación de protocolos de alta confianza, a continuación se muestra un esquema general de los procesos ms importantes que se deben realizar:
+
+![]()
+
+Como se puede ver, el proceso implica una serie de pasos:
+
+1. Control estricto de calidad de las lecturas
+2. Alineamientos de lecturas pareadas y sin parear por separado
+3. Integración de los alineamientos correspondientes a una muestra
+4. Realineamiento
+5. Recalibración de calidad de asignación de bases
+6. Llamado de variantes 
+7. Genotipificación conjunta
+8. Filtrado de variantes
+9. Individualización de VCFs
+10. Anotación de variantes
+
+Para realizar estos procesos es fundamental el uso de algunos programas de cómputo que se mencionan a continuación:
+
+- `Trimmomatic`
+-  `bwa`
+-  `samtools`
+-  `picard`
+-  `abra`
+-  `gatk`
+-  `bcftools`
+-  `snpEff`
+
+
+### Bases de datos
+
+
 
 [Menú Principal](./)
 
