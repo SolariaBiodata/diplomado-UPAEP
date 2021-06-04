@@ -6,7 +6,45 @@ usemathjax: true
 
 ## Bioinformática
 
-### RNA seq
+### Análisis de variantes
+
+Un tipo de estudios muy usuales consiste en resecuenciar individuos de una especie de la cual ya existe un genoma de **referencia**. Esta clase de análisis se realizan para encontrar diferencias que existen entre individuos. Las variantes corresponden a esas diferencias que se pueden encontrar en un individuo con respecto el genoma que se tiene de referencia referencia.
+
+Existen diferentes tipos de variantes entre los cuales se encuentran:
+
+- Variantes puntuales
+    - Polimorfismos de un solo nucleótido
+    - Inserciones
+    - Deleciones
+    - Polimorfismos de varios nucleótidos
+- Variantes estructurales
+    - Rearreglos cromosomales
+    - Translocaciones
+    - Inversiones
+    - Duplicaciones / Número de copia
+    - Inserciones
+    - Deleciones
+
+Las variantes puntuales son el tipo de variantes que se pueden detectar de manera directa mediante secuenciación masiva. Estas tienen como origen las tasas de error naturales de las enzimas implicadas en el proceso de replicación del DNA. Debido a que en el proceso de secuenciación también se utilizan enzimas relacionadas con los procesos de replicación del DNA, es indispensable poder distinguir las variantes biológicas de los artificios derivados del proceso técnico.
+
+A continuación se detallan algunos conceptos clave para los análisis de variantes:
+
+- **Alelo** Es una versión de la variante en diferentes genomas
+    - **Referencia** Es el alelo presente en el genoma de referencia
+    - **Alternativo** Es el alelo que no está en el genoma de referencia
+    - **Mayor** Es el alelo que se encuentra con mayor frecuencia en una población
+    - **Menor** Es el alelo que se encuentra con menor frecuencia en una población
+- **Ploidía** Cantidad de moléculas que contienen un _locus_ por individuo
+    - **Genotipo** Representa el estado alélico de cada cromosoma para una variante en un individuo
+- **Equilibrio de ligamiento** Dos variantes que se encuentran en equilibrio tienen los mismos alelos en diferentes individuos, las variantes segregan juntas
+    - **Haplotipo** Combinación de variantes de diferentes loci en un mismo individuo, es un estado genotípico.
+
+Para poder realizar un análisis de variantes es muy importante considerar diferentes aspectos que se relacionan con las propiedades inherentes de una especie, el individuo y las características técnicas de una muestra. En principio se requiere tener amplia información de referencia, el genoma de referencia es importante, pero mientras más información exista, como variantes comunes, archivos de anotación de genoma, entre otros son muy útiles. La ploidía de un cromosoma en un organismo también es sumamente relevante, ya que las variantes tienen que poder ajustar la información provista en la muestra con un modelo que contemple este parámetro. Esto es particularmente importante en casos en el que analizamos mutaciones germinales, es decir mutaciones que han sido heredadas al individuo con respecto a mutaciones que pueden tener un origen patológico donde algun tejido ha empezado a acumular una mutación. Otro aspecto a considerar es la posibilidad de realizar la secuenciacin de manera selectiva, es decir, obtener secuencias derivadas de un enriquecimiento en algunas regiones del genoma.
+
+
+
+
+
 
 El estudio de las moléculas de **RNA** se puede realizar a través de métodos de secuenciación de ácidos nucleicos. _RNA-seq_ se refiere a la secuenciación de poblaciones de _RNA convertidos en cDNA_. Este tipo de moléculas se pueden obtener al acoplar técnicas como la _PCR_ con los productos de la _transcriptasa reversa_, la cual permite la transcripción de moléculas de RNA en moléculas de DNA. De este modo se puede derivar la cantidad de cada molécula original de RNA en la población, que presumiblemente se trata de un transcrito.
 
