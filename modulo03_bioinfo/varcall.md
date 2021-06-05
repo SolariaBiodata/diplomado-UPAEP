@@ -84,7 +84,7 @@ samtools index muestra.ordenada.bam
 Una vez procesado este alineamiento es viable realizar una visualización:
 
 ```bash
-samtools tview referencia.fasta muestra.ordenada.bam
+samtools tview --reference referencia.fasta muestra.ordenada.bam
 ```
 
 Lo que sigue es realizar el llamado de variantes, lo cual se realiza con `mpileup`:
@@ -110,39 +110,47 @@ Los arhivos `vcf` contienen la información de las variantes detectadas en una m
 
 ### Protocolo de buenas prácticas
 
-El principal objetivo de un análisis de variantes es determinar con alta confiabilidad aquellas mutaciones que corresponden con variaciones biológicamente relevantes. Por esa razón es fundamental contar con protocolos que permitan realizar este análisis con ciertos criterios que minicen la probabilidad de asignar un artificio como variante biológica. Debido a ello se han propuesto diferentes protocolos, uno de ellos es el [protocolo del Broad Institute](https://gatk.broadinstitute.org/hc/en-us/sections/360007226651-Best-Practices-Workflows).
+El principal objetivo de un análisis de variantes es determinar con alta confiabilidad aquellas mutaciones que corresponden con variaciones biológicamente relevantes. Por esa razón es fundamental contar con protocolos que permitan realizar este análisis con ciertos criterios que minicen la probabilidad de asignar un artificio como variante biológica. Debido a ello se han propuesto diferentes protocolos, uno de ellos es el [protocolo del Broad Institute](https://gatk.broadinstitute.org/hc/en-us/sections/360007226651-Best-Practices-Workflows). Este se ha diseñado para realizar análisis de variantes en genoma humano, del cual existen muchos recursos con información relevante que aportan información crucial para el análisis.
 
-Dicho protocolo ha sido usado como base para la generación de protocolos de alta confianza, a continuación se muestra un esquema general de los procesos ms importantes que se deben realizar:
+Dicho protocolo ha sido usado como base para la generación de protocolos de alta confianza, a continuación se muestra un esquema general de los procesos más importantes que se deben realizar:
 
 ![](https://drive.google.com/uc?id=14WOs14_aR8-N6L-1w5mACPJZCvb9mJQ1&export=download "Protocolo de buenas prácticas de análisis de variantes")
 
 Como se puede ver, el proceso implica una serie de pasos:
 
-1. Control estricto de calidad de las lecturas
-2. Alineamientos de lecturas pareadas y sin parear por separado
-3. Integración de los alineamientos correspondientes a una muestra
-4. Realineamiento
-5. Recalibración de calidad de asignación de bases
-6. Llamado de variantes 
-7. Genotipificación conjunta
-8. Filtrado de variantes
-9. Individualización de VCFs
-10. Anotación de variantes
+| Paso | Proceso | Herramientas | Recursos adicionales |
+|--|--|--|--|
+| $$1$$ | Control estricto de calidad de las lecturas | `Trimmomatic`, `fastqc` | Archivo de adaptadores |
+| $$2$$ | Alineamientos de lecturas pareadas y sin parear por separado | `bwa` | Genoma de referencia de alta confiabilidad |
+| $$3$$ | Integración de los alineamientos correspondientes a una muestra | `samtools`, `picard` | Manifiestos de corrida |
+| $$4$$ | Realineamiento y marcaje de duplicados | `abra`, `picard` | Panel de secuenciación |
+| $$5$$ | Recalibración de calidad de asignación de bases | `gatk` | Variantes de alta confiabilidad, panel de secuenciación |
+| $$6$$ | Llamado de variantes | `gatk` | Panel de secuenciación |
+| $$7$$ | Genotipificación conjunta | `gatk` | gVCFs de muestras adicionales |
+| $$8$$ | Filtrado de variantes | `gatk`, `grep`, `awk` | Variantes de alta confiabilidad para SNPs y para INDELes |
+| $$9$$ | Individualización de VCFs | `bcftools`, `gatk` |  |
+| $$10$$ | Anotación de variantes | `snpEff`, `gatk` | Bases de datos de anotación de variantes |
 
-Para realizar estos procesos es fundamental el uso de algunos programas de cómputo que se mencionan a continuación:
+Estos procesos buscan minimizar la probabilidad de obtener un falso positivo con lo cual se obtienen solo variantes de alta confianza. Esto se logra gracias a los pasos de _machine learning_ que mejoran la clasificación de parámetros en diferentes partes del protocolo. Estas clasificaciones pueden realizarse debido a que se cuenta con vastos repositorios de información de alta confiabilidad en los que se han catalogado variantes comunes del genoma.
 
-- `Trimmomatic`
--  `bwa`
--  `samtools`
--  `picard`
--  `abra`
--  `gatk`
--  `bcftools`
--  `snpEff`
+Asimismo, se utiliza toda la información posible para aumentar la certeza en la asignación de genotipos. Tal es el caso de la genotipificación conjunta en donde se aprovecha la información de diversas muestras (e incluso corridas) que se acumulan con la información recien obtenida para optimizar la confianza de los resultados.
 
+### Anotación de variantes
 
-### Bases de datos
+En este proceso se utiliza la información depositada en diferentes recursos públicos para incluirse en los resultados de un análisis de variantes. En este proceso se agrega información de idntificación en diversos repositorios, asi como también propiedades características de una variante, ya sea en términos clínicos, bioquímicos, moleculares, etcétera. Esta información adicional provee de información relevante para que otros profesionales puedan extraer información relevante, ejemplo de ello son las anotaciones clínicas que se usan para reportes de resultados de pruebas genéticas.
 
+En términos generales cada segmento de información adicional puede estar contenida en diversos repositorios de información. En _homo sapiens_ existen diferentes bases de datos que proveen diferentes tipos de información:
+
+| Base de datos | Tipo de información |
+|--|--|
+| dbSNP | Identificación y propiedades genéticas de una variante |
+| 1000G | Información de las frecuencias alélicas de una variante en diferentes poblaciones |
+| ClinVar | Anotaciones de clasificación clínica de una variante relacionadas a diferentes patologías |
+| PharmGKB | Anotaciones de relaciones farmacogenéticas de una variante |
+| Mills_1KG | Anotación de alta confianza de indeles de humano |
+| Cosmic | Información del atlas de variantes somáticas de cáncer |
+
+Uno de los software más comunes para la integración de anotaciones es `snpEff`. Este software se ha desarrollado para adecuarse a los estándares de salidas de `gatk` por lo cual es muy común su implementación en protocolos de buenas prácticas. Así mismo, poseé la capacidad de incluir información de recursos como `dbNSFP` donde se contiene información recopilada de diferentes fuentes de anotación, predictores de efectos funcionales, métricas de frecuencia poblacional, evolutivas entre otras.
 
 
 [Menú Principal](./)
