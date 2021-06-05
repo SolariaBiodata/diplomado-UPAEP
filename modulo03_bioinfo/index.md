@@ -8,7 +8,7 @@ Bienvenido a nuestro 1er Diplomado en "Bioinformática y Docking" en colaboraci�
 
 |Duración| Periodo | Horario |
 |-|-|-|
-| 120 horas | 5 Abril - 25 Junio 2021 _(8 horas por semana)_ | Flexible |
+| 120 horas | 5 Abril - 25 Junio 2021 _(10 horas por semana)_ | Flexible |
 
 
 **Objetivo**: Que los participantes aprendan los procesos de datos de forma sistemática, desde cómo usar las herramientas de procesamiento en Linux, hasta los elementos que afectan la parametrización de programas, así como la interpretación de resultados de modelamiento molecular y docking.
@@ -22,6 +22,14 @@ Bienvenido a nuestro 1er Diplomado en "Bioinformática y Docking" en colaboraci�
 ### [Bases de datos y archivos de bioinformática](./archivosBioinfo)
 
 ### [Preprocesamiento de lecturas](./qcTrimming)
+
+### [Ensambles](./ensambles)
+
+### [RNA-seq](./rnaseq)
+
+### [Metagenómica](./metagenomica)
+
+### [Análisis de variantes](./varcall)
 
 
 
