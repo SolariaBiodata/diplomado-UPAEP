@@ -52,7 +52,7 @@ En el análisis de variantes existen algunos procesos generales:
 
 En la siguiente figura se muestra un esquema de este proceso básico
 
-![]()
+![](https://drive.google.com/uc?id=1CmOoBNRjgXnhGo2NiUu7ZiRwYcH_9cce&export=download "Protocolo básico de llamado de variantes")
 
 En este protocolo empezaremos por activar un ambiente de `conda` y movernos a una carpeta de trabajo, donde generaremos un par de ligas con nuestras lecturas y un genoma de referencia.
 
@@ -114,7 +114,7 @@ El principal objetivo de un análisis de variantes es determinar con alta confia
 
 Dicho protocolo ha sido usado como base para la generación de protocolos de alta confianza, a continuación se muestra un esquema general de los procesos ms importantes que se deben realizar:
 
-![]()
+![](https://drive.google.com/uc?id=14WOs14_aR8-N6L-1w5mACPJZCvb9mJQ1&export=download "Protocolo de buenas prácticas de análisis de variantes")
 
 Como se puede ver, el proceso implica una serie de pasos:
 
