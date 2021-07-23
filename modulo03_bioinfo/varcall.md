@@ -157,4 +157,3 @@ Uno de los software más comunes para la integración de anotaciones es `snpEff`
 
 [Atras](./metagenomica)
 
-[Siguiente](#)
