@@ -64,6 +64,6 @@ fig %>% layout( tittle=~text)
 
 [Menú Principal](./)
 
-[Atras R](./plottingR)
+[Atrás](./plottingR)
 
 [Siguiente](./#)

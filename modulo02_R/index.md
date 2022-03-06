@@ -93,8 +93,6 @@ Bienvenido a la segunda edición del Diplomado en "Bioinformática" en colaborac
 
 ### [Gráficos dinámicos](./plotly)
 
-#### [Plotly Python](./plotly#python)
-
 #### [Plotly R](./plotly#r)
 
 
