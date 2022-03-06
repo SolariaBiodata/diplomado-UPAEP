@@ -1,4 +1,4 @@
-![alt text](https://solariabiodata.com.mx/images/solaria_banner.png "Soluciones de Siguiente Generación")
+![alt text](https://solariabiodata.com.mx/wp-content/uploads/2021/07/logo_red.png "Soluciones de Siguiente Generación")
 # 1er Diplomado de Bioinformática y Docking
 ## [Solaria Biodata](https://solariabiodata.com.mx/) - [UPAEP](https://upaep.mx/)
 
