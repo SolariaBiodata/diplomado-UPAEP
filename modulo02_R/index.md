@@ -21,8 +21,6 @@ Bienvenido a la segunda edición del Diplomado en "Bioinformática" en colaborac
 
 #### [R](./introduccion#r)
 
-#### [Python](./introduccion#python)
-
 #### [Google Colab](./introduccion#google-colab)
 
 ### [Tipos de datos](./tiposDatos)
@@ -48,20 +46,6 @@ Bienvenido a la segunda edición del Diplomado en "Bioinformática" en colaborac
 #### [Listas](./estructurasR#listas)
 
 #### [Dataframes](./estructurasR#data-frames)
-
-### [Principios de Python](./principiosPython)
-
-#### [Operadores](./principiosPython#operadores)
-
-#### [Variables](./principiosPython#variables)
-
-### [Estructuras de Python](./estructurasPython)
-
-#### [Datos unidimensionales](./testructurasPython#datos-unidimensionales)
-
-#### [Datos multidimensionales](./estructurasPython#datos-multidimensionales)
-
-#### [DataFrames](./estructurasPython#dataframes)
 
 ### [Tidyverse](./tidyverseR)
 

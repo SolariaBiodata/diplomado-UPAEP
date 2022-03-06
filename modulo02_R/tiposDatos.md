@@ -47,6 +47,4 @@ Los valores lógicos representan los valores más sencillos de operar en _algebr
 
 [Atras](./introduccion)
 
-[Avanzar a R](./principiosR)
-
-[Avanzar a Python](./principiosPython)
+[Siguiente](./principiosR)
