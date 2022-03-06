@@ -155,5 +155,5 @@ Uno de los software más comunes para la integración de anotaciones es `snpEff`
 
 [Menú Principal](./)
 
-[Atras](./metagenomica)
+[Atras](./rnaseq)
 

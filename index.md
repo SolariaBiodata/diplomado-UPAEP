@@ -17,23 +17,14 @@ Bienvenido a la segunda edición del Diplomado en "Bioinformática" en colaborac
 
 ## [Introducción a Linux](./modulo01_linux/)
 
-### [Sistemas de archivos](./modulo01_linux/sistemaArchivos)
 
-### [Comandos de la terminal](./modulo01_linux/comandosTerminal)
-
-### [Operaciones con archivos de texto](./modulo01_linux/operacionesArchivosTexto)
-
-### [Operaciones avanzadas con archivos](./modulo01_linux/operacionesAvanzadasArchivos)
-
-### [Filtros avanzados](./modulo01_linux/filtrosAvanzados)
-
-### [Búsqueda de patrones](./modulo01_linux/busquedaPatrones)
+## [Biodatos en R](./modulo02_R/)
 
 
-## [Lenguajes de Programación](./modulo02_PythonR/)
+## [Bioinformática NGS](./modulo03_bioinfo/)
 
 
-## [Bioinformática](./modulo03_bioinfo/)
+## [Metagenómica](./modulo04_meta/)
 
 
 

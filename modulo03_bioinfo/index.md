@@ -27,8 +27,6 @@ Bienvenido a la segunda edición del Diplomado en "Bioinformática" en colaborac
 
 ### [RNA-seq](./rnaseq)
 
-### [Metagenómica](./metagenomica)
-
 ### [Análisis de variantes](./varcall)
 
 
