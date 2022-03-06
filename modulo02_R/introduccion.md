@@ -6,11 +6,11 @@ usemathjax: true
 
 ## Lenguajes de programación
 
-### Introducción a R y Python
+### Introducción a R
 
 Los lenguajes de programación son lenguajes formales con gramáticas bien definidas. En estos lenguajes la comunicación de mensajes se da de un usuario a una computadora, por lo cual es importante que nunca exista ambigüedad en los lenguajes.
 
-R y Python han sido usados por muchos grupos en los últimos años. En bioinformática y en análisis de datos son los lenguajes predominantes.
+R sido usado por muchos grupos en los últimos años. En bioinformática y en análisis de datos es uno los lenguajes predominantes junto con Python.
 
 | Python | R |
 |--|--|
@@ -38,32 +38,9 @@ Rscript programa.R
 
 Asimismo, existe una interfaz muy común para usar R en un ambiente de análisis más cómodo, esta interfaz se conoce como **RStudio**. Esta interfaz permite interaccionar con el lenguaje de una manera más gráfica, por lo que es una opción muy popular para ejecutar `R`. Este programa no es una distribución oficial del lenguaje, no obstante se reconoce su importancia por lo cual es una interfaz recomendable para el análisis de datos. Antes de usar la interfaz es necesario obtener los instaladores correspondientes en la [página oficial](https://www.rstudio.com/) y proceder con la instalación.
 
-#### Python
-
-Es un lenguaje de programación que ha ganado muchos adeptos en los últimos años. Actualmente se distribuye de manera oficial por la mayoría de distribuciones GNU/Linux, por lo que solo se requiere invocar al comando `python` desde la terminal para iniciar el interprete del lenguaje. Sin embargo es muy importante destacar que existen 2 versiones predominantes que son distintas y que actualmente se siguen manteniendo: _Python 2_ (en su versión 2.7) y _Python 3_ la cual es la distribución más habitual hoy en día. Es necesario hacer instalaciones del interprete cuando se trabaja en MAC o Windows, para ello se sugiere revisar los protocolos de instalación referenciados en la [página oficial](https://www.python.org/).
-
-Este lenguaje puede ser interpretado en un modo interactivo, para ello se requiere de la invocación estándar:
-
-```bash
-python
-```
-
-no obstante, existe una forma de ejecutar programas en modo no interactivo, para ello se utiliza:
-
-```bash
-python programa.py
-```
-
-Existen muchos recursos para habilitar interfaces gráficas de despliegue de análisis en Python, a continuación se mencionan algunos de los recursos más importantes:
-
- - [Conda](https://docs.conda.io/en/latest/#)
- - [Jupyter](https://jupyter.org/install)
- - [Spyder](https://www.spyder-ide.org/)
-
-
 #### Google Colab
 
-[Colab](https://colab.research.google.com/) es una implementación de los notebooks de _Jupyter_ en la nube cómputo de Google. Esta es una herramienta muy útil, ya que nos permite utilizar `python` y `R` de manera sencilla sin siquiera instalar los intérpretes en nuestras máquinas locales.
+[Colab](https://colab.research.google.com/) es una implementación de los notebooks de _Jupyter_ en la nube cómputo de Google. Esta es una herramienta muy útil, ya que nos permite utilizar `R` de manera sencilla sin siquiera instalar un intérprete en nuestras máquinas locales.
 
 En colab existen dos tipos de celdas
 
@@ -91,11 +68,11 @@ A continuación se describen algunos ejemplos de texto enriquecido con [_Markdow
 | `# Título` | # Título |
 | \``codigo`\` | `codigo` |
 
-En este curso vamos a usar esta herramienta para practicar la sintáxis y hacer ejercicios, por lo cual es muy importante que puedas generar nuevas libretas. Para ello solo requieres inicializar nuevas libretas haciendo click en las siguientes ligas:
+En este curso vamos a usar esta herramienta para practicar la sintáxis y hacer ejercicios, por lo cual es muy importante que puedas generar nuevas libretas. Para ello solo requieres inicializar libretas haciendo click en la siguiente liga de `R` (También está una liga a la forma de generar una libreta en python, aunque esa no la usaremos):
 
-| Python | R |
+| **R** | Python |
 |--|--|
-| [Libreta Python3](https://colab.research.google.com/notebook#create=true&language=python3) | [Libreta R](https://colab.research.google.com/notebook#create=true&language=r) |
+| **[Libreta R](https://colab.research.google.com/notebook#create=true&language=r)** | [Libreta Python3](https://colab.research.google.com/notebook#create=true&language=python3) |
 
 [Menú Principal](./)
 
