@@ -11,7 +11,7 @@ Bienvenido a la segunda edición del Diplomado en "Bioinformática" en colaborac
 | 120 horas | 22 de marzo - 11 Junio 2022 _(10 horas por semana)_ | Flexible |
 
 
-**Objetivo**: Que los participantes aprendan los procesos de datos de forma sistemática, desde cómo usar las herramientas de procesamiento en Linux, hasta los elementos que afectan la parametrización de programas, así como la interpretación de resultados de modelamiento molecular y docking.
+**Objetivo**: Que los participantes aprendan los procesos de datos de forma sistemática, desde cómo usar los lenguajes de programación hasta la puesta en marcha de ambientes productivos de procesamiento y visualización de datos.
 
 **En esta página, estaremos revisando el contenido de lecturas y el resumen de comandos revisados en las sesiones en vivo**
 
