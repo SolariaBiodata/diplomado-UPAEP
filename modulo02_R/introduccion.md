@@ -45,7 +45,7 @@ Asimismo, existe una interfaz muy común para usar R en un ambiente de análisis
 En colab existen dos tipos de celdas
 
   1. Celdas de **código** las cuales permiten la ejecución de instrucciones en el lenguaje deseado (`R` o `python`, sólo uno).
-  2. Celdas de **texto** con las cuales podemos agregar más información no ejecutable, la cual nos permite agregar texto enriquecido con el lenguaje _markdown_.
+  2. Celdas de **texto** con las cuales podemos agregar más información no ejecutable, la cual nos permite agregar texto enriquecido con el lenguaje [markdown](https://www.markdownguide.org/).
 
 Las celdas de texto permiten incluso incluír fórmulas escritas en lenguaje $$LaTeX$$:
 
