@@ -109,7 +109,7 @@ usemathjax: true
 **GNOME** - **G**NU **N**etwork **O**bject **M**odel **E**nvironment
 
  - Un entorno de escritorio para Linux.
- - 
+
 **GNU** - **G**NU's **N**ot **U**nix
 
  - Componentes de Software y Utilidades base de los sistemas GNU/Linux. Son la mayoría de programas con los que interactúa el usuario.
@@ -171,7 +171,7 @@ usemathjax: true
 
  - Abreviación de manual. Si te interesa conocer lo que hace un comando, escribe en la terminal:
 
- -  - man (nombre del comando)
+    - `man` (nombre del comando)
 
  - Y te va a devolver un manual con la información detallada de cómo se usa y lo que puede hacer el comando consultado.
 
@@ -207,9 +207,9 @@ usemathjax: true
 **PHP** - Hypertext Preprocessor
 
  - Un lenguaje de programación especialmente orientado al desarrollo web.
- - 
+ 
 **Putty** -
- - 
+
  - Programa en Windows que permite abrir sesiones de Shell desde una máquina remota.
 
 **Python** - Lenguaje de Programación Python
@@ -232,7 +232,7 @@ usemathjax: true
 **Root** - Raíz (/) ó Super Usuario (Administrador)
 
  - La cuenta con nivel de “super usuario” en Linux. El nivel más alto de permisos en el sistema.
- - 
+
  - En otro contexto también se puede refererir al mismo super usuario.
 
 **RPM** - **R**ed Hat **P**ackage **M**anager
@@ -252,7 +252,7 @@ Implementación libre del protocolo SMB de archivos compartidos de Microsoft Win
  - Puesto de forma poética, es la frontera comunicacional entre los humanos y el kernel de GNU/Linux.
 
  - El kernel solo entiende lenguaje binario, las personas escriben comandos y la shell hace el servicio de traducción de ida y vuelta, aceptando y entregando los datos.
- - 
+
  - También es el nombre del Lenguaje de Programación de Ese Nivel Comunicacional.
 
 
