@@ -1,3 +1,9 @@
+---
+usemathjax: true
+---
+![alt text](https://solariabiodata.com.mx/wp-content/uploads/2021/07/logo_red.png "Soluciones de Siguiente Generación")
+# 2o [Diplomado de Bioinformática](./)
+
 ## Pruebas de hipótesis
 
 Se puede hacer una inferencia al realizar una afirmación acerca de un valor que puede tomar un parámetro estadístico de una población. Dicha afirmación puede estar basada en experiencia o alguna creencia, la cual será contrastada con la evidencia que tenemos a través de la información que nos proporciona una muestra. A este proceso se le conoce como _prueba de hipótesis_.
