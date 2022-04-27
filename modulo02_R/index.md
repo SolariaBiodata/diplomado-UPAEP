@@ -75,7 +75,7 @@ Bienvenido a la segunda edición del Diplomado en "Bioinformática" en colaborac
 
 #### [Probabilidad](./estadisticaR#probabilidad)
 
-#### [Pruebas de hiótesis](./estadisticaR#pruebas-de-hipótesis)
+#### [Pruebas de hipótesis](./PruebaHipotesis)
 
 #### [Prueba de una muestra](./estadisticaR#prueba-de-una-muestra)
 
