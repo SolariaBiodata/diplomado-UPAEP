@@ -6,7 +6,7 @@ usemathjax: true
 
 ## Unidad 3 -Bioinformática
 
-Bienvenidos a la Unidad 3  del 1er Diplomado de Bioinformática y Docking. En esta unidad revisaremos varios temas relacionados con bioinformática, empezando por conocer, de qué forma se pueden obtener datos, secuencias, genomas, mediante secuenciación.
+Bienvenidos a la Unidad 3 del 2do Diplomado de Bioinformática y Metagenómica. En esta unidad revisaremos varios temas relacionados con bioinformática, empezando por conocer, de qué forma se pueden obtener datos, secuencias, genomas, mediante secuenciación.
 
 ### Introducción a NGS
 
