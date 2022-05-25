@@ -73,7 +73,7 @@ Visualizamos control de calidad de las lecturas de las lecturas Forward
 ```bash
 plotQualityProfile(fnFs[1:3])
 ```
-*** Adjuntar imagen *** 
+![](https://drive.google.com/file/d/1zjVMAd78NApNXroYVChk0hPL90YUpMfv/view?usp=sharing)
 
 Visualizamos control de calidad de las lecturas de las lecturas 
 
