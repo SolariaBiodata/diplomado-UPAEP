@@ -18,6 +18,7 @@ Bienvenido a la segunda edición del Diplomado en "Bioinformática" en colaborac
 ## Metagenómica
 
 ### [Introduccion](./introduccion)
+## [DADA2](./Resolución_de_lecturas)
 
 
 
