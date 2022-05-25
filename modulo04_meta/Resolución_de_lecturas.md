@@ -16,8 +16,18 @@ El objetivo de devtools es facilitar su vida como desarrollador de paquetes al p
 ```bash
 install.packages("devtools")
 ```
+# Pasos previos a la instalación de DADA2
+Invocamos a la libreria devtools que permite instalar librerias desde github.
+
 ```bash
 library("devtools")
+```
+
+# Posteriormente instalamos DADA2
+
+El pipeline DADA2  tiene como punto de partida un conjunto de archivos fastq secuenciados por Illumina ("desmultiplexado"), que realiza un control de calidad que elimina quimeras y adaptadores. El producto final es una tabla de "variantes de secuencia de amplicón" (ASV), que es un análogo de mayor resolución de la tabla OTU tradicional que ofrecen otros programas.
+
+```bash
 devtools::install_github("benjjneb/dada2", ref="v1.16")
 ```
 ```bash
