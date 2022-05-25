@@ -8,8 +8,8 @@ usemathjax: true
 
 ## Instalación de librerias 
 Lo primero que vamos a realizar es la instación de DADA2. 
-Instalamos la libreria devtools
-El objetivo de devtools es facilitar su vida como desarrollador de paquetes al proporcionar funciones R que simplifican muchas tareas comunes.
+Instalamos la libreria devtools.
+El objetivo de devtools es facilitar su vida como desarrollador de paquetes al proporcionar funciones de R que simplifican muchas tareas comunes.
 
 ```bash
 install.packages("devtools")
@@ -22,7 +22,7 @@ devtools::install_github("benjjneb/dada2", ref="v1.16")
 library(dada2)
 ```
 # Instalamos phyloseq
-El paquete phyloseq es una herramienta para importar, almacenar, analizar y mostrar gráficamente datos de secuenciación filogenética complejos que ya se han agrupado en unidades taxonómicas operativas (OTU), especialmente cuando hay datos de muestra asociados, árbol filogenético y/o asignación taxonómica de las OTU.
+El paquete phyloseq es una herramienta que funciona para importar, almacenar, analizar y mostrar gráficamente datos de secuenciación filogenética complejos que ya se han agrupado en unidades taxonómicas operativas (OTU), especialmente cuando hay datos de muestra asociados, árbol filogenético y/o asignación taxonómica de las OTUs.
 
 ```bash
 if (!require("BiocManager", quietly = TRUE))
@@ -73,23 +73,28 @@ Visualizamos control de calidad de las lecturas de las lecturas Forward
 ```bash
 plotQualityProfile(fnFs[1:3])
 ```
-![](https://drive.google.com/file/d/1zjVMAd78NApNXroYVChk0hPL90YUpMfv/view?usp=sharing)
+![control_calidad_fnFs_1](https://user-images.githubusercontent.com/54455898/170303438-f851ebda-3f5e-447f-b644-9a634e37a2dc.png)
 
-Visualizamos control de calidad de las lecturas de las lecturas 
-
----
-
-Reverse
+Visualizamos control de calidad de las lecturas de las lecturas Reverse
 
 ```bash
 plotQualityProfile(fnRs[1:3])
 ```
 
-*** Adjuntar imagen *** 
+![control_calidad_fnRs_2](https://user-images.githubusercontent.com/54455898/170303787-e06fdd06-b43a-4fa5-8094-90a03b560ef2.png)
+
 
 
 # Filtrado de las lecturas
 Indicamos que generamos una subcaperta o subdirectorio llamado filtered donde se van almacenar los datos 
+
+```bash
+filtFs <- file.path(PATH, "filtered", paste0(sample.names, "_F_filt.fastq.gz"))
+filtRs <- file.path(PATH, "filtered", paste0(sample.names, "_R_filt.fastq.gz"))
+names(filtFs) <- sample.names
+names(filtRs) <- sample.names
+```
+# Filtrado de las lecturas por tamaño 
 
 ```bash
 out <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, truncLen=c(150,100),
@@ -101,13 +106,14 @@ out <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, truncLen=c(150,100),
 ```bash
 plotQualityProfile(filtFs[1:3])
 ```
-*** Adjuntar imagen *** 
+
+![lecturas_filt_Fs_3](https://user-images.githubusercontent.com/54455898/170303946-1580280f-9822-4ef6-8338-ca580a23280a.png)
 
 ```bash
 plotQualityProfile(filtRs[1:3])
-```
+``` 
 
-*** Adjuntar imagen *** 
+![lecturas_filt_Rs_4](https://user-images.githubusercontent.com/54455898/170304121-e1bc1b15-7993-4de3-880a-6b72d30c01da.png)
 
 ```bash
 head(out)
