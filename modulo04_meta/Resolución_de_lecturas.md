@@ -6,8 +6,10 @@ usemathjax: true
 
 # Resolución de lecturas con DADA2
 
+DADA2 es un paquete de software que modela y corrige errores de amplicón secuenciados por Illumina. DADA2 infiere secuencias de muestra con exactitud, sin granularidad gruesa en Unidad Taxonómica Operativa (OTU), y resuelve diferencias de tan solo un nucleótido. En varias comunidades simuladas. DADA2 ha destacado de otros similares en identificar más variantes reales produciendo menos secuencias espurias. 
+
 ## Instalación de librerias 
-Lo primero que vamos a realizar es la instación de DADA2. 
+Lo primero que vamos a realizar es la instalación de DADA2. 
 Instalamos la libreria devtools.
 El objetivo de devtools es facilitar su vida como desarrollador de paquetes al proporcionar funciones de R que simplifican muchas tareas comunes.
 
@@ -22,7 +24,7 @@ devtools::install_github("benjjneb/dada2", ref="v1.16")
 library(dada2)
 ```
 # Instalamos phyloseq
-El paquete phyloseq es una herramienta que funciona para importar, almacenar, analizar y mostrar gráficamente datos de secuenciación filogenética complejos que ya se han agrupado en unidades taxonómicas operativas (OTU), especialmente cuando hay datos de muestra asociados, árbol filogenético y/o asignación taxonómica de las OTUs.
+El paquete phyloseq es una herramienta que funciona para importar, almacenar, analizar y mostrar gráficamente datos de secuenciación filogenética complejos que ya se han agrupado en OTUs, especialmente cuando hay datos de muestra asociados, árbol filogenético y/o asignación taxonómica de las OTUs.
 
 ```bash
 if (!require("BiocManager", quietly = TRUE))
@@ -38,7 +40,7 @@ install_github("microbiome/microbiome")
 library(microbiome)
 ```
 # Instalamos Fantaxtic 
-Es un paquete que contiene un conjunto de funciones contenedoras para los paquetes phyloseq y ggplot2 en el software R que convierte los datos de conteo taxonómico ordinarios en gráficos fantásticos listos para publicación. Las figuras Fantaxtic vienen como figuras completamente estilizadas con colores agradables y un control de trazado máximo
+Es un paquete que contiene un conjunto de funciones contenedoras para los paquetes phyloseq y ggplot2 en el software R que convierte los datos de conteo taxonómico ordinarios en gráficos fantásticos listos para publicación. Las figuras Fantaxtic vienen como figuras completamente estilizadas con colores agradables y un control de trazado máximo.
 
 ```bash
 devtools::install_github("gmteunisse/Fantaxtic")
@@ -52,6 +54,11 @@ library(ggplot2)
 # Ruta de las lecturas
 Indicamos la ruta de las lecturas
 
+```bash
+PATH = "/Ruta/Lecturas"
+list.files(PATH)
+```
+
 Cargar los archivos de la corrida de secuenciación
 
 > 
@@ -59,23 +66,19 @@ Cargar los archivos de la corrida de secuenciación
 > 
 
 ```bash
-PATH = "/Ruta/Lecturas"
-list.files(PATH)
-```
-```bash
 fnFs <- sort(list.files(PATH, pattern="_R1_001.fastq", full.names = TRUE))
 fnRs <- sort(list.files(PATH, pattern="_R2_001.fastq", full.names = TRUE))
 sample.names <- sapply(strsplit(basename(fnFs), "_"), `[`, 1)
 ```
 
-Visualizamos control de calidad de las lecturas de las lecturas Forward
+Visualizamos control de calidad de las lecturas Forward
 
 ```bash
 plotQualityProfile(fnFs[1:3])
 ```
 ![control_calidad_fnFs_1](https://user-images.githubusercontent.com/54455898/170303438-f851ebda-3f5e-447f-b644-9a634e37a2dc.png "control_calidad_fnFs_1")
 
-Visualizamos control de calidad de las lecturas de las lecturas Reverse
+Visualizamos control de calidad de las lecturas Reverse
 
 ```bash
 plotQualityProfile(fnRs[1:3])
@@ -95,6 +98,7 @@ names(filtRs) <- sample.names
 ```
 # Filtrado de las lecturas por tamaño 
 
+
 ```bash
 out <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, truncLen=c(150,100),
               maxN=0, maxEE=c(2,2), truncQ=2, rm.phix=TRUE,
@@ -102,11 +106,15 @@ out <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, truncLen=c(150,100),
 ```
 # Visualización de las lecturas después del trimming
 
+#### Visualizamos filtrado de lecturas Forward
+
 ```bash
 plotQualityProfile(filtFs[1:3])
 ```
 
 ![lecturas_filt_Fs_3](https://user-images.githubusercontent.com/54455898/170303946-1580280f-9822-4ef6-8338-ca580a23280a.png "lecturas_filt_Fs_3")
+
+#### Visualizamos filtrado de lecturas Reverse
 
 ```bash
 plotQualityProfile(filtRs[1:3])
@@ -134,7 +142,7 @@ dadaRs <- dada(filtRs, err=errR, multithread=TRUE)
 ```bash
 mergers <- mergePairs(dadaFs, filtFs, dadaRs, filtRs, verbose=TRUE)
 ```
-# Remoción de Chimeras
+# Remoción de chimeras
 
 ```bash
 seqtab <- makeSequenceTable(mergers)
@@ -200,7 +208,7 @@ plot_bar(ps.top20, fill="Family")
 ```
 
 
-![grafica_aplicada_5](https://user-images.githubusercontent.com/54455898/170310406-c17914a5-6fe7-4b7c-822d-111ea5e5b5ab.png "grafica_aplicada")
+![grafica_apilada_5](https://user-images.githubusercontent.com/54455898/170310406-c17914a5-6fe7-4b7c-822d-111ea5e5b5ab.png "grafica_apilada")
 
 
 # Graficamos con Fantaxtic 
