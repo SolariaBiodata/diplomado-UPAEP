@@ -179,6 +179,7 @@ saveRDS(taxa, "tax_final1.rds")
 seqtab <- readRDS("seqtab_final1.rds") 
 taxtab <- readRDS("tax_final1.rds")
 ```
+# Guardamos y creamos un objeto Phyloseq 
 
 ```bash
 asv_seqs <- colnames(seqtab.nochim)
@@ -187,15 +188,27 @@ asv_tab <- t(seqtab.nochim)
 row.names(asv_tab) <- sub(">", "", asv_headers)
 asv_tax <- taxa
 row.names(asv_tax) <- sub(">", "", asv_headers)
-obpy2<- phyloseq(otu_table(seqtab.nochim, taxa_are_rows=FALSE), tax_table(taxa))
-ps2
+ps<- phyloseq(otu_table(seqtab.nochim, taxa_are_rows=FALSE), tax_table(taxa))
+```
+# Graficas apiladas
+
+```bash
+top20 <- names(sort(taxa_sums(ps), decreasing=TRUE))[1:20]
+ps.top20 <- transform_sample_counts(ps, function(OTU) OTU/sum(OTU))
+ps.top20 <- prune_taxa(top20, ps.top20)
+plot_bar(ps.top20, fill="Family")
 ```
 
 
+![grafica_aplicada_5](https://user-images.githubusercontent.com/54455898/170310406-c17914a5-6fe7-4b7c-822d-111ea5e5b5ab.png "grafica_aplicada")
 
 
+# Graficamos con Fantaxtic 
 
-
+```bash
+fantaxtic_bar(ps.top20, color_by = "Family", label_by = "Genus", other_label = "Other")
+```
+![grafica_fantaxtic_6](https://user-images.githubusercontent.com/54455898/170310836-d9196878-59f2-4606-a3b4-b13f760d86d4.png "grafica_fantaxtic")
 
 
 
