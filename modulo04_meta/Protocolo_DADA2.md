@@ -62,15 +62,128 @@ Cargar los archivos de la corrida de secuenciación
 PATH = "/Ruta/Lecturas"
 list.files(PATH)
 ```
+```bash
+fnFs <- sort(list.files(PATH, pattern="_R1_001.fastq", full.names = TRUE))
+fnRs <- sort(list.files(PATH, pattern="_R2_001.fastq", full.names = TRUE))
+sample.names <- sapply(strsplit(basename(fnFs), "_"), `[`, 1)
+```
+
+Visualizamos control de calidad de las lecturas de las lecturas Forward
+
+```bash
+plotQualityProfile(fnFs[1:3])
+```
+*** Adjuntar imagen *** 
+
+Visualizamos control de calidad de las lecturas de las lecturas 
+
+---
+
+Reverse
+
+```bash
+plotQualityProfile(fnRs[1:3])
+```
+
+*** Adjuntar imagen *** 
 
 
+# Filtrado de las lecturas
+Indicamos que generamos una subcaperta o subdirectorio llamado filtered donde se van almacenar los datos 
 
+```bash
+out <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, truncLen=c(150,100),
+              maxN=0, maxEE=c(2,2), truncQ=2, rm.phix=TRUE,
+              compress=TRUE, multithread=TRUE)
+```
+# Visualización de las lecturas despues del trimming
 
+```bash
+plotQualityProfile(filtFs[1:3])
+```
+*** Adjuntar imagen *** 
 
+```bash
+plotQualityProfile(filtRs[1:3])
+```
 
+*** Adjuntar imagen *** 
 
+```bash
+head(out)
+```
 
+# Filtrado de errores en las lecturas
+Para este paso se utiliza la función lernErrors que es un modelo de error paramétrico (err), donde cada conjunto de datos de lecturas tiene un conjunto diferente de tasas de error. El método learnErrors aprende este modelo de error de los datos, alternando la estimación de las tasas de error y la inferencia de la composición de la muestra hasta que convergen en una solución conjunta consistente.
 
+```bash
+errF <- learnErrors(filtFs, multithread=TRUE)
+errR <- learnErrors(filtRs, multithread=TRUE)
+```
+```bash
+dadaFs <- dada(filtFs, err=errF, multithread=TRUE)
+dadaRs <- dada(filtRs, err=errR, multithread=TRUE)
+```
+# Merge de las lecturas 
+
+```bash
+mergers <- mergePairs(dadaFs, filtFs, dadaRs, filtRs, verbose=TRUE)
+```
+# Remoción de Chimeras
+
+```bash
+seqtab <- makeSequenceTable(mergers)
+seqtab.nochim <- removeBimeraDenovo(seqtab, method="consensus", multithread=TRUE, verbose=TRUE)
+dim(seqtab.nochim)
+sum(seqtab.nochim)/sum(seqtab)
+write.table(seqtab.nochim, file = "AmpliconSequenceVariableTable.txt", sep = "\t")
+```
+
+# Resumen de los filtrados de control de calidad
+
+```bash
+getN <- function(x) sum(getUniques(x))
+track <- cbind(out, sapply(dadaFs, getN), sapply(dadaRs, getN), sapply(mergers, getN), rowSums(seqtab.nochim))
+colnames(track) <- c("input", "filtered", "denoisedF", "denoisedR", "merged", "nonchim")
+rownames(track) <- sample.names
+track
+write.table(track,"Track_reads.tsv", sep="\t", quote=F, col.names=NA)
+```
+# Asignación taxonómica con la base de datos de SILVA
+
+```bash
+taxa<-assignTaxonomy(seqtab.nochim, "/content/reads/silva_nr_v132_train_set.fa.gz", multithread=TRUE)
+```
+
+# Removemos las secuencias y visualizamos la tabla de asignación taxonómica 
+
+```bash
+taxa.print <- taxa
+rownames(taxa.print) <- NULL
+head(taxa.print)
+```
+
+*** Adjuntar como se vería la tabla ***
+
+```bash
+write.table(taxa, file = "TaxonomyTable.txt", sep = "\t")
+saveRDS(seqtab.nochim, "seqtab_final1.rds")
+saveRDS(taxa, "tax_final1.rds")
+
+seqtab <- readRDS("seqtab_final1.rds") 
+taxtab <- readRDS("tax_final1.rds")
+```
+
+```bash
+asv_seqs <- colnames(seqtab.nochim)
+asv_headers <- vector(dim(seqtab.nochim)[2], mode="character")
+asv_tab <- t(seqtab.nochim)
+row.names(asv_tab) <- sub(">", "", asv_headers)
+asv_tax <- taxa
+row.names(asv_tax) <- sub(">", "", asv_headers)
+obpy2<- phyloseq(otu_table(seqtab.nochim, taxa_are_rows=FALSE), tax_table(taxa))
+ps2
+```
 
 
 
