@@ -84,7 +84,6 @@ plotQualityProfile(fnRs[1:3])
 ![control_calidad_fnRs_2](https://user-images.githubusercontent.com/54455898/170303787-e06fdd06-b43a-4fa5-8094-90a03b560ef2.png "control_calidad_fnRs_2")
 
 
-
 # Filtrado de las lecturas
 Indicamos que generamos una subcaperta o subdirectorio llamado filtered donde se van almacenar los datos 
 
@@ -101,7 +100,7 @@ out <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, truncLen=c(150,100),
               maxN=0, maxEE=c(2,2), truncQ=2, rm.phix=TRUE,
               compress=TRUE, multithread=TRUE)
 ```
-# Visualización de las lecturas despues del trimming
+# Visualización de las lecturas después del trimming
 
 ```bash
 plotQualityProfile(filtFs[1:3])
