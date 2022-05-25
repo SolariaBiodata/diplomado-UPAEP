@@ -4,7 +4,7 @@ usemathjax: true
 ![alt text](https://solariabiodata.com.mx/wp-content/uploads/2021/07/logo_red.png "Soluciones de Siguiente Generación")
 # 2o [Diplomado de Bioinformática](./)
 
-# Libreta con R para el protoloco de DADA2 
+# Resolución de lecturas con DADA2
 
 ## Instalación de librerias 
 Lo primero que vamos a realizar es la instación de DADA2. 
