@@ -169,7 +169,8 @@ rownames(taxa.print) <- NULL
 head(taxa.print)
 ```
 
-*** Adjuntar como se vería la tabla ***
+![vistaprevia_asigtaxonomica](https://user-images.githubusercontent.com/54455898/170314876-3a42490a-a67e-4ca5-94f1-08a6c935cd93.png "vista preeliminar")
+
 
 ```bash
 write.table(taxa, file = "TaxonomyTable.txt", sep = "\t")
