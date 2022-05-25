@@ -73,7 +73,7 @@ Visualizamos control de calidad de las lecturas de las lecturas Forward
 ```bash
 plotQualityProfile(fnFs[1:3])
 ```
-![control_calidad_fnFs_1](https://user-images.githubusercontent.com/54455898/170303438-f851ebda-3f5e-447f-b644-9a634e37a2dc.png)
+![control_calidad_fnFs_1](https://user-images.githubusercontent.com/54455898/170303438-f851ebda-3f5e-447f-b644-9a634e37a2dc.png "control_calidad_fnFs_1")
 
 Visualizamos control de calidad de las lecturas de las lecturas Reverse
 
@@ -81,7 +81,7 @@ Visualizamos control de calidad de las lecturas de las lecturas Reverse
 plotQualityProfile(fnRs[1:3])
 ```
 
-![control_calidad_fnRs_2](https://user-images.githubusercontent.com/54455898/170303787-e06fdd06-b43a-4fa5-8094-90a03b560ef2.png)
+![control_calidad_fnRs_2](https://user-images.githubusercontent.com/54455898/170303787-e06fdd06-b43a-4fa5-8094-90a03b560ef2.png "control_calidad_fnRs_2")
 
 
 
@@ -107,13 +107,13 @@ out <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, truncLen=c(150,100),
 plotQualityProfile(filtFs[1:3])
 ```
 
-![lecturas_filt_Fs_3](https://user-images.githubusercontent.com/54455898/170303946-1580280f-9822-4ef6-8338-ca580a23280a.png)
+![lecturas_filt_Fs_3](https://user-images.githubusercontent.com/54455898/170303946-1580280f-9822-4ef6-8338-ca580a23280a.png "lecturas_filt_Fs_3")
 
 ```bash
 plotQualityProfile(filtRs[1:3])
 ``` 
 
-![lecturas_filt_Rs_4](https://user-images.githubusercontent.com/54455898/170304121-e1bc1b15-7993-4de3-880a-6b72d30c01da.png)
+![lecturas_filt_Rs_4](https://user-images.githubusercontent.com/54455898/170304121-e1bc1b15-7993-4de3-880a-6b72d30c01da.png "lecturas_filt_Rs_4")
 
 ```bash
 head(out)
