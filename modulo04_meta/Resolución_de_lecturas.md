@@ -4,7 +4,7 @@ usemathjax: true
 ![alt text](https://solariabiodata.com.mx/wp-content/uploads/2021/07/logo_red.png "Soluciones de Siguiente Generación")
 # 2o [Diplomado de Bioinformática](./)
 
-# Resolución de lecturas con DADA2
+# Análisis de metaprofiling con DADA2
 
 DADA2 es un paquete de software que modela y corrige errores de amplicón secuenciados por Illumina. DADA2 infiere secuencias de muestra con exactitud, sin granularidad gruesa en Unidad Taxonómica Operativa (OTU), y resuelve diferencias de tan solo un nucleótido. En varias comunidades simuladas. DADA2 ha destacado de otros similares en identificar más variantes reales produciendo menos secuencias espurias. 
 
@@ -70,10 +70,6 @@ list.files(PATH)
 ```
 
 Cargar los archivos de la corrida de secuenciación
-
-> 
-
-> 
 
 ```bash
 fnFs <- sort(list.files(PATH, pattern="_R1_001.fastq", full.names = TRUE))
