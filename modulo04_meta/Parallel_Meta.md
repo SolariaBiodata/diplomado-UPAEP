@@ -41,4 +41,20 @@ Ahora para correr Parallel-META 3, solo se requiere ejecutar el siguiente comand
 ```bash
 PM-pipeline -i list_test.txt -m metadata_test.txt -R T -o output_test
 ```
+## Al terminar de procesar los datos se generará el archivo de salida llamado ***output_test*** con el siguiente contenido
+|°|°|°|°|°|
+|-----|-----|-----|-----|-----|
+| Abundance_Tables/ | Analysis_Report.txt | Alpha_Diversity/ | Beta_Diversity/ | Clustering/ |
+| Markers/ | Network/ | Sample_Views/ | Single_Sample/ | Single_Sample.List |
+| error.log  | meta.txt | scripts.sh | index.html | Distance_Matrix/ | 
+
+## Dentro de la carpeta "Abundance_Tables/" podemos visualizar gráficas de abundancia relativa con base a ciertas clasificaciones
+
+### Visualización de abundancia relativa a nivel de ***filo*** 
+
+![taxa phylum Abd distribution-1](https://user-images.githubusercontent.com/54455898/170571276-d551f060-d113-45f3-b59d-db917834ea8c.png)
+
+### Visualización de abundancia relativa a nivel de ***género*** 
+
+![taxa genus Abd distribution-1](https://user-images.githubusercontent.com/54455898/170571663-5858a14a-2b3e-4f7b-a2fd-98c7e4d94e53.png)
 
