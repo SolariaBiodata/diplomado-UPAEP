@@ -6,6 +6,20 @@ usemathjax: true
 
 # Procesamiento de datos de microbioma con Parallel-META 3
 
+## Cuestión actual sobre los datos metagenómicos
+
+El número de metagenomas está aumentando rápidamente. Sin embargo, los métodos actuales para el análisis metagenómico están limitados por su capacidad para la extracción de datos en profundidad entre una gran cantidad de microbiomas, cada uno de los cuales tiene una estructura comunitaria compleja. Además, la complejidad de configurar y operar la canalización computacional también dificulta el procesamiento de datos eficiente para los investigadores.
+
+## ¿Qué es Parallel-Meta?
+
+* Parallel-Meta(PM) es un paquete de software fácil de usar para el análisis rápido y completo de datos de microbiomas en múltiples plataformas.
+* PM cubre una amplia gama de funciones para el preprocesamiento de datos, estadísticas, visualización mediante algoritmos de última generación.
+* Todo el procedimiento de PM está optimizado por un esquema de computación paralelo que permite el procesamiento rápido de miles de microbiomas.
+
+PMS cubre una amplia gama de funciones para el preprocesamiento de datos, estadísticas, visualización mediante algoritmos de última generación.
+
+Todo el procedimiento de PMS está optimizado por un esquema de computación paralelo que permite el procesamiento rápido de miles de microbiomas.
+
 ## Hacer la lista de archivos de secuencia
 
 Debe permitir que Parallel-META conozca las rutas de sus muestras de entrada mediante una lista de archivos de secuencias. En la lista, cada línea contiene la ruta exacta de un solo archivo de secuencia de una muestra, por lo que la cantidad de líneas en la lista debe ser igual a la cantidad de muestras de entrada. Se recomienda encarecidamente las rutas absolutas (rutas completas) para evitar los errores de ruta. Estos datos están guardados para esta práctica como ****list_test.txt****. Aquí hay un ejemplo de la lista de archivos de secuencia.
