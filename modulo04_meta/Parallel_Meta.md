@@ -8,7 +8,7 @@ usemathjax: true
 
 ## Hacer la lista de archivos de secuencia
 
-Debe permitir que Parallel-META conozca las rutas de sus muestras de entrada mediante una lista de archivos de secuencias. En la lista, cada línea contiene la ruta exacta de un solo archivo de secuencia de una muestra, por lo que la cantidad de líneas en la lista debe ser igual a la cantidad de muestras de entrada. Se recomienda encarecidamente las rutas absolutas (rutas completas) para evitar los errores de ruta. Estos datos están guardados para esta práctica como list_test.txt. Aquí hay un ejemplo de la lista de archivos de secuencia.
+Debe permitir que Parallel-META conozca las rutas de sus muestras de entrada mediante una lista de archivos de secuencias. En la lista, cada línea contiene la ruta exacta de un solo archivo de secuencia de una muestra, por lo que la cantidad de líneas en la lista debe ser igual a la cantidad de muestras de entrada. Se recomienda encarecidamente las rutas absolutas (rutas completas) para evitar los errores de ruta. Estos datos están guardados para esta práctica como ****list_test.txt****. Aquí hay un ejemplo de la lista de archivos de secuencia.
 
 085-01 /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/reads_profiling/085-01_S1_L001_R1_001.fastq
 
