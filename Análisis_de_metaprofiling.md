@@ -21,10 +21,9 @@ Primeramente se invoca la librería devtools que permite instalar librerias desd
 ```bash
 library("devtools")
 ```
-
 ## Instalación de DADA2
 
-El pipeline DADA2  tiene como punto de partida un conjunto de archivos fastq secuenciados por Illumina ("desmultiplexado"), que realiza un control de calidad que elimina quimeras y adaptadores. El producto final es una tabla de "variantes de secuencia de amplicón" (ASV), que es un análogo de mayor resolución de la tabla OTU tradicional que ofrecen otros programas.
+Una vez que devtools esté activado podemos instalar DADA2
 
 ```bash
 devtools::install_github("benjjneb/dada2", ref="v1.16")
@@ -32,6 +31,8 @@ devtools::install_github("benjjneb/dada2", ref="v1.16")
 ```bash
 library(dada2)
 ```
+El pipeline DADA2  tiene como punto de partida un conjunto de archivos fastq secuenciados por Illumina ("desmultiplexado"), que realiza un control de calidad que elimina quimeras y adaptadores. El producto final es una tabla de "variantes de secuencia de amplicón" (ASV), que es un análogo de mayor resolución de la tabla OTU tradicional que ofrecen otros programas.
+
 ## Instalamos phyloseq
 El paquete ****phyloseq**** es una herramienta que funciona para importar, almacenar, analizar y mostrar gráficamente datos de secuenciación filogenética complejos que ya se han agrupado en OTUs, especialmente cuando hay datos de muestra asociados, árbol filogenético y/o asignación taxonómica de las OTUs.
 
