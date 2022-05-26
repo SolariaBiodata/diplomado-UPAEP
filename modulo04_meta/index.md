@@ -18,7 +18,7 @@ Bienvenido a la segunda edición del Diplomado en "Bioinformática" en colaborac
 ## Metagenómica
 
 ### [Introducción](./introduccion)
-#### [Análisis de metaprofiling](./Analisis_de_metaprofiling)
+#### [Analisis_de_metaprofiling](./Analisis_de_metaprofiling)
 
 
 
