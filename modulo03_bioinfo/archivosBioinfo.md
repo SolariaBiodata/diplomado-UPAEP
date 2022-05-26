@@ -174,10 +174,10 @@ TTGTGTAGTAGATTAGCTCCGCTAATCACGA
 
 Como puede observarse, en este formato cada lectura de un fragmento se compone por 4 líneas:
 
- 1. El encabezado de la lectura sirve para identificar cada una, siempre inicia con `@`
- 2. La línea de la secuencia de nucléotidos asignados (sigue las especifiaciones del formato FASTA)
- 3. Línea  de separación, se caracteriza porque inicia con `+`, algunas veces no contiene más información que dicho caracter
- 4. La línea de la secuencia de calidades Phred, usualmente con la codificacion _Phred33_. Esta línea tiene la misma longitud que la secuencia de nucleótidos (2).
+ 1. El encabezado de la lectura sirve para identificar cada una, siempre inicia con `@`.
+ 2. La línea de la secuencia de nucléotidos asignados (sigue las especifiaciones del formato FASTA).
+ 3. Línea  de separación, se caracteriza porque inicia con `+`, algunas veces no contiene más información que dicho carácter.
+ 4. La línea de la secuencia de calidades Phred, usualmente con la codificación _Phred33_. Esta línea tiene la misma longitud que la secuencia de nucleótidos (2).
 
 Un archivo FASTQ contiene múltiples lecturas, sin embargo, para que sea válido, debe contener esas 4 líneas por cada una de las lecturas, por lo que una característica adicional es que contiene un número de líneas el cual es múltiplo de 4. 
 
