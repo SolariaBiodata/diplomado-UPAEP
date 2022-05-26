@@ -62,7 +62,7 @@ PM-pipeline -i list_test.txt -m metadata_test.txt -R T -o output_test
 ```
 ### Al terminar de procesar los datos se generará el archivo de salida llamado ***output_test*** con el siguiente contenido
 | ****SO**** | ****L****  | ****A****  | ****R****  | ****IA**** |
-| ---------- | ---------- | ---------- | ---------- | ---------- |
+| ----------------- | ------------------- | ---------------- | --------------- | ----------- |
 | Abundance_Tables/ | Analysis_Report.txt | Alpha_Diversity/ | Beta_Diversity/ | Clustering/ |
 | Markers/ | Network/ | Sample_Views/ | Single_Sample/ | Single_Sample.List |
 | error.log  | meta.txt | scripts.sh | index.html | Distance_Matrix/ | 
