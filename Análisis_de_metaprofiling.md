@@ -6,18 +6,17 @@ usemathjax: true
 
 # Análisis de metaprofiling con DADA2
 
-DADA2 es un paquete de software que modela y corrige errores de amplicón secuenciados por Illumina. DADA2 infiere secuencias de muestra con exactitud, sin granularidad gruesa en Unidad Taxonómica Operativa (OTU), y resuelve diferencias de tan solo un nucleótido. En varias comunidades simuladas. DADA2 ha destacado de otros similares en identificar más variantes reales produciendo menos secuencias espurias. 
+DADA2 es un paquete de software que modela y corrige errores de amplicón secuenciados por Illumina. DADA2 infiere secuencias de muestra con exactitud, sin granularidad gruesa en Unidad Taxonómica Operativa (OTU), y resuelve diferencias de tan solo un nucleótido. En varias comunidades simuladas. DADA2 ha destacado de otras herramientas similares en identificar más variantes reales produciendo menos secuencias espurias. 
 
 ## Instalación de librerias 
-Lo primero que vamos a realizar es la instalación de DADA2. 
-Instalamos la libreria devtools.
+Antes de la instalación de DADA2 es importante contar con la libreria **devtools**.
 El objetivo de devtools es facilitar su vida como desarrollador de paquetes al proporcionar funciones de R que simplifican muchas tareas comunes.
 
 ```bash
 install.packages("devtools")
 ```
 ## Pasos previos a la instalación de DADA2
-Invocamos a la libreria devtools que permite instalar librerias desde github.
+Primeramente se invoca la librería devtools que permite instalar librerias desde github.
 
 ```bash
 library("devtools")
@@ -34,7 +33,7 @@ devtools::install_github("benjjneb/dada2", ref="v1.16")
 library(dada2)
 ```
 ## Instalamos phyloseq
-El paquete phyloseq es una herramienta que funciona para importar, almacenar, analizar y mostrar gráficamente datos de secuenciación filogenética complejos que ya se han agrupado en OTUs, especialmente cuando hay datos de muestra asociados, árbol filogenético y/o asignación taxonómica de las OTUs.
+El paquete ****phyloseq**** es una herramienta que funciona para importar, almacenar, analizar y mostrar gráficamente datos de secuenciación filogenética complejos que ya se han agrupado en OTUs, especialmente cuando hay datos de muestra asociados, árbol filogenético y/o asignación taxonómica de las OTUs.
 
 ```bash
 if (!require("BiocManager", quietly = TRUE))
@@ -50,7 +49,7 @@ install_github("microbiome/microbiome")
 library(microbiome)
 ```
 ## Instalamos Fantaxtic 
-Es un paquete que contiene un conjunto de funciones contenedoras para los paquetes phyloseq y ggplot2 en el software R que convierte los datos de conteo taxonómico ordinarios en gráficos fantásticos listos para publicación. Las figuras Fantaxtic vienen como figuras completamente estilizadas con colores agradables y un control de trazado máximo.
+***Fantaxtic*** es un paquete que contiene un conjunto de funciones contenedoras para los paquetes phyloseq y ggplot2 en el software R que convierte los datos de conteo taxonómico ordinarios en gráficos fantásticos listos para publicación. Las figuras Fantaxtic vienen como figuras completamente estilizadas con colores agradables y un control de trazado máximo.
 
 ```bash
 devtools::install_github("gmteunisse/Fantaxtic")
@@ -77,14 +76,14 @@ fnRs <- sort(list.files(PATH, pattern="_R2_001.fastq", full.names = TRUE))
 sample.names <- sapply(strsplit(basename(fnFs), "_"), `[`, 1)
 ```
 
-Visualizamos control de calidad de las lecturas Forward
+Visualizamos el control de calidad de las lecturas Forward
 
 ```bash
 plotQualityProfile(fnFs[1:3])
 ```
 ![control_calidad_fnFs_1](https://user-images.githubusercontent.com/54455898/170303438-f851ebda-3f5e-447f-b644-9a634e37a2dc.png "control_calidad_fnFs_1")
 
-Visualizamos control de calidad de las lecturas Reverse
+Visualizamos el control de calidad de las lecturas Reverse
 
 ```bash
 plotQualityProfile(fnRs[1:3])
@@ -112,7 +111,7 @@ out <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, truncLen=c(150,100),
 ```
 ## Visualización de las lecturas después del trimming
 
-#### Visualizamos filtrado de lecturas Forward
+#### Visualizamos el filtrado de lecturas Forward
 
 ```bash
 plotQualityProfile(filtFs[1:3])
@@ -120,7 +119,7 @@ plotQualityProfile(filtFs[1:3])
 
 ![lecturas_filt_Fs_3](https://user-images.githubusercontent.com/54455898/170303946-1580280f-9822-4ef6-8338-ca580a23280a.png "lecturas_filt_Fs_3")
 
-#### Visualizamos filtrado de lecturas Reverse
+#### Visualizamos el filtrado de lecturas Reverse
 
 ```bash
 plotQualityProfile(filtRs[1:3])
@@ -133,7 +132,7 @@ head(out)
 ```
 
 ## Filtrado de errores en las lecturas
-Para este paso se utiliza la función lernErrors que es un modelo de error paramétrico (err), donde cada conjunto de datos de lecturas tiene un conjunto diferente de tasas de error. El método learnErrors aprende este modelo de error de los datos, alternando la estimación de las tasas de error y la inferencia de la composición de la muestra hasta que convergen en una solución conjunta consistente.
+Para este paso se utiliza la función ***lernErrors*** que es un modelo de error paramétrico (err), donde cada conjunto de datos de lecturas tiene un conjunto diferente de tasas de error. El método ***learnErrors*** aprende este modelo de error de los datos, alternando la estimación de las tasas de error y la inferencia de la composición de la muestra hasta que convergen en una solución conjunta consistente.
 
 ```bash
 errF <- learnErrors(filtFs, multithread=TRUE)
@@ -204,7 +203,7 @@ asv_tax <- taxa
 row.names(asv_tax) <- sub(">", "", asv_headers)
 ps<- phyloseq(otu_table(seqtab.nochim, taxa_are_rows=FALSE), tax_table(taxa))
 ```
-## Graficas apiladas
+## Gráficas apiladas
 
 ```bash
 top20 <- names(sort(taxa_sums(ps), decreasing=TRUE))[1:20]
