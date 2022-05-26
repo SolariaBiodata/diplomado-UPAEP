@@ -80,7 +80,7 @@ Una biblioteca con elementos de baja calidad, incrementa la complejidad y dismin
 
 **Remoción de adaptadores**
 
-La remoción de adaptadores es el proceso a través del cual suministramos información de secuencias conocidas de adaptadores para localizarlos y depletarlos de un archivo de lecturas crudas. Para ello se puede realizar con diferentes software. Aumamos que tenemos un adaptador `ATTTGGTACGTA` el cual queremos eliminar de nuestra corrida:
+La remoción de adaptadores es el proceso a través del cual suministramos información de secuencias conocidas de adaptadores para localizarlos y depletarlos de un archivo de lecturas crudas. Para ello se puede realizar con diferentes software. Identificamos el adaptador `ATTTGGTACGTA` el cual queremos eliminar de nuestra corrida:
 
 ```
 fastx_clipper -a ATTTGGTACGTA -i mislecturas.fastq -o mislecturas_noadapter.fastq
