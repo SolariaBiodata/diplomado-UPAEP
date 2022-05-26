@@ -45,12 +45,11 @@ BiocManager::install("phyloseq")
 ```bash
 install_github("microbiome/microbiome")
 ```
-## Instalamos microbiome
 ```bash
 library(microbiome)
 ```
 ## Instalamos Fantaxtic 
-***Fantaxtic*** es un paquete que contiene un conjunto de funciones contenedoras para los paquetes phyloseq y ggplot2 en el software R que convierte los datos de conteo taxonómico ordinarios en gráficos fantásticos listos para publicación. Las figuras Fantaxtic vienen como figuras completamente estilizadas con colores agradables y un control de trazado máximo.
+****Fantaxtic**** es un paquete que contiene un conjunto de funciones contenedoras para los paquetes phyloseq y ggplot2 en el software R que convierte los datos de conteo taxonómico ordinarios en gráficos fantásticos listos para publicación. Las figuras Fantaxtic vienen como figuras completamente estilizadas con colores agradables y un control de trazado máximo.
 
 ```bash
 devtools::install_github("gmteunisse/Fantaxtic")
