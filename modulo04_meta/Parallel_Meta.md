@@ -6,6 +6,9 @@ usemathjax: true
 
 # Procesamiento de datos de microbioma con Parallel-META 3
 
+![imagen_pm](https://user-images.githubusercontent.com/54455898/170573799-385cde3c-68fa-4cb4-a418-7525bacc818d.jpg)
+
+
 ## Cuestión actual sobre los datos metagenómicos
 
 El número de metagenomas está aumentando rápidamente. Sin embargo, los métodos actuales para el análisis metagenómico están limitados por su capacidad para la extracción de datos en profundidad entre una gran cantidad de microbiomas, cada uno de los cuales tiene una estructura comunitaria compleja. Además, la complejidad de configurar y operar la canalización computacional también dificulta el procesamiento de datos eficiente para los investigadores.
