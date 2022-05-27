@@ -8,7 +8,6 @@ usemathjax: true
 
 ![imagen_pm](https://user-images.githubusercontent.com/54455898/170573799-385cde3c-68fa-4cb4-a418-7525bacc818d.jpg)
 
-
 ## Cuestión actual sobre los datos metagenómicos
 
 El número de metagenomas está aumentando rápidamente. Sin embargo, los métodos actuales para el análisis metagenómico están limitados por su capacidad para la extracción de datos en profundidad entre una gran cantidad de microbiomas, cada uno de los cuales tiene una estructura comunitaria compleja. Además, la dificultad de configurar y operar la canalización computacional también complica el procesamiento de datos eficiente para los investigadores.
@@ -23,7 +22,21 @@ El número de metagenomas está aumentando rápidamente. Sin embargo, los métod
 
 ## Pasos previos para ejecutar Parallel-Meta
 
-### Hacer la lista de archivos de secuencia
+### Lecturas de secuenciación descomprimidas
+
+Es muy importante revisar que tus archivos de secuenciación se encuentren descromprimidos, ya que al momento de correr PM no generará como tal un error, y se podría desperdiciar demasiado tiempo en tanto a los recursos de computo. Normalmente las lecturas de secuenciación se encuentran comprimidas en formato ***gz*** el cual es un algoritmo de compresión estándar GNU zip (gzip).
+
+Si se encuetran todas tus lecturas comprimidas dentro de la misma carpeta puedes ejecutar el siguiente comando:
+
+```bash
+gunzip *.gz
+```
+En dado caso de que desees volver a comprimir todas tus lecturas a la vez simplemente corres la siguiente instrucción en la terminal:
+
+```bash
+gzip *.fastq
+```
+### Elaboración de una lista de archivos de secuencia
 
 Debe permitir que Parallel-META conozca las rutas de sus muestras de entrada mediante una lista de archivos de secuencias. En la lista, cada línea contiene la ruta exacta de un solo archivo de secuencia de una muestra, por lo que la cantidad de líneas en la lista debe ser igual a la cantidad de muestras de entrada. Se recomienda encarecidamente las rutas absolutas (rutas completas) para evitar los errores de ruta. Estos datos están guardados para esta práctica como ***list_test.txt***. A continuación se muestra un ejemplo de la lista de archivos de secuencia.
 
@@ -41,7 +54,7 @@ Debe permitir que Parallel-META conozca las rutas de sus muestras de entrada med
 085-03 /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/reads_profiling/085-03_S3_L001_R2_001.fastq
 ```
 
-### Comprueba tus metadatos
+### Comprobación de metadatos
 Los metadatos son una tabla que contiene los IDs de las muestras y la información que desea analizar y comparar. En la tabla, las muestras deben ordenarse como en la lista de archivos de secuencia del último paso. Cada fila representa una muestra y cada columna representa una característica. Las columnas deben estar separadas por tabulaciones. Toda la información de las descripciones de las muestras en la tabla de metadatos NO debe contener ningún símbolo de espacio (‘ ’), símbolo de barra invertida (‘/’) ni símbolo de tabla (‘\t’). El ejemplo de abajo representa la tabla de metadatos que se usará para la parte práctica.
 
 ```bash
@@ -109,8 +122,8 @@ En esta última seccion se enlistan ciertas medidas proporcionadas por Parallel 
 
 ####  Diversidad Alfa y Beta
 
-* La diversidad ****alfa**** es una medida de la diversidad del microbioma aplicable a una sola muestra. 
-* la diversidad ****beta**** es una medida de la similitud o diferencia de dos comunidades. 
+* La diversidad ***alfa*** es una medida de la diversidad del microbioma aplicable a una sola muestra. 
+* la diversidad ***beta*** es una medida de la similitud o diferencia de dos comunidades. 
 
 En cuanto a la diversidad alfa, existen muchos índices, cada uno de los cuales refleja diferentes aspectos de la heterogeneidad de la comunidad. Las diferencias clave se relacionan en cómo los índices valoran la variación en especies raras si consideran solo la presencia/ausencia o incorporan la abundancia, y cómo interpretan la ausencia compartida. 
 
