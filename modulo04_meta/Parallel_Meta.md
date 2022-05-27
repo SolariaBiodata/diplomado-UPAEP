@@ -93,7 +93,7 @@ El gráfico circular interactivo resume las composiciones taxonómicas de un gru
 
 ![heatmap_PM](https://user-images.githubusercontent.com/54455898/170793547-663dcb5e-9059-4086-8f35-8b153dc57fba.png)
 
-Los mapas de calor son una poderosa herramienta que visualiza los datos de microbioma en micromatrices. Básicamente, son imágenes de ***color falso*** en las que las celdas de la matriz con valores relativos altos se colorean de manera diferente a las que tienen valores relativos bajos.
+Los mapas de calor son una poderosa herramienta que visualizan los datos de microbioma en micromatrices. Básicamente, son imágenes de ***falso color*** en las que las celdas de la matriz con valores relativos altos se colorean de manera diferente a las que tienen valores relativos bajos.
 
 ### Redes de interacción microbiana
 
