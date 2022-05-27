@@ -77,3 +77,11 @@ PM-pipeline -i list_test.txt -m metadata_test.txt -R T -o output_test
 
 ![taxa genus Abd distribution-1](https://user-images.githubusercontent.com/54455898/170571663-5858a14a-2b3e-4f7b-a2fd-98c7e4d94e53.png)
 
+### Diversos gráficos que podemos obtener con PM
+
+Como te habrás dato cuenta 
+
+![i_piechart_PM](https://user-images.githubusercontent.com/54455898/170790669-2cfb15ad-c6c3-424e-8469-2a8d5f87c323.png)
+
+
+
