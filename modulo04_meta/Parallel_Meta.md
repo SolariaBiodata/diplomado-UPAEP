@@ -20,18 +20,49 @@ El número de metagenomas está aumentando rápidamente. Sin embargo, los métod
 
 * Todo el procedimiento de PM está optimizado por un esquema de computación paralelo que permite el procesamiento rápido de miles de microbiomas.
 
+## Instalación 
+
+El programa PM ya se encuentra habilitado en el servidor de ***Solaria Biodata*** , de igual forma puedes instalarlo en tu equipo de computo ejecutando los siguientes pasos.
+
+### Descargue el paquete adecuado para su sistema operativo (Mac o Linux)
+
+Dirígete a esta [página_oficial](http://bioinfo.single-cell.cn/parallel-meta.html) para descargar la versión más actual.
+
+### Descomprimir el paquete
+
+```bash
+tar -xzvf parallel-meta.tar.gz
+```
+### Entrar al directorio descomprimido
+
+```bash
+cd parallel-meta/
+```
+### Ejecutar el instalador
+
+```bash
+source install.sh
+```
+### Verificación
+
+Pueder revisar si se instaló correctamente Parallel-META 3 presionando ***Enter*** a lo siguiente en tu terminal
+
+```bash
+PM-pipeline
+```
+
 ## Pasos previos para ejecutar Parallel-Meta
 
 ### Lecturas de secuenciación descomprimidas
 
-Es muy importante revisar que tus archivos de secuenciación se encuentren descromprimidos, ya que al momento de correr PM no generará como tal un error, y se podría desperdiciar demasiado tiempo en tanto a los recursos de computo. Normalmente las lecturas de secuenciación se encuentran comprimidas en formato ***gz*** el cual es un algoritmo de compresión estándar GNU zip (gzip).
+Es muy importante revisar que tus archivos de secuenciación se encuentren descromprimidos, ya que al momento de correr PM no generará como tal un error, y se podría desperdiciar demasiado tiempo en tanto a los recursos de cómputo. Normalmente las lecturas de secuenciación se encuentran comprimidas en formato ***gz*** el cual es un algoritmo de compresión estándar GNU zip (gzip).
 
 Si se encuetran todas tus lecturas comprimidas dentro de la misma carpeta puedes ejecutar el siguiente comando:
 
 ```bash
 gunzip *.gz
 ```
-En dado caso de que desees volver a comprimir todas tus lecturas a la vez simplemente corres la siguiente instrucción en la terminal:
+En dado caso de que desees volver a comprimir todas tus lecturas en un solo paso simplemente corres la siguiente instrucción en la terminal:
 
 ```bash
 gzip *.fastq
