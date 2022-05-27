@@ -11,23 +11,21 @@ usemathjax: true
 
 ## Cuestión actual sobre los datos metagenómicos
 
-El número de metagenomas está aumentando rápidamente. Sin embargo, los métodos actuales para el análisis metagenómico están limitados por su capacidad para la extracción de datos en profundidad entre una gran cantidad de microbiomas, cada uno de los cuales tiene una estructura comunitaria compleja. Además, la complejidad de configurar y operar la canalización computacional también dificulta el procesamiento de datos eficiente para los investigadores.
+El número de metagenomas está aumentando rápidamente. Sin embargo, los métodos actuales para el análisis metagenómico están limitados por su capacidad para la extracción de datos en profundidad entre una gran cantidad de microbiomas, cada uno de los cuales tiene una estructura comunitaria compleja. Además, la dificultad de configurar y operar la canalización computacional también complica el procesamiento de datos eficiente para los investigadores.
 
 ## ¿Qué es Parallel-Meta?
 
-* Parallel-Meta(PM) es un paquete de software fácil de usar para el análisis rápido y completo de datos de microbiomas en múltiples plataformas.
+* Parallel-Meta (PM) es un paquete de software fácil de usar para el análisis rápido y completo de datos de microbiomas en múltiples plataformas.
+
 * PM cubre una amplia gama de funciones para el preprocesamiento de datos, estadísticas, visualización mediante algoritmos de última generación.
+
 * Todo el procedimiento de PM está optimizado por un esquema de computación paralelo que permite el procesamiento rápido de miles de microbiomas.
-
-PMS cubre una amplia gama de funciones para el preprocesamiento de datos, estadísticas, visualización mediante algoritmos de última generación.
-
-Todo el procedimiento de PMS está optimizado por un esquema de computación paralelo que permite el procesamiento rápido de miles de microbiomas.
 
 ## Pasos previos para ejecutar Parallel-Meta
 
 ### Hacer la lista de archivos de secuencia
 
-Debe permitir que Parallel-META conozca las rutas de sus muestras de entrada mediante una lista de archivos de secuencias. En la lista, cada línea contiene la ruta exacta de un solo archivo de secuencia de una muestra, por lo que la cantidad de líneas en la lista debe ser igual a la cantidad de muestras de entrada. Se recomienda encarecidamente las rutas absolutas (rutas completas) para evitar los errores de ruta. Estos datos están guardados para esta práctica como ****list_test.txt****. Aquí hay un ejemplo de la lista de archivos de secuencia.
+Debe permitir que Parallel-META conozca las rutas de sus muestras de entrada mediante una lista de archivos de secuencias. En la lista, cada línea contiene la ruta exacta de un solo archivo de secuencia de una muestra, por lo que la cantidad de líneas en la lista debe ser igual a la cantidad de muestras de entrada. Se recomienda encarecidamente las rutas absolutas (rutas completas) para evitar los errores de ruta. Estos datos están guardados para esta práctica como ***list_test.txt***. A continuación se muestra un ejemplo de la lista de archivos de secuencia.
 
 ```bash
 085-01 /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/reads_profiling/085-01_S1_L001_R1_001.fastq
@@ -44,7 +42,7 @@ Debe permitir que Parallel-META conozca las rutas de sus muestras de entrada med
 ```
 
 ### Comprueba tus metadatos
-Los metadatos son una tabla que contiene los ID de las muestras y la información que desea analizar y comparar. En la tabla, las muestras deben ordenarse como en la lista de archivos de secuencia del último paso. Cada fila representa una muestra y cada columna representa una característica. Las columnas deben estar separadas por tabulaciones. Toda la información de las descripciones de las muestras en la tabla de metadatos NO debe contener ningún símbolo de espacio (‘ ’), símbolo de barra invertida (‘/’) ni símbolo de tabla (‘\t’). Este es un ejemplo de la tabla de metadatos.
+Los metadatos son una tabla que contiene los IDs de las muestras y la información que desea analizar y comparar. En la tabla, las muestras deben ordenarse como en la lista de archivos de secuencia del último paso. Cada fila representa una muestra y cada columna representa una característica. Las columnas deben estar separadas por tabulaciones. Toda la información de las descripciones de las muestras en la tabla de metadatos NO debe contener ningún símbolo de espacio (‘ ’), símbolo de barra invertida (‘/’) ni símbolo de tabla (‘\t’). El ejemplo de abajo representa la tabla de metadatos que se usará para la parte práctica.
 
 ```bash
 ID      TypeSample
@@ -61,11 +59,11 @@ Ahora para correr Parallel-META 3, solo se requiere ejecutar el siguiente comand
 PM-pipeline -i list_test.txt -m metadata_test.txt -R T -o output_test
 ```
 ### Al terminar de procesar los datos se generará el archivo de salida llamado ***output_test*** con el siguiente contenido
-| ****SO**** | ****L****  | ****A****  | ****R****  | ****IA**** |
+|          °        |           °         |         °        |        °        |      °      |
 | ----------------- | ------------------- | ---------------- | --------------- | ----------- |
 | Abundance_Tables/ | Analysis_Report.txt | Alpha_Diversity/ | Beta_Diversity/ | Clustering/ |
-| Markers/ | Network/ | Sample_Views/ | Single_Sample/ | Single_Sample.List |
-| error.log  | meta.txt | scripts.sh | index.html | Distance_Matrix/ | 
+|       Markers/    |        Network/     |   Sample_Views/  |  Single_Sample/ | Single_Sample.List |
+|        error.log  |       meta.txt      |    scripts.sh    |    index.html   | Distance_Matrix/ | 
 
 ### Dentro de la carpeta "Abundance_Tables/" podemos visualizar gráficas de abundancia relativa con base a ciertas clasificaciones
 
