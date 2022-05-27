@@ -89,16 +89,39 @@ Las siguientes figuras son ejemplos que también se pueden visualizar en los res
 
 El gráfico circular interactivo resume las composiciones taxonómicas de un grupo seleccionado. Los investigadores pueden hacer clic en una sección particular de interés para analizar mejor sus composiciones en un nivel taxonómico más bajo.
 
-#### Mapas de calor 
+##### Mapas de calor 
 
 ![heatmap_PM](https://user-images.githubusercontent.com/54455898/170793547-663dcb5e-9059-4086-8f35-8b153dc57fba.png)
 
 Los mapas de calor son una poderosa herramienta que visualizan los datos de microbioma en micromatrices. Básicamente, son imágenes de ***falso color*** en las que las celdas de la matriz con valores relativos altos se colorean de manera diferente a las que tienen valores relativos bajos.
 
-### Redes de interacción microbiana
+#### Redes de interacción microbiana
 
 ![network_pm](https://user-images.githubusercontent.com/54455898/170794162-65372fb9-bb14-401a-ad59-ff2970fde86a.png)
 
 Las redes de interacciones microbianas son cruciales para el análisis de establecimiento y mantenimiento concreto de una población microbiana. Estas interacciones ocurren por el reconocimiento ambiental seguido por la transferencia de información molecular y genética que incluye muchos mecanismos y clases de moléculas.
+
+### Otros ficheros importantes 
+
+A menudo se utilizan diferentes medidas de alto nivel para describir el microbioma en una muestra. Dichas medidas no brindan información sobre los cambios en la abundancia de taxones específicos, pero nos permiten acceder a un cambio o diferencia más amplio en la composición de los microorganismos.
+
+En esta última seccion se enlistan ciertas medidas proporcionadas por Parallel Meta.
+
+####  Diversidad Alfa y Beta
+
+* La diversidad ****alfa**** es una medida de la diversidad del microbioma aplicable a una sola muestra. 
+* la diversidad ****beta**** es una medida de la similitud o diferencia de dos comunidades. 
+
+En cuanto a la diversidad alfa, existen muchos índices, cada uno de los cuales refleja diferentes aspectos de la heterogeneidad de la comunidad. Las diferencias clave se relacionan en cómo los índices valoran la variación en especies raras si consideran solo la presencia/ausencia o incorporan la abundancia, y cómo interpretan la ausencia compartida. 
+
+La diversidad beta es una medida esencial para muchos métodos estadísticos populares en principalmente en ecología, como los métodos basados en la ordenación, y se usa ampliamente para estudiar la asociación entre las variables ambientales y la composición microbiana.
+
+En resumen, las medidas de diversidad alfa pueden verse como una estadística resumida de una sola población (diversidad dentro de la muestra), mientras que las medidas de diversidad beta son estimaciones de similitud o diferencia entre poblaciones (entre muestras).
+
+#### Curvas de rarefacción
+
+Las curvas de rarefacción se utilizan a menudo cuando se calculan los índices de diversidad alfa debido a que el número creciente de taxones secuenciados permite estimaciones cada vez más precisas de la diversidad de la población total. Por lo tanto, las curvas de rarefacción se pueden utilizar para estimar la riqueza total de la muestra, en comparación con la riqueza de la muestra observada.
+
+
 
 
