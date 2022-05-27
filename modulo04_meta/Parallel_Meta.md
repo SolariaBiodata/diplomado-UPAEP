@@ -81,9 +81,24 @@ PM-pipeline -i list_test.txt -m metadata_test.txt -R T -o output_test
 
 Como te habrás dato cuenta, los diferentes tipos de ficheros generados por PM se nombran con el prefijo "taxa", los cuales son resultados de taxonomia, así como "func" que son resultados funcionales metabólicos.
 
-Las siguientes figuras son ejemplos que también se pueden visualizar en los resultados de PM. Para consultar información más específica puedes consultar el manual de [Parallel_META](http://bioinfo.single-cell.cn/Released_Software/parallel-meta/sampledata/TutorialPM3.pdf)
+Las siguientes figuras son ejemplos que también se pueden visualizar en los resultados de PM. Para consultar información más específica puedes revisar el manual de [Parallel_META](http://bioinfo.single-cell.cn/Released_Software/parallel-meta/sampledata/TutorialPM3.pdf)
+
+#### Gráfico circular interactivo
 
 ![i_piechart_PM](https://user-images.githubusercontent.com/54455898/170790669-2cfb15ad-c6c3-424e-8469-2a8d5f87c323.png)
 
+El gráfico circular interactivo resume las composiciones taxonómicas de un grupo seleccionado. Los investigadores pueden hacer clic en una sección particular de interés para analizar mejor sus composiciones en un nivel taxonómico más bajo.
+
+#### Mapas de calor 
+
+![heatmap_PM](https://user-images.githubusercontent.com/54455898/170793547-663dcb5e-9059-4086-8f35-8b153dc57fba.png)
+
+Los mapas de calor son una poderosa herramienta que visualiza los datos de microbioma en micromatrices. Básicamente, son imágenes de ***color falso*** en las que las celdas de la matriz con valores relativos altos se colorean de manera diferente a las que tienen valores relativos bajos.
+
+### Redes de interacción microbiana
+
+![network_pm](https://user-images.githubusercontent.com/54455898/170794162-65372fb9-bb14-401a-ad59-ff2970fde86a.png)
+
+Las redes de interacciones microbianas son cruciales para el análisis de establecimiento y mantenimiento concreto de una población microbiana. Estas interacciones ocurren por el reconocimiento ambiental seguido por la transferencia de información molecular y genética que incluye muchos mecanismos y clases de moléculas.
 
 
