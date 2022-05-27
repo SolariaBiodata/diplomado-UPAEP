@@ -81,7 +81,7 @@ PM-pipeline -i list_test.txt -m metadata_test.txt -R T -o output_test
 
 Como te habrás dato cuenta, los diferentes tipos de ficheros generados por PM se nombran con el prefijo "taxa", los cuales son resultados de taxonomia, así como "func" que son resultados funcionales metabólicos.
 
-Las siguientes figuras son ejemplos que también se pueden visualizar en los resultados de PM. Para consultar información más específica puedes consultar el manual de [Parallel_META](http::/bioinfo.single-cell.cn/Released_Software/parallel-meta/sampledata/TutorialPM3.pdf)
+Las siguientes figuras son ejemplos que también se pueden visualizar en los resultados de PM. Para consultar información más específica puedes consultar el manual de [Parallel_META](http://bioinfo.single-cell.cn/Released_Software/parallel-meta/sampledata/TutorialPM3.pdf)
 
 ![i_piechart_PM](https://user-images.githubusercontent.com/54455898/170790669-2cfb15ad-c6c3-424e-8469-2a8d5f87c323.png)
 
