@@ -24,7 +24,7 @@ El número de metagenomas está aumentando rápidamente. Sin embargo, los métod
 
 El programa PM ya se encuentra habilitado en el servidor de ***Solaria Biodata*** , de igual forma puedes instalarlo en tu equipo de computo ejecutando los siguientes pasos.
 
-### Descargue el paquete adecuado para su sistema operativo (Mac o Linux)
+### Descargue el paquete adecuado para su sistema operativo (Mac OS o Linux)
 
 Dirígete a esta [página_oficial](http://bioinfo.single-cell.cn/parallel-meta.html) para descargar la versión más actual.
 
