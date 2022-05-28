@@ -20,9 +20,9 @@ Cada plataforma de secuenciación es susceptible de tener ciertos errores, sin e
 
 **Aglomeraciones policlonales mixtas ($$\mu$$)** La presencia de distintos insertos en una misma fuente de señal reduce significativamente la calidad. En algunos casos es imposible para el algoritmo hacer el llamado de base. Este efecto se incrementa cuando existe una carga elevada de material genético en los instrumentos de medición.
 
-**Efecto frontera ($$\omega$$)** El ruido de fondo y la presencia de aglomeraciones policlonales reducen el área de fondo. Ello implica una disminución enla capacidad de realizar el llamado de base. En términos prácticos, se reduce la diferencia entre una señal real y la intensidad del fondo, por lo cual se dificulta la estimación correcta de los parámetros en el algoritmo de llamado de base.
+**Efecto frontera ($$\omega$$)** El ruido de fondo y la presencia de aglomeraciones policlonales reducen el área de fondo. Ello implica una disminución en la capacidad de realizar el llamado de base. En términos prácticos, se reduce la diferencia entre una señal real y la intensidad del fondo, por lo cual se dificulta la estimación correcta de los parámetros en el algoritmo de llamado de base.
 
-**Entrecruzamiento de señal ($$\Sigma$$)** La diferencia entre intensidad de fluoróforo puede ser indistinguible dependiendo del estado de calibración del equipo, la integridad de los reactivos, entre otros. El efecto se debe a que la señal para determinar la presencia de un fluoróforo coincide en cierto grado con la señal que pertenece a otro. 
+**Entrecruzamiento de señal ($$\Sigma$$)** La diferencia entre intensidad de fluoróforo puede ser indistinguible dependiendo del estado de vibración del equipo, la integridad de los reactivos, entre otros. El efecto se debe a que la señal para determinar la presencia de un fluoróforo coincide en cierto grado con la señal que pertenece a otro. 
 
 **Acumulación de fluoróforo ($$\tau$$)** Entre otros contaminantes, la intensidad de una señal se ve alterada en los últimos pasos de la reacción. La acumulación de fluoróforos eleva la intensidad del fondo.
 
@@ -40,7 +40,7 @@ De estos factores revisados algunos de ellos son comunes a diferentes plataforma
 
 ### Control de calidad
 
-Cuando se pretende procesar datos de secuenciación masiva un aspecto crucial es el control de la calidad de las lecturas. Durante este proceso se revisan diversos parámetros de la corrida de secuenciación. El propósito de esta revisión es descartar cualquier fuente de generación de _artificios_ durante el proceso de secuenciación, mismos que pueden tener origenes biológicos, metodológicos o informacionales.
+Cuando se pretende procesar datos de secuenciación masiva un aspecto crucial es el control de la calidad de las lecturas. Durante este proceso se revisan diversos parámetros de la corrida de secuenciación. El propósito de esta revisión es descartar cualquier fuente de generación de _artificios_ durante el proceso de secuenciación, mismos que pueden tener orígenes biológicos, metodológicos o informacionales.
 
 En el proceso de control de calidad es muy importante generar reportes con información crucial con respecto a diversos parámetros de calidad en la corrida. Para realizar esto existen diversos paquetes bioinformáticos, sin embargo uno de los software más ampliamente usados es `fastqc`.
 
