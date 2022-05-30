@@ -111,8 +111,8 @@ Para realizar asignación taxonómica existen dos aproximaciones que se basan en
 | **Composición** | 1. Asignación por medio de espectro de _k-meros_<br>2. Modelado basado en _machine learning_ de las características de la secuencia<br>3. Modelado del conjunto de lecturas, tratadas igual que una referencia<br> 4. Comparación entre los modelos generados y las referencias para determinar la asignación taxonómica lectura a lectura. |
 
 
-[Menú Principal](./index.md)
+[Menú Principal](./index)
 
-[Atras](./index.md)
+[Atras](./index)
 
 [Siguiente](./Analisis_de_metaprofiling)
