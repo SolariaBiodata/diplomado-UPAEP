@@ -138,9 +138,9 @@ El archivo manifiesto puede estar estructurado como el ejemplo de abajo:
 QIIME 2 es una plataforma de bioinformática microbioma completamente rediseñada, con la capacidad de facilitar la ciencia de datos de microbiomas integral y totalmente reproducible, mejorando la accesibilidad a diversos usuarios al agregar múltiples interfaces de usuario.
 
 
-[Menú Principal](./)
+[Menú Principal](./index)
 
-[Atras](./)
+[Atras](./Parallel_Meta)
 
 [Siguiente](./)
 
