@@ -8,7 +8,7 @@ usemathjax: true
 
 > "La metodología [clonación de ADN ambiental en E. coli para la detección de fenotipos] ha sido posible gracias a los avances en biología molecular y genómica eucariótica, que han sentado las bases para la clonación y el análisis funcional de los genomas colectivos de la microflora del suelo, que denominamos el metagenoma del suelo." - ***Jo Emily Handelsma*** , Directora del ***Wisconsin Institute for Discovery*** de la ***University of Wisconsin–Madison***
 
-### Metagenómica
+### La Metagenómica en el centro de todo
 
 ![flow_metagenomics](https://user-images.githubusercontent.com/54455898/171058417-bffda134-4217-4565-91e8-81d3f5834d7d.jpg "La Metagenómica en el centro de todo")
 
