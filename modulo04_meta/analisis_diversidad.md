@@ -5,7 +5,6 @@ usemathjax: true
 # 2o [Diplomado de Bioinformática](./)
 
 # Análisis de diversidad con Ampvis2
-
 ![ampvis_logo02](https://user-images.githubusercontent.com/54455898/171064502-cb352294-5236-44ed-a7ec-75680ffa25c8.png)
 
 Ampvis2 es un paquete de R para visualizar y analizar convenientemente los datos de amplicón de ARNr 16S de diferentes maneras. Es bastante útil a partir de la tabla de OTUs y una de metadatos.
@@ -22,40 +21,49 @@ library(ampvis2)
 ```
 ### Formatos de la información de entrada
 
-La información de la tabla de OTUs debe de estar separada por algún delimitador, ya sea por comas "," o tabulaciones "  ", pero principalmente al final tener las columnas de la taxonomía de cada OTU con un nombre concreto y solo los niveles clásicos en inglés, empezando por ***Kingdom*** . En esta práctica la tabla de OTUs ocuparemos solamente 6 niveles, pero pueden ser hasta 7.
+La información de la tabla de OTUs debe de estar separada por algún delimitador, ya sea por comas "," o tabuladores "  " , pero principalmente al final tener las columnas de la taxonomía de cada OTU con un nombre concreto y solo los niveles clásicos en inglés, empezando por ***Kingdom*** . En esta práctica la tabla de OTUs ocuparemos solamente 6 niveles, pero pueden ser hasta 7.
 
 ![otustable_ampvis2](https://user-images.githubusercontent.com/54455898/171065521-126348f0-237b-4fd4-b710-f7b06bbe999f.png)
 
-# Análisis de metaprofiling con DADA2
+#### Lista de metadatos
 
-DADA2 es un paquete de software que modela y corrige errores de amplicón secuenciados por Illumina. DADA2 infiere secuencias de muestra con exactitud, sin granularidad gruesa en Unidad Taxonómica Operativa (OTU), y resuelve diferencias de tan solo un nucleótido. En varias comunidades simuladas. DADA2 ha destacado de otras herramientas similares en identificar más variantes reales produciendo menos secuencias espurias. 
+La lista de metadatos será la siguiente:
 
-## Instalación de librerias 
-Antes de la instalación de DADA2 es importante contar con la libreria **devtools**.
-El objetivo de devtools es facilitar su vida como desarrollador de paquetes al proporcionar funciones de R que simplifican muchas tareas comunes.
+| SampleID  | TypeSample  |  
+|---|---|
+| 085-01  | suelo  |   
+| 085-02  | agua  |   
+| 085-03  | sedimento  |  
 
-```bash
-install.packages("devtools")
-```
-## Pasos previos a la instalación de DADA2
-Primeramente se invoca la librería devtools que permite instalar librerias desde github.
+Como te habrás dado cuenta, cumple con el mismo formato que en las prácticas anteriores, donde su principal característica es que la informacion está separada mediante tabuladores. 
 
-```bash
-library("devtools")
-```
-## Instalación de DADA2
+### Generación de diferentes gráficas
 
-Una vez que devtools esté activado podemos instalar DADA2
+#### Curvas de rarefacción
 
 ```bash
-devtools::install_github("benjjneb/dada2", ref="v1.16")
+amp_rarecurve(data = SOP, stepsize = 50, color_by = "TypeSample")
 ```
+![rarecurve](https://user-images.githubusercontent.com/54455898/171067025-d9e91ee3-0c10-49e3-a842-8bb492aa3fd2.png)
+
+### Gráfica de Boxplot
+
 ```bash
-library(dada2)
+amp_boxplot(data = SOP, group_by = "TypeSample", tax_add = "Family")
 ```
-El pipeline DADA2  tiene como punto de partida un conjunto de archivos fastq secuenciados por Illumina ("desmultiplexado"), que realiza un control de calidad que elimina quimeras y adaptadores. El producto final es una tabla de "variantes de secuencia de amplicón" (ASV), que es un análogo de mayor resolución de la tabla OTU tradicional que ofrecen otros programas.
-```
+![bplot_ampvis2](https://user-images.githubusercontent.com/54455898/171067045-ecce49f8-2762-4831-9d26-906531eebb88.png)
+
+### Mapa de calor o Heatmap
+
 ```bash
-library(dada2)
+amp_heatmap(data = SOP, group_by = "TypeSample", tax_show = 20, tax_aggregate = "Genus", tax_add = "Phylum")
 ```
-El pipeline DADA2  tiene como punto de partida un conjunto de archivos fastq secuenciados por Illumina ("desmultiplexado"), que realiza un control de calidad que elimina quimeras y adaptadores. El producto final es una tabla de "variantes de secuencia de amplicón" (ASV), que es un análogo de mayor resolución de la tabla OTU tradicional que ofrecen otros programas.
+![hm_ampvis2](https://user-images.githubusercontent.com/54455898/171067064-16e639e3-a906-4606-9835-ba94b415306f.png)
+
+### Diagrama de Venn
+
+```bash
+amp_venn(data = SOP, group_by = "TypeSample", cut_f = 95)
+```
+![venn_ampvis2](https://user-images.githubusercontent.com/54455898/171067097-aa62820a-11e3-499f-b792-7bb651417aaf.png)
+
