@@ -31,7 +31,7 @@ El entorno de Qiime requiere que cuentes con una tabla de metadatos con informac
 
 #### Inspección de metadatos
 
-La tabla de metadatos debe de estar con el formato correcto, para verificarlo debe realizar la siguiente instrucción en la terminal
+La tabla de metadatos debe cargar en Qiime con el formato correcto, para verificarlo debe realizar la siguiente instrucción en la terminal
 
 ```bash
 qiime tools inspect-metadata metadata_test.txt
@@ -50,6 +50,17 @@ También es indispensable contar con un archivo manifiesto como el ejemplo de ab
 | 085-03  | /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/reads_profiling/085-03_S3_L001_R2_001.fastq  | reverse  |
 
 Es importante mencionar que cada tipo de información debe de estar separada por comas "," y sin ningún tipo de espacios.
+
+### Serie de instrucciones
+
+#### Importación de datos pareados 
+
+Una vez que tengamos nuestros dos ficheros principales debemos importar nuestras lecturas, que este caso, son pareadas con la finalidad que se genere un archivo en formato qza con la información de sus lecturas:
+
+```bash
+qiime tools import --type 'SampleData[PairedEndSequencesWithQuality]' --input-path manifiesto.csv --input-format PairedEndFastqManifestPhred33 --output-path raw-seqs.qza 
+```
+
 
 
 
