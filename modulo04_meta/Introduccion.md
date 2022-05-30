@@ -6,6 +6,8 @@ usemathjax: true
 
 ## Bioinformática
 
+> "La metodología [clonación de ADN ambiental en E. coli para la detección de fenotipos] ha sido posible gracias a los avances en biología molecular y genómica eucariótica, que han sentado las bases para la clonación y el análisis funcional de los genomas colectivos de la microflora del suelo, que denominamos el metagenoma del suelo." - Jo Emily Handelsma, Directora del ***Wisconsin Institute for Discovery*** de la ***University of Wisconsin–Madison***
+
 ### Metagenómica
 
 El área que se enfoca en el estudio del material génico directamente en muestras ambientales se conoce como ecogenómica, no obstante un término mucho más comun para referirse a este es **metagenómica**. Una de las preguntas fundamentales en este tipo de ensayos es:
