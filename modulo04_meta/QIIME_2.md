@@ -70,17 +70,50 @@ qiime dada2 denoise-paired --i-demultiplexed-seqs raw-seqs.qza --p-trunc-len-f 1
 ```
 #### Clasificación
 
-Ya que se hayan eliminado ciertos ruidos será posible proceder con la clasificación de sus lecturas, para ello contados con una base de datos de SILVA extraída del siguiente [repositorio](https://github.com/qiime2/docs/blob/master/source/data-resources.rst)
+Ya que se hayan eliminado ciertos ruidos será posible proceder con la clasificación de sus lecturas, para ello contamos en el servidor con una base de datos de SILVA extraída del siguiente [repositorio](https://github.com/qiime2/docs/blob/master/source/data-resources.rst) :
+
+```bash
+qiime feature-classifier classify-sklearn --i-classifier rep/silva-138-99-nb-weighted-classifier.qza --i-reads rep-seqs.qza --o-classification taxonomy.qza 
+```
+Cuando se tienen los datos clasificados se pueden contraer grupos de entidades que tienen la misma asignación taxonómica en el nivel especificado. Las frecuencias de todas las entidades se sumarán cuando se colapsen:
+
+```bash
+qiime taxa collapse --i-table rep/table.qza --i-taxonomy taxonomy.qza --p-level 6 --output-dir taxtable
+```
+En el comando anterior se realizó la asignación taxonómica hasta el nivel 6.
+
+Es necesario tabualar los resultados generados para ver los tipos de columna de sus muestras:
+
+```bash
+qiime metadata tabulate --m-input-file taxonomy.qza --o-visualization taxonomy.qzv
+```
+QIIME2 utiliza dos tipos de archivos diferentes que contienen los datos y metadatos de un análisis: los archivos ***.qza*** son archivos de datos, mientras que los archivos ***.qzv*** son visualizaciones.
+
+```bash
+qiime taxa barplot --i-table rep/table.qza --i-taxonomy taxonomy.qza --m-metadata-file metadata_test.txt --o-visualization taxa-barplot.qzv
+```
+Descargamos los archivos que se pueden visualizar con el comando ***sbcp*** exclusivo de [Solaria Biodata](http://13.56.237.15/) :
+
+```bash
+mv taxa-barplot.qzv TuNombre_taxa-barplot.qzv
+```
+
+```bash
+sbcp TuNombre_taxa-barplot.qzv
+```
+Ciertos archivos se pueden visualizar en [QIIME 2 View](https://view.qiime2.org/) :
+
+![qiimeview](https://user-images.githubusercontent.com/54455898/171028623-a164f92f-367b-4216-bb8a-0bacea469c79.png)
+ "qiime2view")
+ 
+****QIIME 2 View**** o ****q2view**** admite la visualización de archivos alojados externamente, lo que significa que puede proporcionar un enlace a su archivo (por ejemplo, en Dropbox) y ****q2view**** lo descargará y mostrará automáticamente. Mejor aún, las páginas resultantes se pueden compartir, por lo que si un colaborador no cuenta con este paquete, simplemente puede cargar sus resultados y compartir sus enlaces de ****q2view**** con su colaborador.
 
 
+[Menú Principal](./)
 
+[Atras](./)
 
-
-
-
-
-
-
+[Siguiente](./)
 
 
 
