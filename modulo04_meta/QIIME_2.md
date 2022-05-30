@@ -10,13 +10,13 @@ QIIME 2 es un entorno informático para procesar y analizar datos de bibliotecas
 
 ![logoq2](https://user-images.githubusercontent.com/54455898/171038735-5f004863-3913-48ad-89f2-9b2160e98499.png)
 
-Es importante señalar que QIIME 2 es un sistema en el que operan otros análisis, muchos de los cuales no están diseñados por los desarrolladores de QIIME 2 en absoluto. No existe una única  forma de enviar datos a través del sistema Qiime2; a menudo, muchas opciones diferentes de procesamiento y análisis están disponibles.
+Es importante señalar que QIIME 2 es un sistema en el que operan otros análisis, muchos de los cuales no están diseñados por los desarrolladores de QIIME 1 en absoluto.
 
-¿Qué diferencias hay entre QUIIME 1 y QIIME 2?
+¿Qué diferencias hay entre QIIME 1 y QIIME 2?
 
 ![q1flow](https://user-images.githubusercontent.com/54455898/171042958-0dd376b4-5c00-4f6e-9301-97f7ce51fc68.png "workflow Q1")
 
-* QIIME ha respaldado muchos estudios de microbiomas y ganó una amplia comunidad de usuarios y desarrolladores, pero debido a la diversidad de herramientas de última generación se ha quedado atrás.
+* QIIME 1 ha respaldado muchos estudios de microbiomas y ganó una amplia comunidad de usuarios y desarrolladores, pero debido a la diversidad de herramientas de última generación se ha quedado atrás.
 
 ![QIIME 2](https://user-images.githubusercontent.com/54455898/171041662-8d861162-02ca-4042-853b-cdbc94cdd664.png "Home QIIME 2")
 
@@ -32,7 +32,7 @@ conda activate qiime2-2021.4
 
 #### Tabla de metadatos
 
-El entorno de QIIME requiere que cuentes con una tabla de metadatos con información sobre sus muestras, dicha información debe estar separada por tabulaciones, como la que se muestra a continuación:
+El entorno de QIIME 2 requiere que cuentes con una tabla de metadatos con información sobre sus muestras, dicha información debe estar separada por tabulaciones, como la que se muestra a continuación:
 
 | SampleID  | TypeSample  |  
 |---|---|
@@ -42,7 +42,7 @@ El entorno de QIIME requiere que cuentes con una tabla de metadatos con informac
 
 #### Inspección de metadatos
 
-La tabla de metadatos debe cargar en QIIME con el formato correcto, para verificarlo debe realizar la siguiente instrucción en la terminal
+La tabla de metadatos debe cargar en QIIME 2 con el formato correcto, para verificarlo debe realizar la siguiente instrucción en la terminal
 
 ```bash
 qiime tools inspect-metadata metadata_test.txt
@@ -98,7 +98,7 @@ Es necesario tabualar los resultados generados para ver los tipos de columna de 
 ```bash
 qiime metadata tabulate --m-input-file taxonomy.qza --o-visualization taxonomy.qzv
 ```
-QIIME2 utiliza dos tipos de archivos diferentes que contienen los datos y metadatos de un análisis: los archivos ***.qza*** son archivos de datos, mientras que los archivos ***.qzv*** son visualizaciones.
+QIIME 2 utiliza dos tipos de archivos diferentes que contienen los datos y metadatos de un análisis: los archivos ***.qza*** son archivos de datos, mientras que los archivos ***.qzv*** son visualizaciones.
 
 ```bash
 qiime taxa barplot --i-table rep/table.qza --i-taxonomy taxonomy.qza --m-metadata-file metadata_test.txt --o-visualization taxa-barplot.qzv
