@@ -4,14 +4,21 @@ usemathjax: true
 ![alt text](https://solariabiodata.com.mx/wp-content/uploads/2021/07/logo_red.png "Soluciones de Siguiente Generación")
 # 2o [Diplomado de Bioinformática](./)
 
+## ¿Qué es QIIME 2?
 
+QIIME 2 es un entorno informático para procesar y analizar datos de bibliotecas de amplicones. Por lo general, estas bibliotecas de amplicones se generan dirigiéndose al gen 16S rRNA en una comunidad procariótica para obtener información sobre los taxones presentes y sus abundancias relativas. 
 
+![logoq2](https://user-images.githubusercontent.com/54455898/171038735-5f004863-3913-48ad-89f2-9b2160e98499.png)
 
+Es importante señalar que QIIME 2 es un sistema en el que operan otros análisis, muchos de los cuales no están diseñados por los desarrolladores de QIIME 2 en absoluto. No existe una única  forma de enviar datos a través del sistema Qiime2; a menudo, muchas opciones diferentes de procesamiento y análisis están disponibles.
 
+¿Qué diferencias hay entre QUIIME 1 y QIIME 2?
 
+* QIIME ha respaldado muchos estudios de microbiomas y ganó una amplia comunidad de usuarios y desarrolladores, pero debido a la diversidad de herramientas de última generación se ha quedado atrás.
 
+* La versión actual de QIIME cuentan con herramientas de última generación para control de calidad de secuencias desde diferentes plataformas de secuenciación (DADA2 y Deblur 12), asignación de taxonomía e inserción filogenética, que mejoran cuantitativamente los resultados sobre QIIME 1 y otras herramientas. Los complementos también admiten una funcionalidad cualitativamente nueva, incluido el análisis de series de tiempo y muestras pareadas de microbiomas (que son fundamentales para estudiar los efectos de los tratamientos en el microbioma) y el aprendizaje automático.
 
-
+### Hora de practicar 
 
 El servidor de Solaria Biodata cuenta con el paquete de QIIME 2.4 dentro de un ambiente el cual debemos de activar, para ello debemos de ejecutar lo siguiente:
 
@@ -101,12 +108,30 @@ mv taxa-barplot.qzv TuNombre_taxa-barplot.qzv
 ```bash
 sbcp TuNombre_taxa-barplot.qzv
 ```
-Ciertos archivos se pueden visualizar en [QIIME 2 View](https://view.qiime2.org/) :
+Ciertos archivos se pueden visualizar en [QIIME 2 View](https://view.qiime2.org/):
 
 ![qiime2view](https://user-images.githubusercontent.com/54455898/171030601-fcc56fd2-d6b8-49f9-897c-bf7bfe64b6e5.png "Q2VIEW")
  
-***QIIME 2 View*** o ***q2view*** admite la visualización de archivos alojados externamente, lo que significa que puede proporcionar un enlace a su archivo (por ejemplo, en Dropbox) y ***q2view*** lo descargará y mostrará automáticamente. Mejor aún, las páginas resultantes se pueden compartir, por lo que si un colaborador no cuenta con este paquete, simplemente puede cargar sus resultados y compartir sus enlaces de ***q2view*** con su colaborador.
+***QIIME 2 View*** o ***q2view*** admite la visualización de archivos alojados externamente, lo que significa que puede proporcionar un enlace a su archivo (por ejemplo, en Dropbox) y ***q2view*** lo descargará y mostrará automáticamente. Mejor aún, las páginas resultantes se pueden compartir, por lo que si un colaborador no cuenta con este paquete, simplemente puede cargar sus resultados y compartir sus enlaces con su colaborador.
 
+### Secuencias no pareadas
+
+QIIME 2 puede procesar datos no pareados, dicha tabla de metadatos puede ser parecida a esta:
+
+| SampleID | BarcodeSequence | Treatment   | Group       | Year    | Concentration |
+|-----------|-----------------|-------------|-------------|---------|---------------|
+| **q2:types** | **categorical**     | **categorical** | **categorical** | **numeric** | **numeric**       |
+| SAMPLE_A  | CAGTGTCA        | Cont_A      | Control     | 2020    | 20.0          |
+| SAMPLE_B  | CATTGTCA        | Cont_A      | Experiment  | 2021    | 25.0          |
+
+El archivo manifiesto puede estar estructurado como el ejemplo de abajo:
+
+|sample-id|absolute-filepath|direction  |
+|---------|-----------------|-----------|
+|SAMPLE_A |$PWD/raw/samplA.fastq|forward|
+|SAMPLE_B |$PWD/raw/samplB.fastq|forward|
+
+QIIME 2 es una plataforma de bioinformática microbioma completamente rediseñada, con la capacidad de facilitar la ciencia de datos de microbiomas integral y totalmente reproducible, mejorando la accesibilidad a diversos usuarios al agregar múltiples interfaces de usuario
 
 [Menú Principal](./)
 
