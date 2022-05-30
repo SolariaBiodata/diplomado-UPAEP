@@ -14,11 +14,11 @@ Es importante señalar que QIIME 2 es un sistema en el que operan otros análisi
 
 ¿Qué diferencias hay entre QUIIME 1 y QIIME 2?
 
+![q1flow](https://user-images.githubusercontent.com/54455898/171042958-0dd376b4-5c00-4f6e-9301-97f7ce51fc68.png "workflow Q1")
+
 * QIIME ha respaldado muchos estudios de microbiomas y ganó una amplia comunidad de usuarios y desarrolladores, pero debido a la diversidad de herramientas de última generación se ha quedado atrás.
 
-
 ![QIIME 2](https://user-images.githubusercontent.com/54455898/171041662-8d861162-02ca-4042-853b-cdbc94cdd664.png "Home QIIME 2")
-
 
 * La versión actual de QIIME cuentan con herramientas de última generación para control de calidad de secuencias desde diferentes plataformas de secuenciación (DADA2 y Deblur 12), asignación de taxonomía e inserción filogenética, que mejoran cuantitativamente los resultados sobre QIIME 1 y otras herramientas. Los complementos también admiten una funcionalidad cualitativamente nueva, incluido el análisis de series de tiempo y muestras pareadas de microbiomas (que son fundamentales para estudiar los efectos de los tratamientos en el microbioma) y el aprendizaje automático.
 
@@ -122,7 +122,7 @@ Ciertos archivos se pueden visualizar en [QIIME 2 View](https://view.qiime2.org/
 
 QIIME 2 puede procesar datos no pareados, dicha tabla de metadatos puede ser parecida a esta:
 
-| SampleID | BarcodeSequence | Treatment   | Group       | Year    | Concentration |
+| SampleID | Bar code Sequence | Treatment   | Group       | Year    | Concentration |
 |-----------|-----------------|-------------|-------------|---------|---------------|
 | **q2:types** | **categorical**     | **categorical** | **categorical** | **numeric** | **numeric**       |
 | SAMPLE_A  | CAGTGTCA        | Cont_A      | Control     | 2020    | 20.0          |
@@ -135,7 +135,8 @@ El archivo manifiesto puede estar estructurado como el ejemplo de abajo:
 |SAMPLE_A |$PWD/raw/samplA.fastq|forward|
 |SAMPLE_B |$PWD/raw/samplB.fastq|forward|
 
-QIIME 2 es una plataforma de bioinformática microbioma completamente rediseñada, con la capacidad de facilitar la ciencia de datos de microbiomas integral y totalmente reproducible, mejorando la accesibilidad a diversos usuarios al agregar múltiples interfaces de usuario
+QIIME 2 es una plataforma de bioinformática microbioma completamente rediseñada, con la capacidad de facilitar la ciencia de datos de microbiomas integral y totalmente reproducible, mejorando la accesibilidad a diversos usuarios al agregar múltiples interfaces de usuario.
+
 
 [Menú Principal](./)
 
