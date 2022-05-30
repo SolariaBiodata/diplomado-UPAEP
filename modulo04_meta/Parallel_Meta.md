@@ -166,7 +166,6 @@ En resumen, las medidas de diversidad alfa pueden verse como una estadística re
 
 Las curvas de rarefacción se utilizan constantemente cuando se calculan los índices de diversidad alfa debido a que el número creciente de taxones secuenciados permite estimaciones cada vez más precisas de la diversidad de la población total. Por lo tanto, las curvas de rarefacción se pueden utilizar para estimar la riqueza total de la muestra, en comparación con la riqueza de la muestra observada.
 
-
 [Menú Principal](./index)
 
 [Atras](./Analisis_de_metaprofiling)
