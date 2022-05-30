@@ -20,6 +20,9 @@ Bienvenido a la segunda edición del Diplomado en "Bioinformática" en colaborac
 ### [Introducción](./introduccion)
 #### [Analisis_de_metaprofiling](./Analisis_de_metaprofiling)
 #### [Procesamiento_de_datos_de_microbioma](./Parallel_Meta)
+#### [Análisis de microbioma con Quiime 2](./Qiime_2)
+
+
 
 
 
