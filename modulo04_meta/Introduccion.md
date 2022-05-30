@@ -10,6 +10,8 @@ usemathjax: true
 
 ### Metagenómica
 
+![flow_metagenomics](https://user-images.githubusercontent.com/54455898/171058417-bffda134-4217-4565-91e8-81d3f5834d7d.jpg "La Metagenómica en el centro de todo")
+
 El área que se enfoca en el estudio del material génico directamente en muestras ambientales se conoce como ecogenómica, no obstante un término mucho más comun para referirse a este es **metagenómica**. Una de las preguntas fundamentales en este tipo de ensayos es:
 
 > ¿Qué organismos están presentes en una muestra?
