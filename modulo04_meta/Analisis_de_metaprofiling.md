@@ -224,10 +224,10 @@ fantaxtic_bar(ps.top20, color_by = "Family", label_by = "Genus", other_label = "
 ![grafica_fantaxtic_6](https://user-images.githubusercontent.com/54455898/170310836-d9196878-59f2-4606-a3b4-b13f760d86d4.png "grafica_fantaxtic")
 
 
-[Menú Principal](./)
+[Menú Principal](./index)
 
-[Atras](./)
+[Atras](./Introduccion)
 
-[Siguiente](./)
+[Siguiente](./Parallel_Meta)
 
 
