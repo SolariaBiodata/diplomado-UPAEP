@@ -103,10 +103,9 @@ sbcp TuNombre_taxa-barplot.qzv
 ```
 Ciertos archivos se pueden visualizar en [QIIME 2 View](https://view.qiime2.org/) :
 
-![qiimeview](https://user-images.githubusercontent.com/54455898/171028623-a164f92f-367b-4216-bb8a-0bacea469c79.png)
- "qiime2view")
+![qiime2view](https://user-images.githubusercontent.com/54455898/171030601-fcc56fd2-d6b8-49f9-897c-bf7bfe64b6e5.png "Q2VIEW")
  
-****QIIME 2 View**** o ****q2view**** admite la visualización de archivos alojados externamente, lo que significa que puede proporcionar un enlace a su archivo (por ejemplo, en Dropbox) y ****q2view**** lo descargará y mostrará automáticamente. Mejor aún, las páginas resultantes se pueden compartir, por lo que si un colaborador no cuenta con este paquete, simplemente puede cargar sus resultados y compartir sus enlaces de ****q2view**** con su colaborador.
+***QIIME 2 View*** o ***q2view*** admite la visualización de archivos alojados externamente, lo que significa que puede proporcionar un enlace a su archivo (por ejemplo, en Dropbox) y ***q2view*** lo descargará y mostrará automáticamente. Mejor aún, las páginas resultantes se pueden compartir, por lo que si un colaborador no cuenta con este paquete, simplemente puede cargar sus resultados y compartir sus enlaces de ***q2view*** con su colaborador.
 
 
 [Menú Principal](./)
