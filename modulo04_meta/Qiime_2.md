@@ -20,7 +20,7 @@ conda activate qiime2-2021.4
 El entorno de Qiime requiere que cuentes con una tabla de metadatos con información sobre sus muestras, dicha información debe estar separada por tabulaciones, como la que se muestra a continuación:
 
 | SampleID  | TypeSample  |  
-|---|---|---|---|---|
+|---|---|
 | 085-01  | suelo  |   
 | 085-02  | agua  |   
 | 085-03  | sedimento  |   
