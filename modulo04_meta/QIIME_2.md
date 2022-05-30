@@ -13,7 +13,7 @@ usemathjax: true
 
 
 
-El servidor de Solaria Biodata cuenta con el paquete de Qiime 2.4 dentro de un ambiente el cual debemos de activar, para ello debemos de ejecutar lo siguiente:
+El servidor de Solaria Biodata cuenta con el paquete de QIIME 2.4 dentro de un ambiente el cual debemos de activar, para ello debemos de ejecutar lo siguiente:
 
 ```bash
 conda activate qiime2-2021.4
@@ -21,7 +21,7 @@ conda activate qiime2-2021.4
 
 #### Tabla de metadatos
 
-El entorno de Qiime requiere que cuentes con una tabla de metadatos con información sobre sus muestras, dicha información debe estar separada por tabulaciones, como la que se muestra a continuación:
+El entorno de QIIME requiere que cuentes con una tabla de metadatos con información sobre sus muestras, dicha información debe estar separada por tabulaciones, como la que se muestra a continuación:
 
 | SampleID  | TypeSample  |  
 |---|---|
@@ -31,7 +31,7 @@ El entorno de Qiime requiere que cuentes con una tabla de metadatos con informac
 
 #### Inspección de metadatos
 
-La tabla de metadatos debe cargar en Qiime con el formato correcto, para verificarlo debe realizar la siguiente instrucción en la terminal
+La tabla de metadatos debe cargar en QIIME con el formato correcto, para verificarlo debe realizar la siguiente instrucción en la terminal
 
 ```bash
 qiime tools inspect-metadata metadata_test.txt
@@ -55,13 +55,22 @@ Es importante mencionar que cada tipo de información debe de estar separada por
 
 #### Importación de datos pareados 
 
-Una vez que tengamos nuestros dos ficheros principales debemos importar nuestras lecturas, que este caso, son pareadas con la finalidad que se genere un archivo en formato qza con la información de sus lecturas:
+Una vez que tengamos nuestros dos ficheros principales debemos importar nuestras lecturas que, en este caso son pareadas con la finalidad que se genere un archivo en formato qza con la información de sus lecturas:
 
 ```bash
 qiime tools import --type 'SampleData[PairedEndSequencesWithQuality]' --input-path manifiesto.csv --input-format PairedEndFastqManifestPhred33 --output-path raw-seqs.qza 
 ```
 
+#### Procesamiento de ruidos 
 
+La siguiente instrucción que se ejecuta es para eliminar el ruido de los extremos de las secuencias emparejados, así como la filtración de quimeras:
+
+```bash
+qiime dada2 denoise-paired --i-demultiplexed-seqs raw-seqs.qza --p-trunc-len-f 150 --p-trunc-len-r 150 --p-trunc-q 10 --o-representative-sequences rep-seqs.qza --output-dir rep --verbose 
+```
+#### Clasificación
+
+Ya que se hayan eliminado ciertos ruidos será posible proceder con la clasificación de sus lecturas, para ello contados con una base de datos de SILVA extraída del siguiente [repositorio](https://github.com/qiime2/docs/blob/master/source/data-resources.rst)
 
 
 
