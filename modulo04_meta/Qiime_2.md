@@ -25,6 +25,13 @@ El entorno de Qiime requiere que cuentes con una tabla de metadatos con informac
 | 085-02  | agua  |   
 | 085-03  | sedimento  |   
 
+#### Inspección de metadatos
+
+La tabla de metadatos debe de estar con el formato correcto, para verificarlo debe realizar la siguiente instrucción en la terminal
+
+```bash
+qiime tools inspect-metadata metadata_test.txt
+```
 
 
 
