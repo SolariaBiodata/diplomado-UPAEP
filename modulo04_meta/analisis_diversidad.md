@@ -7,10 +7,10 @@ usemathjax: true
 # Análisis de diversidad con Ampvis2
 ![ampvis_logo02](https://user-images.githubusercontent.com/54455898/171064502-cb352294-5236-44ed-a7ec-75680ffa25c8.png)
 
-Ampvis2 es un paquete de R para visualizar y analizar convenientemente los datos de amplicón de ARNr 16S de diferentes maneras. Es bastante útil a partir de la tabla de OTUs y una de metadatos.
+Ampvis2 es un paquete de R para visualizar y analizar convenientemente los datos de amplicón de ARN ribosomal (ARNr) 16S de diferentes maneras. Es bastante útil a partir de la tabla de OTUs y otra de metadatos.
 
 ## Instalación de librerias 
-Lo primero que vamos a instalar es la libreria ampvis2 desde su repositorio principal en Github
+Lo primero que vamos a instalar es la libreria ampvis2 desde su repositorio principal en Github:
 
 ```bash
 install.packages("remotes")
@@ -21,7 +21,7 @@ library(ampvis2)
 ```
 ### Formatos de la información de entrada
 
-La información de la tabla de OTUs debe de estar separada por algún delimitador, ya sea por comas "," o tabuladores "  " , pero principalmente al final tener las columnas de la taxonomía de cada OTU con un nombre concreto y solo los niveles clásicos en inglés, empezando por ***Kingdom*** . En esta práctica la tabla de OTUs ocuparemos solamente 6 niveles, pero pueden ser hasta 7.
+La información de la tabla de OTUs debe de estar separada por algún delimitador, ya sea por comas "," o tabuladores "  " , pero principalmente al final tener las columnas de la taxonomía de cada OTU con un nombre concreto y solo los niveles clásicos en inglés, empezando por ***Kingdom*** . En esta práctica, la tabla de OTUs abarcará solamente 6 niveles, pero pueden ser hasta 7.
 
 ![otustable_ampvis2](https://user-images.githubusercontent.com/54455898/171065521-126348f0-237b-4fd4-b710-f7b06bbe999f.png)
 
@@ -55,7 +55,7 @@ amp_boxplot(data = SOP, group_by = "TypeSample", tax_add = "Family")
 ```
 ![bplot_ampvis2](https://user-images.githubusercontent.com/54455898/171067045-ecce49f8-2762-4831-9d26-906531eebb88.png)
 
-En este tipo de gráficos se puede analizar mejor el porcentaje de abundancia ubicado en el eje de las ***x*** con base a los 3 grupos en relación con las familias representadas en cada muestra significativa.
+En este tipo de gráficos se puede analizar mejor el porcentaje de abundancia ubicado en el eje de las ***x*** con base a los 3 grupos dados para esta visualización en relación con las familias representadas en cada muestra significativa.
 
 ### Mapa de calor o Heatmap
 
