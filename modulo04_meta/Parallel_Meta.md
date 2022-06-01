@@ -136,7 +136,7 @@ Las siguientes figuras son ejemplos que también se pueden visualizar en los res
   style="width:100%; height:300px;"
 ></iframe>
 
-<iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="taxonomy.html" height="525" width="100%"></iframe>
+<iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="modulo04_meta/output_test/Sample_Views/taxonomy.html" height="525" width="100%"></iframe>
 
 El gráfico circular interactivo resume las composiciones taxonómicas de un grupo seleccionado. Los investigadores pueden hacer clic en una sección particular de interés para analizar mejor sus composiciones en un nivel taxonómico más bajo.
 
