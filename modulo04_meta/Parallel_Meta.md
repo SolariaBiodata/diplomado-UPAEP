@@ -168,6 +168,6 @@ Las curvas de rarefacción se utilizan constantemente cuando se calculan los ín
 
 [Menú Principal](./index)
 
-[Atras](./index)
+[Atras](./introduccion)
 
 [Siguiente](./QIIME_2)
