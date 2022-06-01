@@ -4,7 +4,7 @@ usemathjax: true
 ![alt text](https://solariabiodata.com.mx/wp-content/uploads/2021/07/logo_red.png "Soluciones de Siguiente Generación")
 # 2o [Diplomado de Bioinformática](./)
 
-## Bioinformática
+## Antes de comenzar...
 
 > "La metodología [clonación de ADN ambiental en E. coli para la detección de fenotipos] ha sido posible gracias a los avances en biología molecular y genómica eucariótica, que han sentado las bases para la clonación y el análisis funcional de los genomas colectivos de la microflora del suelo, que denominamos el metagenoma del suelo." - ***Jo Emily Handelsma*** , Directora del ***Wisconsin Institute for Discovery*** de la ***University of Wisconsin–Madison***
 
