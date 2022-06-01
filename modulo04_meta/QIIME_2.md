@@ -142,20 +142,4 @@ QIIME 2 es una plataforma de bioinformática microbioma completamente rediseñad
 
 [Atras](./Parallel_Meta)
 
-[Siguiente](./)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[Siguiente](./analisis_diversidad)
