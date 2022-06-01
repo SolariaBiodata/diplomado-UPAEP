@@ -1,0 +1,25 @@
+Random-Forest Score (error rate = 100%)
+g__Rheinheimera. 0
+g__Staphylococcus. 0
+g__Mycobacterium. 0
+g__Asticcacaulis. 0
+g__Bradyrhizobium. 0
+g__Delftia. 0
+g__Plesiomonas. 0
+g__Sphingomonas. 0
+g__Achromobacter. 0
+g__Kocuria. 0
+g__Sphingopyxis. 0
+g__Altererythrobacter. 0
+g__Pseudomonas. 0
+g__Bradyrhizobiaceae_Group. 0
+g__Cetobacterium. 0
+g__Xanthobacter. 0
+g__Geobacillus. 0
+g__Ruegeria. 0
+g__Caulobacter. 0
+g__Undibacterium. 0
+g__Carboxydocella. 0
+Unclassified 0
+g__Agrobacterium. 0
+g__Mesorhizobium. 0

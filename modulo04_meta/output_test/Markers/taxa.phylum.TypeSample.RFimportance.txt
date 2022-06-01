@@ -1,0 +1,6 @@
+Random-Forest Score (error rate = 100%)
+p__Proteobacteria. 0
+p__Firmicutes. 0
+p__Actinobacteria. 0
+p__Fusobacteria. 0
+p__Cyanobacteria. 0

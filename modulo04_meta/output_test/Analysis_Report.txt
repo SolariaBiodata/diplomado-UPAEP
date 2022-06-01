@@ -1,0 +1,19 @@
+Parallel-Meta Pipeline Analysis Report
+Version 3.6
+Reference sequence database: GreenGenes-13-8 (16S rRNA, 97% level)
+Input type: Sequence list
+Sequence list: list_pm1
+Sequence type: Targeted sequences
+Pair-end sequences: Yes
+Copy number correction: Yes
+Sequence Normalization Depth: NA
+Sequence Normalization Bootstrap: NA
+ASV denoising: Yes
+Chimera removal: Yes
+Sequence alignment threshold: 0.99
+Functional anlaysis: Yes
+Weighted taxa distance: Meta-Storms
+Unweighted taxa distance: Meta-Storms-unweighed
+Weighted function distance: Cosine
+Number of Input Sample: 3
+Number of Output Sample: 3

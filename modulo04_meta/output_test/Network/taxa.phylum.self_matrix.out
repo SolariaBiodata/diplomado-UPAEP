@@ -1,0 +1,6 @@
+	p__Proteobacteria;	p__Firmicutes;	p__Actinobacteria;	p__Fusobacteria;	p__Cyanobacteria;
+p__Proteobacteria;	1	0.216453	0.814736	0.813966	0.0961024
+p__Firmicutes;	0.216453	1	-0.389734	-0.390956	0.992576
+p__Actinobacteria;	0.814736	-0.389734	1	0.999999	-0.49885
+p__Fusobacteria;	0.813966	-0.390956	0.999999	1	-0.5
+p__Cyanobacteria;	0.0961024	0.992576	-0.49885	-0.5	1

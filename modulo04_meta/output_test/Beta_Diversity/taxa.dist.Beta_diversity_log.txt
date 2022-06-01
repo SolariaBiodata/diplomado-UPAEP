@@ -1,0 +1,4 @@
+All the sample metadata:  TypeSample 
+
+The column names do not exactly match the row names! Please revise!Error in is.element(group, all_group_f) : object 'all_group_f' not found
+Execution halted

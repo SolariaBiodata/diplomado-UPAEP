@@ -1,0 +1,159 @@
+Warning: Sample ID starts by number
+PM-select-taxa:
+PM-select-taxa:
+PM-select-taxa:
+PM-predict-func:
+PM-predict-func-nsti:
+PM-select-func:
+PM-select-func:
+PM-plot-tax:
+PM-comp-taxa:
+PM-comp-taxa:
+PM-comp-func:
+PM-comp-corr:
+Warning message:
+In centralization.closeness(g) :
+  At centrality.c:2784 :closeness centrality is not well-defined for disconnected graphs
+PM-comp-corr:
+PM-rare-curv:
+PM_Distribution.R:
+Warning message:
+In dir.create(outpath) : 'output_test/Abundance_Tables' already exists
+Error in 1:ncol(data_map) : argument of length 0
+Execution halted
+PM_Distribution.R:
+Warning message:
+In dir.create(outpath) : 'output_test/Abundance_Tables' already exists
+Error in 1:ncol(data_map) : argument of length 0
+Execution halted
+PM_Distribution.R:
+Warning message:
+In dir.create(outpath) : 'output_test/Abundance_Tables' already exists
+Error in 1:ncol(data_map) : argument of length 0
+Execution halted
+PM_Distribution.R:
+Warning message:
+In dir.create(outpath) : 'output_test/Abundance_Tables' already exists
+Error in 1:ncol(data_map) : argument of length 0
+Execution halted
+PM_Pcoa.R:
+Error in names(x) <- value : 
+  'names' attribute [3] must be the same length as the vector [2]
+Calls: PM_pcoa -> colnames<-
+Execution halted
+PM_Pcoa.R:
+Error in names(x) <- value : 
+  'names' attribute [3] must be the same length as the vector [2]
+Calls: PM_pcoa -> colnames<-
+Execution halted
+PM_Pcoa.R:
+Error in names(x) <- value : 
+  'names' attribute [3] must be the same length as the vector [2]
+Calls: PM_pcoa -> colnames<-
+Execution halted
+PM_Pca.R:
+Error in names(x) <- value : 
+  'names' attribute [3] must be the same length as the vector [2]
+Calls: PM_pca -> colnames<-
+Execution halted
+PM_Pca.R:
+Error in names(x) <- value : 
+  'names' attribute [3] must be the same length as the vector [2]
+Calls: PM_pca -> colnames<-
+Execution halted
+PM_Pca.R:
+Error in names(x) <- value : 
+  'names' attribute [3] must be the same length as the vector [2]
+Calls: PM_pca -> colnames<-
+Execution halted
+PM_Pca.R:
+Error in names(x) <- value : 
+  'names' attribute [3] must be the same length as the vector [2]
+Calls: PM_pca -> colnames<-
+Execution halted
+PM_Adiversity.R:
+Warning message:
+In dir.create(outpath) : 'output_test/Alpha_Diversity' already exists
+PM_Adiversity.R:
+Warning message:
+In dir.create(outpath) : 'output_test/Alpha_Diversity' already exists
+PM_Adiversity.R:
+Warning message:
+In dir.create(outpath) : 'output_test/Alpha_Diversity' already exists
+PM_Bdiversity.R:
+PM_Bdiversity.R:
+PM_Adiversity.R:
+Warning message:
+In dir.create(outpath) : 'output_test/Alpha_Diversity' already exists
+PM_Adiversity.R:
+Warning message:
+In dir.create(outpath) : 'output_test/Alpha_Diversity' already exists
+PM_Bdiversity.R:
+PM_Marker_Test.R:
+Warning message:
+In dir.create(outpath) : 'output_test/Markers' already exists
+PM_Marker_RFscore.R:
+Warning message:
+In dir.create(outpath) : 'output_test/Markers' already exists
+Warning messages:
+1: Use of `framebm$MeanDecreaseAccuracy` is discouraged. Use `MeanDecreaseAccuracy` instead. 
+2: Use of `framebm$MeanDecreaseAccuracy` is discouraged. Use `MeanDecreaseAccuracy` instead. 
+3: Use of `framebm$MeanDecreaseAccuracy` is discouraged. Use `MeanDecreaseAccuracy` instead. 
+4: Use of `framebm$MeanDecreaseAccuracy` is discouraged. Use `MeanDecreaseAccuracy` instead. 
+PM_Marker_Corr.R:
+Warning message:
+In dir.create(outpath) : 'output_test/Markers' already exists
+Error in order(rownames(allmetadata)) : argument 1 is not a vector
+Calls: data.frame -> [ -> [.factor -> NextMethod -> order
+Execution halted
+PM_Marker_Test.R:
+Warning message:
+In dir.create(outpath) : 'output_test/Markers' already exists
+PM_Marker_RFscore.R:
+Warning message:
+In dir.create(outpath) : 'output_test/Markers' already exists
+Warning messages:
+1: Use of `framebm$MeanDecreaseAccuracy` is discouraged. Use `MeanDecreaseAccuracy` instead. 
+2: Use of `framebm$MeanDecreaseAccuracy` is discouraged. Use `MeanDecreaseAccuracy` instead. 
+3: Use of `framebm$MeanDecreaseAccuracy` is discouraged. Use `MeanDecreaseAccuracy` instead. 
+4: Use of `framebm$MeanDecreaseAccuracy` is discouraged. Use `MeanDecreaseAccuracy` instead. 
+PM_Marker_Corr.R:
+Warning message:
+In dir.create(outpath) : 'output_test/Markers' already exists
+Error in order(rownames(allmetadata)) : argument 1 is not a vector
+Calls: data.frame -> [ -> [.factor -> NextMethod -> order
+Execution halted
+PM_Marker_Test.R:
+Warning message:
+In dir.create(outpath) : 'output_test/Markers' already exists
+PM_Marker_RFscore.R:
+Warning message:
+In dir.create(outpath) : 'output_test/Markers' already exists
+Warning messages:
+1: Use of `framebm$MeanDecreaseAccuracy` is discouraged. Use `MeanDecreaseAccuracy` instead. 
+2: Use of `framebm$MeanDecreaseAccuracy` is discouraged. Use `MeanDecreaseAccuracy` instead. 
+3: Use of `framebm$MeanDecreaseAccuracy` is discouraged. Use `MeanDecreaseAccuracy` instead. 
+4: Use of `framebm$MeanDecreaseAccuracy` is discouraged. Use `MeanDecreaseAccuracy` instead. 
+PM_Marker_Corr.R:
+Warning message:
+In dir.create(outpath) : 'output_test/Markers' already exists
+Error in order(rownames(allmetadata)) : argument 1 is not a vector
+Calls: data.frame -> [ -> [.factor -> NextMethod -> order
+Execution halted
+PM_Marker_Test.R:
+Warning message:
+In dir.create(outpath) : 'output_test/Markers' already exists
+PM_Marker_RFscore.R:
+Warning message:
+In dir.create(outpath) : 'output_test/Markers' already exists
+Warning messages:
+1: Use of `framebm$MeanDecreaseAccuracy` is discouraged. Use `MeanDecreaseAccuracy` instead. 
+2: Use of `framebm$MeanDecreaseAccuracy` is discouraged. Use `MeanDecreaseAccuracy` instead. 
+3: Use of `framebm$MeanDecreaseAccuracy` is discouraged. Use `MeanDecreaseAccuracy` instead. 
+4: Use of `framebm$MeanDecreaseAccuracy` is discouraged. Use `MeanDecreaseAccuracy` instead. 
+PM_Marker_Corr.R:
+Warning message:
+In dir.create(outpath) : 'output_test/Markers' already exists
+Error in order(rownames(allmetadata)) : argument 1 is not a vector
+Calls: data.frame -> [ -> [.factor -> NextMethod -> order
+Execution halted

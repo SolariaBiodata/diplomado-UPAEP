@@ -1,0 +1,4 @@
+SampleID	TypeSample
+085-01	suelo
+085-02	agua
+085-03	sedimento

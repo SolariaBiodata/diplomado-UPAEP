@@ -1,0 +1,36 @@
+
+    -------------------------------
+    Input  1. Data matrix: 
+              row.names	Sample_id
+              col.names	Varibles
+              For example, data should be organized like this:
+              Sample_id	group	V1	V2	etc...
+              sample_0001	A	6	25
+              sample_0002	B	9	32
+              etc...        
+           2. Metadata:
+              row.names	Sample_id
+              col.names	Sample_categories
+    -------------------------------   
+    Output 1. Table 1: Statistical results of all taxa
+              Table 2: Statistical summary of significant taxa
+           2. Logfile
+    
+    Last update: 2021-04-22
+    
+    
+    
+    Input Parameters: 
+                   filename= output_test/Abundance_Tables/func.l2.Abd 
+                   metadata.filename= output_test/meta.txt 
+                   The cutoff of Mean AB of each taxon= 0.001 
+                   The cutoff of percentage of Zero value for each taxon= 0.8 
+                   The confidence level of statistical tests for taxa= 0.01 
+ 
+    The number of all input variables : 51 
+    The number of variables (removed variables containing over 80% zero): 51 
+    The number of variables (removed variables whose mean relative abundance less than 0.001 :43 
+Error in bartlett.test.default(c(0.00988507, 0.00793335, 0.00808669),  : 
+  there must be at least 2 observations in each group
+Calls: BetweenGroup.test ... bartlett.test.formula -> do.call -> bartlett.test -> bartlett.test.default
+Execution halted

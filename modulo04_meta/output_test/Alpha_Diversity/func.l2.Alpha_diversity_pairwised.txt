@@ -1,0 +1,21 @@
+Alpha diversity wilcoxon test
+Pairwise.wilcox.test FDR
+
+=====================
+Shannon:
+	agua	sedimento
+sedimento	1	NA
+suelo	1	1
+	
+=====================
+Simpson:
+	agua	sedimento
+sedimento	1	NA
+suelo	1	1
+	
+=====================
+CHAO1:
+	agua	sedimento
+sedimento	NA	NA
+suelo	1	1
+	

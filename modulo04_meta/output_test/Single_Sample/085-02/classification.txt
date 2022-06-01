@@ -1,0 +1,24 @@
+#Database_OTU	Count	Abundance	Taxonomy
+4467810	1	0.00457666	k__Bacteria;	p__Firmicutes;	c__Bacilli;	o__Bacillales;	f__Bacillaceae;	g__Geobacillus;	s__Unclassified;	otu__4467810
+343089	1	0.01373	k__Bacteria;	p__Proteobacteria;	c__Gammaproteobacteria;	o__Pseudomonadales;	f__Moraxellaceae;	g__Acinetobacter;	s__johnsonii;	otu__343089
+818602	1	0.0411899	k__Bacteria;	p__Proteobacteria;	c__Gammaproteobacteria;	o__Pseudomonadales;	f__Pseudomonadaceae;	g__Pseudomonas;	s__monteilii;	otu__818602
+586766	1	0.020595	k__Bacteria;	p__Proteobacteria;	c__Gammaproteobacteria;	o__Chromatiales;	f__Chromatiaceae;	g__Rheinheimera;	s__Unclassified;	otu__586766
+4445751	1	0.0411899	k__Bacteria;	p__Proteobacteria;	c__Alphaproteobacteria;	o__Rhodospirillales;	f__Rhodospirillaceae;	g__Rhodospirillaceae_Group;	s__Unclassified;	otu__4445751
+104031	1	0.0411899	k__Bacteria;	p__Proteobacteria;	c__Alphaproteobacteria;	o__Rhizobiales;	f__Hyphomicrobiaceae;	g__Parvibaculum;	s__Unclassified;	otu__104031
+437584	1	0.0411899	k__Bacteria;	p__Proteobacteria;	c__Alphaproteobacteria;	o__Rhizobiales;	f__Phyllobacteriaceae;	g__Nitratireductor;	s__Unclassified;	otu__437584
+656520	1	0.0411899	k__Bacteria;	p__Proteobacteria;	c__Alphaproteobacteria;	o__Rhodobacterales;	f__Rhodobacteraceae;	g__Rhodobacter;	s__Unclassified;	otu__656520
+935202	1	0.0411899	k__Bacteria;	p__Proteobacteria;	c__Alphaproteobacteria;	o__Sphingomonadales;	f__Sphingomonadaceae;	g__Sphingomonas;	s__Unclassified;	otu__935202
+463607	1	0.0411899	k__Bacteria;	p__Proteobacteria;	c__Alphaproteobacteria;	o__Sphingomonadales;	f__Sphingomonadaceae;	g__Sphingomonas;	s__wittichii;	otu__463607
+2607184	1	0.0102975	k__Bacteria;	p__Proteobacteria;	c__Betaproteobacteria;	o__Burkholderiales;	f__Comamonadaceae;	g__Delftia;	s__Unclassified;	otu__2607184
+551109	1	0.0411899	k__Bacteria;	p__Proteobacteria;	c__Alphaproteobacteria;	o__Caulobacterales;	f__Caulobacteraceae;	g__Asticcacaulis;	s__Unclassified;	otu__551109
+328710	1	0.0411899	k__Bacteria;	p__Proteobacteria;	c__Gammaproteobacteria;	o__Pseudomonadales;	f__Moraxellaceae;	g__Moraxellaceae_Group;	s__Unclassified;	otu__328710
+155367	2	0.0411899	k__Bacteria;	p__Proteobacteria;	c__Alphaproteobacteria;	o__Rhodobacterales;	f__Rhodobacteraceae;	g__Ruegeria;	s__Unclassified;	otu__155367
+162215	1	0.00686499	k__Bacteria;	p__Proteobacteria;	c__Gammaproteobacteria;	o__Enterobacteriales;	f__Enterobacteriaceae;	g__Kluyvera;	s__P8;	otu__162215
+837283	1	0.020595	k__Bacteria;	p__Proteobacteria;	c__Gammaproteobacteria;	o__Enterobacteriales;	f__Enterobacteriaceae;	g__Plesiomonas;	s__Unclassified;	otu__837283
+254116	1	0.0411899	k__Bacteria;	p__Proteobacteria;	c__Alphaproteobacteria;	o__Rhizobiales;	f__Bradyrhizobiaceae;	g__Bradyrhizobium;	s__Unclassified;	otu__254116
+617271	5	0.20595	k__Bacteria;	p__Proteobacteria;	c__Gammaproteobacteria;	o__Pseudomonadales;	f__Pseudomonadaceae;	g__Pseudomonas;	s__Unclassified;	otu__617271
+4427546	1	0.0102975	k__Bacteria;	p__Proteobacteria;	c__Alphaproteobacteria;	o__Sphingomonadales;	f__Sphingomonadaceae;	g__Sphingobium;	s__Unclassified;	otu__4427546
+235024	1	0.00686499	k__Bacteria;	p__Proteobacteria;	c__Gammaproteobacteria;	o__Enterobacteriales;	f__Enterobacteriaceae;	g__Enterobacteriaceae_Group;	s__Unclassified;	otu__235024
+866365	3	0.0617849	k__Bacteria;	p__Proteobacteria;	c__Alphaproteobacteria;	o__Caulobacterales;	f__Caulobacteraceae;	g__Caulobacter;	s__Unclassified;	otu__866365
+73782	1	0.0411899	k__Bacteria;	p__Proteobacteria;	c__Gammaproteobacteria;	o__Pseudomonadales;	f__Pseudomonadaceae;	g__Pseudomonas;	s__nitroreducens;	otu__73782
+1111342	14	0.144165	k__Bacteria;	p__Proteobacteria;	c__Betaproteobacteria;	o__Burkholderiales;	f__Oxalobacteraceae;	g__Undibacterium;	s__Unclassified;	otu__1111342

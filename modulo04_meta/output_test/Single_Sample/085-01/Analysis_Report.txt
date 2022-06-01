@@ -1,0 +1,20 @@
+Parallel-Meta Suite Analysis Report
+Version: 3.7
+Reference database: GreenGenes-13-8 (16S rRNA, 97% level)
+Input type : rRNA targeted sequences
+Input file : /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/reads_profiling/085-01_S1_L001_R1_001.fastq
+Input paired file : /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/reads_profiling/085-01_S1_L001_R2_001.fastq
+ASV denoising: Yes
+Chimera removal: Yes
+Sequence alignment threshold: 0.99
+rRNA sequence number: 69602
+Mapped rRNA sequence number: 31334
+ASV number: 4597
+Alpha diversity (# of taxa):
+Kingdom	1
+Phylum	5
+Class	7
+Order	14
+Family	19
+Genus	21
+OTU	31
