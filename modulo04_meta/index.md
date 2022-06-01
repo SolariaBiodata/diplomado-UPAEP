@@ -18,10 +18,10 @@ Bienvenido a la segunda edición del Diplomado en "Bioinformática" en colaborac
 ## Metagenómica
 
 ### [Introducción](./Introduccion)
-#### [Análisis de metaprofiling](./Analisis_de_metaprofiling)
-#### [Procesamiento de datos de microbioma](./Parallel_Meta)
-#### [Análisis de microbioma con QIIME 2](./QIIME_2)
-#### [Análisis de diversidad](./analisis_diversidad)
+#### [Procesamiento de datos de microbioma con Parallel-META 3](./Parallel_Meta)
+#### [Procesamiento de datos de microbioma con QIIME 2](./QIIME_2)
+#### [Procesamiento de datos de microbioma con DADA2](./Analisis_de_metaprofiling)
+#### [Análisis de diversidad con Ampvis2](./analisis_diversidad)
 
 
 
