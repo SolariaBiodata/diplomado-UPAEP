@@ -115,4 +115,4 @@ Para realizar asignación taxonómica existen dos aproximaciones que se basan en
 
 [Atras](./index)
 
-[Siguiente](./Analisis_de_metaprofiling)
+[Siguiente](./Parallel_Meta.md)
