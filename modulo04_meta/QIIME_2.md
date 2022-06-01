@@ -6,11 +6,11 @@ usemathjax: true
 
 ## ¿Qué es QIIME 2?
 
-QIIME 2 es un entorno informático para procesar y analizar datos de bibliotecas de amplicones. Por lo general, estas bibliotecas de amplicones se generan dirigiéndose al gen 16S rRNA en una comunidad procariótica para obtener información sobre los taxones presentes y sus abundancias relativas. 
+QIIME 2 es un entorno informático para procesar y analizar datos de bibliotecas de amplicones. Por lo general, estas bibliotecas de amplicones se generan dirigiéndose al gen 16S del ARNr en una comunidad procariótica para obtener información sobre los taxones presentes y sus abundancias relativas. 
 
 ![logoq2](https://user-images.githubusercontent.com/54455898/171038735-5f004863-3913-48ad-89f2-9b2160e98499.png)
 
-Es importante señalar que QIIME 2 es un sistema en el que operan otros análisis, muchos de los cuales no están diseñados por los desarrolladores de QIIME 1 en absoluto.
+Es importante señalar que QIIME 2 es un sistema en el que operan otros análisis, muchos de los cuales no están diseñados por los desarrolladores de QIIME 1 en lo absoluto.
 
 ¿Qué diferencias hay entre QIIME 1 y QIIME 2?
 
@@ -20,7 +20,7 @@ Es importante señalar que QIIME 2 es un sistema en el que operan otros análisi
 
 ![QIIME 2](https://user-images.githubusercontent.com/54455898/171041662-8d861162-02ca-4042-853b-cdbc94cdd664.png "Home QIIME 2")
 
-* La versión actual de QIIME cuentan con herramientas de última generación para control de calidad de secuencias desde diferentes plataformas de secuenciación (DADA2 y Deblur 12), asignación de taxonomía e inserción filogenética, que mejoran cuantitativamente los resultados sobre QIIME 1 y otras herramientas. Los complementos también admiten una funcionalidad cualitativamente nueva, incluido el análisis de series de tiempo y muestras pareadas de microbiomas (que son fundamentales para estudiar los efectos de los tratamientos en el microbioma) y el aprendizaje automático.
+* La versión actual de QIIME cuenta con herramientas de última generación para control de calidad de secuencias desde diferentes plataformas de secuenciación (DADA2 y Deblur 12), asignación de taxonomía e inserción filogenética, que mejoran cuantitativamente los resultados sobre QIIME 1 y otras herramientas. Los complementos también admiten una funcionalidad cualitativamente nueva, incluido el análisis de series de tiempo y muestras pareadas de microbiomas (que son fundamentales para estudiar los efectos de los tratamientos en el microbioma) y el aprendizaje automático.
 
 ### Hora de practicar 
 
@@ -66,7 +66,7 @@ Es importante mencionar que cada tipo de información debe de estar separada por
 
 #### Importación de datos pareados 
 
-Una vez que tengamos nuestros dos ficheros principales debemos importar nuestras lecturas que, en este caso son pareadas con la finalidad que se genere un archivo en formato qza con la información de sus lecturas:
+Transferimos nuestras lecturas (en este caso son pareadas) con la finalidad de que se genere un archivo en formato ***qza*** que incluya la información específica:
 
 ```bash
 qiime tools import --type 'SampleData[PairedEndSequencesWithQuality]' --input-path manifiesto.csv --input-format PairedEndFastqManifestPhred33 --output-path raw-seqs.qza 
@@ -74,7 +74,7 @@ qiime tools import --type 'SampleData[PairedEndSequencesWithQuality]' --input-pa
 
 #### Procesamiento de ruidos 
 
-La siguiente instrucción que se ejecuta es para eliminar el ruido de los extremos de las secuencias emparejados, así como la filtración de quimeras:
+La siguiente instrucción que se ejecuta es para eliminar el ruido de los extremos de las secuencias pareadas, así como la filtración de quimeras:
 
 ```bash
 qiime dada2 denoise-paired --i-demultiplexed-seqs raw-seqs.qza --p-trunc-len-f 150 --p-trunc-len-r 150 --p-trunc-q 10 --o-representative-sequences rep-seqs.qza --output-dir rep --verbose 
