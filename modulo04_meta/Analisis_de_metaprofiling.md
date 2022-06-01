@@ -226,8 +226,6 @@ fantaxtic_bar(ps.top20, color_by = "Family", label_by = "Genus", other_label = "
 
 [Menú Principal](./index)
 
-[Atras](./Introduccion)
+[Atras](./QIIME_2)
 
-[Siguiente](./Parallel_Meta)
-
-
+[Siguiente](./analisis_diversidad)
