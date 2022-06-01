@@ -14,7 +14,7 @@ Es importante señalar que QIIME 2 es un sistema en el que operan otros análisi
 
 ¿Qué diferencias hay entre QIIME 1 y QIIME 2?
 
-![q1flow](https://user-images.githubusercontent.com/54455898/171042958-0dd376b4-5c00-4f6e-9301-97f7ce51fc68.png "workflow Q1")
+![qiime](https://user-images.githubusercontent.com/54455898/171340759-577e1163-5b9a-4944-b615-10639784a9a0.jpg)
 
 * QIIME 1 ha respaldado muchos estudios de microbiomas y ganó una amplia comunidad de usuarios y desarrolladores, pero debido a la diversidad de herramientas de última generación se ha quedado atrás.
 
