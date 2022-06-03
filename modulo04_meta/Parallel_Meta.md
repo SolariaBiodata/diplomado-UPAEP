@@ -102,7 +102,15 @@ Ahora para correr Parallel-META 3, solo se requiere ejecutar el siguiente comand
 ```bash
 PM-pipeline -i list_test.txt -m metadata_test.txt -R T -o output_test
 ```
-### Al terminar de procesar los datos se generará el archivo de salida llamado ***output_test*** con el siguiente contenido
+## Parámetros adicionales
+
+Las banderas ***-R T*** en la instrucción de PM anterior habilitan la curva de rarefacción, que muestra cómo la diversidad alfa varía con el número de secuencia:
+
+```bash
+PM-rare-curv -i results/Abundance_Tables/taxa.OTU.Count -o Rare_curve
+```
+
+### Al terminar de procesar los datos se generará el archivo de salida llamado ***results*** con el siguiente contenido
 
 | °  | °  | °  | °  | °  |
 |---|---|---|---|---|
