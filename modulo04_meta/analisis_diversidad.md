@@ -23,11 +23,25 @@ library(ampvis2)
 
 La información de la tabla de OTUs debe de estar separada por algún delimitador, ya sea por comas "," o tabuladores "  " , pero principalmente al final tener las columnas de la taxonomía de cada OTU con un nombre concreto y solo los niveles clásicos en inglés, empezando por ***Kingdom*** . En esta práctica, la tabla de OTUs abarcará solamente 6 niveles, pero pueden ser hasta 7.
 
+```bash
+data_level <- read.csv(file = "/content/sample_data/datos_level_6.csv")
+```
+```bash
+head(data_level)
+```
+
 ![otustable_ampvis2](https://user-images.githubusercontent.com/54455898/171065521-126348f0-237b-4fd4-b710-f7b06bbe999f.png)
 
 #### Lista de metadatos
 
 La lista de metadatos será la siguiente:
+
+```bash
+metadata_test <- read.table(file = "/content/sample_data/metadata_test.txt")
+```
+```bash
+metadata_test
+```
 
 | SampleID  | TypeSample  |  
 |---|---|
@@ -35,7 +49,22 @@ La lista de metadatos será la siguiente:
 | 085-02  | agua  |   
 | 085-03  | sedimento  |  
 
-Como te habrás dado cuenta, cumple con el mismo formato que en las prácticas anteriores, donde su principal característica es que la informacion está separada mediante tabuladores. 
+Como te habrás dado cuenta, esta tabla de metadatos cumple con el mismo formato que en prácticas anteriores, donde su principal característica es que la informacion está separada mediante tabuladores.
+
+### Creación de un objeto
+
+Debemos crear una matriz con cualquier nombre, para esta práctica se llamará SOLARIA. Este paso es fundamental para generar los análisis y visualizaciones:
+
+```bash
+SOLARIA <- amp_load(otutable ="/content/sample_data/datos_level_6.csv", metadata ="/content/sample_data/metadata_test.txt")
+```
+```bash
+SOLARIA
+```
+
+![object_solaria](https://user-images.githubusercontent.com/54455898/172037524-62b563a0-3bcd-419b-81cd-b62815ce0daf.png)
+
+Al cargar el ***objeto***, nos va a proporcionar los ***elementos*** que contiene, el cual resume la cantidad de lecturas y OTUs en las 3 muestras aplicadas, así como la ***taxonomía asignada*** y el número de variables identificados en el fichero de ***metadatos***.
 
 ### Generación de diferentes gráficas
 
@@ -46,7 +75,7 @@ amp_rarecurve(data = SOP, stepsize = 50, color_by = "TypeSample")
 ```
 ![rarecurve](https://user-images.githubusercontent.com/54455898/171067025-d9e91ee3-0c10-49e3-a842-8bb492aa3fd2.png)
 
-Las curvas de rarefacciones representan el número de especies frente al número de muestras. Este tipo de curvas se crea volviendo a muestrear aleatoriamente el conjunto de “n” muestras varias veces y luego trazando el número promedio de especies encontradas en cada muestra. Se espera que cada curva generada obtenga un comportamiento "asintótico".
+Las curvas de rarefacción representan el número de especies frente al número de muestras. Este tipo de curvas se crea volviendo a muestrear aleatoriamente el conjunto de “n” muestras varias veces y luego trazando el número promedio de especies encontradas en cada muestra. Se espera que cada curva generada obtenga un comportamiento “asintótico”.
 
 ### Gráfica de Boxplot
 
@@ -55,7 +84,7 @@ amp_boxplot(data = SOP, group_by = "TypeSample", tax_add = "Family")
 ```
 ![bplot_ampvis2](https://user-images.githubusercontent.com/54455898/171067045-ecce49f8-2762-4831-9d26-906531eebb88.png)
 
-En este tipo de gráficos se puede analizar mejor el porcentaje de abundancia ubicado en el eje de las ***x*** con base a los 3 grupos dados para esta visualización en relación con las familias representadas en cada muestra significativa.
+En este tipo de gráficos se puede analizar mejor el porcentaje de abundancia ubicado en el eje de las ***x*** con base a los ***3 grupos*** dados para esta visualización en relación con las ***familias*** representadas en cada muestra significativa.
 
 ### Mapa de calor o Heatmap
 
