@@ -8,9 +8,13 @@ usemathjax: true
 
 ## MEGAHIT 
 
-MEGAHIT (***MH***) es un ensamblador de secuencuencias de próxima generación (NGS) de novo para procesar datos metagenómicos grandes y complejos de manera rentable y en tiempo. Se ha caracterizado por tener la capacidad de ensamblar un conjunto de datos de metagenómica del suelo con 252 Gigabytes de pares de secuencias (Gbps) en 44,1 y 99,6 h en un solo nodo informático con y sin unidad de procesamiento de gráficos, respectivamente.
+MEGAHIT (***MH*** ) es un ensamblador de secuencuencias de próxima generación (NGS) de novo para procesar datos metagenómicos grandes y complejos de manera rentable y en tiempo. Se ha caracterizado por tener la capacidad de ensamblar un conjunto de datos de metagenómica del suelo con 252 gigabytes de pares de secuencias (gbps) en 44,1 y 99,6 h en un solo nodo informático con y sin unidad de procesamiento de gráficos, respectivamente.
 
-Creamos dentro de nuestro directorio personal una carpeta donde ejecutaremos ***MH***:
+### ¿Cómo trabaja ***MH*** ?
+
+***MH*** reúne los datos como un todo, es decir, no se necesita ningún procesamiento previo como la partición y la normalización, permitiendo generar contigs más grandes respecto a resultados de otros metaensambladores.
+
+Creamos dentro de nuestro directorio personal una carpeta donde ejecutaremos ***MH*** :
  ```bash
 mkdir megahit
 ```
