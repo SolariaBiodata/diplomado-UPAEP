@@ -5,14 +5,22 @@ usemathjax: true
 # 2o [Diplomado de Bioinformática](./)
 
 # Ensamblajes metagenómicos
+## Cuestión actual 
+El paso más crítico del análisis de datos metagenómicos es la reconstrucción de genes y genomas individuales de los microorganismos de diversas comunidades usando ***ensambladores metagenómicos***, programas computacionales que juntan pequeños fragmentos de ADN secuenciado generado por instrumentos de secuenciación.
+
+Para esta práctica usaremos dos metaensambladores distintos que se han distiguido en este campo por su forma de procesar lecturas de manera eficaz.  
 
 ## MEGAHIT 
 
-MEGAHIT (***MH*** ) es un ensamblador de secuencuencias de próxima generación (NGS) de novo para procesar datos metagenómicos grandes y complejos de manera rentable y en tiempo. Se ha caracterizado por tener la capacidad de ensamblar un conjunto de datos de metagenómica del suelo con 252 gigabytes de pares de secuencias (gbps) en 44,1 y 99,6 h en un solo nodo informático con y sin unidad de procesamiento de gráficos, respectivamente.
+![MEGAHIT](https://user-images.githubusercontent.com/54455898/172469415-31d70162-06ca-4493-8f3c-31eee3792713.png"MEGAHIT")
+
+MEGAHIT (***MH*** ) es un ensamblador de metagenómas de última generación de novo para procesar datos metagenómicos grandes y complejos de manera rentable y en tiempo. Se ha caracterizado por tener la capacidad de ensamblar un conjunto de datos de metagenómica del suelo con 252 gigabytes de pares de secuencias (gbps) en 44,1 y 99,6 horas en un solo nodo informático con y sin unidad de procesamiento de gráficos, respectivamente.
 
 ### ¿Cómo trabaja ***MH*** ?
 
 ***MH*** reúne los datos como un todo, es decir, no se necesita ningún procesamiento previo como la partición y la normalización, permitiendo generar contigs más grandes respecto a resultados de otros metaensambladores.
+
+## Manos a la obra
 
 Creamos dentro de nuestro directorio personal una carpeta donde ejecutaremos ***MH*** :
  ```bash
@@ -70,6 +78,13 @@ grep ">" -c final.contigs.fa
 Estos resultados podemos compararlos con otros ensambladores de metagenomas.
 
 ## metaSPAdes 
+
+![logo_metaspades](https://user-images.githubusercontent.com/54455898/172477623-f8826cca-aaaf-46de-a087-7df7ac33c788.png"MetaSPAdes")
+
+El otro ensamblador con el que practicaremos se llama metaSPAdes (***MS*** ), el cual aborda varios desafíos del ensamblaje metagenómico al capitalizar ideas computacionales que demostraron ser útiles en ensamblajes de células individuales y genomas diploides altamente polimórficos.
+MS combina nuevas ideas algorítmicas con soluciones comprobadas del kit de herramientas SPAdes para abordar varios desafíos del ensamblaje metagenómico.
+
+## Que comience la práctica
 
 Creamos una carpeta para correr ***MS**:
  ```bash
