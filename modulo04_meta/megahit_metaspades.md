@@ -12,29 +12,29 @@ usemathjax: true
 ## Cuestión actual 
 El paso más crítico del análisis de datos metagenómicos es la reconstrucción de genes y genomas individuales de los microorganismos de diversas comunidades usando ***ensambladores metagenómicos***, programas computacionales que juntan pequeños fragmentos de ADN secuenciado generado por instrumentos de secuenciación.
 
-Para esta práctica usaremos dos metaensambladores distintos que se han distiguido en este campo por su forma de procesar lecturas de manera eficaz.  
+Para esta práctica usaremos dos ***metaensambladores*** distintos que se han distiguido en este campo por su forma de procesar lecturas de manera eficaz.  
 
 ## MEGAHIT 
 
 ![logo_mh](https://user-images.githubusercontent.com/54455898/172481137-f0cf0ed3-88b0-4b9f-bd15-d844e3f9e9dc.png)
 
 
-MEGAHIT (***MH*** ) es un ensamblador de metagenómas de última generación de novo para procesar datos metagenómicos grandes y complejos de manera rentable y en tiempo. Se ha caracterizado por tener la capacidad de ensamblar un conjunto de datos de metagenómica del suelo con 252 gigabytes de pares de secuencias (gbps) en 44,1 y 99,6 horas en un solo nodo informático con y sin unidad de procesamiento de gráficos, respectivamente.
+MEGAHIT (***MH***) es un ensamblador de metagenómas de última generación de novo para procesar datos grandes y complejos de manera rentable y en tiempo. Se ha caracterizado por tener la capacidad de ensamblar un conjunto de datos de metagenómica del suelo con 252 gigabytes por pares de secuencias (gbps) en 44,1 y 99,6 horas en un solo nodo informático con y sin unidad de procesamiento de gráficos, respectivamente.
 
-### ¿Cómo trabaja ***MH*** ?
+### ¿Cómo trabaja ***MH***?
 
-***MH*** reúne los datos como un todo, es decir, no se necesita ningún procesamiento previo como la partición y la normalización, permitiendo generar contigs más grandes respecto a resultados de otros metaensambladores.
+***MH*** reúne los datos como un todo, es decir, no se necesita ningún procesamiento previo como la partición y la normalización, permitiendo generar contigs más grandes respecto a resultados de otros ***metaensambladores***.
 
 ## Manos a la obra
 
-Creamos dentro de nuestro directorio personal una carpeta donde ejecutaremos ***MH*** :
+Creamos dentro de nuestro directorio personal una carpeta donde ejecutaremos ***MH***:
  ```bash
 mkdir megahit
 ```
  ```bash
 cd megahit
 ```
-Haremos las ligas simbolicas para llamar a las lecturas que ocuparemos ubicadas en el folder indicado durante la sesión en vivo: 
+Haremos las ligas simbolicas para llamar a las metalecturas que ocuparemos ubicadas en el folder indicado durante la sesión en vivo: 
  ```bash
 ln -s /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/practica_mh_ms/SRR19423238_1.fastq SRR19423238_1
 ln -s /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/practica_mh_ms/SRR19423238_2.fastq SRR19423238_2
@@ -45,7 +45,7 @@ ls -lhtr
 SRR19423238_1 -> /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/practica_mh_ms/SRR19423238_1.fastq
 SRR19423238_2 -> /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/practica_mh_ms/SRR19423238_2.fastq
 ```
-Una vez que estén generadas las ligas simbólicas podemos verificar si contamos con el programa MH con la siguiente instrucción:
+Una vez que estén generadas las ligas simbólicas podemos verificar si contamos con el programa ***MH*** con la siguiente instrucción:
 
  ```bash
 megahit
@@ -71,7 +71,7 @@ Cuando finalice de ensamblar las metalecturas se crerá el directorio que sugeri
 |  final.contigs.fa  |  intermediate_contigs/  |
 |  log  |  opts.txt  |
 
-En primera instancia podemos revisar los contigs finales 
+En primera instancia podemos revisar los contigs finales:
 
  ```bash
 cd out_megahit
@@ -86,15 +86,15 @@ Estos resultados podemos compararlos con otros ensambladores de metagenomas.
 
 ![logo_metaspades](https://user-images.githubusercontent.com/54455898/172481184-b79ab263-fdff-4598-9d99-399638318bdb.png)
 
-El otro ensamblador con el que practicaremos se llama metaSPAdes (***MS*** ), el cual aborda varios desafíos del ensamblaje metagenómico al capitalizar ideas computacionales que demostraron ser útiles en ensamblajes de células individuales y genomas diploides altamente polimórficos.
+El otro ensamblador con el que practicaremos se llama metaSPAdes (***MS***), el cual aborda varios desafíos de este amplio campo al capitalizar ideas computacionales que demostraron ser útiles en ensamblajes de células individuales y genomas diploides altamente polimórficos.
 
-### ¿Qué lo caracteríza de otros metaensambladores?
+### ¿Qué lo caracteriza de otros metaensambladores?
 
-MS combina nuevas ideas algorítmicas con soluciones comprobadas del kit de herramientas SPAdes para abordar varios desafíos del ensamblaje metagenómico.
+***MS*** combina nuevas ideas algorítmicas con soluciones comprobadas del kit de herramientas SPAdes para abordar varios desafíos del ensamblaje metagenómico.
 
 ## Que comience la práctica
 
-Creamos una carpeta para correr ***MS**:
+Creamos una carpeta para correr ***MS***:
  ```bash
 mkdir metaspades
 cd metaspades
@@ -129,7 +129,7 @@ Se generan más ficheros en comparación cuando corremos ***MH*** de manera esta
 
 Dentro de los resultados de ***MS*** podemos consultar los ***k-mers*** implementados durante el metaensamble.
 
-Ingresamos al contenido final para visualizar los contigs generados y a su vez compararlos con los de ***MH*** :
+Ingresamos al contenido final para visualizar los contigs generados y a su vez compararlos con los de ***MH***:
 
  ```bash
 cd out_metaspades
