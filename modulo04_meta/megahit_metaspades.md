@@ -5,6 +5,10 @@ usemathjax: true
 # 2o [Diplomado de Bioinformática](./)
 
 # Ensamblajes metagenómicos
+
+![logoinicial](https://user-images.githubusercontent.com/54455898/172481784-36581de9-6c1d-4df3-8d8f-42a1482c7c64.png)
+
+
 ## Cuestión actual 
 El paso más crítico del análisis de datos metagenómicos es la reconstrucción de genes y genomas individuales de los microorganismos de diversas comunidades usando ***ensambladores metagenómicos***, programas computacionales que juntan pequeños fragmentos de ADN secuenciado generado por instrumentos de secuenciación.
 
@@ -12,7 +16,8 @@ Para esta práctica usaremos dos metaensambladores distintos que se han distigui
 
 ## MEGAHIT 
 
-![MEGAHIT](https://user-images.githubusercontent.com/54455898/172469415-31d70162-06ca-4493-8f3c-31eee3792713.png"MEGAHIT")
+![logo_mh](https://user-images.githubusercontent.com/54455898/172481137-f0cf0ed3-88b0-4b9f-bd15-d844e3f9e9dc.png)
+
 
 MEGAHIT (***MH*** ) es un ensamblador de metagenómas de última generación de novo para procesar datos metagenómicos grandes y complejos de manera rentable y en tiempo. Se ha caracterizado por tener la capacidad de ensamblar un conjunto de datos de metagenómica del suelo con 252 gigabytes de pares de secuencias (gbps) en 44,1 y 99,6 horas en un solo nodo informático con y sin unidad de procesamiento de gráficos, respectivamente.
 
@@ -79,9 +84,12 @@ Estos resultados podemos compararlos con otros ensambladores de metagenomas.
 
 ## metaSPAdes 
 
-![logo_metaspades](https://user-images.githubusercontent.com/54455898/172477623-f8826cca-aaaf-46de-a087-7df7ac33c788.png"MetaSPAdes")
+![logo_metaspades](https://user-images.githubusercontent.com/54455898/172481184-b79ab263-fdff-4598-9d99-399638318bdb.png)
 
 El otro ensamblador con el que practicaremos se llama metaSPAdes (***MS*** ), el cual aborda varios desafíos del ensamblaje metagenómico al capitalizar ideas computacionales que demostraron ser útiles en ensamblajes de células individuales y genomas diploides altamente polimórficos.
+
+### ¿Qué lo caracteríza de otros metaensambladores?
+
 MS combina nuevas ideas algorítmicas con soluciones comprobadas del kit de herramientas SPAdes para abordar varios desafíos del ensamblaje metagenómico.
 
 ## Que comience la práctica
@@ -121,7 +129,7 @@ Se generan más ficheros en comparación cuando corremos ***MH*** de manera esta
 
 Dentro de los resultados de ***MS*** podemos consultar los ***k-mers*** implementados durante el metaensamble.
 
-Ingresamos al contenido final para visualizar los contigs generados:
+Ingresamos al contenido final para visualizar los contigs generados y a su vez compararlos con los de ***MH*** :
 
  ```bash
 cd out_metaspades
