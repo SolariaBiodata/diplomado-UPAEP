@@ -178,6 +178,15 @@ Puedes practicar con las lecturas restantes y comparar las asignaciones que se d
 
 ## MetaPhlAn
 
+![MetaPhlAn](https://user-images.githubusercontent.com/54455898/172720183-44e22eef-11db-473b-b4d3-0032c1873028.png)
+
+* MetaPhlAn (***MPA***) es una herramienta computacional que permite perfilar la composición de comunidades microbianas (bacterias, arqueas y eucariotas) a partir de datos de secuenciación ***shotgun*** (es decir, no 16S) con nivel de especie.
+
+* ***MPA*** se basa en genes marcadores específicos de clado únicos identificados a partir de aproximadamente 17,000 genomas de referencia (~13 500 bacterianos y arqueales, ~3500 virales y ~110 eucariotas) lo que le permite ser más versatil respecto a otras herramientas similares.
+
+
+### Sigamos con la parte final de la práctica 
+
 Las lecturas ***fastq*** y bases de datos que ocuparemos para correr ***MPA*** se encuentran en la siguiente ruta
 
 ```bash
