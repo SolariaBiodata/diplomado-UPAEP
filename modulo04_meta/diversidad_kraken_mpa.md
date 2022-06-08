@@ -13,7 +13,13 @@ Durante los últimos 75 años, muchos investigadores han tenido éxito en sintet
 
 ![Alt Text](https://blogs.agu.org/thefield/files/2019/02/LIFE.gif)
 
-https://github.com/SolariaBiodata/diplomado-UPAEP/blob/gh-pages/modulo04_meta/htmls_kraken_mpa/LIFE.gif?raw=true 
+Recientemente se han sugerido varias hipótesis posibles sobre las primeras formas de vida en la Tierra, que actualmente se están probando en experimentos de laboratorio, observaciones de campo y reconstrucciones filogenéticas del metabolismo ancestral. 
+
+## ¿En qué se basan?
+
+![Alt Text](https://1.bp.blogspot.com/-Vk3ZTsBuhTU/YIrQByhxGuI/AAAAAAAAnaE/U5luD6lMgVoaYJLVhlkIYMQFu3GvLB8rACLcBGAsYHQ/w640-h360/2cf24660c3b78cb469402599183873a0.gif)
+
+Se han analizado las desconcertantes diferencias en el metabolismo del carbono y la energía en arqueas metanogénicas y bacterias acetogénicas para proponer un posible mecanismo ancestral de reducción de dióxido de carbono en fuentes hidrotermales alcalinas. Con base a este mecanismo, se ha mostrado que la evolución del bombeo activo de iones podría haber impulsado la profunda divergencia de bacterias y arqueas dentro de las fosas hidrotermales.
 
 ## Kraken
 
