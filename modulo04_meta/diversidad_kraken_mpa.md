@@ -58,6 +58,7 @@ $ ktImportText -o Tu_Nombre_krona_26.html krona_input_26
 $ sbcp Tu_Nombre_krona_26.html
 ```
 
+<iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="./htmls_kraken_mpa/prueba_kraken_krona_26.html" height="525" width="100%"></iframe>
 
 
 
