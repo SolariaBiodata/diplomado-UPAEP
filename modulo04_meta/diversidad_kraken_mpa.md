@@ -11,7 +11,9 @@ Durante los últimos 75 años, muchos investigadores han tenido éxito en sintet
 
 ## ¿En donde se han registrado las primeras formas de vida?
 
-<iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="./htmls_kraken_mpa/vent.gifv" height="525" width="100%"></iframe>
+![Alt Text](https://blogs.agu.org/thefield/files/2019/02/LIFE.gif)
+
+https://github.com/SolariaBiodata/diplomado-UPAEP/blob/gh-pages/modulo04_meta/htmls_kraken_mpa/LIFE.gif?raw=true 
 
 ## Kraken
 
