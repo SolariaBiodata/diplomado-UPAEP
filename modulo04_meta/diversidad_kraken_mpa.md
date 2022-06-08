@@ -4,6 +4,8 @@ usemathjax: true
 ![alt text](https://solariabiodata.com.mx/wp-content/uploads/2021/07/logo_red.png "Soluciones de Siguiente Generación")
 # 2o [Diplomado de Bioinformática](./)
 
+Visualizamos las lecturas que vamos a ocupar e identificamos la ruta donde se encuentren:
+
 ```bash
 $ ls -lhtr /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion2/
 
@@ -12,6 +14,7 @@ SRR6651936_final.contigs.fa
 SRR6651949_final.contigs.fa
 
 ```
+Nos dirigimos a nuestra carpeta personal y dentro de ella creamos un folder donde ejecutaremos ***Kraken***:
 
 ```bash
 $ cd /home/centos/diplomadoUPAEP/carpetapersonal/
@@ -20,12 +23,14 @@ $ mkdir kraken_krona
 
 $ cd kraken_krona
 ```
+Antes de correr **Kraken*** vamos a generar ligas simbólicas a las lecturas que ocuparemos:
 
 ```bash
 $ ln -s /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion2/SRR6651926_final.contigs.fa SRR6651926
 $ ln -s /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion2/SRR6651936_final.contigs.fa SRR6651936
 $ ln -s /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion2/SRR6651949_final.contigs.fa SRR6651949
 ```
+Revisamos que estén creadas correctamente, en dado caso de que "palpiten" las rutas absolutas (también suelen marcarse con un tono rojo) puede ser que exista algún error:
 
 ```bash
 ls -lhtr
@@ -34,17 +39,45 @@ SRR6651926 -> /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion2
 SRR6651936 -> /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion2/SRR6651936_final.contig
 SRR6651949 -> /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion2/SRR6651949_final.contig
 ```
+Generamos una liga simbólica a la base de datos:
 
 ```bash
 $ ln -s /media/data/solaria/.backup/tools/software/bin/minikraken_20171013_4GB/ minikraken
 $ ls -lhtr 
   minikraken -> /media/data/solaria/.backup/tools/software/bin/minikraken_20171013_4GB/
 ```
+Es preferible crear una carpeta para cada lectura para no tener problemas con los ficheros que vayamos generando. Durante la sesión en vivo solamente practicaremos con una lectura y con ello poder probrar otros programas que están asignados en este último módulo del diplomado:
 
 ```bash
 $ mkdir SXX26/
 $ cd    SXX26/
+
+```
+
+Verificamos ***Kraken*** y sus opciones:
+
+```bash
+$ kraken 
+  Usage: kraken [options] <filename(s)>
+
+Options:
+  --db NAME               Name for Kraken DB
+                          (default: none)
+  --threads NUM           Number of threads (default: 1)
+  --fasta-input           Input is FASTA format
+  --fastq-input           Input is FASTQ format
+  --fastq-output          Output in FASTQ format
+  [...]
+
+```
+
+```bash
 $ kraken --fasta-input ../SRR6651926 --db ../minikraken/ --output out_kraken_26
+```
+
+```bash
+$ kraken-report
+  kraken-report: Must specify DB with either --db or $KRAKEN_DEFAULT_DB
 ```
 
 ```bash
@@ -52,7 +85,31 @@ $ kraken-report --db ../minikraken/ out_kraken_26 > report_26
 ```
 
 ```bash
+$ kreport2krona.py
+  usage: kreport2krona.py [-h] -r R_FILE -o O_FILE [--intermediate-ranks]
+                        [--no-intermediate-ranks]
+```
+
+```bash
 $ kreport2krona.py -r report_26 -o krona_input_26
+```
+
+```bash
+$ ktImportText
+                                       _________________________________
+____________________________________/ KronaTools 2.8.1 - ktImportText \___
+
+Creates a Krona chart from text files listing quantities and lineages.
+                                                               _______
+______________________________________________________________/ Usage \___
+
+ktImportText \
+   [options] \
+   text_1[,name_1] \
+   [text_2[,name_2]] \
+   
+   [...]
+
 ```
 
 ```bash
@@ -126,23 +183,6 @@ Options:
 
 ```bash
 $ metaphlan2krona.py -p SRS019033_test -k krona_input_SRS019033
-```
-```bash
-$ ktImportText
-                                       _________________________________
-____________________________________/ KronaTools 2.8.1 - ktImportText \___
-
-Creates a Krona chart from text files listing quantities and lineages.
-                                                               _______
-______________________________________________________________/ Usage \___
-
-ktImportText \
-   [options] \
-   text_1[,name_1] \
-   [text_2[,name_2]] \
-   
-   [...]
-
 ```
 
 ```bash
