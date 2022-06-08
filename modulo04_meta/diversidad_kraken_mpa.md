@@ -4,6 +4,15 @@ usemathjax: true
 ![alt text](https://solariabiodata.com.mx/wp-content/uploads/2021/07/logo_red.png "Soluciones de Siguiente Generación")
 # 2o [Diplomado de Bioinformática](./)
 
+# Para reflexionar...
+## ¿Por qué la vida es como es?
+
+Durante los últimos 75 años, muchos investigadores han tenido éxito en sintetizar las moléculas de la vida, desde aminoácidos hasta nucleótidos. Sin embargo, hay un parecido sorprendentemente pequeño entre gran parte de esta química y las rutas metabólicas de las células, en términos de sustratos, catalizadores y rutas sintéticas.
+
+## ¿En donde se han registrado las primeras formas de vida?
+
+<iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="./htmls_kraken_mpa/vent.gifv" height="525" width="100%"></iframe>
+
 ## Kraken
 
 ![kraken2](https://user-images.githubusercontent.com/54455898/172718386-ab916fc7-8d47-46b7-94dd-d143b4429284.png)
