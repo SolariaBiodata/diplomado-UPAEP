@@ -1,4 +1,8 @@
-
+---
+usemathjax: true
+---
+![alt text](https://solariabiodata.com.mx/wp-content/uploads/2021/07/logo_red.png "Soluciones de Siguiente Generación")
+# 2o [Diplomado de Bioinformática](./)
 
 ```bash
 $ ls -lhtr /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion2/
