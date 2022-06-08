@@ -153,7 +153,7 @@ $ ktImportText -o Tu_Nombre_krona_mpa_SRS019033.html krona_input_SRS019033
 $ sbcp Tu_Nombre_krona_mpa_SRS019033.html
 ```
 
-
+<iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="./htmls_kraken_mpa/krona_mpa_SRS019033.html" height="525" width="100%"></iframe>
 
 
 
