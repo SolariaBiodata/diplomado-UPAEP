@@ -133,7 +133,7 @@ $ kreport2krona.py
 $ kreport2krona.py -r report_26 -o krona_input_26
 ```
 
-Convertimos el fichero ***krona_input_26*** con formato de HTML, para ello ocuparemos ***ktImportText***:
+Convertimos el fichero ***krona_input_26*** a formato de HTML, para ello ocuparemos ***ktImportText***:
 
 ```bash
 $ ktImportText
