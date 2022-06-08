@@ -4,6 +4,14 @@ usemathjax: true
 ![alt text](https://solariabiodata.com.mx/wp-content/uploads/2021/07/logo_red.png "Soluciones de Siguiente Generación")
 # 2o [Diplomado de Bioinformática](./)
 
+## Kraken
+
+![kraken2](https://user-images.githubusercontent.com/54455898/172718386-ab916fc7-8d47-46b7-94dd-d143b4429284.png)
+
+Kraken, es una nueva herramienta de clasificación de secuencias cuya precisión es comparable a las mejores técnicas de clasificación de lecturas, y su velocidad supera con creces tanto a los clasificadores como a los programas de estimación de abundancia.
+
+### ¡Llegó la hora de clasificar!
+
 Visualizamos las lecturas que vamos a ocupar e identificamos la ruta donde se encuentren:
 
 ```bash
@@ -164,7 +172,22 @@ $ sbcp Tu_Nombre_krona_26.html
 
 <iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="./htmls_kraken_mpa/prueba_kraken_krona_26.html" height="525" width="100%"></iframe>
 
-## Practica con las lecturas restantes 
+### Practica con las lecturas restantes 
+
+Puedes practicar con las lecturas restantes y comparar las asignaciones que se determinaron.
+
+## MetaPhlAn
+
+Las lecturas ***fastq*** y bases de datos que ocuparemos para correr ***MPA*** se encuentran en la siguiente ruta
+
+```bash
+$ ls -lhtr /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion2/
+
+* mpa_v20_m200
+* SRS019033.fastq
+
+```
+Al igual que Kraken, creamos dentro de nuestra carpeta personal un folder para correr ***MPA*** y también elaboramos las ligas simbólicas sobre los ficheros que necesitaremos:
 
 ```bash
 $ cd /home/centos/diplomadoUPAEP/carpeta_personal/
@@ -181,6 +204,8 @@ $ ln -s /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion2/mpa_v
 
 ```
 
+Antes de ejecutar ***MPA*** debemos de activar el ambiente ***base*** del servidor de SOLARIA ya que ocupamos contar con ***BIOM***:
+
 ```bash
 $ conda activate base
 $ biom
@@ -196,6 +221,7 @@ Commands:
   [...]
   
 ```
+Revisamos que tengamos instalado ***MPA***:
 
 ```bash
 $ metaphlan2.py
@@ -206,10 +232,12 @@ $ metaphlan2.py
   [...]
   
 ```
+Corremos ***MPA***:
 
 ```bash
 $ metaphlan2.py SRS019033 --mpa_pkl mpa_v20_m200/mpa_v20_m200.pkl --bowtie2db mpa_v20_m200/mpa_v20_m200 --bt2_ps very-sensitive --bowtie2out 085_01.bz2 --nproc 4 --input_type fastq -o SRS019033_test
 ```
+***MPA*** cuenta con su propio paquete para construir los ficheros ***Krona*** respecto a la base de datos implementada anteriormente:
 
 ```bash
 $ metaphlan2krona.py
@@ -223,20 +251,28 @@ Options:
                         the Krons output file name
 
 ```
+Corremos ***metaphlan2krona***:
 
 ```bash
 $ metaphlan2krona.py -p SRS019033_test -k krona_input_SRS019033
 ```
+Tranformamos los resultados a formato HTML para poder visualizarlos en el navegador de nuestro interés:
 
 ```bash
 $ ktImportText -o Tu_Nombre_krona_mpa_SRS019033.html krona_input_SRS019033
 ```
+Subimos el archivo a [SBio Cloud Server](http://13.56.237.15/)
 
 ```bash
 $ sbcp Tu_Nombre_krona_mpa_SRS019033.html
 ```
+### Visualización de los resultados de MPA en Krona:
 
 <iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="./htmls_kraken_mpa/krona_mpa_SRS019033.html" height="525" width="100%"></iframe>
+
+## ¿Que te pareció la práctica?
+
+Como te habrás dado cuenta, las lecturas que se usaron en ***Kraken*** son diferentes a las de ***MPA*** debido a que las bases de datos implementadas en cada programa asignan cierto porcentaje de información registrada en los bancos de metadatos, los cuales requieren de más investigación para clasificar diersas muestras que por el momento se encuentras "desconocidas".
 
 
 
