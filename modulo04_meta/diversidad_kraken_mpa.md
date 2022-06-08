@@ -23,7 +23,7 @@ Recientemente se han sugerido varias hipótesis posibles sobre las primeras form
 
 * Con base a este mecanismo, se ha mostrado que la evolución del bombeo activo de iones podría haber impulsado la profunda divergencia de bacterias y arqueas dentro de las fosas hidrotermales.
 
-### Rocas Halitas 
+### Rocas halita 
 
 ![Halite2101B](https://user-images.githubusercontent.com/54455898/172731046-2ebfb7ef-5c59-4b48-99d3-c5e7c7a32136.jpg)
 
