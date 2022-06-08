@@ -14,6 +14,7 @@ SRR6651936_final.contigs.fa
 SRR6651949_final.contigs.fa
 
 ```
+
 Nos dirigimos a nuestra carpeta personal y dentro de ella creamos un folder donde ejecutaremos ***Kraken***:
 
 ```bash
@@ -23,13 +24,15 @@ $ mkdir kraken_krona
 
 $ cd kraken_krona
 ```
-Antes de correr **Kraken*** vamos a generar ligas simbólicas a las lecturas que ocuparemos:
+
+Antes de correr ***Kraken*** vamos a generar ligas simbólicas a las lecturas que ocuparemos:
 
 ```bash
 $ ln -s /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion2/SRR6651926_final.contigs.fa SRR6651926
 $ ln -s /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion2/SRR6651936_final.contigs.fa SRR6651936
 $ ln -s /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion2/SRR6651949_final.contigs.fa SRR6651949
 ```
+
 Revisamos que estén creadas correctamente, en dado caso de que "palpiten" las rutas absolutas (también suelen marcarse con un tono rojo) puede ser que exista algún error:
 
 ```bash
@@ -39,6 +42,7 @@ SRR6651926 -> /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion2
 SRR6651936 -> /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion2/SRR6651936_final.contig
 SRR6651949 -> /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion2/SRR6651949_final.contig
 ```
+
 Generamos una liga simbólica a la base de datos:
 
 ```bash
@@ -46,6 +50,7 @@ $ ln -s /media/data/solaria/.backup/tools/software/bin/minikraken_20171013_4GB/ 
 $ ls -lhtr 
   minikraken -> /media/data/solaria/.backup/tools/software/bin/minikraken_20171013_4GB/
 ```
+
 Es preferible crear una carpeta para cada lectura para no tener problemas con los ficheros que vayamos generando. Durante la sesión en vivo solamente practicaremos con una lectura y con ello poder probrar otros programas que están asignados en este último módulo del diplomado:
 
 ```bash
@@ -71,28 +76,64 @@ Options:
 
 ```
 
+Ejecutamos ***Kraken*** brindándole la lectura que procesaremos, la base de datos e indicando el nombre de nuestro archivo de salida:
+
 ```bash
 $ kraken --fasta-input ../SRR6651926 --db ../minikraken/ --output out_kraken_26
 ```
+Ahora debemos generar un ***reporte*** sobre lo que se corrió anteriormente, entonces revisamos en que consiste ***kraken-report*** y despues lo ejecutamos:
 
 ```bash
 $ kraken-report
   kraken-report: Must specify DB with either --db or $KRAKEN_DEFAULT_DB
 ```
-
 ```bash
 $ kraken-report --db ../minikraken/ out_kraken_26 > report_26
 ```
+
+Dicho ***reporte*** está delimitado por tabuladores y puede contener lo siguiente:
+
+```bash
+
+* Porcentaje de lecturas cubiertas por el clado enraizado en este taxón
+* Número de lecturas cubiertas por el clado enraizado en este taxón
+* Número de lecturas asignadas directamente a este taxón
+* Un código de rango, que indica (U)nclassified, (D)omain, (K)ingdom, (P)hylum, (C)lass, (O)rder, (F)amily, (G)enus o (S)pecies. Todos los demás rangos son simplemente '-'.
+* ID de taxonomía NCBI
+* Nombre científico 
+
+```
+
+Es posible visualizar el reporte generado:
+
+```bash
+$ head report_26
+
+ 96.24	260130	260130	U	0	unclassified
+  3.76	10167	6	-	1	root
+  3.75	10149	165	-	131567	  cellular organisms
+  2.88	7791	195	D	2157	    Archaea
+  2.76	7466	4	P	28890	      Euryarchaeota
+  2.76	7448	1181	C	183963	        Halobacteria
+  0.97	2632	142	O	2235	          Halobacteriales
+  0.65	1747	138	F	1963268	            Haloarculaceae
+  0.17	468	246	G	2237	              Haloarcula
+  0.05	141	0	S	2238	                Haloarcula marismortui
+
+```
+
+Ahora debemos correr ***kreport2krona*** el cual acepta el reporte generado anteriormente con la finalidad de obtener un fichero de entrada que podamos imprimirlo en ***Krona***:
 
 ```bash
 $ kreport2krona.py
   usage: kreport2krona.py [-h] -r R_FILE -o O_FILE [--intermediate-ranks]
                         [--no-intermediate-ranks]
 ```
-
 ```bash
 $ kreport2krona.py -r report_26 -o krona_input_26
 ```
+
+Convertimos el fichero ***krona_input_26*** con formato de HTML, para ello ocuparemos ***ktImportText***:
 
 ```bash
 $ ktImportText
@@ -111,13 +152,15 @@ ktImportText \
    [...]
 
 ```
-
 ```bash
 $ ktImportText -o Tu_Nombre_krona_26.html krona_input_26
 ```
+Es importante renombrar nuestro archivo final de ***Krona*** y poder distinguirlo más fácil al momento de subirlo a [SBio Cloud Server](http://13.56.237.15/)
+
 ```bash
 $ sbcp Tu_Nombre_krona_26.html
 ```
+### Visualización de las asignaciones que se generaron sobre lecturas de muestras de rocas Halitas en Krona:
 
 <iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="./htmls_kraken_mpa/prueba_kraken_krona_26.html" height="525" width="100%"></iframe>
 
