@@ -34,16 +34,29 @@ SRR6651949 -> /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion2
 ```bash
 $ ln -s /media/data/solaria/.backup/tools/software/bin/minikraken_20171013_4GB/ minikraken
 $ ls -lhtr 
-
-minikraken -> /media/data/solaria/.backup/tools/software/bin/minikraken_20171013_4GB/
-
+  minikraken -> /media/data/solaria/.backup/tools/software/bin/minikraken_20171013_4GB/
 ```
 
 ```bash
-kraken --fasta-input ../SRR6651926 --db ../minikraken/ --output out_kraken_26
+$ mkdir SXX26/
+$ cd    SXX26/
+$ kraken --fasta-input ../SRR6651926 --db ../minikraken/ --output out_kraken_26
 ```
 
+```bash
+$ kraken-report --db ../minikraken/ out_kraken_26 > report_26
+```
 
+```bash
+$ kreport2krona.py -r report_26 -o krona_input_26
+```
+
+```bash
+$ ktImportText -o Tu_Nombre_krona_26.html krona_input_26
+```
+```bash
+$ sbcp Tu_Nombre_krona_26.html
+```
 
 
 
