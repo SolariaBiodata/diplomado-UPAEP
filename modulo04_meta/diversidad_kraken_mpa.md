@@ -8,9 +8,14 @@ SRR6651936_final.contigs.fa
 SRR6651949_final.contigs.fa
 
 ```
+
+```bash
 $ cd /home/centos/diplomadoUPAEP/carpetapersonal/
+
 $ mkdir kraken_krona
+
 $ cd kraken_krona
+```
 
 ```bash
 $ ln -s /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion2/SRR6651926_final.contigs.fa SRR6651926
