@@ -104,6 +104,23 @@ $ metaphlan2.py
 ```
 
 ```bash
+$ metaphlan2.py SRS019033 --mpa_pkl mpa_v20_m200/mpa_v20_m200.pkl --bowtie2db mpa_v20_m200/mpa_v20_m200 --bt2_ps very-sensitive --bowtie2out 085_01.bz2 --nproc 4 --input_type fastq -o SRS019033_test
+```
+
+```bash
+$ metaphlan2krona.py
+  Usage: metaphlan2krona.py [options]
+
+Options:
+  -h, --help            show this help message and exit
+  -p PROFILE, --profile=PROFILE
+                        The input file is the MetaPhlAn standard result file
+  -k KRONA, --krona=KRONA
+                        the Krons output file name
+
+```
+
+```bash
 $ metaphlan2krona.py -p SRS019033_test -k krona_input_SRS019033
 ```
 ```bash
@@ -119,6 +136,7 @@ ktImportText \
    [options] \
    text_1[,name_1] \
    [text_2[,name_2]] \
+   
    [...]
 
 ```
@@ -126,6 +144,7 @@ ktImportText \
 ```bash
 $ ktImportText -o Tu_Nombre_krona_mpa_SRS019033.html krona_input_SRS019033
 ```
+
 ```bash
 $ sbcp Tu_Nombre_krona_mpa_SRS019033.html
 ```
