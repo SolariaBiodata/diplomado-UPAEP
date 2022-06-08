@@ -9,17 +9,33 @@ usemathjax: true
 
 Durante los últimos 75 años, muchos investigadores han tenido éxito en sintetizar las moléculas de la vida, desde aminoácidos hasta nucleótidos. Sin embargo, hay un parecido sorprendentemente pequeño entre gran parte de esta química y las rutas metabólicas de las células, en términos de sustratos, catalizadores y rutas sintéticas.
 
-## ¿En donde se han registrado las primeras formas de vida?
+### ¿En donde se han registrado las primeras formas de vida?
 
 ![Alt Text](https://blogs.agu.org/thefield/files/2019/02/LIFE.gif)
 
 Recientemente se han sugerido varias hipótesis posibles sobre las primeras formas de vida en la Tierra, que actualmente se están probando en experimentos de laboratorio, observaciones de campo y reconstrucciones filogenéticas del metabolismo ancestral. 
 
-## ¿En qué se basan?
+### ¿En qué se basan?
 
 ![Alt Text](https://1.bp.blogspot.com/-Vk3ZTsBuhTU/YIrQByhxGuI/AAAAAAAAnaE/U5luD6lMgVoaYJLVhlkIYMQFu3GvLB8rACLcBGAsYHQ/w640-h360/2cf24660c3b78cb469402599183873a0.gif)
 
-Se han analizado las desconcertantes diferencias en el metabolismo del carbono y la energía en arqueas metanogénicas y bacterias acetogénicas para proponer un posible mecanismo ancestral de reducción de dióxido de carbono en fuentes hidrotermales alcalinas. Con base a este mecanismo, se ha mostrado que la evolución del bombeo activo de iones podría haber impulsado la profunda divergencia de bacterias y arqueas dentro de las fosas hidrotermales.
+* Se han analizado las desconcertantes diferencias en el metabolismo del carbono y la energía en arqueas metanogénicas y bacterias acetogénicas para proponer un posible mecanismo ancestral de reducción de dióxido de carbono en fuentes hidrotermales alcalinas. 
+
+* Con base a este mecanismo, se ha mostrado que la evolución del bombeo activo de iones podría haber impulsado la profunda divergencia de bacterias y arqueas dentro de las fosas hidrotermales.
+
+### Rocas Halitas 
+
+![Halite2101B](https://user-images.githubusercontent.com/54455898/172731046-2ebfb7ef-5c59-4b48-99d3-c5e7c7a32136.jpg)
+
+* La halita es uno de los entornos más extremos para sustentar la vida. Debido a que la halita es geológicamente estable e impermeable al agua subterránea, los microbios supuestamente tienen un origen sindeposicional, lo que los convierte en los organismos más antiguos que se sabe que viven en la Tierra. 
+
+* Recientemente, nuestra comprensión de la diversidad microbiana dentro de la halita se ha ampliado y ahora están disponibles las primeras secuencias del genoma de microbios antiguos enterrados en halita. Los secretos detrás de la supervivencia prolongada en la sal también están comenzando a ser revelados.
+
+### ¿Por qué estudiar microbios antiguos enterrados en halita?
+
+* Los microorganismo enterradas con ***halita*** se ven desafiadas por el hambre, la acumulación de metabolitos finales, las mutaciones nocivas, la degradación de los componentes celulares, las concentraciones de iones extremadamente altas y las condiciones anóxicas.
+
+* Dichos microorganismos deben tener cualidades que les permitan sobrevivir dentro de las formaciones de evaporitas, y se podrían descubrir nuevas estrategias de supervivencia. Los datos de secuencia disponibles de microbios enterrados en halita están aumentando, lo que abre nuevas posibilidades en la investigación de halófilos.
 
 ## Kraken
 
@@ -29,7 +45,7 @@ Kraken, es una nueva herramienta de clasificación de secuencias cuya precisión
 
 ### ¡Llegó la hora de clasificar!
 
-Visualizamos las lecturas que vamos a ocupar e identificamos la ruta donde se encuentren:
+Visualizamos las lecturas que vamos a ocupar e identificamos la ruta donde se encuentren. Dichas lecturas provienen de ***halitas*** que se han descrito al principio de este contenido.
 
 ```bash
 $ ls -lhtr /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion2/
