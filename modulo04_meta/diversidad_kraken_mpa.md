@@ -37,6 +37,14 @@ Recientemente se han sugerido varias hipótesis posibles sobre las primeras form
 
 * Dichos microorganismos deben tener cualidades que les permitan sobrevivir dentro de las formaciones de evaporitas, y se podrían descubrir nuevas estrategias de supervivencia. Los datos de secuencia disponibles de microbios enterrados en halita están aumentando, lo que abre nuevas posibilidades en la investigación de halófilos.
 
+## Clasificadores metagenómicos
+
+![environmental_genomics](https://user-images.githubusercontent.com/54455898/172733093-6ec68be3-afd7-4caf-80e2-19d64fe28ae5.png)
+
+* Actualmente se encuentran disponibles una amplia variedad de herramientas de software para realizar la clasificación taxonómica de estos datos metagenómicos. 
+
+* El rápido ritmo de desarrollo de estos clasificadores y la complejidad de los metagenómas hacen que sea importante que los investigadores puedan comparar su sus resultados de una manra más específica y concreta.
+
 ## Kraken
 
 ![kraken2](https://user-images.githubusercontent.com/54455898/172718386-ab916fc7-8d47-46b7-94dd-d143b4429284.png)
