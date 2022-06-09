@@ -3,18 +3,22 @@
 
 ### Instalación de librerias
 
-```bash
-eje
-```
+Activamos la librería de ***ggplot2***: 
+
 ```bash
 library(ggplot2)
 ```
+
+Debemos tener instalado ***reshape2***, el cual facilita la transformación de datos entre los formatos a lo largo y ancho:
+
 ```bash
 install.packages("reshape2")
 ```
 ```bash
 library(reshape2)
 ```
+Intalamos ***BiocManager*** para tener un mejor análisis estadístico y la comprensión de datos genómicos a paritr de otros paquetes como ***phyloseq***:
+
 ```bash
 if (!require("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
@@ -24,27 +28,32 @@ BiocManager::install("phyloseq")
 ```bash
 library(phyloseq)
 ```
+Instalamos el paquete de ***lattice*** para permitir un fácil acondicionamiento sobre los datos y producir gráficos ***múltiples pequeños***: 
 
 ```bash
 install.packages("lattice")
 ```
+***Permute*** proporciona funciones para generar permutaciones restringidas y no restringidas:
 
 ```bash
 install.packages("permute")
 ```
-
 ```bash
 library(permute)
 ```
+Con ***vegan*** podemos realizar los análisis de divesidad que se mostrarán más adelante:
 
+```bash
+install.packages("vegan")
+```
 ```bash
 library(vegan)
 ```
+Instalamos ***dplyr***:
 
 ```bash
 install.packages("dplyr")
 ```
-
 ```bash
 library(dplyr)
 ```
@@ -58,12 +67,12 @@ head(datos)
 
 ![1_r](https://user-images.githubusercontent.com/54455898/172842951-4340d3cc-5416-4183-b6d2-4b9430673a44.png)
 
-### Obtenemos la
+### Obtenemos la tabla de abundancia relativa
 
 ```bash
 prop<-prop.table(data.matrix(datos), 2)
 ```
-### Con la función melt convertimos la tabla en un df
+### Con la función melt convertimos la tabla en un data frame
 
 ```bash
 dat_m <- melt(prop)
