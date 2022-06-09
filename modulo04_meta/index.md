@@ -24,7 +24,7 @@ Bienvenido a la segunda edición del Diplomado en "Bioinformática" en colaborac
 #### [Análisis de diversidad con Kraken y MetaPhlAn](./diversidad_kraken_mpa)
 #### [Ensamblaje de metagenomas](./megahit_metaspades)
 #### [Análisis de diversidad con Ampvis2](./analisis_diversidad)
-
+#### [Análisis de diversidad con R](./analisis_R)
 
 
 
