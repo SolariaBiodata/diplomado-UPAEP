@@ -25,7 +25,9 @@ Recientemente se han sugerido varias hipótesis posibles sobre las primeras form
 
 ### Rocas halita 
 
-![Halite2101B](https://user-images.githubusercontent.com/54455898/172731046-2ebfb7ef-5c59-4b48-99d3-c5e7c7a32136.jpg)
+
+![51THGggi+KL _SL1000_](https://user-images.githubusercontent.com/54455898/172964073-51d0f96e-2deb-4182-8576-3f8fa47463ff.jpg)
+
 
 * La halita es uno de los entornos más extremos para sustentar la vida. Debido a que la halita es geológicamente estable e impermeable al agua subterránea, los microbios supuestamente tienen un origen sindeposicional, lo que los convierte en los organismos más antiguos que se sabe que viven en la Tierra. 
 
