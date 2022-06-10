@@ -10,6 +10,12 @@ usemathjax: true
 <td><img src="https://user-images.githubusercontent.com/54455898/172992604-1fb50c5f-5119-4d17-be82-3eabf19c4414.png" width=500/>
 <td><img src="https://user-images.githubusercontent.com/54455898/172992717-d6a9df72-165e-40e5-ae63-58c83a6c8dea.jpg" width=500/>
 
+    
+    <table><tr>
+<td><img src="https://user-images.githubusercontent.com/54455898/172992604-1fb50c5f-5119-4d17-be82-3eabf19c4414.png" width=500/>
+<td><img src="https://user-images.githubusercontent.com/54455898/172992717-d6a9df72-165e-40e5-ae63-58c83a6c8dea.jpg" width=500/>
+</tr></table>
+    
 ### Instalación de librerias
 
 Activamos la librería de ***ggplot2***: 
