@@ -138,3 +138,9 @@ cd out_metaspades
 grep ">" -c contigs.fasta
 29
 ```
+
+[Menú Principal](./index)
+
+[Atras](./Analisis_de_metaprofiling)
+
+[Siguiente](./taxonomia_kraken_mpa)
