@@ -106,3 +106,8 @@ amp_venn(data = SOP, group_by = "TypeSample", cut_f = 95)
 
 Los diagramas de Venn calculan la cantidad de OTUs compartidos por grupos dados los umbrales sobre la frecuencia con la que las OTUs deben estar por encima de cierta abundancia. También devuelve la abundancia promedio de las OTUs en un grupo en particular.
 
+[Menú Principal](./index)
+
+[Atras](./taxonomia_kraken_mpa)
+
+[Siguiente](./diversidad_R)
