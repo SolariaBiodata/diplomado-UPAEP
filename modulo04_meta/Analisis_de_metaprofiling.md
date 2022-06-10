@@ -228,4 +228,4 @@ fantaxtic_bar(ps.top20, color_by = "Family", label_by = "Genus", other_label = "
 
 [Atras](./QIIME_2)
 
-[Siguiente](./analisis_diversidad)
+[Siguiente](./megahit_metaspades)
