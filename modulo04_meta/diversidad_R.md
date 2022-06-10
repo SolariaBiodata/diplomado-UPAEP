@@ -1,6 +1,18 @@
 
 # Análisis de diversidad en R
 
+<table><tr>
+<td><img src="https://user-images.githubusercontent.com/54455898/172992604-1fb50c5f-5119-4d17-be82-3eabf19c4414.png" width=200/>
+<td><img src="https://user-images.githubusercontent.com/54455898/172992717-d6a9df72-165e-40e5-ae63-58c83a6c8dea.jpg" width=200/>
+</tr></table>
+
+
+
+![rcolab](https://user-images.githubusercontent.com/54455898/172992604-1fb50c5f-5119-4d17-be82-3eabf19c4414.png)
+![@shutterstock_1102537547](https://user-images.githubusercontent.com/54455898/172992717-d6a9df72-165e-40e5-ae63-58c83a6c8dea.jpg)
+
+
+
 ### Instalación de librerias
 
 Activamos la librería de ***ggplot2***: 
@@ -178,7 +190,9 @@ plot_heatmap(objetophy)
 ```
 ![8_plot_heatmap](https://user-images.githubusercontent.com/54455898/172988445-25039dfb-93d4-4d37-b847-53a17726493e.png)
 
+### Importancia de R en el análisis de datos ***shotgun***
 
+La gran cantidad de datos ***shotgun*** metagenómicos requieren canalizaciones integrales, fáciles de usar, como lo son diversos paquetes de ***R*** y con ello obtener mejores análisis a partir este tipo de ***metainformación***, que aceleran los pasos de la bioinformática, liberando a los investigadores la necesidad de realizar manualmente tareas complejas y que consumen mucho tiempo.
 
 
 
