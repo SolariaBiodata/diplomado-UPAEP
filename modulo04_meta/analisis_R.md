@@ -119,9 +119,22 @@ samples
 ```
 ![4_metadata](https://user-images.githubusercontent.com/54455898/172860257-ab4756a5-1457-424d-827f-f4f455c4a18d.png)
 
+### Visualizamos como se encuentran organizado los datos
+
+```bash
+head (datos)
+```
+![datos_head](https://user-images.githubusercontent.com/54455898/172974649-464269dd-3d43-422d-8b65-cea07785d877.png)
+
 ```bash
 OTU <- otu_table(datos, taxa_are_rows = TRUE)
-GP <- prune_species(speciesSums(physeq1) > 0, OTU) 
+GP <- prune_species(speciesSums(physeq1) > 0, OTU)
+GP
+```
+
+```bash
+objetophy<-phyloseq(OTU,samples)
+objetophy
 ```
 
 ### Graficamos los índices
