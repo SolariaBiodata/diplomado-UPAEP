@@ -153,12 +153,12 @@ plot_richness(objetophy, measures=c("Chao1", "Shannon", "Simpson"),color="Site")
 ![6_plot_richness](https://user-images.githubusercontent.com/54455898/172987491-2e48ec49-051f-4f21-a61a-069568020d38.png)
 
 ### Calculamos diversidad Beta 
-#### Primero se calcula la matriz de distancia Bray-Curtis
+#### Primero se calcula la matriz de distancia ***Bray-Curtis***
 
 ```bash
 dist_bc <- as.matrix(vegdist(OTU, method = "bray"))
 ```
-#### A partir de la matriz de distancia obtenemos la raíz cuadrada y con ello convertir las distancias en métricas
+#### A partir de ***Bray-Curtis*** obtenemos la raíz cuadrada y con ello convertir las distancias en métricas
 
 ```bash
 dist_bc_sqrt <- sqrt (dist_bc)
@@ -171,7 +171,7 @@ plot_ordination(objetophy, pcoa_bc, color = "Site") + geom_point(size=5, alpha=0
 ```
 ![7_plot_ordination](https://user-images.githubusercontent.com/54455898/172987537-ad18fc49-e262-429f-aa6c-12d6a02da9d8.png)
 
-#### Generamos un heatmap a paritr del objeto que se creó anteriormente
+#### Generamos un ***heatmap*** con base al objeto que se creó anteriormente
 
 ```bash
 plot_heatmap(objetophy)
