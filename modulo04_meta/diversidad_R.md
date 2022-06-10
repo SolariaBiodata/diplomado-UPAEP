@@ -1,8 +1,14 @@
+---
+usemathjax: true
+---
+![alt text](https://solariabiodata.com.mx/wp-content/uploads/2021/07/logo_red.png "Soluciones de Siguiente Generación")
+# 2o [Diplomado de Bioinformática](./)
+
 
 # Análisis de diversidad en R
 
-<img src="https://user-images.githubusercontent.com/54455898/172992604-1fb50c5f-5119-4d17-be82-3eabf19c4414.png" width=200/>
-<img src="https://user-images.githubusercontent.com/54455898/172992717-d6a9df72-165e-40e5-ae63-58c83a6c8dea.jpg" width=200/>
+<img src="https://user-images.githubusercontent.com/54455898/172992604-1fb50c5f-5119-4d17-be82-3eabf19c4414.png" width=500/>
+<img src="https://user-images.githubusercontent.com/54455898/172992717-d6a9df72-165e-40e5-ae63-58c83a6c8dea.jpg" width=500/>
 
 ### Instalación de librerias
 
