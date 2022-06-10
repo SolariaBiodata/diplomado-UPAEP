@@ -326,31 +326,9 @@ $ sbcp Tu_Nombre_krona_mpa_SRS019033.html
 
 Como te habrás dado cuenta, las lecturas que se usaron en ***Kraken*** son diferentes a las de ***MPA*** debido a que las bases de datos implementadas en cada programa asignan cierto porcentaje de información registrada en los bancos de metadatos, los cuales requieren de más investigación para clasificar diersas muestras que por el momento se encuentras "desconocidas".
 
+[Menú Principal](./index)
 
+[Atras](./megahit_metaspades)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[Siguiente](./diversidad_ampvis2)
 
