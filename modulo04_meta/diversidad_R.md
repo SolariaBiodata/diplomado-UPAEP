@@ -32,7 +32,7 @@ install.packages("reshape2")
 ```bash
 library(reshape2)
 ```
-Intalamos ***BiocManager*** para tener un mejor análisis estadístico y la comprensión de datos genómicos a paritr de otros paquetes como ***phyloseq***:
+Instalamos ***BiocManager*** para tener un mejor análisis estadístico y la comprensión de datos genómicos a paritr de otros paquetes como ***phyloseq***:
 
 ```bash
 if (!require("BiocManager", quietly = TRUE))
@@ -123,9 +123,9 @@ colnames(dat_m)<-c("Specie", "Sample", "Abundance")
 
 ![3_gráfica_apilada_ggplot2](https://user-images.githubusercontent.com/54455898/172859730-285b9c29-a30a-44eb-98e1-5e3e82793a9c.png)
 
-### Obtención de indices de diversidad Alfa con phyloseq
+### Obtención de índices de diversidad Alfa con ***phyloseq***
 
-Con la función de "sample_data" de phyloseq introduccimos los metadatos:
+Con la función de "sample_data" de phyloseq introducimos los metadatos:
 
 ```bash
 metadata<-read.table("/content/sampledata.txt",sep="\t", header=T, row.names=1)
@@ -146,7 +146,7 @@ OTU <- otu_table(datos, taxa_are_rows = TRUE)
 GP <- prune_species(speciesSums(physeq1) > 0, OTU)
 GP
 ```
-#### Construimos un objeto a partir de los OTU y las muestras:
+#### Construimos un objeto a partir de los OTUs y las muestras:
 ```bash
 objetophy<-phyloseq(OTU,samples)
 objetophy
