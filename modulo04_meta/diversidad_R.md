@@ -56,7 +56,7 @@ install.packages("permute")
 ```bash
 library(permute)
 ```
-Con ***vegan*** podemos realizar los análisis de divesidad que se mostrarán más adelante:
+Con ***vegan*** podemos visualizar mejor los análisis de divesidad que se mostrarán más adelante:
 
 ```bash
 install.packages("vegan")
@@ -87,7 +87,7 @@ head(datos)
 ```bash
 prop<-prop.table(data.matrix(datos), 2)
 ```
-### Con la función melt convertimos la tabla en un data frame
+### Con la función ***melt*** convertimos la tabla en un ***data frame***
 
 ```bash
 dat_m <- melt(prop)
@@ -101,7 +101,7 @@ head(dat_m)
 ```bash
 colnames(dat_m)<-c("Specie", "Sample", "Abundance")
 ```
-### Realizamos una grafica apilada de las abundacias relativas con ggplot2
+### Realizamos una gráfica apilada de las abundacias relativas con ***ggplot2***
 
 ```bash
  ggplot(dat_m, aes(Sample, Abundance, fill =Specie )) +
@@ -167,7 +167,7 @@ plot_richness(objetophy, measures=c("Chao1", "Shannon", "Simpson"),color="Site")
 ```
 ![6_plot_richness](https://user-images.githubusercontent.com/54455898/172987491-2e48ec49-051f-4f21-a61a-069568020d38.png)
 
-### Calculamos diversidad Beta 
+### Calculamos la diversidad Beta 
 #### Primero se calcula la matriz de distancia ***Bray-Curtis***
 
 ```bash
