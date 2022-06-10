@@ -97,9 +97,9 @@ SRR6651949 -> /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion2
 Generamos una liga simbólica a la base de datos:
 
 ```bash
-$ ln -s /media/data/solaria/.backup/tools/software/bin/minikraken_20171013_4GB/ minikraken
+$ ln -s /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion2/minikraken minikraken
 $ ls -lhtr 
-  minikraken -> /media/data/solaria/.backup/tools/software/bin/minikraken_20171013_4GB/
+  minikraken -> /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion2/minikraken
 ```
 
 Es preferible crear una carpeta para cada lectura para no tener problemas con los ficheros que vayamos generando. Durante la sesión en vivo solamente practicaremos con una lectura y con ello poder probrar otros programas que están asignados en este último módulo del diplomado:
