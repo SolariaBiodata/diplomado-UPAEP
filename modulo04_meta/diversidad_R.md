@@ -131,22 +131,50 @@ OTU <- otu_table(datos, taxa_are_rows = TRUE)
 GP <- prune_species(speciesSums(physeq1) > 0, OTU)
 GP
 ```
-
+#### Construimos un objeto a partir de los OTU y las muestras:
 ```bash
 objetophy<-phyloseq(OTU,samples)
 objetophy
 ```
+![objetophy](https://user-images.githubusercontent.com/54455898/172986047-95af61e8-fcc7-4fb2-bdd3-275d7b1e8b59.png)
 
 ### Graficamos los índices
 
 ```bash
 plot_richness(objetophy, color="Site")  
 ```
-
 [5_plot_richness](https://user-images.githubusercontent.com/54455898/172860714-e064fc34-61c9-47a2-9601-4b68b0994e7d.png)
 
+```bash
+plot_richness(objetophy, measures=c("Chao1", "Shannon", "Simpson"),color="Site") + geom_point(size=5, alpha=0.7) 
+```
+![6_plot_richness](https://user-images.githubusercontent.com/54455898/172987491-2e48ec49-051f-4f21-a61a-069568020d38.png)
 
+### Calculamos diversidad Beta 
+#### Primero se calcula la matriz de distancia Bray-Curtis
 
+```bash
+dist_bc <- as.matrix(vegdist(OTU, method = "bray"))
+```
+#### A partir de la matriz de distancia obtenemos la raíz cuadrada y con ello convertir las distancias en métricas
+
+```bash
+dist_bc_sqrt <- sqrt (dist_bc)
+```
+```bash
+pcoa_bc = ordinate(objetophy, "PCoA", "bray") 
+```
+```bash
+plot_ordination(objetophy, pcoa_bc, color = "Site") + geom_point(size=5, alpha=0.7)
+```
+![7_plot_ordination](https://user-images.githubusercontent.com/54455898/172987537-ad18fc49-e262-429f-aa6c-12d6a02da9d8.png)
+
+#### Generamos un heatmap a paritr del objeto que se creó anteriormente
+
+```bash
+plot_heatmap(objetophy)
+```
+![8_plot_heatmap](https://user-images.githubusercontent.com/54455898/172988445-25039dfb-93d4-4d37-b847-53a17726493e.png)
 
 
 
