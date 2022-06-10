@@ -16,7 +16,7 @@ usemathjax: true
 
 * En esta práctica ocuparemos del lenguaje de programación R para implementar diversos paquetes de diversidad, algunos de ellos vistos en actividades anteriores para retroalimentarnos.
     
-### Instalación de librerias
+### Comencemos con la instalación de librerias 
 
 Activamos la librería de ***ggplot2***: 
 
