@@ -23,7 +23,7 @@ Bienvenido a la segunda edición del Diplomado en "Bioinformática" en colaborac
 #### [Procesamiento de datos de microbioma con DADA2](./Analisis_de_metaprofiling)
 #### [Ensamblaje de metagenomas](./megahit_metaspades)
 #### [Análisis taxonómico con Kraken y MetaPhlAn](./taxonomia_kraken_mpa)
-#### [Análisis de diversidad con Ampvis2](./analisis_diversidad)
+#### [Análisis de diversidad con Ampvis2](./diversidad_ampvis2.md)
 #### [Análisis de diversidad con R](./analisis_R)
 
 
