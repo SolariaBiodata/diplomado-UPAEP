@@ -197,6 +197,11 @@ plot_heatmap(objetophy)
 
 La gran cantidad de datos ***shotgun*** metagenómicos requieren canalizaciones integrales, fáciles de usar, como lo son diversos paquetes de ***R*** y con ello obtener mejores análisis a partir este tipo de ***metainformación***, que aceleran los pasos de la bioinformática, liberando a los investigadores la necesidad de realizar manualmente tareas complejas y que consumen mucho tiempo.
 
+[Menú Principal](./index)
+
+[Atras](./diversidad_ampvis2)
+
+[Siguiente](./)
 
 
 
