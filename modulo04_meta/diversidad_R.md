@@ -43,7 +43,7 @@ BiocManager::install("phyloseq")
 ```bash
 library(phyloseq)
 ```
-Instalamos el paquete de ***lattice*** para permitir un fácil acondicionamiento sobre los datos y producir gráficos ***múltiples pequeños***: 
+Instalamos el paquete de ***lattice*** para permitir un fácil acondicionamiento sobre los datos y producir ***múltiples gráficos pequeños***: 
 
 ```bash
 install.packages("lattice")
