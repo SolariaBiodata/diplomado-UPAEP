@@ -11,6 +11,13 @@ usemathjax: true
 <table><tr><td><img src="https://user-images.githubusercontent.com/54455898/172992604-1fb50c5f-5119-4d17-be82-3eabf19c4414.png" width=500/>
 <td><img src="https://user-images.githubusercontent.com/54455898/172992717-d6a9df72-165e-40e5-ae63-58c83a6c8dea.jpg" width=500/></tr></table>
 
+
+<table><tr>
+<td><img src="https://solariabiodata.com.mx/wp-content/uploads/2021/07/logo_red.png" alt="Soluciones de siguiente generacion" width=200/>
+<td><img src="https://raw.githubusercontent.com/juan70804/contenido/main/dada2_logo.png"><td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/160px-R_logo.svg.png
+"></tr></table>
+
+
 ### Instalación de librerias
 
 Activamos la librería de ***ggplot2***: 
