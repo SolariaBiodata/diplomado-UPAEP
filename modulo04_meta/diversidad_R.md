@@ -7,10 +7,6 @@ usemathjax: true
 
 # Análisis de diversidad en R
 
-°             |  °
-:-------------------------:|:-------------------------:
-![rcolab](https://user-images.githubusercontent.com/54455898/172992604-1fb50c5f-5119-4d17-be82-3eabf19c4414.png)  |  ![@shutterstock_1102537547](https://user-images.githubusercontent.com/54455898/172992717-d6a9df72-165e-40e5-ae63-58c83a6c8dea.jpg)
-
 <p align="middle">
   <img src="https://user-images.githubusercontent.com/54455898/172992604-1fb50c5f-5119-4d17-be82-3eabf19c4414.png" width="350" />
   <img src="https://user-images.githubusercontent.com/54455898/172992717-d6a9df72-165e-40e5-ae63-58c83a6c8dea.jpg" width="350" /> 
