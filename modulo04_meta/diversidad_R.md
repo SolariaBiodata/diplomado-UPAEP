@@ -14,7 +14,7 @@ usemathjax: true
 
 * El análisis de datos metagenómicos es un desafío porque una muestra puede contener miles de especies, cada una con diferentes abundancias, y múltiples copias de las secuencias genómicas se cortan y fragmentan a medida que se realizan las lecturas. 
 
-* En esta práctica ocuparemos del lenguaje de programación R para implementar diversos paquetes de diversidad, algunos de ellos vamos a retomarlos de actividades anteriores para retroalimentarnos.
+* En esta práctica ocuparemos del lenguaje de programación R para implementar diversos paquetes de diversidad, algunos de ellos vistos en actividades anteriores para retroalimentarnos.
     
 ### Instalación de librerias
 
