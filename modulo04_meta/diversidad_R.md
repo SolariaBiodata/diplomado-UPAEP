@@ -143,7 +143,7 @@ objetophy
 ```bash
 plot_richness(objetophy, color="Site")  
 ```
-[5_plot_richness](https://user-images.githubusercontent.com/54455898/172860714-e064fc34-61c9-47a2-9601-4b68b0994e7d.png)
+![5_plot_richness](https://user-images.githubusercontent.com/54455898/172989228-a7e677c1-6997-407a-b162-f3b50096110e.png)
 
 ```bash
 plot_richness(objetophy, measures=c("Chao1", "Shannon", "Simpson"),color="Site") + geom_point(size=5, alpha=0.7) 
