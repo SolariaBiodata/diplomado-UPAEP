@@ -11,6 +11,10 @@ usemathjax: true
   <img src="https://user-images.githubusercontent.com/54455898/172992604-1fb50c5f-5119-4d17-be82-3eabf19c4414.png" width="350" />
   <img src="https://user-images.githubusercontent.com/54455898/172992717-d6a9df72-165e-40e5-ae63-58c83a6c8dea.jpg" width="350" /> 
 </p>
+
+* El análisis de datos metagenómicos es un desafío porque una muestra puede contener miles de especies, cada una con diferentes abundancias, y múltiples copias de las secuencias genómicas se cortan y fragmentan a medida que se realizan las lecturas. 
+
+* En esta práctica ocuparemos del lenguaje de programación R para implementar diversos paquetes de diversidad, algunos de ellos vamos a retomarlos de actividades anteriores para retroalimentarnos.
     
 ### Instalación de librerias
 
