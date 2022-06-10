@@ -11,11 +11,13 @@ usemathjax: true
 <td><img src="https://user-images.githubusercontent.com/54455898/172992604-1fb50c5f-5119-4d17-be82-3eabf19c4414.png" width=500/>
 <td><img src="https://user-images.githubusercontent.com/54455898/172992717-d6a9df72-165e-40e5-ae63-58c83a6c8dea.jpg" width=500/>
 
-
 <table><tr>
-<td><img src="https://user-images.githubusercontent.com/54455898/172992604-1fb50c5f-5119-4d17-be82-3eabf19c4414.png" width=500/>
-<td><img src="https://user-images.githubusercontent.com/54455898/172992717-d6a9df72-165e-40e5-ae63-58c83a6c8dea.jpg" width=500/>
-</tr></table>
+<td><img src="https://solariabiodata.com.mx/wp-content/uploads/2021/07/logo_red.png" alt="Soluciones de siguiente generacion" width=200/>
+<td><img src="https://raw.githubusercontent.com/juan70804/contenido/main/dada2_logo.png"><td><img src="https://raw.githubusercontent.com/SolariaBiodata/diplomado-UPAEP/gh-pages/modulo04_meta/htmls_kraken_mpa/rcolab.png
+"></tr></table>
+
+    
+![rcolab](https://user-images.githubusercontent.com/54455898/173015474-5de6a76c-79b4-4be8-bb90-e44c00fdab50.png)
 
 
 ### Instalación de librerias
