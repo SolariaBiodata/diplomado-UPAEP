@@ -4,7 +4,9 @@ usemathjax: true
 ![alt text](https://solariabiodata.com.mx/wp-content/uploads/2021/07/logo_red.png "Soluciones de Siguiente Generación")
 # 2o [Diplomado de Bioinformática](./)
 
-# Para reflexionar...
+# Análisis taxonómico con Kraken y MetaPhlAn
+
+## Antes de empezar...
 ## ¿Por qué la vida es como es?
 
 Durante los últimos 75 años, muchos investigadores han tenido éxito en sintetizar las moléculas de la vida, desde aminoácidos hasta nucleótidos. Sin embargo, hay un parecido sorprendentemente pequeño entre gran parte de esta química y las rutas metabólicas de las células, en términos de sustratos, catalizadores y rutas sintéticas.
