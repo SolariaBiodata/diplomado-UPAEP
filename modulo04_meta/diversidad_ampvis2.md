@@ -7,7 +7,7 @@ usemathjax: true
 # Análisis de diversidad con Ampvis2
 ![ampvis_logo02](https://user-images.githubusercontent.com/54455898/171064502-cb352294-5236-44ed-a7ec-75680ffa25c8.png)
 
-Ampvis2 es un paquete de R para visualizar y analizar convenientemente los datos de amplicón de ARN ribosomal (ARNr) 16S de diferentes maneras. Es bastante útil a partir de la tabla de OTUs y otra de metadatos.
+Ampvis2 es un paquete de R para visualizar y analizar convenientemente los metadatos de nuestro interés. Es bastante útil a partir de la tabla de OTUs y otra de metadatos.
 
 ## Instalación de librerias 
 Lo primero que vamos a instalar es la libreria ampvis2 desde su repositorio principal en Github:
