@@ -14,7 +14,7 @@ Bienvenidos a la Unidad 3 del 2do Diplomado de Bioinformática y Metagenómica. 
 
 Se dice que la biología molecular, comienza el 25 de abril de 1953, también conocido como el _Día Internacional del ADN_, para conmemorar la propuesta de la estructura en doble hélice del ácido desoxirribonucleico, considerado uno de los hallazgos científicos más significativos del siglo XX y de mayor impacto en la humanidad.
 
-Comoncemos a hablar del **ADN**. Existen 4 nucleótidos básicos que todos conocemos: **Adenina**, **Timina**, **Citosina** y **Guanina** que están conformados por un grupo Tri-fosfato, una base nitrogenada y un azúcar, que puede ser ribosa (para _ARN_) o desoxiribosa (para _ADN_)
+Comencemos a hablar del **ADN**. Existen 4 nucleótidos básicos que todos conocemos: **Adenina**, **Timina**, **Citosina** y **Guanina** que están conformados por un grupo Tri-fosfato, una base nitrogenada y un azúcar, que puede ser ribosa (para _ARN_) o desoxiribosa (para _ADN_)
 
 ![image](https://drive.google.com/uc?export=view&id=1Rry3T0NC2qAgKvs3aqr-hS_I10UP67n6)
 
