@@ -47,7 +47,7 @@ Recientemente se han sugerido varias hipótesis posibles sobre las primeras form
 
 * Actualmente se encuentran disponibles una amplia variedad de herramientas de software para realizar la clasificación taxonómica de estos datos metagenómicos. 
 
-* El rápido ritmo de desarrollo de estos clasificadores y la complejidad de los metagenómas hacen que sea importante que los investigadores puedan comparar sus resultados de una manera más específica y concreta.
+* El rápido ritmo de desarrollo de estos clasificadores y la complejidad de los metagenomas hacen que sea importante que los investigadores puedan comparar sus resultados de una manera más específica y concreta.
 
 ## Kraken
 
