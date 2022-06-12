@@ -227,7 +227,7 @@ Puedes practicar con las lecturas restantes y comparar las asignaciones que se d
 
 * MetaPhlAn (***MPA***) es una herramienta computacional que permite perfilar la composición de comunidades microbianas (bacterias, arqueas y eucariotas) a partir de datos de secuenciación ***shotgun*** (es decir, no 16S) con nivel de especie.
 
-* ***MPA*** se basa en genes marcadores específicos de clado únicos identificados a partir de aproximadamente 17,000 genomas de referencia (~13 500 bacterianos y arqueales, ~3500 virales y ~110 eucariotas) lo que le permite ser más versatil respecto a otras herramientas similares.
+* ***MPA*** se basa en genes marcadores específicos de clado únicos identificados a partir de aproximadamente 17,000 genomas de referencia (~13,500 bacterianos y arqueales, ~3,500 virales y ~110 eucariotas) lo que le permite ser más versátil respecto a otras herramientas similares.
 
 
 ### Sigamos con la parte final de la práctica 
