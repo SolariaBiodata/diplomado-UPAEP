@@ -47,13 +47,13 @@ Recientemente se han sugerido varias hipótesis posibles sobre las primeras form
 
 * Actualmente se encuentran disponibles una amplia variedad de herramientas de software para realizar la clasificación taxonómica de estos datos metagenómicos. 
 
-* El rápido ritmo de desarrollo de estos clasificadores y la complejidad de los metagenómas hacen que sea importante que los investigadores puedan comparar su sus resultados de una manra más específica y concreta.
+* El rápido ritmo de desarrollo de estos clasificadores y la complejidad de los metagenómas hacen que sea importante que los investigadores puedan comparar su sus resultados de una manera más específica y concreta.
 
 ## Kraken
 
 ![kraken2](https://user-images.githubusercontent.com/54455898/172718386-ab916fc7-8d47-46b7-94dd-d143b4429284.png)
 
-Kraken, es una nueva herramienta de clasificación de secuencias cuya precisión es comparable a las mejores técnicas de clasificación de lecturas, y su velocidad supera con creces tanto a los clasificadores como a los programas de estimación de abundancia.
+Kraken es una nueva herramienta de clasificación de secuencias cuya precisión es comparable a las mejores técnicas de clasificación de lecturas, y su velocidad supera con creces tanto a los clasificadores como a los programas de estimación de abundancia.
 
 ### ¡Llegó la hora de clasificar!
 
