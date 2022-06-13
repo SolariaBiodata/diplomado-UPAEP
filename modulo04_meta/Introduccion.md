@@ -12,7 +12,7 @@ usemathjax: true
 
 ![flow_metagenomics](https://user-images.githubusercontent.com/54455898/171058417-bffda134-4217-4565-91e8-81d3f5834d7d.jpg "La Metagenómica en el centro de todo")
 
-El área que se enfoca en el estudio del material génico directamente en muestras ambientales se conoce como ecogenómica, no obstante un término mucho más comun para referirse a este es **metagenómica**. Una de las preguntas fundamentales en este tipo de ensayos es:
+El área que se enfoca en el estudio del material génico directamente en muestras ambientales se conoce como ecogenómica, no obstante un término mucho más común para referirse a este es **metagenómica**. Una de las preguntas fundamentales en este tipo de ensayos es:
 
 > ¿Qué organismos están presentes en una muestra?
 Un concepto fundamental se representa con el _ambiente_ el cual consiste en la relación entre componentes físicos, químicos y biológicos en un espacio. Con el advenimiento de las nuevas tecnologías genómicas ahora es posible realizar esta clase de análisis con gran detalle utilizando grandes volúmenes de información provenientes de muestras de comunidades microbianas. El contenido genómico de comunidades microbianas completas proporciona información sobre su _estructura_ y _función_, por lo que algunos objetivos que se pueden tratar con estos enfoques son:
@@ -25,17 +25,17 @@ Un concepto fundamental se representa con el _ambiente_ el cual consiste en la r
 
 En 1977 se realizó [un estudio](https://doi.org/10.1073/pnas.74.11.5088) donde se sentaron las bases de la filogenia molecular de procariotas utilizando el gen **16S ribosomal**. Actualmente se conocen cerca de $$30,437$$ genomas de los tres dominios de la vida _Bacteria_, _Archaea_ y _Eukarya_. Estos han podido clasificarse utilizando moléculas de tasas de mutación estable como _16S_.
 
-El gen ribosomal de compone de 9 regiones hipervariables, interespaciada por regiones conservadas. Secuencias específicos para cada especie dentro de una región hipervariable dada constituyen objetivos útiles para ensayos de diagnóstico y otras investigaciones científicas. Por ejemplo:
+El gen ribosomal se compone de 9 regiones hipervariables, interespaciada por regiones conservadas. Secuencias específicas para cada especie dentro de una región hipervariable dada constituyen objetivos útiles para ensayos de diagnóstico y otras investigaciones científicas. Por ejemplo:
 
 | Región | Resolución |
 |--|--|
-| **V1 - V8** | cerca de 110 especies bacterianas diferentes, incluyendo patógenos de transmisión sanguínea |
+| **V1 - V8** | Cerca de 110 especies bacterianas diferentes, incluyendo patógenos de transmisión sanguínea |
 | **V1** | _Staphylococcus aureus_ y coagulase negative _Staphylococcus sp_ |
 | **V2** | Especies de _Mycobacterial_  |
 | **V3** | Especies de _Haemophilus_ |
 | **V3-V4** | Metagenomica $$\sim 460$$ pb |
 
-Este tipo de enfique implica realizar búsquedas de secuencias en bases de datos dedicadas a este tipo de información. Algunas bases de datos recomendadas son:
+Este tipo de enfoque implica realizar búsquedas de secuencias en bases de datos dedicadas a este tipo de información. Algunas bases de datos recomendadas son:
 
 | Base de datos | Tipo de curación | Cantidad de nodos | Resolución | Tasa de error (%) |
 |--|--|--|--|--|
