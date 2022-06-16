@@ -30,5 +30,6 @@ Bienvenido a la segunda edición del Diplomado en "Bioinformática" en colaborac
 #### [Análisis de diversidad con R](./diversidad_R)
 
 ## Metagenómica functional
-#### [Prodigal](./prodigal)
+
+#### [Análisis metafuncional con Prodigal](./prodigal)
 
