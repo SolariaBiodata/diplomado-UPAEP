@@ -180,6 +180,15 @@ tabla_mebs.txt.noa
 tabla_mebs.txt_norm_mebs.tab
 tabla_mebs.txt_pfam_completenes.tab
 ```
+
 ```bash
-sbcp tabla_mebs.txt_comp_heatmap.png
+mv tabla_mebs.txt_barplot.png minombre_barplot_mebs.png
+mv tabla_mebs.txt_comp_heatmap.png minombre_heatmap_mebs.png
 ```
+
+```bash
+sbcp minombre_barplot_mebs.png
+sbcp minombre_heatmap_mebs.png
+```
+### Visualizaciones 
+
