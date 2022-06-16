@@ -21,42 +21,34 @@ cd prodigal
 ```
 
 ```bash
-
 ln -s /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion3/SRR6651926_final.contigs.fa 26
 
 ln -s /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion3/SRR6651936_final.contigs.fa 36
 
 ln -s /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion3/SRR6651949_final.contigs.fa 49
-
 ```
 
 ```bash
-
 ln -s /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion3/cycles/ cycles
 
 ln -s /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion3/data2vis/ data2vis
-
 ```
 
 ```bash
 ls -lhtr
-
     26 -> /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion3/SRR6651926_final.contigs.fa
     36 -> /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion3/SRR6651936_final.contigs.fa
     49 -> /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion3/SRR6651949_final.contigs.fa
     cycles -> /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion3/cycles/
     data2vis -> /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion3/data2vis/
-
 ```
 
 # Prodigal
 
 ```bash
-
 prodigal -i 26 -o misgenes_26 -a myproteins_26 -p meta
 prodigal -i 36 -o misgenes_36 -a myproteins_36 -p meta
 prodigal -i 49 -o misgenes_49 -a myproteins_49 -p meta
-
 ```
 
 ```bash
