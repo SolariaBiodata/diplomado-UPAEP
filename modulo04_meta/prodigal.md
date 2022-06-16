@@ -204,7 +204,7 @@ sbcp minombre_heatmap_mebs.png
 #### Heatmap
 
 <p align="middle">
-  <img src="https://user-images.githubusercontent.com/54455898/174034680-24527a23-9b26-468d-9517-1667a65ccc0c.png" width="880" />
+  <img src="https://user-images.githubusercontent.com/54455898/174034680-24527a23-9b26-468d-9517-1667a65ccc0c.png" />
 </p>
 
 [Menú Principal](./index)
