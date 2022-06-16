@@ -80,6 +80,16 @@ prodigal -i 26 -o misgenes_26 -a myproteins_26 -p meta
 prodigal -i 36 -o misgenes_36 -a myproteins_36 -p meta
 prodigal -i 49 -o misgenes_49 -a myproteins_49 -p meta
 ```
+```bash
+ls -lhtr
+[...]
+misgenes_26
+misgenes_36
+misgenes_49
+myproteins_26
+myproteins_36
+myproteins_49
+```
 
 ```bash
 mkdir copia_aminoacidos 
