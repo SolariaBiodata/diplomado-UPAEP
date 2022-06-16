@@ -69,7 +69,7 @@ ls -lhtr
     data2vis -> /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion3/data2vis/
 ```
 
-Ya que tengamos el material enlazado podemos comenzar con la ejecución de Prodigal, para ello visualizamos primeramente su manual:
+Ya que tengamos el material enlazado podemos comenzar con la ejecución de ***Prodigal***, para ello visualizamos primeramente su manual:
 
 ```bash
 prodigal
