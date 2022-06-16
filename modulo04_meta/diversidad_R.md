@@ -201,9 +201,4 @@ La gran cantidad de datos ***shotgun*** metagenómicos requieren canalizaciones 
 
 [Atras](./diversidad_ampvis2)
 
-[Siguiente](./)
-
-
-
-
-
+[Siguiente](./prodigal)
