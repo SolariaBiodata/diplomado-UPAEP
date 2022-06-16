@@ -6,7 +6,9 @@ usemathjax: true
 
 # Análisis metafuncional con Prodigal
 
-
+<p align="middle">
+  <img src="https://user-images.githubusercontent.com/54455898/174041132-bf404d23-6760-4701-9b15-091e730baa64.png" />
+</p>
 
 ```bash
 ls -lhtr /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion3/
