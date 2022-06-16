@@ -10,7 +10,7 @@ usemathjax: true
   <img src="https://user-images.githubusercontent.com/54455898/174124469-01fb5b2e-158f-4c00-9143-c6a06973aa59.jpg" width="700" />
 </p>
 
-la metagenómica ha sido indispensable para evaluar las comunidades microbianas en el tratamiento biológico de ***aguas residuales***, como la ***eliminación*** ***biológica*** de ***fósforo*** y ***nitrógeno*** por bacterias, el estudio de genes de resistencia a antibióticos (ARG) y la reducción de metales pesados por ***comunidades microbianas***, con un énfasis en la contribución de la ***diversidad microbiana*** y la ***diversidad metabólica***. Si embargo, debemos deducir primeramente las secuencias de genes y aminoácidos que podrian identificarse en este tipo de metadatos.
+La metagenómica ha sido indispensable para evaluar las comunidades microbianas en el tratamiento biológico de ***aguas residuales***, así como en muchas ***áreas naturales***, para la ***eliminación*** ***biológica*** de ***fósforo*** y ***nitrógeno*** por bacterias, el estudio de genes de resistencia a antibióticos (ARG) y la reducción de metales pesados por ***comunidades microbianas***, con un énfasis en la contribución de la ***diversidad microbiana*** y la ***diversidad metabólica***. Si embargo, debemos deducir primeramente las secuencias de genes y aminoácidos que podrían identificarse en este tipo de metadatos.
 
 ## Prodigal
 
@@ -20,7 +20,7 @@ la metagenómica ha sido indispensable para evaluar las comunidades microbianas 
 ## Disfruta de la última practica
 
 Primero visualizamos el contenido de la sesión 3, el cual tendremos que enlazar a nuestra carpeta personal. 
-Las secuencias que usaremos son de muestras de rocas halita que hemos usado en sesiones anteriores:
+Las secuencias que usaremos son de muestras de ***rocas halita*** que hemos usado en sesiones anteriores:
 
 ```bash
 ls -lhtr /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion3/
