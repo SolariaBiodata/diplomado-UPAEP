@@ -7,10 +7,17 @@ usemathjax: true
 # Análisis metafuncional con Prodigal
 
 <p align="middle">
-  <img src="https://user-images.githubusercontent.com/54455898/174041132-bf404d23-6760-4701-9b15-091e730baa64.png" />
+  <img src="https://user-images.githubusercontent.com/54455898/174124469-01fb5b2e-158f-4c00-9143-c6a06973aa59.jpg" width="700" />
 </p>
 
-# Disfruta de la última practica
+la metagenómica ha sido indispensable para evaluar las comunidades microbianas en el tratamiento biológico de ***aguas residuales***, como la ***eliminación*** ***biológica*** de ***fósforo*** y ***nitrógeno*** por bacterias, el estudio de genes de resistencia a antibióticos (ARG) y la reducción de metales pesados por ***comunidades microbianas***, con un énfasis en la contribución de la ***diversidad microbiana*** y la ***diversidad metabólica***. Si embargo, debemos deducir primeramente las secuencias de genes y aminoácidos que podrian identificarse en este tipo de metadatos.
+
+## Prodigal
+
+* ***Prodigal*** es una super herramienta bioinformática capaz de predecir genes codificadores de proteínas para genomas bacterianos y arqueales.
+* Este software se ejecuta sin problemas en genomas terminados, borradores de genomas y metagenomas.
+
+## Disfruta de la última practica
 
 Primero visualizamos el contenido de la sesión 3, el cual tendremos que enlazar a nuestra carpeta personal. 
 Las secuencias que usaremos son de muestras de rocas halita que hemos usado en sesiones anteriores:
@@ -25,7 +32,7 @@ ls -lhtr /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion3/
     data2vis -> /home/centos/diplomadoUPAEP/aa_solaria/mebs/data2vis/
 ```
 
-Una vez que visualicemos el material que vamos a ocupar nos dirigimos a nuestra carperta personal y creamos un directorio para realizar la práctica de metagenómica functional:  
+Una vez que visualicemos el material a necesitar nos dirigimos a nuestra carperta personal y creamos un directorio para realizar la práctica de metagenómica functional:  
 
 ```bash
 cd /home/centos/diplomadoUPAEP/carpeta_personal
@@ -94,7 +101,7 @@ Usage:  prodigal [-a trans_file] [-c] [-d nuc_file] [-f output_type]
          -v:  Print version number and exit.
 ```
 
-Procedemos a la ejecución de Prodigal:
+Procedemos a la ejecución de ***Prodigal***:
 
 ```bash
 prodigal -i 26 -o misgenes_26 -a myproteins_26 -p meta
@@ -123,7 +130,8 @@ mv myproteins_26 copia_aminoacidos/myproteins_26.faa
 mv myproteins_36 copia_aminoacidos/myproteins_36.faa
 mv myproteins_49 copia_aminoacidos/myproteins_49.faa
 ```
-¿Qué es MEBS? MEBS es una plataforma de software diseñada para evaluar, comparar e inferir vías metabólicas complejas en grandes conjuntos de datos ***ómicos***:
+¿Qué es ***MEBS**? 
+***MEBS*** es una plataforma de software diseñada para evaluar, comparar e inferir vías metabólicas complejas en grandes conjuntos de datos ***ómicos***:
 
 ```bash
 mebs.pl -h
@@ -215,7 +223,7 @@ tabla_mebs.txt.noa
 tabla_mebs.txt_norm_mebs.tab
 tabla_mebs.txt_pfam_completenes.tab
 ```
-En primeria instancia podemos analizar el gráfico ***barplot*** el cual proporciona información sobre las fuentes (azufre, carbono, oxígeno, hierro y nitrógeno) más requeridas en cada una de las muestras.
+En primeria instancia podemos analizar el gráfico ***barplot*** el cual proporciona información sobre las principales fuentes (azufre, carbono, oxígeno, hierro y nitrógeno) requeridas en cada una de las muestras.
 
 También podemos ver algunos de los ***heatmap*** generados y con ello analizar las rutas más completas en cada muestra:
 
