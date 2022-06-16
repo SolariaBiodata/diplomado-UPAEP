@@ -10,6 +10,11 @@ usemathjax: true
   <img src="https://user-images.githubusercontent.com/54455898/174041132-bf404d23-6760-4701-9b15-091e730baa64.png" />
 </p>
 
+# Disfruta de la última practica
+
+Primero visualizamos el contenido de la sesión 3, el cual tendremos que enlazar a nuestra carpeta personal. 
+Las secuencias que usaremos son de muestras de rocas halita que hemos usado en sesiones anteriores:
+
 ```bash
 ls -lhtr /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion3/
 
@@ -20,11 +25,15 @@ ls -lhtr /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion3/
     data2vis -> /home/centos/diplomadoUPAEP/aa_solaria/mebs/data2vis/
 ```
 
+Una vez que visualicemos el material que vamos a ocupar nos dirigimos a nuestra carperta personal y creamos un directorio para realizar la práctica de metagenómica functional:  
+
 ```bash
 cd /home/centos/diplomadoUPAEP/carpeta_personal
 mkdir prodigal
 cd prodigal
 ```
+
+Generamos las ligas simbólicas de las secuencias a utilizar:
 
 ```bash
 ln -s /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion3/SRR6651926_final.contigs.fa 26
@@ -34,11 +43,15 @@ ln -s /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion3/SRR6651
 ln -s /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion3/SRR6651949_final.contigs.fa 49
 ```
 
+Ahora elaboramos las ligas simbólicas que ocuparemos para generar los análisis:
+
 ```bash
 ln -s /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion3/cycles/ cycles
 
 ln -s /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion3/data2vis/ data2vis
 ```
+
+Verificamos que las ligas simbólcas se hayan creado correctamente:
 
 ```bash
 ls -lhtr
@@ -48,6 +61,8 @@ ls -lhtr
     cycles -> /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion3/cycles/
     data2vis -> /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion3/data2vis/
 ```
+
+Ya que tengamos el material enlazado podemos comenzar con la ejecución de Prodigal, para ello visualizamos primeramente su manual:
 
 ```bash
 prodigal
@@ -79,11 +94,15 @@ Usage:  prodigal [-a trans_file] [-c] [-d nuc_file] [-f output_type]
          -v:  Print version number and exit.
 ```
 
+Procedemos a la ejecución de Prodigal:
+
 ```bash
 prodigal -i 26 -o misgenes_26 -a myproteins_26 -p meta
 prodigal -i 36 -o misgenes_36 -a myproteins_36 -p meta
 prodigal -i 49 -o misgenes_49 -a myproteins_49 -p meta
 ```
+Una vez que termine de procesar las tres muestras visualizamos los ficheros que se generamos:
+
 ```bash
 ls -lhtr
 [...]
@@ -94,6 +113,9 @@ myproteins_26
 myproteins_36
 myproteins_49
 ```
+Si bien se generaron secuencias de genes y sus respectivas traducciones a secuencias de aminoácidos, entonces lo que nosotros nos interesaría primeramente de esos formatos es inferir las vías metabólicas.
+
+Los seis ficheros generados son útiles, sin embargo para ejecutar el siguiente programa únicamente ocuparemos las secuencias de aminoácidos y para ello debemos transportarlas a otra carpeta donde dichas secuencias deben estar en formato ***FAA*** debido a que son una colección de secuencias de aminoácidos del genoma solicitado en formato ***FASTA***:
 
 ```bash
 mkdir copia_aminoacidos 
@@ -101,6 +123,7 @@ mv myproteins_26 copia_aminoacidos/myproteins_26.faa
 mv myproteins_36 copia_aminoacidos/myproteins_36.faa
 mv myproteins_49 copia_aminoacidos/myproteins_49.faa
 ```
+¿Qué es MEBS? MEBS es una plataforma de software diseñada para evaluar, comparar e inferir vías metabólicas complejas en grandes conjuntos de datos ***ómicos***:
 
 ```bash
 mebs.pl -h
@@ -124,12 +147,18 @@ Program to compute MEBS for a set of genomic/metagenomic FASTA files in input fo
             Required option  for mebs_output.py
 ```
 
+Procedemos a ejecutar MEBS indicando la carpeta generada anteriormente y direccionamos los resultados a un fichero en formtato de texto plano:
+
 ```bash
 mebs.pl -input copia_aminoacidos/ -type metagenomic -fdr 0.0001 -comp > tabla_mebs.txt
 ```
+Para visualizar los diferentes tipos de gŕaficas que podemos generar a partir del archivo ***tabla_mebs.txt*** debemos crear un directorio donde se adjuntaran los resultados:
+
 ```bash
 mkdir results_mebs
 ```
+Activamos el ambiente de conda para habilitar las librerias necesarias:
+
 ```bash
 conda activate base 
 mebs_vis.py -h
@@ -164,10 +193,12 @@ Example:
 $  python3 mebs_vis.py gen_test.tsv 
 --------------------------------------------------------------------------------
 ```
+Generamos las visualizaciones:
 
 ```bash
 mebs_vis.py tabla_mebs.txt -o results_mebs
 ```
+Analizamos el contenido generado
 
 ```bash
 cd results_mebs
@@ -184,11 +215,15 @@ tabla_mebs.txt.noa
 tabla_mebs.txt_norm_mebs.tab
 tabla_mebs.txt_pfam_completenes.tab
 ```
+En primeria instancia podemos analizar el gráfico ***barplot*** el cual proporciona información sobre las fuentes (azufre, carbono, oxígeno, hierro y nitrógeno) más requeridas en cada una de las muestras.
+
+También podemos ver algunos de los ***heatmap*** generados y con ello analizar las rutas más completas en cada muestra:
 
 ```bash
 mv tabla_mebs.txt_barplot.png minombre_barplot_mebs.png
 mv tabla_mebs.txt_comp_heatmap.png minombre_heatmap_mebs.png
 ```
+Los visualizamos dentro del servidor en la nube de [Solaria Biodata](http://13.56.237.15/)
 
 ```bash
 sbcp minombre_barplot_mebs.png
