@@ -192,3 +192,20 @@ sbcp minombre_heatmap_mebs.png
 ```
 ### Visualizaciones 
 
+#### Barplot
+
+![barplot_mebs](https://user-images.githubusercontent.com/54455898/174034500-794877c7-a4b0-4aa0-8e05-1eb4865d035f.png)
+
+#### Heatmap
+
+![heatmap_mebs](https://user-images.githubusercontent.com/54455898/174034680-24527a23-9b26-468d-9517-1667a65ccc0c.png)
+
+
+
+
+
+
+
+
+
+
