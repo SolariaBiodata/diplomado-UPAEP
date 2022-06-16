@@ -4,6 +4,10 @@ usemathjax: true
 ![alt text](https://solariabiodata.com.mx/wp-content/uploads/2021/07/logo_red.png "Soluciones de Siguiente Generación")
 # 2o [Diplomado de Bioinformática](./)
 
+# Análisis metafuncional con Prodigal
+
+
+
 ```bash
 ls -lhtr /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion3/
 
@@ -42,8 +46,6 @@ ls -lhtr
     cycles -> /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion3/cycles/
     data2vis -> /home/centos/diplomadoUPAEP/aa_solaria/fastqs/metagenomics/sesion3/data2vis/
 ```
-
-# Prodigal
 
 ```bash
 prodigal
@@ -190,6 +192,7 @@ mv tabla_mebs.txt_comp_heatmap.png minombre_heatmap_mebs.png
 sbcp minombre_barplot_mebs.png
 sbcp minombre_heatmap_mebs.png
 ```
+
 ### Visualizaciones 
 
 #### Barplot
