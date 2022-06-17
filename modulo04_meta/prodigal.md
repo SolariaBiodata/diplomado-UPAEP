@@ -4,7 +4,7 @@ usemathjax: true
 ![alt text](https://solariabiodata.com.mx/wp-content/uploads/2021/07/logo_red.png "Soluciones de Siguiente Generación")
 # 2o [Diplomado de Bioinformática](./)
 
-# Análisis metafuncional con Prodigal
+# Análisis metafuncional con Prodigal y MEBS
 
 <p align="middle">
   <img src="https://user-images.githubusercontent.com/54455898/174124469-01fb5b2e-158f-4c00-9143-c6a06973aa59.jpg" width="700" />
@@ -130,7 +130,7 @@ mv myproteins_26 copia_aminoacidos/myproteins_26.faa
 mv myproteins_36 copia_aminoacidos/myproteins_36.faa
 mv myproteins_49 copia_aminoacidos/myproteins_49.faa
 ```
-¿Qué es ***MEBS**? 
+¿Qué es ***MEBS***? 
 ***MEBS*** es una plataforma de software diseñada para evaluar, comparar e inferir vías metabólicas complejas en grandes conjuntos de datos ***ómicos***:
 
 ```bash
@@ -257,10 +257,3 @@ sbcp minombre_heatmap_mebs.png
 [Atras](./diversidad_R)
 
 [Siguiente](./)
-
-
-
-
-
-
-
