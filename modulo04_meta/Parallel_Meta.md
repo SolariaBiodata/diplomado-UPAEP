@@ -100,7 +100,7 @@ ID      TypeSample
 Ahora para correr Parallel-META 3, solo se requiere ejecutar el siguiente comando de una sola línea:
 
 ```bash
-PM-pipeline -i list_test.txt -m metadata_test.txt -R T -o output_test
+PM-pipeline -i list_test.txt -m metadata_test.txt -R T -o results
 ```
 ## Parámetros adicionales
 
