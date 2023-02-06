@@ -1,7 +1,7 @@
 theme: jekyll-theme-cayman
 #name: diplomado bioinformática
-title: Diplomado bioinformática y metagenómica
-description: [Sitio de recursos de apoyo para el diplomado de bioinformática y metagenómica]
+title: Diplomado bioinformática y RNA seq
+description: [Sitio de recursos de apoyo para el diplomado de bioinformática y RNA seq]
 markdown: kramdown
 plugins:
   - jemoji
