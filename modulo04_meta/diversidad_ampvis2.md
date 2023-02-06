@@ -2,7 +2,7 @@
 usemathjax: true
 ---
 ![alt text](https://solariabiodata.com.mx/wp-content/uploads/2021/07/logo_red.png "Soluciones de Siguiente Generación")
-# 2o [Diplomado de Bioinformática](./)
+# 3er[Diplomado de Bioinformática](./)
 
 # Análisis de diversidad con Ampvis2
 ![ampvis_logo02](https://user-images.githubusercontent.com/54455898/171064502-cb352294-5236-44ed-a7ec-75680ffa25c8.png)

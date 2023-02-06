@@ -2,7 +2,7 @@
 usemathjax: true
 ---
 ![alt text](https://solariabiodata.com.mx/wp-content/uploads/2021/07/logo_red.png "Soluciones de Siguiente Generación")
-# 2o [Diplomado de Bioinformática](./)
+# 3er[Diplomado de Bioinformática](./)
 
 ## Pruebas de hipótesis
 

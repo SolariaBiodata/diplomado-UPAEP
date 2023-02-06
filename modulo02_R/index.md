@@ -1,5 +1,5 @@
 ![alt text](https://solariabiodata.com.mx/wp-content/uploads/2021/07/logo_red.png "Soluciones de Siguiente Generación")
-# 2o Diplomado de Bioinformática
+# 3erDiplomado de Bioinformática
 ## [Solaria Biodata](https://solariabiodata.com.mx/) - [UPAEP](https://upaep.mx/)
 
 Bienvenido a la segunda edición del Diplomado en "Bioinformática" en colaboración con la Facultad de Ingeniería en Biotecnología de la Universidad Popular Autónoma del Estado de Puebla (UPAEP), nos da mucho gusto que participes con nosotros. 
