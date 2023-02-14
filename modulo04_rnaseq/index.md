@@ -11,20 +11,12 @@ Bienvenido a la segunda edición del Diplomado en "Bioinformática" en colaborac
 | 120 horas | 22 de marzo - 11 Junio 2022 _(10 horas por semana)_ | Flexible |
 
 
-**Objetivo**: Que los participantes aprendan los procesos de datos de forma sistemática, desde cómo usar los comandos en Linux, hasta los elementos que afectan la parametrización de programas, así como la interpretación de resultados de pipelines bioinformáticos.
+**Objetivo**: Que los participantes aprendan los procesos de datos de forma sistemática, desde cómo usar los comandos en Linux, hasta los elementos que afectan la parametrización de programas, así como la interpretación de resultados de pipelines bioinformáticos en RNA seq.
 
 **En esta página, estaremos revisando el contenido de lecturas y el resumen de comandos revisados en las sesiones en vivo**
 
-## Bioinformática
+## RNA seq
 
-### [Introduccion](./introduccion)
+### [Introduccion](./rnaseq)
 
-### [Bases de datos y archivos de bioinformática](./archivosBioinfo)
-
-### [Preprocesamiento de lecturas](./qcTrimming)
-
-### [Ensambles](./ensambles)
-
-### [Análisis de variantes](./varcall)
-
-### [Metagenómica](./meta_intro)
+### [RNA-seq](./rnaseq)
