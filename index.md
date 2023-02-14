@@ -11,7 +11,7 @@ Bienvenido a la tercera edición del Diplomado en "Bioinformática" en colaborac
 | 120 horas | 6 de Marzo - 15 Julio 2023 _(10 horas por semana)_ | Flexible |
 
 
-**Objetivo**: Que los participantes aprendan los procesos de datos de forma sistemática, desde cómo usar las herramientas de procesamiento en Linux, hasta los elementos que afectan la parametrización de programas, así como la interpretación de resultados de metagenómica.
+**Objetivo**: Que los participantes aprendan los procesos de datos de forma sistemática, desde cómo usar las herramientas de procesamiento en Linux, hasta los elementos que afectan la parametrización de programas, así como la interpretación de resultados de RNA seq.
 
 **En esta página, estaremos revisando el contenido de lecturas y el resumen de comandos revisados en las sesiones en vivo**
 
@@ -24,7 +24,7 @@ Bienvenido a la tercera edición del Diplomado en "Bioinformática" en colaborac
 ## [Bioinformática NGS](./modulo03_bioinfo/)
 
 
-## [RNA seq](#)
+## [RNA seq](./modulo04_rnaseq/)
 
 
 
