@@ -8,7 +8,7 @@ Bienvenido a la segunda edición del Diplomado en "Bioinformática" en colaborac
 
 |Duración| Periodo | Horario |
 |-|-|-|
-| 120 horas | 6 de Marzo - 3 de Julio 2023 _(10 horas por semana)_ | Flexible |
+| 120 horas | 6 de Marzo - 3 de Julio 2023 _(8 horas por semana)_ | Flexible |
 
 
 **Objetivo**: Que los participantes aprendan los procesos de datos de forma sistemática, desde cómo usar los lenguajes de programación hasta la puesta en marcha de ambientes productivos de procesamiento y visualización de datos.
