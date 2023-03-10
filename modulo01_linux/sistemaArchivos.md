@@ -110,6 +110,6 @@ en automático nos llevará al directorio home
 
 [Menú Principal](./)
 
-[Atras](#)
+[Atras](historia)
 
 [Siguiente](./comandosTerminal)

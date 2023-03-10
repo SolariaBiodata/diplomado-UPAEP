@@ -1,4 +1,12 @@
-# Breviario Histórico
+---
+usemathjax: true
+---
+![alt text](https://solariabiodata.com.mx/wp-content/uploads/2021/07/logo_red.png "Soluciones de Siguiente Generación")
+# 3er [Diplomado de Bioinformática](./)
+
+## Introducción a Linux
+
+### Breviario Histórico
 
 La historia de GNU/Linux se remonta a finales de la década de 1970, cuando el programador Richard Stallman comenzó a trabajar en el Proyecto GNU, una iniciativa para crear un sistema operativo completo de software libre y de código abierto. Stallman estaba preocupado por la creciente dependencia de las empresas de software propietario y quería crear un sistema operativo que permitiera a los usuarios tener control total sobre sus computadoras.
 
@@ -13,3 +21,11 @@ A medida que la popularidad de GNU/Linux crecía, las empresas comenzaron a adop
 Hoy en día, GNU/Linux es uno de los sistemas operativos más populares del mundo, utilizado en todo, desde servidores web hasta sistemas embebidos en dispositivos móviles. La comunidad de desarrollo de software libre y de código abierto que respalda a GNU/Linux sigue siendo vibrante y activa, con miles de desarrolladores en todo el mundo contribuyendo al proyecto.
 
 En resumen, la historia de GNU/Linux es una historia de colaboración y comunidad. El Proyecto GNU y el núcleo Linux, creados por personas diferentes en diferentes momentos, se unieron para crear uno de los sistemas operativos más importantes y versátiles del mundo. La naturaleza de software libre y de código abierto de GNU/Linux ha permitido que la comunidad de desarrollo se expanda y evolucione con el tiempo, lo que ha llevado a una amplia adopción en todo el mundo.
+
+
+
+[Menú Principal](./)
+
+[Atras](#)
+
+[Siguiente](./sistemaArchivos)
