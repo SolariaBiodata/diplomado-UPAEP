@@ -2,7 +2,7 @@
 # 3er Diplomado de Bioinformática
 ## [Solaria Biodata](https://solariabiodata.com.mx/) - [UPAEP](https://upaep.mx/)
 
-Bienvenido a la segunda edición del Diplomado en "Bioinformática" en colaboración con la Facultad de Ingeniería en Biotecnología de la Universidad Popular Autónoma del Estado de Puebla (UPAEP), nos da mucho gusto que participes con nosotros. 
+Bienvenido a la tercera edición del Diplomado en "Bioinformática" en colaboración con la Facultad de Ingeniería en Biotecnología de la Universidad Popular Autónoma del Estado de Puebla (UPAEP), nos da mucho gusto que participes con nosotros. 
 
 ¡Esperamos el diplomado sea de tu total agrado, adquieras muchos conocimientos y lo disfrutes mucho!
 
