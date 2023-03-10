@@ -17,6 +17,8 @@ Bienvenido a la segunda edición del Diplomado en "Bioinformática" en colaborac
 
 ## Introducción a Linux
 
+### [Breviario Histórico](./historia)
+
 ### [Sistemas de archivos](./sistemaArchivos)
 
 #### [Estructura jerárquica y navegación](./sistemaArchivos#estructura-jerárquica-y-navegación)
