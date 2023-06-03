@@ -59,8 +59,8 @@ En este protocolo empezaremos por activar un ambiente de `conda` y movernos a un
 ```bash
 conda activate varcall-sb
 cd <ruta_de_carpeta_de_trabajo>
-ln -s /media/data/solaria/diplomadoUPAEP/aa_solaria/varcall/SRR2584857.fq.gz muestra.fastq.gz
-ln -s /media/data/solaria/diplomadoUPAEP/aa_solaria/varcall/ecoli-rel606.fa referencia.fasta
+ln -s /home/centos/workingDir/aa_solaria/varcall/SRR2584857.fq.gz muestra.fastq.gz
+ln -s /home/centos/workingDir/aa_solaria/varcall/ecoli-rel606.fa referencia.fasta
 ```
 
 Ahora contamos con un archivo `referencia.fasta` con el genoma y `muestra.fastq.gz` contiene lecturas que de ahora en adelante asumiremos que han pasado por un preprocesamiento astringente.
@@ -84,7 +84,7 @@ samtools index muestra.ordenada.bam
 Una vez procesado este alineamiento es viable realizar una visualización:
 
 ```bash
-samtools tview --reference referencia.fasta muestra.ordenada.bam
+samtools tview muestra.ordenada.bam referencia.fasta
 ```
 
 Lo que sigue es realizar el llamado de variantes, lo cual se realiza con `mpileup`:
