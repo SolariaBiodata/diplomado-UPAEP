@@ -4,7 +4,7 @@ El comando *rm* que viene de la palabra remove y tiene el fin de eliminar comple
 rm [opciones] /nombre/
 ~~~
 También es posible utilizar las opciones de:
-.## Eliminar directorios de forma recursiva \(*-r*\) 
+## Eliminar directorios de forma recursiva \(*-r*\) 
 Se incluye una carpeta con todas sus subcarpetas y su contenido. Es necesario usar esta opción para eliminar directorios.
 ## Forzar eliminación de archivos \(*-f*\)
 Esta permite suprimir todas solicitudes de confirmación. Recordar que al usar este comando de eliminación, no es posible recuperar ningún archivo o directorio.
