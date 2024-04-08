@@ -9,11 +9,11 @@ Se ejecuta el comando *less* seguido del nombre del archivo, obteniendo como sal
 less alineamientos.txt
 ~~~
 La navegación del archivo en la terminal sigue las siguientes teclas : 
-- Presiona la tecla ↓ para moverte hacia abajo línea por línea.
-- Presiona la tecla ↑ para moverte hacia arriba línea por línea.
-- Presiona la tecla Espacio, Enter o Page Down para avanzar una página.
-- Presiona la tecla B o Page up para retroceder una página.
-- Para ir al principio del archivo, presiona la tecla Home.
-- Para ir al final del archivo, presiona la tecla End.
+- Presiona la tecla `↓` para moverte hacia abajo línea por línea.
+- Presiona la tecla `↑` para moverte hacia arriba línea por línea.
+- Presiona la tecla `Espacio ␣`, `Enter ↵` o `Page Down ⇟` para avanzar una página.
+- Presiona la tecla `B` o `Page up ⇞` para retroceder una página.
+- Para ir al principio del archivo, presiona la tecla `Home ⇱` o `Inicio`.
+- Para ir al final del archivo, presiona la tecla `End ⇲` o `Fin`.
 
 Al llegar al final del documento el prompt no regresa de manera automática, es necesario salirse de la interfaz con la tecla `q`. 

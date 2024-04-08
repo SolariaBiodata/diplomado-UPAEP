@@ -9,10 +9,10 @@ Se ejecuta el comando *more* seguido del nombre del archivo, obteniendo como sal
 more alineamientos.txt
 ~~~
 La navegación del archivo en la terminal sigue las siguientes teclas : 
-- Presiona la tecla Espacio o Enter para avanzar una página.
-- Presiona la tecla B o Backspace para retroceder una página.
-- Presiona la tecla ↑ para moverte hacia arriba en el contenido.
-- Presiona la tecla ↓ para moverte hacia abajo en el contenido.
+- Presiona la tecla `Espacio ␣` o `Enter ↵` para avanzar una página.
+- Presiona la tecla `B` o `Backspace ⌫` para retroceder una página.
+- Presiona la tecla `↑` para moverte hacia arriba en el contenido.
+- Presiona la tecla `↓` para moverte hacia abajo en el contenido.
 
 Al llegar al final del documento, la interfaz del comando more se cerrará devolviendo el prompt. Si se desea salir de la interfaz antes de llegar al final se puede hacer con la tecla `q`.
 ## 2. Opción +num
