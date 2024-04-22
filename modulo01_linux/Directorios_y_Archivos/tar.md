@@ -10,12 +10,7 @@ Se ejecuta el comando *tar* seguido de la combinación de las opciones *-cvf*, e
 ~~~
 tar -cvf secuencias.tar secuencia1.txt secuencia2.txt secuencia3.txt
 ~~~
-~~~
-Si quisiéramos comprimir los archivos en un directorio específico: 
-~~~
-tar -cvf secuencias.tar secuencia1.txt secuencia2.txt secuencia3.txt -C bioinformatica
-~~~
-Como resultado, se generará un archivo comprimido *tar* en el directorio hipotético con el nombre *bioinformatica*. 
+
 ## 2. Visualizar el contenido de un archivo comprimido *tar*
 Se ejecuta el comando *tar* seguido de la combinación de las opciones *-tf* y el nombre del archivo con extensión *tar* que queremos visualizar sin la necesidad de extraerlo. Las opciones usadas ejecutan las siguientes instrucciones:
 - t: muestra los archivos y directorios contenidos en un archivo.
@@ -53,6 +48,6 @@ Se ejecuta el comando *tar* seguido de la combinación de las opciones *-xvzf* y
 - v: muestra el progreso del proceso en la consola.
 - f: especifica el nombre del archivo comprimido.
 ~~~
-tar -xvzf secuencias.tar.gz
+tar -xvzf archivoseq.tar.gz
 ~~~
 Como resultado, los archivos contenidos en el archivo comprimido se extraerán en el directorio actual. 
