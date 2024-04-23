@@ -6,7 +6,7 @@ less [nombre_archivo]
 ## Visualizar el contenido de un archivo de texto
 Se ejecuta el comando *less* seguido del nombre del archivo, obteniendo como salida el contenido del archivo en la terminal.
 ~~~
-less alineamientos.txt
+less BRCA1transcript.txt
 ~~~
 La navegación del archivo en la terminal sigue las siguientes teclas : 
 - Presiona la tecla `↓` para moverte hacia abajo línea por línea.

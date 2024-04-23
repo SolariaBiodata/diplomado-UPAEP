@@ -1,0 +1,104 @@
+
+                                                                  Scientific      Common                     Max    Total Query   E    Per.   Acc.                        
+Description                                                       Name            Name            Taxid      Score  Score cover Value  Ident  Len        Accession        
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       929    929   100%  0.0    100.00 3843       NM_001408484.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       929    929   100%  0.0    100.00 3846       NM_001408478.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       929    929   100%  0.0    100.00 7032       NM_001407948.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       929    929   100%  0.0    100.00 7029       NM_001407950.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       929    929   100%  0.0    100.00 7152       NM_001407907.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       929    929   100%  0.0    100.00 7155       NM_001407879.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       929    929   100%  0.0    100.00 7152       NM_001407571.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       845    845   100%  0.0    97.42  7016       NM_001407952.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       828    828   100%  0.0    95.81  3739       NM_001408450.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       828    828   100%  0.0    95.81  3751       NM_001408418.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       828    828   100%  0.0    95.81  3862       NM_001408398.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       828    828   100%  0.0    95.81  3745       NM_001408428.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       828    828   100%  0.0    95.81  3742       NM_001408440.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       828    828   100%  0.0    95.81  3742       NM_001408434.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       828    828   100%  0.0    95.81  3865       NM_001407992.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       828    828   100%  0.0    95.81  3865       NM_001407981.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       828    828   100%  0.0    95.81  3868       NM_001407978.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       828    828   100%  0.0    95.81  7100       NM_001407859.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       828    828   100%  0.0    95.81  7051       NM_001407672.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       828    828   100%  0.0    95.81  7054       NM_001407666.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       828    828   100%  0.0    95.81  7051       NM_001407678.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       828    828   100%  0.0    95.81  7174       NM_001407612.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       828    828   100%  0.0    95.81  7177       NM_001407597.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       828    828   100%  0.0    95.81  7171       NM_001407639.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       828    828   100%  0.0    95.81  7243       NM_001407582.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       828    828   100%  0.0    95.81  7171       NM_001407636.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       828    828   100%  0.0    95.81  7174       NM_001407620.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       828    828   100%  0.0    95.81  7171       NM_001407629.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       828    828   100%  0.0    95.81  3865       NM_007298.4      
+PREDICTED: Pan paniscus BRCA1 DNA repair associated (BRCA1),...   Pan paniscus    pygmy chimpa... 9597       806    806   100%  0.0    95.05  14373      XM_063598601.1   
+PREDICTED: Pan paniscus BRCA1 DNA repair associated (BRCA1),...   Pan paniscus    pygmy chimpa... 9597       806    806   100%  0.0    95.05  14376      XM_063598594.1   
+PREDICTED: Pan paniscus BRCA1 DNA repair associated (BRCA1),...   Pan paniscus    pygmy chimpa... 9597       806    806   100%  0.0    95.05  14496      XM_057300191.2   
+PREDICTED: Pan paniscus BRCA1 DNA repair associated (BRCA1),...   Pan paniscus    pygmy chimpa... 9597       806    806   100%  0.0    95.05  14499      XM_057300187.2   
+PREDICTED: Pan paniscus BRCA1 DNA repair associated (BRCA1),...   Pan paniscus    pygmy chimpa... 9597       806    806   100%  0.0    95.05  14499      XM_057300186.2   
+PREDICTED: Pan paniscus BRCA1 DNA repair associated (BRCA1),...   Pan paniscus    pygmy chimpa... 9597       806    806   100%  0.0    95.05  14499      XM_055100853.2   
+PREDICTED: Pan paniscus BRCA1 DNA repair associated (BRCA1),...   Pan paniscus    pygmy chimpa... 9597       806    806   100%  0.0    95.05  14502      XM_057300185.2   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       802    802   100%  0.0    95.05  7167       NM_001407841.1   
+Homo sapiens breast and ovarian cancer susceptibility protein...  Homo sapiens    human           9606       767    767   84%   0.0    99.06  5693       AF005068.1       
+PREDICTED: Pongo abelii BRCA1 DNA repair associated (BRCA1),...   Pongo abelii    Sumatran ora... 9601       760    760   100%  0.0    93.52  3264       XM_054546479.2   
+PREDICTED: Pongo abelii BRCA1 DNA repair associated (BRCA1),...   Pongo abelii    Sumatran ora... 9601       760    760   100%  0.0    93.52  6624       XM_054546471.2   
+PREDICTED: Pongo abelii BRCA1 DNA repair associated (BRCA1),...   Pongo abelii    Sumatran ora... 9601       760    760   100%  0.0    93.52  6694       XM_054546458.2   
+PREDICTED: Pongo abelii BRCA1 DNA repair associated (BRCA1),...   Pongo abelii    Sumatran ora... 9601       760    760   100%  0.0    93.52  6696       XM_054546455.2   
+PREDICTED: Pongo abelii BRCA1 DNA repair associated (BRCA1),...   Pongo abelii    Sumatran ora... 9601       760    760   100%  0.0    93.52  6696       XM_054546454.2   
+PREDICTED: Pongo abelii BRCA1 DNA repair associated (BRCA1),...   Pongo abelii    Sumatran ora... 9601       760    760   100%  0.0    93.52  6698       XM_009251700.4   
+Homo sapiens cDNA, FLJ98032                                       Homo sapiens    human           9606       752    752   91%   0.0    95.45  2106       AK308084.1       
+PREDICTED: Symphalangus syndactylus BRCA1 DNA repair associate... Symphalangus... siamang         9590       749    749   100%  0.0    93.14  3800       XM_055256891.2   
+PREDICTED: Symphalangus syndactylus BRCA1 DNA repair associate... Symphalangus... siamang         9590       749    749   100%  0.0    93.14  3916       XM_055256885.2   
+PREDICTED: Symphalangus syndactylus BRCA1 DNA repair associate... Symphalangus... siamang         9590       749    749   100%  0.0    93.14  3915       XM_055256884.2   
+PREDICTED: Symphalangus syndactylus BRCA1 DNA repair associate... Symphalangus... siamang         9590       749    749   100%  0.0    93.14  3916       XM_055256882.2   
+PREDICTED: Symphalangus syndactylus BRCA1 DNA repair associate... Symphalangus... siamang         9590       749    749   100%  0.0    93.14  7239       XM_055256863.2   
+PREDICTED: Symphalangus syndactylus BRCA1 DNA repair associate... Symphalangus... siamang         9590       749    749   100%  0.0    93.14  7239       XM_055256862.2   
+PREDICTED: Symphalangus syndactylus BRCA1 DNA repair associate... Symphalangus... siamang         9590       749    749   100%  0.0    93.14  7311       XM_055256857.2   
+PREDICTED: Theropithecus gelada BRCA1, DNA repair associated...   Theropithecu... gelada          9565       697    697   91%   0.0    93.94  7107       XM_025363319.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       621    827   88%   6e-173 100.00 3787       NM_001408416.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       621    827   88%   6e-173 100.00 6970       NM_001407874.1   
+PREDICTED: Pan paniscus BRCA1 DNA repair associated (BRCA1),...   Pan paniscus    pygmy chimpa... 9597       604    805   88%   6e-168 99.11  14421      XM_057300197.2   
+PREDICTED: Pan paniscus BRCA1 DNA repair associated (BRCA1),...   Pan paniscus    pygmy chimpa... 9597       604    805   88%   6e-168 99.11  17604      XM_057300184.2   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       597    761   81%   1e-165 100.00 3634       NM_001408506.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       597    761   81%   1e-165 100.00 3748       NM_001408481.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       597    761   81%   1e-165 100.00 3748       NM_001408491.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       597    761   81%   1e-165 100.00 3619       NM_001408509.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       597    761   81%   1e-165 100.00 3622       NM_001408508.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       597    761   81%   1e-165 100.00 3751       NM_001408480.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       597    761   81%   1e-165 100.00 7054       NM_001407918.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       597    761   81%   1e-165 100.00 6937       NM_001407949.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       597    761   81%   1e-165 100.00 6931       NM_001407957.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       597    761   81%   1e-165 100.00 6934       NM_001407953.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       597    761   81%   1e-165 100.00 7057       NM_001407906.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       597    761   81%   1e-165 100.00 7057       NM_001407894.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       597    761   81%   1e-165 100.00 7060       NM_001407887.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       597    761   81%   1e-165 100.00 7057       NM_001407909.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       593    768   82%   1e-164 100.00 3757       NM_001408479.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       593    768   82%   1e-164 100.00 3754       NM_001408489.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       593    768   82%   1e-164 100.00 3754       NM_001408490.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       593    932   100%  1e-164 100.00 4909       NM_001408483.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       593    932   100%  1e-164 100.00 3574       NM_001408514.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       593    768   82%   1e-164 100.00 3700       NM_001408502.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       593    768   82%   1e-164 100.00 3751       NM_001408493.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       593    932   100%  1e-164 100.00 4288       NM_001408485.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       593    768   82%   1e-164 100.00 6940       NM_001407951.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       593    768   82%   1e-164 100.00 6940       NM_001407955.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       593    768   82%   1e-164 100.00 7060       NM_001407916.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       593    932   100%  1e-164 100.00 7477       NM_001407947.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       593    768   82%   1e-164 100.00 6943       NM_001407946.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       593    768   82%   1e-164 100.00 7063       NM_001407910.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       593    932   100%  1e-164 100.00 7471       NM_001407956.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       593    768   82%   1e-164 100.00 7060       NM_001407915.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       593    768   82%   1e-164 100.00 6937       NM_001407958.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       593    932   100%  1e-164 100.00 7600       NM_001407882.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       593    768   82%   1e-164 100.00 7066       NM_001407884.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       593    768   82%   1e-164 100.00 7129       NM_001407853.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       593    932   100%  1e-164 100.00 7597       NM_001407897.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       593    768   82%   1e-164 100.00 7063       NM_001407895.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       593    768   82%   1e-164 100.00 7063       NM_001407904.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       593    932   100%  1e-164 100.00 7597       NM_001407908.1   
+PREDICTED: Saimiri boliviensis boliviensis BRCA1 DNA repair...    Saimiri boli... Bolivian squ... 39432      582    582   84%   3e-161 91.33  6405       XM_039475996.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       571    746   80%   6e-158 100.00 3624       NM_001408507.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       571    746   80%   6e-158 100.00 7050       NM_001407899.1   
+Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript...   Homo sapiens    human           9606       569    733   78%   2e-157 100.00 7047       NM_001407886.1   
+Homo sapiens clone sv.34 BRCA1 mRNA, complete sequence            Homo sapiens    human           9606       556    556   59%   2e-153 100.00 3527       OP156965.1       
+

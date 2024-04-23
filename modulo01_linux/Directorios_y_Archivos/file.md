@@ -35,12 +35,12 @@ Se muestran algunos delos usos más comunes de este comando:
 ## 1. Determinar el tipo de archivo de un único archivo
 Se ejecuta el comando *file* seguido del nombre del archivo, obteniendo como salida el tipo de archivo. El tipo de archivo puede ser documento pdf, imagen jpeg, archivo de texto, ASCII text, entre otros formatos.
 ~~~
-file alineamientos.txt
+file hitBRCA1.txt
 ~~~
 ## 2. Determinar el tipo de archivo de varios archivos
 En el argumento del comando se añaden los diferentes archivos que queremos consultar.
 ~~~
-file alineamientos.txt bacillus.txt pseudomonas.txt
+file hitBRCA1.txt blastBRCA1.txt
 ~~~
 ## 3. Determinar el tipo de archivo de los archivos de un directorio
 Se usa el comodín **\*** en el argumento y en la salida se enlistarán los tipos de archivos de todos los archivos contenidos en el directorio actual.
@@ -57,11 +57,11 @@ Se agrega el rango en el que se quiere que se presenten los archivos analizados,
 file [a-z]*
 ~~~
 ## 5. Opción -b
-Esta opción significa *brief*, generando una salida con el tipo de archivo, pero sin el nombre del archivo.
+Esta opción significa *brief*, generando una salida con el tipo de archivo, pero sin el nombre del archivo. Si tuviéramos un archivo PDF llamado alineamientos.pdf, ingresaríamos: 
 ~~~
 file alineamientos.pdf 
 ~~~
-Generando una salida:
+Generando una salida, por ejemplo:
 ~~~
 PDF document, version 1.4
 ~~~ 

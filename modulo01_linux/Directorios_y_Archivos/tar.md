@@ -6,9 +6,9 @@ Se ejecuta el comando *tar* seguido de la combinación de las opciones *-cvf*, e
 - v: muestra el progreso del proceso en la consola.
 - f: especifica el nombre del archivo comprimido.
 
- Suponiendo que quisiéramos crear un archivo comprimido llamado *secuencias.tar* de tres secuencias de ADN aleatorias:
+ Suponiendo que quisiéramos crear un archivo comprimido llamado *secuencias.tar* de tres secuencias de transcritos:
 ~~~
-tar -cvf secuencias.tar secuencia1.txt secuencia2.txt secuencia3.txt
+tar -cvf secuencias.tar BRCA1transcript.txt BRCA2transcript.txt PALB2transcript.txt
 ~~~
 
 ## 2. Visualizar el contenido de un archivo comprimido *tar*
@@ -18,7 +18,7 @@ Se ejecuta el comando *tar* seguido de la combinación de las opciones *-tf* y e
 ~~~
 tar -tf secuencias.tar
 ~~~
-Obteniendo una salida de los archivos que se encuentran en dicho archivo comprimido, que de acuerdo con el ejemplo anterior serían secuencia1.txt, secuencia2.txt y secuencia3.txt.
+Obteniendo una salida de los archivos que se encuentran en dicho archivo comprimido, que de acuerdo con el ejemplo anterior serían BRCA1transcript.txt BRCA2transcript.txt y PALB2transcript.txt.
 ## 3. Extraer el contenido de un archivo comprimido *tar*
 Se ejecuta el comando *tar* seguido de la combinación de las opciones *-xvf* y el nombre del archivo con extensión *tar* del que queremos extraer los archivos que contiene. Las opciones usadas ejecutan las siguientes instrucciones:
 - x: extrae archivos y directorios de un archivo existente.
@@ -39,7 +39,7 @@ Otros formatos de compresión están indicados por las opciones:
 - j : compresión bzip2 \(extensión .tbz\).
 - J: compresión xz.
 ~~~
-tar -cvzf archivoseq.tar.gz secuencia1.txt secuencia2.txt secuencia3.txt
+tar -cvzf archivoseq.tar.gz BRCA1transcript.txt BRCA2transcript.txt PALB2transcript.txt
 ~~~
 ## 5. Extraer el contenido de un archivo comprimido *tar.gz*
 Se ejecuta el comando *tar* seguido de la combinación de las opciones *-xvzf* y el nombre del archivo con extensión *tar.gz* del que queremos extraer los archivos que contiene. Las opciones usadas ejecutan las siguientes instrucciones:

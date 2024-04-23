@@ -6,7 +6,7 @@ more [nombre_archivo]
 ## 1. Visualizar el contenido de un archivo de texto
 Se ejecuta el comando *more* seguido del nombre del archivo, obteniendo como salida el contenido del archivo en la terminal.
 ~~~
-more alineamientos.txt
+more BRCA2transcript.txt
 ~~~
 La navegación del archivo en la terminal sigue las siguientes teclas : 
 - Presiona la tecla `Espacio ␣` o `Enter ↵` para avanzar una página.
@@ -18,6 +18,6 @@ Al llegar al final del documento, la interfaz del comando more se cerrará devol
 ## 2. Opción +num
 Muestra el texto después del número de línea especificado. 
 ~~~
-more +5 alineamientos.txt
+more +5 BRCA2transcript.txt
 ~~~
 Arrojando como salida el contenido de la línea 5 hasta el final del documento.
