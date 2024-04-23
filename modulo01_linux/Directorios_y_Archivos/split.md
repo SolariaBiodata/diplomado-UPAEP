@@ -3,6 +3,7 @@ El comando *split* divide el contenido de un archivo y genera nuevos archivos co
 ~~~
 split [nombre_archivo]
 ~~~
+Para este comando, usaremos algún alrchivo que deseemos seccionar, el cual se ejemplificará con el nombre *archivo.txt*.
 
 ## 1. Dividir un archivo en partes iguales 
 Se ejecuta el comando *split* seguido del nombre del archivo. 

@@ -14,7 +14,7 @@ gzip -c BRCA1transcript.txt BRCA2transcript.txt > secuencias.tar.gz
 ~~~
 Obteniendo una salida de un archivo comprimido llamado *secuencias.tar.gz* que contiene de manera comprimida los archivos *BRCA1transcript.txt* y *BRCA2transcript.txt*. 
 ## 3. Descomprimir un archipo *gzip*
-Se ejecuta el comando *gzip* seguido de la opción *-d* y del nombre del archivo con extensión *gz*, previamente creado. Si quisiéramos descomprimir el archivo *secuencia1.txt.gz* y obtener el archivo original sin comprimir:
+Se ejecuta el comando *gzip* seguido de la opción *-d* y del nombre del archivo con extensión *gz*, previamente creado. Si quisiéramos descomprimir el archivo *BRCA1transcript.txt.gz* y obtener el archivo original sin comprimir:
 ~~~
 gzip -d BRCA1transcript.txt.gz
 ~~~

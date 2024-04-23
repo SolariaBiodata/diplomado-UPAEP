@@ -31,7 +31,7 @@ Si necesitas omitir un número específico de caracteres finales al comparar lí
 uniq -w 20 hitBRCA1.txt
 ~~~
 ## 6. Omitir campos 
-Si necesitas omitir un número específico de caraccampos/secciones al comparar líneas, utiliza la opción *-f* seguida del número de campos a ignorar.
+Si necesitas omitir un número específico de campos/secciones al comparar líneas, utiliza la opción *-f* seguida del número de campos a ignorar.
 ~~~
 uniq -f 6 hitBRCA1.txt
 ~~~

@@ -36,17 +36,17 @@ touch -m archivo.txt
 touch -c archivoexistente.txt
 ~~~
 ## 8. Opción -d para especificar cadena de fecha y hora
-Usa una cadena de fecha/hora en lugar de la actual. El siguiente ejemplo después de ser ejecutado actualizará la fecha de acceso y modificación del archivo *archivo.txt* al día anterior. 
+Usa una cadena de fecha/hora en lugar de la actual. El siguiente ejemplo, después de ser ejecutado, actualizará la fecha de acceso y modificación del archivo *archivo.txt* al día anterior. 
 ~~~
 touch -d "yesterday" archivo.txt
 ~~~
 ## 9. Opción -r para especificar fecha a partir de referencia
-Permite utilizar la fecha de acceso y modificación de otro archivo como referencia. El siguiente comando, al ser ejecutado. cambiará la fecha de acceso y modificación de *archivo.txt* con base en las fechas correspondientes de *archivoreferencia.txt*.
+Permite utilizar la fecha de acceso y modificación de otro archivo como referencia. El siguiente comando, al ser ejecutado, cambiará la fecha de acceso y modificación de *archivo.txt* con base en las fechas correspondientes de *archivoreferencia.txt*.
 ~~~
 touch -r archivoreferencia.txt archivo.txt
 ~~~
 ## 10. ¿Cómo verificar la fecha de acceso y modificación de un archivo? 
-El comando stat se utiliza para mostrar información detallada sobre archivos y sistemas de archivos. Su sintaxis se muestra en el siguiente ejemplo.
+El comando *stat* se utiliza para mostrar información detallada sobre archivos y sistemas de archivos. Su sintaxis se muestra en el siguiente ejemplo.
 ~~~
 stat archivo.txt
 ~~~

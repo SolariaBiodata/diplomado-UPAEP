@@ -23,7 +23,7 @@ cd "Alineamientos Bacillus"
 ~~~
 Podemos verificar que hemos cambiado de directorio ejecutando el comando *pwd*, el cual nos indica el directorio actual.
 ## 3. Cambiar al directorio raíz \(Root directory\)
-El directorio raiz es aquel que ocupa el primer lugar en la jerarquía del sistema de archivos. Se ejecuta añadiendo un */* en el argumento del comando.
+El directorio raíz es aquel que ocupa el primer lugar en la jerarquía del sistema de archivos. Se ejecuta añadiendo un */* en el argumento del comando.
 ~~~
 cd /
 ~~~

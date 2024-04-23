@@ -29,7 +29,7 @@ tar -xvf secuencias.tar
 ~~~
 Como resultado, los archivos contenidos en el archivo comprimido se extraerán en el directorio actual. 
 ## 4. Compresión gzip en el archivo comprimido *tar*
-Se ejecuta el comando *tar* seguido de la combinación de las opciones *-cvzf* y el nombre del archivo con extensión *tar.gz* que queremos crear.Las opciones usadas ejecutan las siguientes instrucciones:
+Se ejecuta el comando *tar* seguido de la combinación de las opciones *-cvzf* y el nombre del archivo con extensión *tar.gz* que queremos crear. Las opciones usadas ejecutan las siguientes instrucciones:
 - c: crea un nuevo archivo.
 - z: compresión zip en el archivo tar.
 - v: muestra el progreso del proceso en la consola.

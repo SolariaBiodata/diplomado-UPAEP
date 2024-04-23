@@ -8,7 +8,7 @@ Para imprimir el directorio actual en el que estamos trabajando se ejecuta:
 ~~~
 pwd 
 ~~~
-Como resultado, se mostrará la ruta completa del directorio en el que nos encontramos. Por ejemplo. si el directorio en el que nos encontramos tiene como nombre *alineamientos bacillus_cereus_y_subtilis*, el cual se encuentra dentro del directorio *Secuencias*, el cual se encuentra a su vez dentro del directorio *Metagenomica*, último que pertenece al directorio raíz: 
+Como resultado, se mostrará la ruta completa del directorio en el que nos encontramos. Por ejemplo, si el directorio en el que nos encontramos tiene como nombre *alineamientos bacillus_cereus_y_subtilis*, el cual se encuentra dentro del directorio *Secuencias*, el cual se encuentra a su vez dentro del directorio *Metagenomica*, último que pertenece al directorio raíz: 
 ~~~
 pwd
 ~~~

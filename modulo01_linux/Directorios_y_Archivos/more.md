@@ -14,7 +14,7 @@ La navegación del archivo en la terminal sigue las siguientes teclas :
 - Presiona la tecla `↑` para moverte hacia arriba en el contenido.
 - Presiona la tecla `↓` para moverte hacia abajo en el contenido.
 
-Al llegar al final del documento, la interfaz del comando more se cerrará devolviendo el prompt. Si se desea salir de la interfaz antes de llegar al final se puede hacer con la tecla `q`.
+Al llegar al final del documento, la interfaz del comando *more* se cerrará devolviendo el prompt. Si se desea salir de la interfaz antes de llegar al final se puede hacer con la tecla `q`.
 ## 2. Opción +num
 Muestra el texto después del número de línea especificado. 
 ~~~

@@ -23,7 +23,7 @@ mi_archivo.xxx: Variant Call Format (VCF) version 4.2, ASCII text
 mi_archivo.xxx: Bourne-Again shell script, ASCII text executable 
 ```
 
-Con la información que nos arroja en la salida podemos descartar algunos escenarios desde el inicio. Típicamente lo que nos interesa descartar en este punto es que un archivo a pesar de tener una extensión en específico, contenga datos correspondientes a un formato diferente. A continuación se muestra como pudiera verse un archivo binario con la información desplegada por este comando:
+Con la información que nos arroja en la salida podemos descartar algunos escenarios desde el inicio. Típicamente lo que nos interesa descartar en este punto es que un archivo, a pesar de tener una extensión en específico, contenga datos correspondientes a un formato diferente. A continuación se muestra cómo pudiera verse un archivo binario con la información desplegada por este comando:
 
 ```bash
 mi_archivo.xxx: PDF document, version 1.6
@@ -31,7 +31,7 @@ mi_archivo.xxx: PDF document, version 1.6
 ```bash
 mi_archivo.xxx: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, with debug_info, not stripped 
 ```
-Se muestran algunos delos usos más comunes de este comando:
+Se muestran algunos de los usos más comunes de este comando:
 ## 1. Determinar el tipo de archivo de un único archivo
 Se ejecuta el comando *file* seguido del nombre del archivo, obteniendo como salida el tipo de archivo. El tipo de archivo puede ser documento pdf, imagen jpeg, archivo de texto, ASCII text, entre otros formatos.
 ~~~
@@ -43,7 +43,7 @@ En el argumento del comando se añaden los diferentes archivos que queremos cons
 file hitBRCA1.txt blastBRCA1.txt
 ~~~
 ## 3. Determinar el tipo de archivo de los archivos de un directorio
-Se usa el comodín **\*** en el argumento y en la salida se enlistarán los tipos de archivos de todos los archivos contenidos en el directorio actual.
+Se usa el comodín **\*** en el argumento, y en la salida se enlistarán los tipos de archivos de todos los archivos contenidos en el directorio actual.
 ~~~
 file *
 ~~~

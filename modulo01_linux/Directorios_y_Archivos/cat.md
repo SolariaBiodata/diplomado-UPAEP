@@ -20,7 +20,7 @@ Se ejecuta el comando *cat* seguido del nombre del archivo. Como resultado, se m
 cat fasta.txt
 ~~~
 ## 2. Mostrar el número de líneas 
-Se usa la opción *-n* para mostrar el número de línea junto al contendio correspondiente del archivo. 
+Se usa la opción *-n* para mostrar el número de línea junto al contenido correspondiente del archivo. 
 ~~~
 cat -n fasta.txt
 ~~~

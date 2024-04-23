@@ -46,9 +46,7 @@ Cabe mencionar que la primera columna combina el contenido del tipo de archivo y
  3. Número de ligas fuertes al archivo
  4. Usuario propietario
  5. Grupo del archivo
- 6. Tamaño (en formarto humanamente legible)
-
-    El tamaño es mostrado en bytes.
+ 6. Tamaño (en formarto humanamente legible). El tamaño es mostrado en bytes.
  7. Tiempo de la última modificación del archivo
  8. Nombre del archivo
 
