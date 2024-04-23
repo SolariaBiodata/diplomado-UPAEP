@@ -53,3 +53,8 @@ Una vez que el _Pull Request_ sea satisfactoriamente agregado o _mergeado_ con l
 
 Si el proceso concluye exitosamente una :heavy_check_mark: se agrega al final del último commit en la página principal de `gh-pages`. Una vez que ocurre esto puedes revisar los cambios en la página rendereada.
 
+### 2. Usar otras ramas y desplegarlas en `gh-pages`
+
+Se usa el mismo esquema asumiendo que ya se ha creado una rama con cualquier origen. En este caso se puede aprovechar estándares de GitHub para _mergear_ ramas. Para ello es necesario crear un _Pull Request_ usando el atajo [link](https://github.com/SolariaBiodata/diplomado-UPAEP/compare/gh-pages...). Donde será necesario buscar la rama que deseas integrar. Alternativamente puedes construir el link de esta forma `https://github.com/SolariaBiodata/diplomado-UPAEP/compare/gh-pages...<tu-rama>`.
+
+
