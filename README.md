@@ -47,7 +47,7 @@ git commit -m "chore: Ejemplo de uso"
 git push
 ```
 
-Cuando estés satisfecho con los cambios planteados tienes que hacer un _Pull request_ intentando agregar tus cambios a la rama `gh-pages`. Una vez más usa las convenciones para nombrar tu _pull request_ i.e: `feat(linux): Agregando comandos de navegación`. Un atajo para crear un _pull request_ a la rama `gh-pages` es seguir el siguiente [link](https://github.com/SolariaBiodata/diplomado-UPAEP/compare/gh-pages...). No obstante puedes hacerlo directamente al modificar este url agregando el nombre de tu rama al final `https://github.com/SolariaBiodata/diplomado-UPAEP/compare/gh-pages...<tu-rama>` sustituyendo `<tu-rama>` por el nombre de tu rama, en el ejemplo sería `feat/Agregar-comandos-navegacion-en-linux`.
+Cuando estés satisfecho con los cambios planteados tienes que hacer un _Pull Request_ intentando agregar tus cambios a la rama `gh-pages`. Una vez más usa las convenciones para nombrar tu _Pull Request_ i.e: `feat(linux): Agregando comandos de navegación`. Un atajo para crear un _Pull Request_ a la rama `gh-pages` es seguir el siguiente [link](https://github.com/SolariaBiodata/diplomado-UPAEP/compare/gh-pages...). No obstante puedes hacerlo directamente al modificar este url agregando el nombre de tu rama al final `https://github.com/SolariaBiodata/diplomado-UPAEP/compare/gh-pages...<tu-rama>` sustituyendo `<tu-rama>` por el nombre de tu rama, en el ejemplo sería `feat/Agregar-comandos-navegacion-en-linux`.
 
 Una vez que el _Pull Request_ sea satisfactoriamente agregado o _mergeado_ con la rama `gh-pages`, el proceso de construcción de la página se disparará automáticamente.
 
