@@ -10,10 +10,12 @@ Si el archivo existe, se abrirá el archivo desde la terminal y se mostrará el 
 ## 2. Edición del archivo y modos de operación
 Como se había mencionado anteriormente, *vi* tiene dos modos de operación: 
 1. Modo de comando
+
     Por default este es el modo que rige al editor cuando se ejecuta el comando *vi*, y como su nombre lo dice, la edición del archivo depende de la utilización de comandos específicos. 
 2. Modo de inserción 
-    Este modo es utilizado para insertar texto. Para ingresar texto antes del cursos se presiona la tecla `i`, en cambio, si se quiere insertar después de éste se presiona `a`
-Si se quiere cambiar del modo de inserción al modo de comando presiona la tecla `Esc`. 
+
+    Este modo es utilizado para insertar texto. Para ingresar texto antes del cursor, se presiona la tecla `i`, en cambio, si se quiere insertar después de éste se presiona la tecla `a`.
+Si se quiere cambiar del modo de inserción al modo de comando, presiona la tecla `Esc`. 
 ## 3. Navegar por el archivo
 Para navegar a través del documento:
 - Presiona la tecla `↓` para moverte hacia abajo línea por línea.
@@ -21,17 +23,17 @@ Para navegar a través del documento:
 - Presiona las teclas `←` y `→` para moverte de manera horizontal dentro de las líneas. 
 - Presiona `0` para ir al principio de la línea.
 - Presiona `$` para ir al final de la línea.
-Presiona `G` para ir al final del archivo.
-Presiona `gg` para ir al principio del archivo.
+- Presiona `G` para ir al final del archivo.
+- Presiona `gg` para ir al principio del archivo.
 ## 4. Guardar cambios 
 Para guardar los cambios que se le han realizado al archivo, puedes utilizar los siguientes comandos: 
-- `:wq` o `ZZ`: Guarda los cambios y sale de vi.
-- `:w`: Guarda los cambios sin salir de vi.
-- `:q!`: Sale de vi sin guardar cambios.
+- `:wq` o `ZZ`: Guarda los cambios y sale de *vi*.
+- `:w`: Guarda los cambios sin salir de *vi*.
+- `:q!`: Sale de *vi* sin guardar cambios.
 ## 5. Otros comandos 
 - `dd`: Elimina la línea donde está el cursor.
 - `yy`: Copia la línea donde está el cursor.
-- `p`: Pega la línea copiada o cortada.
+- `p`: Pega la línea copiada o eliminada.
 - `/texto`: Busca el texto especificado hacia adelante en el archivo.
 - `?texto`: Busca el texto especificado hacia atrás en el archivo.
 - `u`: Deshace el último cambio.
