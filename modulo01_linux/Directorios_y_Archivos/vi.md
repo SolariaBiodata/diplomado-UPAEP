@@ -38,3 +38,7 @@ Para guardar los cambios que se le han realizado al archivo, puedes utilizar los
 - `?texto`: Busca el texto especificado hacia atrás en el archivo.
 - `u`: Deshace el último cambio.
 - `Ctrl + R`: Rehace el último cambio deshecho.
+
+
+**Nota:**
+*La versión más reciente de este comando, vim, no funciona en WSL*

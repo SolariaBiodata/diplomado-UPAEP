@@ -52,3 +52,6 @@ Si se desea argregar un archivo específico a un archivo ZIP se usa el comando *
 zip -u secuencias.zip BRCA1transcript.txt
 ~~~ 
 El archivo zip ingresado tendrá todos los archivos que originalmente tenía y un nuevo archivo *BRCA1transcript.txt*.
+
+**Nota:**
+*Este comando no funciona en WSL*

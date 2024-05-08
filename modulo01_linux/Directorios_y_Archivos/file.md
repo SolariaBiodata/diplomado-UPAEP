@@ -65,3 +65,7 @@ Generando una salida, por ejemplo:
 ~~~
 PDF document, version 1.4
 ~~~ 
+
+
+**Nota:**
+*Este comando no funciona en WSL*
