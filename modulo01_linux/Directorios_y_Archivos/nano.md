@@ -27,13 +27,9 @@ Para salir del editor nano, presiona `Ctrl + X`. Si has realizado cambios, el ed
 - `Ctrl + K`: Elimina la línea en la que actualmente nos encontramos posicionados.
 - `Ctrl + U`: Pega la línea que hemos eliminado con anterioridad en la posición actual.
 - `Ctrl + R`: Abre un archivo y se inserta en la posición del cursor actual.
-- `Alt + \`: 
-- `Alt + .`:  
 - `Alt + W`: Busca la siguiente coincidencia de la palabra que previamente has ingresado con `Ctrl + W`.
 - `Alt + Q`: Busca la anterior coincidencia de la palabra que previamente has ingresado con `Ctrl + W`.
-- `Alt + ,`:  
-- `Ctrl + J`: Justifica el párrafo en donde se encuentre el cursor, o bien, el texto seleccionado. 
-- `Alt + 6`:  
+- `Ctrl + J`: Justifica el párrafo en donde se encuentre el cursor, o bien, el texto seleccionado.  
 - `Alt + U`: Deshacer un cambio.
 - `Alt + E`: Rehacer un cambio.
 - `Alt + R`: Reemplaza el texto, así que primero ingresarás el texto a buscar y luego el texto con el que quieres reemplazar éste. 
