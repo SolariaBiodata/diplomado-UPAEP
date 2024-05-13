@@ -11,7 +11,7 @@ Si el archivo existe, se abrirá el archivo desde la terminal y se mostrará el 
 Como se había mencionado anteriormente, *vi* tiene dos modos de operación: 
 1. Modo de comando
 
-    Por default este es el modo que rige al editor cuando se ejecuta el comando *vi*, y como su nombre lo dice, la edición del archivo depende de la utilización de comandos específicos. 
+    Por default, este es el modo que rige al editor cuando se ejecuta el comando *vi*, y como su nombre lo dice, la edición del archivo depende de la utilización de comandos específicos. 
 2. Modo de inserción 
 
     Este modo es utilizado para insertar texto. Para ingresar texto antes del cursor, se presiona la tecla `i`, en cambio, si se quiere insertar después de éste se presiona la tecla `a`.

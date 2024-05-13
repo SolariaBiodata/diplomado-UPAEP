@@ -26,7 +26,7 @@ Como se observa, la información se muestra en columnas y éstas se interpretan 
 - Total: Cantidad total de RAM física en el sistema.
 - Usado: cantidad de RAM que se está usando actualmente por ejecución de programas y procesos. 
 - Libre: Cantidad RAM física que no se está utilizando actualmente por ningún proceso y está libre para que sea asignada a nuevos procesos. 
-- Compartida: Cantidad de memoria utilizada por el sistema de archivos temporal \(tmpfs\), último el cual es un sistema de archivos que almacena archivos en la memoria RAM  en lugar del disco duro. 
+- Compartida: Cantidad de memoria utilizada por el sistema de archivos temporal \(tmpfs\), último el cual es un sistema de archivos que almacena archivos en la memoria RAM en lugar del disco duro. 
 - Caché/buff: Cantidad de memoria que el sistema operativo usa para almacenar los datos que recientemente fueron utilizados para agilizar el acceso a ellos. 
 - Disponible: Valor estimado de la cantidad de recursos de memoria que aún están disponibles para su uso. 
 

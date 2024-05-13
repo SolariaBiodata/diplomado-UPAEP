@@ -59,7 +59,7 @@ file [a-z]*
 ## 5. Opción -b
 Esta opción significa *brief*, generando una salida con el tipo de archivo, pero sin el nombre del archivo. Si tuviéramos un archivo PDF llamado alineamientos.pdf, ingresaríamos: 
 ~~~
-file alineamientos.pdf 
+file -b alineamientos.pdf 
 ~~~
 Generando una salida, por ejemplo:
 ~~~
